@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kompyte",
-  description: "Kompyte is a competitive intelligence software focused on enabling go-to-market teams with the insights they need to overcome the competition. Using machine learning AI, Kompyte collects,  analyzes, and organizes data to help teams share actionable insights.",
+  title: "Marko Benis",
+  description: "Designer",
 };
 
 export default function RootLayout({
@@ -16,6 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/icon.svg" sizes="16" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );

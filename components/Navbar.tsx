@@ -11,7 +11,7 @@ export const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="sticky top-9 z-50 p-4 bg-white shadow-md rounded-lg mx-auto max-w-7xl mt-8">
+    <nav className="sticky z-50 p-4 bg-white shadow-md rounded-lg mx-auto w-full">
       <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="text-2xl font-bold">
@@ -20,7 +20,7 @@ export const Navbar: React.FC = () => {
               src="/logo.svg"
               width={200}
               height={50} 
-              className=" object-contain"
+              className=" object-contain ml-1"
               alt="Marko Benis" />
           </Link>
         </div>

@@ -5,11 +5,11 @@ import { useState } from 'react';
 const steps = [
   { 
     id: 1, 
-    title: "Let\u2019s start a new project", 
-    subtitle: "We are honoured you are interested in working with us. Please fill out the project planner and we\u2019ll get back to you in a jiffy.",
+    title: "Let’s start a new project", 
+    subtitle: "We are honoured you are interested in working with us. Please fill out the project planner and we’ll get back to you in a jiffy.",
     content: (
       <div>
-        <label className="block text-left text-gray-700">Name or Company Name</label>
+        <label className="block text-left text-gray-700">Name or company name</label>
         <input type="text" className="w-full p-2 border rounded mb-4" placeholder="Enter name or company name" />
         
         <label className="block text-left text-gray-700">Email</label>
@@ -52,8 +52,8 @@ const steps = [
   },
   { 
     id: 4, 
-    title: "What\u2019s your budget?",
-    subtitle: "An honest budget will allow us to ensure expectations are met. Don\u2019t have an exact price? Guesstimate.",
+    title: "What’s your budget?",
+    subtitle: "An honest budget will allow us to ensure expectations are met. Don’t have an exact price? Guesstimate.",
     content: (
       <div>
         <label className="block text-left text-gray-700">From</label>
@@ -85,34 +85,54 @@ const Wizard = () => {
   };
 
   return (
-    <div className="max-w-xl  mx-auto text-center p-6">
-      <h2 className="text-2xl font-bold">How It Works</h2>
-      <p className="text-gray-600 my-4">
+    <div className="relative flex items-center justify-center min-h-[500px]">
+      {/* Previous Button - Placed outside on the left */}
+      <button 
+        onClick={prevStep} 
+        disabled={currentStep === 0} 
+        className="absolute left-0 px-4 py-2 bg-gray-300 rounded disabled:opacity-50"
+      >
+        ◀
+      </button>
+
+      {/* Main Wizard Container */}
+      <div className="max-w-xl mx-auto text-center p-6">
+        {/* Wizard Title */}
+        <p className="text-2xl font-bold my-10">Project Planner</p>
         
-      </p>
-      
-      <div className="relative flex items-center justify-center my-6">
-        <div className="absolute w-full h-0.5 bg-gray-300 "></div>
-        {steps.map((step, index) => (
-          <div
-            key={step.id}
-            className={`relative w-12 h-12 flex items-center justify-center rounded-full border-2 ${index === currentStep ? 'bg-red-500 text-white border-red-500' : 'bg-white border-gray-300 text-gray-600'} z-10`}
-          >
-            {step.id}
+        {/* Step Indicator */}
+        <div className="relative flex items-center justify-center my-6">
+          <div className="absolute w-full h-0.5 bg-gray-300"></div>
+          {steps.map((step, index) => (
+            <div
+              key={step.id}
+              className={`relative w-12 h-12 flex items-center justify-center rounded-full border-2 ${
+                index === currentStep ? 'bg-red-500 text-white border-red-500' : 'bg-white border-gray-300 text-gray-600'
+              } z-10`}
+            >
+              {step.id}
+            </div>
+          ))}
+        </div>
+
+        {/* Wizard Content with Fixed Height */}
+        <div className="relative bg-white p-6 rounded-lg shadow-lg min-h-[500px] flex items-center justify-center">
+          <div className="w-full max-w-lg text-center">
+            <h3 className="font-semibold text-3xl my-5">{steps[currentStep].title}</h3>
+            <p className="text-gray-600 my-5">{steps[currentStep].subtitle}</p>
+            <div className="text-gray-600">{steps[currentStep].content}</div>
           </div>
-        ))}
+        </div>
       </div>
 
-      <div className="relative bg-white p-4 rounded-lg shadow-lg">
-        <h3 className="font-semibold text-3xl my-5">{steps[currentStep].title}</h3>
-        <p className="text-gray-600 my-5">{steps[currentStep].subtitle}</p>
-        <div className="text-gray-600">{steps[currentStep].content}</div>
-      </div>
-
-      <div className="flex justify-between mt-4">
-        <button onClick={prevStep} disabled={currentStep === 0} className="px-4 py-2 bg-gray-300 rounded disabled:opacity-50">◀</button>
-        <button onClick={nextStep} disabled={currentStep === steps.length - 1} className="px-4 py-2 bg-gray-300 rounded disabled:opacity-50">▶</button>
-      </div>
+      {/* Next Button - Placed outside on the right */}
+      <button 
+        onClick={nextStep} 
+        disabled={currentStep === steps.length - 1} 
+        className="absolute right-0 px-4 py-2 bg-gray-300 rounded disabled:opacity-50"
+      >
+        ▶
+      </button>
     </div>
   );
 };

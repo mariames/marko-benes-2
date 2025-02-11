@@ -2,3 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/poppins/Poppins-Regular.ttf') format('truetype'),
+         url('/fonts/poppins/Poppins-SemiBold.ttf') format('truetype'),
+         url('/fonts/poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: normal;  /* Regular font weight */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600; /* SemiBold font weight */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold; /* Bold font weight */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Farmhouse';
+    src: url('/fonts/farmhouse/Farmhouse.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+.farmhouse-title {
+    font-family: 'Farmhouse', sans-serif;
+}
+  
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+

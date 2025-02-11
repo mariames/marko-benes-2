@@ -19,7 +19,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/icon.svg" sizes="16" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} poppins-font`}>{children}</body>
     </html>
   );
 }

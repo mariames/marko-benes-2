@@ -1,15 +1,22 @@
 import React from "react";
+import Link from "next/link";
 
-const services = [
-  "Labels and Packaging",
-  "Posters and Flyers",
-  "Billboards, Banners & Roll Ups",
-  "Vehicle Branding",
-  "Trade Promo Booths",
-  "Promo Shelves",
-  "Logo",
-  "T-Shirt design",
-  "Video Design",
+interface Service {
+  name: string;
+  link: string;
+  src: string;
+}
+
+const services: Service[] = [
+  { name: "Labels and Packaging", link: "#", src: "/service/labels-and-packaging.jpg" },
+  { name: "Posters and Flyers", link: "#", src: "/service/posters-and-flyers.jpg" },
+  { name: "Billboards, Banners & Roll Ups", link: "#", src: "/service/billboards-banners-roll-ups.jpg" },
+  { name: "Vehicle Branding", link: "#", src: "/service/vehicle-branding.jpg" },
+  { name: "Trade Promo Booths", link: "#", src: "/service/trade-promo-booths.jpg" },
+  { name: "Promo Shelves", link: "#", src: "/service/promo-shelves.jpg" },
+  { name: "Logo", link: "#", src: "/service/logo.jpg" },
+  { name: "T-Shirt design", link: "#", src: "/service/t-shirt-design.jpg" },
+  { name: "Video Design", link: "#", src: "/service/video-design.jpg" },
 ];
 
 const Services: React.FC = () => {
@@ -20,16 +27,16 @@ const Services: React.FC = () => {
       </p>
       <div className="grid grid-cols-3 gap-10 p-6">
         {services.map((service, index) => (
-          <button
-            className="h-32 flex items-center justify-center bg-gray-900 rounded-lg border border-slate-800 transform transition-all duration-300 hover:scale-105 hover:shadow-[0_5px_10px_rgba(0,255,255,0.6),0_5px_15px_rgba(255,0,255,0.6)]"
-            key={index}
-          >
-            <span
-              className="bg-clip-text text-2xl text-transparent bg-gradient-to-r from-cyan-500 to-teal-500 font-semibold text-center p-6 cursor-pointer"
-            >
-              {service}
-            </span>
-          </button>
+          <Link href={service.link} key={index} className="h-56 flex items-center justify-center bg-gray-900 rounded-lg border border-slate-800 bg-cover bg-center"
+          style={{ backgroundImage: `url(${service.src})` }}
+        >
+             
+              
+              <span className="text-2xl christmas-title text-neutral-50 text-center p-6 cursor-pointer bg-black bg-opacity-50 px-4 py-2 rounded-lg">
+                {service.name}
+              </span>
+            
+          </Link>
         ))}
       </div>
     </div>

@@ -15,7 +15,6 @@ import Logos from "@/components/Logos";
 export default function Home() {
   return (
     <main>
-      <Navbar />
       <Intro />
       <Services />
       <Wizard />

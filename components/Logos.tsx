@@ -22,11 +22,9 @@ const Logos = () => {
   return (
     <div className="bg-black">
         <p className="text-3xl text-white text-center py-10">
-            Dedicated to brands that embody 
-            <span className="font-semibold">&nbsp;quality&nbsp;</span> 
-                and 
-            <span className="font-semibold">&nbsp;purpose</span>
-            
+            I work with brands I
+            <span className="font-semibold">&nbsp;believe&nbsp;</span> 
+                in
         </p>
         <div className="bg-black flex justify-center items-center min-h-screen relative">
         {/* Grid Container */}
@@ -38,7 +36,7 @@ const Logos = () => {
                     alt={logo.alt} 
                     width={logo.width} 
                     height={logo.height}
-                    className="opacity-80 hover:opacity-100" />
+                    className="opacity-80 hover:opacity-100 h-16 w-auto" />
             </div>
             ))}
         </div>
@@ -46,9 +44,9 @@ const Logos = () => {
         {/* Grid Lines with Fading Effect */}
         <div className="absolute inset-0 pointer-events-none">
             {/* Vertical Lines with gradient opacity */}
-            <div className="absolute top-0 bottom-0 left-[25%] w-px bg-gradient-to-b from-transparent via-red-500 to-transparent opacity-0 animate-fadeIn"></div>
+            <div className="absolute top-0 bottom-0 left-[30%] w-px bg-gradient-to-b from-transparent via-red-500 to-transparent opacity-0 animate-fadeIn"></div>
             <div className="absolute top-0 bottom-0 left-[50%] w-px bg-gradient-to-b from-transparent via-red-500 to-transparent opacity-0 animate-fadeIn"></div>
-            <div className="absolute top-0 bottom-0 left-[75%] w-px bg-gradient-to-b from-transparent via-red-500 to-transparent opacity-0 animate-fadeIn"></div>
+            <div className="absolute top-0 bottom-0 left-[70%] w-px bg-gradient-to-b from-transparent via-red-500 to-transparent opacity-0 animate-fadeIn"></div>
 
             {/* Horizontal Lines with gradient opacity */}
             <div className="absolute left-0 right-0 top-[33.33%] h-px bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-0 animate-fadeIn"></div>

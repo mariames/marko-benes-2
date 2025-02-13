@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
+import NavbarWithServices from "@/components/NavbarWithServices";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,7 @@ export default function RootLayout({
         <link rel="icon" href="/icon.svg" sizes="16" />
       </head>
       <body className={`${inter.className} poppins-font`}>
-        <Navbar />
+        <NavbarWithServices />
         {children}
       </body>
     </html>

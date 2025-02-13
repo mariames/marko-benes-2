@@ -2,7 +2,9 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>Posters</div>
+    <div className='flex justify-center christmas-title text-5xl my-16'>
+      Posters & Flyers
+    </div>
   )
 }
 

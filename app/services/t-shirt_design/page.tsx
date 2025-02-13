@@ -2,7 +2,9 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>page</div>
+    <div className='flex justify-center christmas-title text-5xl my-16'>
+      T-shirt design
+    </div>
   )
 }
 

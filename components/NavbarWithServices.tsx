@@ -126,7 +126,7 @@ export default function NavbarWithServices() {
                                             onClick={handleItemClick}
                                             className="block px-3 py-2 text-black"
                                         >
-                                            Labels and Packaging
+                                            Labels &amp; Packaging
                                         </Link>
                                     </li>
                                     <li>
@@ -135,7 +135,7 @@ export default function NavbarWithServices() {
                                             onClick={handleItemClick}
                                             className="block px-3 py-2 text-black"
                                         >
-                                            Posters and Flyers
+                                            Posters &amp; Flyers
                                         </Link>
                                     </li>
                                     <li>

@@ -8,8 +8,8 @@ interface Service {
 }
 
 const services: Service[] = [
-  { name: "Labels and Packaging", link: "/services/labels_and_packaging", src: "/service/labels-and-packaging.jpg" },
-  { name: "Posters and Flyers", link: "/services/posters_and_flyers", src: "/service/posters-and-flyers.jpg" },
+  { name: "Labels & Packaging", link: "/services/labels_and_packaging", src: "/service/labels-and-packaging.jpg" },
+  { name: "Posters & Flyers", link: "/services/posters_and_flyers", src: "/service/posters-and-flyers.jpg" },
   { name: "Billboards, Banners & Roll Ups", link: "/services/billboards_banners_roll_ups", src: "/service/billboards-banners-roll-ups.jpg" },
   { name: "Vehicle Branding", link: "/services/vehicle_branding", src: "/service/vehicle-branding.jpg" },
   { name: "Trade Promo Booths", link: "/services/trade_promo_booths", src: "/service/trade-promo-booths.jpg" },

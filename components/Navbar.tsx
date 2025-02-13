@@ -27,9 +27,9 @@ export const Navbar: React.FC = () => {
 
         {/* Desktop Menu Items */}
         <ul className="hidden md:flex space-x-8 text-gray-700 font-medium ml-3 mr-3">
-          <li className="text-gray-700 hover:text-gray-950">
-              <Link href="/collaborate">
-                  Collaborate
+        <li className="text-gray-700 hover:text-gray-950">
+              <Link href="/">
+                Services
               </Link>
           </li>
           <li className="text-gray-700 hover:text-gray-950">
@@ -41,6 +41,11 @@ export const Navbar: React.FC = () => {
                 <Link href="/about">
                   About
                 </Link>
+          </li>
+          <li className="text-gray-700 hover:text-gray-950">
+              <Link href="/collaborate">
+                  Collaborate
+              </Link>
           </li>
           <li className="text-gray-700 hover:text-gray-950">
                 <Link href="/contact">

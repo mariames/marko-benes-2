@@ -37,6 +37,16 @@
 .farmhouse-title {
     font-family: 'Farmhouse', sans-serif;
 }
+
+@font-face {
+    font-family: 'ChristmasComeback';
+    src: url('/fonts/christmas_comback/ChristmasComeback.otf') format('opentype');
+  }
+  
+
+.christmas-title {
+    font-family: 'ChristmasComeback', sans-serif;
+}
   
 
 body {

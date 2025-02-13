@@ -15,7 +15,7 @@ const services = [
 const Services: React.FC = () => {
   return (
     <div className="bg-gray-950 py-10">
-      <p className="text-5xl text-center my-10 pt-4 pb-10 text-gray-300">
+      <p className="text-5xl text-center my-10 pt-4 pb-10 text-gray-300 christmas-title">
         Services
       </p>
       <div className="grid grid-cols-3 gap-10 p-6">

@@ -21,7 +21,7 @@ export function TypewriterEffectSmoothDemo() {
     },
   ];
   return (
-    <div className="flex flex-col items-center justify-center h-[25rem]">
+    <div className="flex flex-col items-center justify-center h-[12rem]">
       
       {/** <TypewriterEffectSmooth words={words} /> */}
       <p className="farmhouse-title text-5xl mb-5">Hi! I am Marko!</p>  

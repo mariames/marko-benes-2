@@ -8,15 +8,15 @@ interface Service {
 }
 
 const services: Service[] = [
-  { name: "Labels and Packaging", link: "#", src: "/service/labels-and-packaging.jpg" },
-  { name: "Posters and Flyers", link: "#", src: "/service/posters-and-flyers.jpg" },
-  { name: "Billboards, Banners & Roll Ups", link: "#", src: "/service/billboards-banners-roll-ups.jpg" },
-  { name: "Vehicle Branding", link: "#", src: "/service/vehicle-branding.jpg" },
-  { name: "Trade Promo Booths", link: "#", src: "/service/trade-promo-booths.jpg" },
-  { name: "Promo Shelves", link: "#", src: "/service/promo-shelves.jpg" },
-  { name: "Logo", link: "#", src: "/service/logo.jpg" },
-  { name: "T-Shirt design", link: "#", src: "/service/t-shirt-design.jpg" },
-  { name: "Video Design", link: "#", src: "/service/video-design.jpg" },
+  { name: "Labels and Packaging", link: "/services/labels_and_packaging", src: "/service/labels-and-packaging.jpg" },
+  { name: "Posters and Flyers", link: "/services/posters_and_flyers", src: "/service/posters-and-flyers.jpg" },
+  { name: "Billboards, Banners & Roll Ups", link: "/services/billboards_banners_roll_ups", src: "/service/billboards-banners-roll-ups.jpg" },
+  { name: "Vehicle Branding", link: "/services/vehicle_branding", src: "/service/vehicle-branding.jpg" },
+  { name: "Trade Promo Booths", link: "/services/trade_promo_booths", src: "/service/trade-promo-booths.jpg" },
+  { name: "Promo Shelves", link: "/services/promo_shelves", src: "/service/promo-shelves.jpg" },
+  { name: "Logo", link: "/services/logo", src: "/service/logo.jpg" },
+  { name: "T-Shirt design", link: "/services/t-shirt_design", src: "/service/t-shirt-design.jpg" },
+  { name: "Video Design", link: "/services/video_design", src: "/service/video-design.jpg" },
 ];
 
 const Services: React.FC = () => {

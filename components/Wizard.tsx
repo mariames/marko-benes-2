@@ -126,7 +126,7 @@ const Wizard = () => {
           </div>
         </div>
 
-      <div className='flex justify-between mt-5'>
+      <div className='flex justify-between mt-7'>
         <button onClick={prevStep} disabled={currentStep === 0} className="px-4 font-semibold py-2 border-2 border-gray-300 rounded-lg w-24 h-16 bg-gray-50 disabled:opacity-50">previous</button>
         <button onClick={nextStep} disabled={currentStep === steps.length - 1} className="px-4 py-2 font-semibold border-2 border-gray-300 bg-gray-50 rounded-lg w-24 h-16 disabled:opacity-50">next</button>
       </div>

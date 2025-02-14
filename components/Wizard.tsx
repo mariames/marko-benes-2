@@ -106,11 +106,11 @@ const Wizard = () => {
         <div className="relative flex items-center justify-between my-6 w-full px-10">
           {steps.map((step, index) => (
             <div key={step.id} className="relative flex items-center">
-              {index > 0 && <div className="absolute -left-7 top-1/2 w-8 h-0.5 bg-gray-300"></div>}
+              {index > 0 && <div className="absolute -left-7 top-1/2 w-8 h-0.5 bg-gray-300 xs:hidden"></div>}
               <div className={`relative flex items-center justify-center w-16 h-16 rounded-full border-2 ${index === currentStep ? 'bg-custom-blue text-white border-custom-blue' : 'bg-white border-gray-300 text-gray-600'}`}>
                 <span className="text-xl">{step.icon}</span>
               </div>
-              {index < steps.length - 1 && <div className="absolute -right-7 top-1/2 w-7 h-0.5 bg-gray-300"></div>}
+              {index < steps.length - 1 && <div className="absolute -right-7 top-1/2 w-7 h-0.5 bg-gray-300 xs:hidden"></div>}
             </div>
           ))}
         </div>

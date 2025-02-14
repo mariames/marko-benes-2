@@ -16,7 +16,6 @@ export default function Home() {
     <main>
       <Intro />
       <Services />
-      <Wizard />
       <Logos />
       <Footer />      
     </main>

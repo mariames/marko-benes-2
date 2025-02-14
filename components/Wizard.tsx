@@ -9,7 +9,7 @@ const steps = [
     subtitle: "We are honoured you are interested in working with us. Please fill out the project planner and we’ll get back to you in a jiffy.",
     icon: <FaRocket />, // Icon for step 1
     content: (
-      <div>
+      <div className='px-10'>
         <label className="block text-left text-gray-700">Name or company name</label>
         <input type="text" className="w-full p-2 border rounded mb-4" placeholder="Enter name or company name" />
         
@@ -24,9 +24,8 @@ const steps = [
     subtitle: "Please select all that apply.",
     icon: <FaTools />, // Icon for step 2
     content: (
-      <div>
+      <div className='pl-10'>
         <fieldset>
-          <legend className="block text-left text-gray-700 mb-2">Select options</legend>
           {["Labels and Packaging", "Posters and Flyers", "Billboards & Roll Ups", 
             "Vehicle Branding", "Promo Booths", "Shelves", "Logo", 
             "T-shirts", "Video Animations"].map((item, index) => (
@@ -47,7 +46,7 @@ const steps = [
     content: (
       <div>
         <label className="block text-left text-gray-700">Message</label>
-        <textarea className="w-full p-2 border rounded" placeholder="Enter your message"></textarea>
+        <textarea className="w-full p-2 border rounded min-h-36" placeholder="Enter your message"></textarea>
       </div>
     )
   },
@@ -99,7 +98,7 @@ const Wizard = () => {
 
   return (
     <div className="relative flex items-center justify-center min-h-[500px]">
-      <button onClick={prevStep} disabled={currentStep === 0} className="absolute left-10 px-4 py-2 bg-gray-300 rounded disabled:opacity-50">◀</button>
+      
       <div className="w-[670px] mx-auto text-center p-6">
         
         <p className="font-semibold my-10 text-5xl">Project Planner</p>
@@ -115,14 +114,26 @@ const Wizard = () => {
           ))}
         </div>
         <div className="relative p-6 rounded-lg shadow-lg min-h-[500px] bg-gray-50">
-          <div className="w-full max-w-lg text-center">
+          {/* Title - Horizontally centered at the top */}
+          <div className="text-center">
             <p className="font-semibold text-3xl my-5">{steps[currentStep].title}</p>
+          </div>
+
+          {/* Content */}
+          <div className="text-gray-600">
             <p className="text-gray-600 mt-5 mb-16">{steps[currentStep].subtitle}</p>
             <div className="text-gray-600">{steps[currentStep].content}</div>
           </div>
         </div>
+
+      <div className='flex justify-between mt-5'>
+        <button onClick={prevStep} disabled={currentStep === 0} className="px-4 font-semibold py-2 border-2 border-gray-300 rounded-lg w-24 h-16 bg-gray-50 disabled:opacity-50">previous</button>
+        <button onClick={nextStep} disabled={currentStep === steps.length - 1} className="px-4 py-2 font-semibold border-2 border-gray-300 bg-gray-50 rounded-lg w-24 h-16 disabled:opacity-50">next</button>
       </div>
-      <button onClick={nextStep} disabled={currentStep === steps.length - 1} className="absolute right-0 px-4 py-2 bg-gray-300 rounded disabled:opacity-50">▶</button>
+
+      </div>
+
+
     </div>
   );
 };

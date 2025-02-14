@@ -79,7 +79,8 @@ const steps = [
     icon: <FaClipboardList />, // Icon for step 5
     content: (
       <div>
-        <p>All the details you have entered will be shown here for your review.</p>
+        <label className="block text-left text-gray-700">In an ideal world when will it be completed?</label>
+        <input type="text" className="w-full p-2 border rounded mb-4" placeholder="Have a date in mind?" />
       </div>
     )
   }

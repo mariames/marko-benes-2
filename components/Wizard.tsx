@@ -46,17 +46,17 @@ const steps = [
     content: (
       <div className='px-9'>
         <label className="block text-left text-gray-700">Message</label>
-        <textarea className="w-full p-2 border rounded min-h-56" placeholder="Enter your message"></textarea>
+        <textarea className="w-full p-2 border rounded min-h-56 resize-none" placeholder="Enter your message"></textarea>
       </div>
     )
   },
   { 
     id: 4, 
     title: "What’s your budget?",
-    subtitle: "An honest budget will allow me to ensure expectations are met.\nDon’t have an exact price? Guesstimate.",
+    subtitle: "A budget sets expectations. Guess if unsure",
     icon: <FaDollarSign />, // Icon for step 4
     content: (
-      <div>
+      <div className='px-10 p-0'>
         <label className="block text-left text-gray-700">From</label>
         <input type="text" className="w-full p-2 border rounded mb-4" placeholder="Enter from" />
         
@@ -78,7 +78,7 @@ const steps = [
     subtitle: "Please review the information provided before submitting.",
     icon: <FaClipboardList />, // Icon for step 5
     content: (
-      <div>
+      <div className='px-10'>
         <label className="block text-left text-gray-700">In an ideal world when will it be completed?</label>
         <input type="text" className="w-full p-2 border rounded mb-4" placeholder="Have a date in mind?" />
       </div>

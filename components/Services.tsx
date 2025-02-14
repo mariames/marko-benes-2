@@ -15,7 +15,7 @@ const services: Service[] = [
   { name: "Trade Promo Booths", link: "/services/trade_promo_booths", src: "/service/trade-promo-booths.jpg" },
   { name: "Promo Shelves", link: "/services/promo_shelves", src: "/service/promo-shelves.jpg" },
   { name: "Logo", link: "/services/logo", src: "/service/logo.jpg" },
-  { name: "T-Shirt design", link: "/services/t-shirt_design", src: "/service/t-shirt-design.jpg" },
+  { name: "T-Shirt Design", link: "/services/t-shirt_design", src: "/service/t-shirt-design.jpg" },
   { name: "Video Design", link: "/services/video_design", src: "/service/video-design.jpg" },
 ];
 

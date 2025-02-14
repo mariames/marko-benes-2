@@ -26,9 +26,9 @@ const steps = [
     content: (
       <div className='pl-10'>
         <fieldset>
-          {["Labels and Packaging", "Posters and Flyers", "Billboards & Roll Ups", 
-            "Vehicle Branding", "Promo Booths", "Shelves", "Logo", 
-            "T-shirts", "Video Animations"].map((item, index) => (
+          {["Labels & Packaging", "Posters & Flyers", "Billboards, Banners & Roll Ups", 
+            "Vehicle Branding", "Trade Promo Booths", "Promo Shelves", "Logo", 
+            "T-Shirt Design", "Video Design"].map((item, index) => (
             <div key={index} className="flex items-center mb-2">
               <input type="radio" name="service" value={item} className="mr-2" />
               <label className="text-gray-700">{item}</label>

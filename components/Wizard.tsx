@@ -6,7 +6,7 @@ const steps = [
   { 
     id: 1, 
     title: "Let’s start a new project", 
-    subtitle: "We are honoured you are interested in working with us. Please fill out the project planner and we’ll get back to you in a jiffy.",
+    subtitle: "Please fill out the project planner.",
     icon: <FaRocket />, // Icon for step 1
     content: (
       <div className='px-10'>
@@ -20,7 +20,7 @@ const steps = [
   },
   { 
     id: 2, 
-    title: "What can we help you with?",
+    title: "What can I do for you?",
     subtitle: "Please select all that apply.",
     icon: <FaTools />, // Icon for step 2
     content: (
@@ -44,16 +44,16 @@ const steps = [
     subtitle: "Design? Awesome!",
     icon: <FaPen />, // Icon for step 3
     content: (
-      <div>
+      <div className='px-9'>
         <label className="block text-left text-gray-700">Message</label>
-        <textarea className="w-full p-2 border rounded min-h-36" placeholder="Enter your message"></textarea>
+        <textarea className="w-full p-2 border rounded min-h-56" placeholder="Enter your message"></textarea>
       </div>
     )
   },
   { 
     id: 4, 
     title: "What’s your budget?",
-    subtitle: "An honest budget will allow us to ensure expectations are met. Don’t have an exact price? Guesstimate.",
+    subtitle: "An honest budget will allow me to ensure expectations are met.\nDon’t have an exact price? Guesstimate.",
     icon: <FaDollarSign />, // Icon for step 4
     content: (
       <div>

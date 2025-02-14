@@ -21,8 +21,8 @@ const services: Service[] = [
 
 const Services: React.FC = () => {
   return (
-    <div className="bg-gray-950 py-10 px-20">
-      <p className="text-5xl text-center my-10 pt-4 pb-10 text-gray-300 christmas-title">
+    <div className="bg-gray-950 pb-10 px-20">
+      <p className="text-5xl text-center my-10 pb-10 text-gray-300 christmas-title">
         Services
       </p>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 gap-10 p-6">

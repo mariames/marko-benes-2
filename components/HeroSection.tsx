@@ -22,7 +22,7 @@ const HeroSection = () => {
       <div className="md:w-2/3 space-y-6">
         <div className="border border-gray-700 p-6 rounded-lg">
           <h1 className="text-4xl font-bold farmhouse-title">
-            Hey! I'm Marko
+            Hey! I&apos;m Marko
         </h1>
           <hr className="border-gray-700 my-2" />
           <h2 className="text-2xl text-gray-400"> A Graphic Designer specializing in creating delightful designs.</h2>
@@ -34,7 +34,7 @@ const HeroSection = () => {
         </div>
         <div className="flex items-center justify-between border border-gray-700 p-4 rounded-lg">
           <span className="text-gray-400 text-xl">• Available for Work</span>
-          <button className="bg-transparent border border-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-800 christmas-title">Let's Connect!</button>
+          <button className="bg-transparent border border-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-800 christmas-title">Let&apos;s Connect!</button>
         </div>
       </div>
       

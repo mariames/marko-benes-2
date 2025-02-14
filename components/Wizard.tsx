@@ -122,7 +122,7 @@ const Wizard = () => {
 
           {/* Content */}
           <div className="text-gray-600">
-            <p className="text-gray-600 mt-5 mb-16">{steps[currentStep].subtitle}</p>
+            <p className="text-gray-600 mt-5 mb-12">{steps[currentStep].subtitle}</p>
             <div className="text-gray-600">{steps[currentStep].content}</div>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const HeroSection = () => {
@@ -7,9 +8,11 @@ const HeroSection = () => {
     <div className="flex flex-col md:flex-row items-center justify-between bg-black text-white p-8 rounded-xl max-w-7xl mx-auto">
     {/* Right Section - Profile Image */}
     <div className="md:w-1/3 flex justify-center mt-6 md:mt-0">
-        <img
+        <Image
           src="/Marko-BW.png" 
           alt="Marko Benis"
+          width={320}
+          height={320}
           className="rounded-lg grayscale object-cover w-80 h-80 border border-gray-700"
         />
     </div>

@@ -30,7 +30,7 @@ export default function NavbarWithServices() {
 
     return (
         <nav className="w-full bg-white shadow z-50">
-            <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+            <div className="justify-between px-2 mx-auto md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <Link href="/"  className="flex flex-row">
@@ -86,29 +86,13 @@ export default function NavbarWithServices() {
                     }`}
                 >
                     {/** className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0" */}
-                    <ul className="items-center justify-center space-y-4 md:flex md:space-x-6 md:space-y-0">
+                    <ul className="items-end justify-end space-y-4 md:flex md:space-x-6 md:space-y-0">
                         <li className="relative" ref={dropdownRef}>
                             <button
                                 onClick={() => setBlogOpen(!blogOpen)}
                                 className="flex items-center text-black"
                             >
                                 Services
-                                <svg
-                                    className={`ml-1 w-4 h-4 transform ${
-                                        blogOpen ? "rotate-180" : "rotate-0"
-                                    }`}
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth={2}
-                                        d="M19 9l-7 7-7-7"
-                                    />
-                                </svg>
                             </button>
                             <div
                                 className={`overflow-hidden transition-all duration-300 ease-in-out ${

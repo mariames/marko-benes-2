@@ -11,6 +11,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        'custom-blue': '#7893C3',
+      },
       keyframes: {
         fadeIn: {
           '0%': { opacity: '0' },

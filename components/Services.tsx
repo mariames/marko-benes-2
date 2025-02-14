@@ -22,14 +22,14 @@ const services: Service[] = [
 const Services: React.FC = () => {
   return (
     <div className="bg-gray-950 pb-10 px-20">
-      <p className="text-5xl text-center my-10 pb-10 text-gray-300 christmas-title">
+      <p className="text-5xl text-center pt-5 pb-10 text-gray-300 christmas-title">
         Services
       </p>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 gap-10 p-6">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 gap-12 p-6">
         {services.map((service, index) => (
           <Link href={service.link} key={index} className="relative group">
             <div
-              className="h-56 flex items-center justify-center bg-gray-900 rounded-lg border border-slate-800 bg-cover bg-center transition-all duration-300 group-hover:brightness-100"
+              className="h-72 w-full max-w-[350px] aspect-[4/3] flex items-center justify-center bg-gray-900 rounded-lg border border-slate-800 bg-cover bg-center transition-all duration-300 group-hover:brightness-100"
               style={{ backgroundImage: `url(${service.src})` }}
             >
               {/* Dark overlay */}

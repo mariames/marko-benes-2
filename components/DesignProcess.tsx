@@ -12,7 +12,7 @@ const DesignProcess: React.FC = () => {
       </div>
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
         {steps.map((step, index) => (
-          <div key={index} className="bg-gray-900 p-6 rounded-lg">
+          <div key={index} className="bg-black border border-gray-100 p-6 rounded-lg">
             <h3 className="text-sm text-gray-400 font-semibold uppercase">{step.number} {step.title}</h3>
             <p className="text-gray-400 mt-2">{step.description}</p>
           </div>

@@ -1,12 +1,13 @@
 import CardSection from "@/components/CardSection";
+import { Cta } from "@/components/Cta";
 import Stack from "@/components/Stack";
-import Image from "next/image";
 
 const About = () => {
   return (
     <>
       <CardSection />
       <Stack />
+      <Cta />
     </>
   );
 };

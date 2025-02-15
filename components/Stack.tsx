@@ -14,6 +14,8 @@ const stackItems = [
 const Stack: React.FC = () => {
   return (
     <section className="bg-black text-white py-10 px-6">
+    <div className="mx-24">
+
       <h2 className="text-3xl font-semibold mb-6 text-center">Stack</h2>
 
       <div className="grid grid-cols-2 gap-4 border-t border-gray-700 pt-4">
@@ -44,6 +46,8 @@ const Stack: React.FC = () => {
             </motion.div>
           );
         })}
+      </div>
+
       </div>
     </section>
   );

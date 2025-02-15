@@ -7,16 +7,20 @@ interface CardProps {
 
 const cardData: CardProps[] = [
   {
-    title: "Hey there! I'm Rachel!",
-    description: "A product and digital designer on a mission to blend innovation with aesthetic finesse.",
+    title: "Education & Early Career",
+    description: "I graduated from the Faculty of Technical Sciences in Novi Sad, department for Graphic Engineering and Design. After graduation, I worked as a freelancer in the field of graphic design, working and improving my skills in Adobe Photoshop, Adobe Illustrator, Adobe InDesign, Adobe After Effects, and Adobe Premiere software.",
   },
   {
-    title: "Innovation at the Core",
-    description: "In every project, I strive to infuse a spark of innovation. From conceptualizing sleek interfaces to devising user-centric solutions, my design philosophy revolves around creating products that not only meet user needs but exceed expectations.",
+    title: "Work Experience (2014-2022)",
+    description: "From 2014 to 2022, I worked full-time in Lomax Company, complementing my knowledge in the above-mentioned software and working in various fields of graphic design: product labels, product packaging, posters, flyers, logos, brochures, advertising solutions, catalogs, trade promo booths, promo shelves, billboards, vehicle branding, 3D models of products, T-shirts design, video design, etc.",
   },
   {
-    title: "Crafting Digital Experiences",
-    description: "With a passion for pixels and a penchant for problem-solving, I navigate the ever-evolving landscape of digital design. My journey began with a curiosity about how technology intersects with creativity, and it's been a thrilling ride ever since.",
+    title: "Pre-Press & Printing",
+    description: "Besides design itself, I have experience in pre-press which is an important part of getting the final print product, where design should be technically adjusted and prepared with quality for the printing process. Printing techniques for which I can prepare print files are: offset, flexo, digital, screen printing, pad printing, solvent, and others. I can say that my knowledge of graphic design, pre-press, and printing techniques is at a high level.",
+  },
+  {
+    title: "Freelance Career (Since 2022)",
+    description: "Since November 2022, I have been working entirely as a self-employed designer.",
   },
 ];
 

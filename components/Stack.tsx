@@ -35,11 +35,11 @@ const Stack: React.FC = () => {
               {isLeftColumn ? (
                 <>
                   <span className="text-gray-400">{item.name}</span>
-                  <img src={item.icon} alt={item.name} className="h-6 w-6" />
+                  <img src={item.icon} alt={item.name} className="h-6 w-6 rounded-md" />
                 </>
               ) : (
                 <>
-                  <img src={item.icon} alt={item.name} className="h-6 w-6" />
+                  <img src={item.icon} alt={item.name} className="h-6 w-6 rounded-md" />
                   <span className="text-gray-400">{item.name}</span>
                 </>
               )}

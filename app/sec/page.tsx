@@ -7,6 +7,7 @@ import { Cta } from '@/components/Cta'
 import Stack from '@/components/Stack'
 import CardSection from '@/components/CardSection'
 import ProjectShowcase from '@/components/ProjectShowcase'
+import Faq from '@/components/Faq'
 
 const page = () => {
   return (
@@ -18,6 +19,7 @@ const page = () => {
         <Stack />
         <CardSection />
         <ProjectShowcase />
+        <Faq />
         <Cta />
     </>
   )

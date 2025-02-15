@@ -29,9 +29,15 @@ const content = [
       description: (
         <>
           <p>
-          The key to successful collaboration with clients is a professional and strategic approach. That is why it is very
-          important to me that all elements of cooperation are defined in advance:
+          Before starting any work, it is important to understand the client&#39;s needs and expectations fully.
           </p>
+          <ul className="list-disc ml-5">
+            <li>What is the purpose of the project?</li>
+            <li>Who is the target audience and preferred style?</li>
+            <li>What are the key visual elements that need to be highlighted?</li>
+            <li>Are there any reference materials or brand guidelines?</li>
+          </ul>          
+          <p>In the Services section, you can view all the necessary information that I need for each type of service.</p>
         </>
       ),
       content: (

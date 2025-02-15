@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const stackItems = [
     { name: "Adobe Photoshop", icon: "/icons/ph3.png" },
@@ -35,11 +36,11 @@ const Stack: React.FC = () => {
               {isLeftColumn ? (
                 <>
                   <span className="text-gray-400">{item.name}</span>
-                  <img src={item.icon} alt={item.name} className="h-6 w-6 rounded-md" />
+                  <Image src={item.icon} alt={item.name} width={24} height={24} className="h-6 w-6 rounded-md" />
                 </>
               ) : (
                 <>
-                  <img src={item.icon} alt={item.name} className="h-6 w-6 rounded-md" />
+                  <Image src={item.icon} alt={item.name} width={24} height={24} className="h-6 w-6 rounded-md" />
                   <span className="text-gray-400">{item.name}</span>
                 </>
               )}

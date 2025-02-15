@@ -3,12 +3,12 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const stackItems = [
-  { name: "Adobe Photoshop", icon: "/icons/framer.svg" },
-  { name: "Adobe Illustrator", icon: "/icons/figma.svg" },
-  { name: "Adobe InDesign", icon: "/icons/illustrator.svg" },
-  { name: "Adobe After Effects", icon: "/icons/photoshop.svg" },
-  { name: "Adobe Premiere", icon: "/icons/slack.svg" },
-  { name: "Slack", icon: "/icons/notion.svg" },
+    { name: "Adobe Photoshop", icon: "/icons/framer.svg" },
+    { name: "Adobe Illustrator", icon: "/icons/figma.svg" },
+    { name: "Adobe InDesign", icon: "/icons/illustrator.svg" },
+    { name: "Adobe After Effects", icon: "/icons/photoshop.svg" },
+    { name: "Adobe Premiere", icon: "/icons/slack.svg" },
+    { name: "Slack", icon: "/icons/notion.svg" },
 ];
 
 const Stack: React.FC = () => {
@@ -23,9 +23,10 @@ const Stack: React.FC = () => {
           return (
             <motion.div
               key={index}
+              whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: isLeftColumn ? -50 : 50 }}
-              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true, amount: 0.3 }} // Ensures it animates when 30% visible
               className={`flex items-center gap-3 border border-gray-700 p-4 rounded-xl bg-[#101010] 
               ${isLeftColumn ? "justify-end" : "justify-start"}`}
             >

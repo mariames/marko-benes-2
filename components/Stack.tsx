@@ -3,12 +3,12 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const stackItems = [
-    { name: "Adobe Photoshop", icon: "/icons/framer.svg" },
-    { name: "Adobe Illustrator", icon: "/icons/figma.svg" },
-    { name: "Adobe InDesign", icon: "/icons/illustrator.svg" },
-    { name: "Adobe After Effects", icon: "/icons/photoshop.svg" },
-    { name: "Adobe Premiere", icon: "/icons/slack.svg" },
-    { name: "Slack", icon: "/icons/notion.svg" },
+    { name: "Adobe Photoshop", icon: "/icons/ph3.png" },
+    { name: "Adobe Illustrator", icon: "/icons/ph3.png" },
+    { name: "Adobe InDesign", icon: "/icons/ph3.png" },
+    { name: "Adobe After Effects", icon: "/icons/ph3.png" },
+    { name: "Adobe Premiere", icon: "/icons/ph3.png" },
+    { name: "Slack", icon: "/icons/ph3.png" },
 ];
 
 const Stack: React.FC = () => {

@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 interface Service {
   name: string;
@@ -7,7 +9,7 @@ interface Service {
   src: string;
   previewSrc1: string;
   previewSrc2: string;
-  types: string[]; // Added types
+  types: string[];
 }
 
 const services: Service[] = [
@@ -80,45 +82,48 @@ const services: Service[] = [
 const Services: React.FC = () => {
   return (
     <div className="bg-gray-950 pb-10 px-6 md:px-10 lg:px-20 xl:px-40 2xl:px-64">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 lg:gap-11 xl:gap-11">
         {services.map((service, index) => (
-          <Link href={service.link} key={index} className="relative group">
-            <div className="w-full aspect-[4/3] flex items-center justify-center bg-gray-900 rounded-lg border border-slate-800 bg-cover bg-center transition-all duration-300 group-hover:brightness-100 overflow-hidden">
-              <div className="relative w-full h-full">
-                {/* Main image (always visible) */}
-                <img
-                  src={service.src}
-                  alt={service.name}
-                  className="absolute w-full h-full object-cover rounded-lg transition-opacity duration-500"
-                />
-                {/* First preview image (appears slowly after hover) */}
-                <img
-                  src={service.previewSrc1}
-                  alt={`${service.name} preview 1`}
-                  className="absolute w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200"
-                />
-                {/* Second preview image (appears slowly after first preview) */}
-                <img
-                  src={service.previewSrc2}
-                  alt={`${service.name} preview 2`}
-                  className="absolute w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-500"
-                />
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.1 }}
+            viewport={{ once: true }}
+          >
+            <Link href={service.link} className="relative group block">
+              <div className="w-full aspect-[4/3] flex items-center justify-center bg-gray-900 rounded-lg border border-slate-800 bg-cover bg-center transition-all duration-300 group-hover:brightness-100 overflow-hidden">
+                <div className="relative w-full h-full">
+                  <img
+                    src={service.src}
+                    alt={service.name}
+                    className="absolute w-full h-full object-cover rounded-lg transition-opacity duration-500"
+                  />
+                  <img
+                    src={service.previewSrc1}
+                    alt={`${service.name} preview 1`}
+                    className="absolute w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200"
+                  />
+                  <img
+                    src={service.previewSrc2}
+                    alt={`${service.name} preview 2`}
+                    className="absolute w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-500"
+                  />
+                </div>
               </div>
-            </div>
-            {/* Service Name */}
-            <div className="mt-3 text-white text-lg font-semibold">{service.name}</div>
-            {/* Types (tags) */}
-            <div className="mt-1 flex gap-2 flex-wrap">
-              {service.types.map((type, idx) => (
-                <span
-                  key={idx}
-                  className="bg-gray-800 text-white text-sm px-3 py-1 rounded-full"
-                >
-                  {type}
-                </span>
-              ))}
-            </div>
-          </Link>
+              <div className="mt-3 text-white text-lg font-semibold">{service.name}</div>
+              <div className="mt-1 flex gap-2 flex-wrap">
+                {service.types.map((type, idx) => (
+                  <span
+                    key={idx}
+                    className="bg-gray-800 text-white text-sm px-3 py-1 rounded-full"
+                  >
+                    {type}
+                  </span>
+                ))}
+              </div>
+            </Link>
+          </motion.div>
         ))}
       </div>
     </div>

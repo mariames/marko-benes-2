@@ -73,7 +73,6 @@ const services: Service[] = [
   { name: ServiceType.PromoShelves, src: "/portfolio/promo-shelves/1_shelves-market-branding-design.jpg" },
   { name: ServiceType.Logo, src: "/portfolio/logos/1_logo-corporate-identity.jpg" },
   { name: ServiceType.TShirtDesign, src: "/portfolio/t-shirt/1_t-shirt-design.jpg" },
-
   { name: ServiceType.LabelsAndPackaging, src: "/portfolio/labels-packaging/2_product-design-print.jpg" },
   { name: ServiceType.PostersAndFlyers, src: "/portfolio/posters-flyers/2_ads-social-network-poster-sport.jpg" },
   { name: ServiceType.BillboardsBannersRollUps, src: "/portfolio/billboards-banners-roll-ups/2_billboard-banner-backdrop-design.jpg" },
@@ -82,7 +81,6 @@ const services: Service[] = [
   { name: ServiceType.PromoShelves, src: "/portfolio/promo-shelves/2_standing-retail-display-shelves.jpg" },
   { name: ServiceType.Logo, src: "/portfolio/logos/2_logo-packaging.jpg" },
   { name: ServiceType.TShirtDesign, src: "/portfolio/t-shirt/2_casual-wear-design.jpg" },
-
   { name: ServiceType.LabelsAndPackaging, src: "/portfolio/labels-packaging/3_label-box-packaging-doypack-laundry-detergent.jpg" },
   { name: ServiceType.PostersAndFlyers, src: "/portfolio/posters-flyers/3_magazine-ads-poster-product.jpg" },
   { name: ServiceType.BillboardsBannersRollUps, src: "/portfolio/billboards-banners-roll-ups/3_roll-up-retractable-banners-design.jpg" },
@@ -91,7 +89,6 @@ const services: Service[] = [
   { name: ServiceType.PromoShelves, src: "/portfolio/promo-shelves/3_standing-retail-display-design.jpg" },
   { name: ServiceType.Logo, src: "/portfolio/logos/3_logo-visual-identity-design.jpg" },
   { name: ServiceType.TShirtDesign, src: "/portfolio/t-shirt/3_graphic-tee.jpg" },
-
   { name: ServiceType.LabelsAndPackaging, src: "/portfolio/labels-packaging/4_stand-up-pouch-doypack-laundry-detergent-clothes.jpg" },
   { name: ServiceType.PostersAndFlyers, src: "/portfolio/posters-flyers/4_music-party-event-poster.jpg" },
   { name: ServiceType.BillboardsBannersRollUps, src: "/portfolio/billboards-banners-roll-ups/4_city-light-advertising.jpg" },
@@ -100,7 +97,6 @@ const services: Service[] = [
   { name: ServiceType.PromoShelves, src: "/portfolio/promo-shelves/4_product-display-design.jpg" },
   { name: ServiceType.Logo, src: "/portfolio/logos/4_logo-logotype-business.jpg" },
   { name: ServiceType.TShirtDesign, src: "/portfolio/t-shirt/4_streetwear-design.jpg" },
-
   { name: ServiceType.LabelsAndPackaging, src: "/portfolio/labels-packaging/5_box-dieline-packaging-dou-pack.jpg" },
   { name: ServiceType.LabelsAndPackaging, src: "/portfolio/labels-packaging/6_spray-bottle-can-design.jpg" },
   { name: ServiceType.LabelsAndPackaging, src: "/portfolio/labels-packaging/7_spray-bottle-can-aerosol-print.jpg" },
@@ -115,7 +111,6 @@ const services: Service[] = [
   { name: ServiceType.LabelsAndPackaging, src: "/portfolio/labels-packaging/16_box-packaging-branding-medicine-cure.jpg" },
   { name: ServiceType.LabelsAndPackaging, src: "/portfolio/labels-packaging/17_laundry-detergent-design-label-packaging.jpg" },
   { name: ServiceType.LabelsAndPackaging, src: "/portfolio/labels-packaging/18_liquid-soap-label-design.jpg" },
-
   { name: ServiceType.PostersAndFlyers, src: "/portfolio/posters-flyers/5_music-festival-jazz-poster.jpg" },
   { name: ServiceType.PostersAndFlyers, src: "/portfolio/posters-flyers/6_party-night-club-instagram-post-poster.jpg" },
   { name: ServiceType.PostersAndFlyers, src: "/portfolio/posters-flyers/7_flyer-dessert-restaurant.jpg" },
@@ -125,18 +120,14 @@ const services: Service[] = [
   { name: ServiceType.PostersAndFlyers, src: "/portfolio/posters-flyers/11_music-night-club-poster.jpg" },
   { name: ServiceType.PostersAndFlyers, src: "/portfolio/posters-flyers/12_product-ads-city-light-poster.jpg" },
   { name: ServiceType.PostersAndFlyers, src: "/portfolio/posters-flyers/13_magazine-ad-healthy-food.jpg" },
-
   { name: ServiceType.BillboardsBannersRollUps, src: "/portfolio/billboards-banners-roll-ups/5_market-ads-banner.jpg" },
   { name: ServiceType.BillboardsBannersRollUps, src: "/portfolio/billboards-banners-roll-ups/6_vinyl-banners-poster-design.jpg" },
-
   { name: ServiceType.TradePromoBooths, src: "/portfolio/promo-booths/5_promo-trade-booth-stand-fair-kiosk-elements.jpg" },
   { name: ServiceType.TradePromoBooths, src: "/portfolio/promo-booths/6_promo-table-design.jpg" },
-
   { name: ServiceType.Logo, src: "/portfolio/logos/5_logo-monogram-restaurant-pub.jpg" },
   { name: ServiceType.TShirtDesign, src: "/portfolio/t-shirt/5_t-shirt-custom-design.jpg" },
   { name: ServiceType.Logo, src: "/portfolio/logos/6_logo-wordmark-jci.jpg" },
   { name: ServiceType.TShirtDesign, src: "/portfolio/t-shirt/6_t-shirt-design-sublimation.jpg" },
-
   { name: ServiceType.TShirtDesign, src: "/portfolio/t-shirt/7_fashion-design-t-shirt.jpg" },
   { name: ServiceType.TShirtDesign, src: "/portfolio/t-shirt/8_printed-tee-design.jpg" },
   { name: ServiceType.TShirtDesign, src: "/portfolio/t-shirt/9_design-casual-wear.jpg" },

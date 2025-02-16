@@ -1,10 +1,9 @@
+import TitleOFPage from '@/components/TitleOFPage'
 import React from 'react'
 
 const page = () => {
   return (
-    <div className='flex justify-center christmas-title text-5xl my-16'>
-      Vehicle branding
-    </div>
+    <TitleOFPage title="Vehicle Branding" />
   )
 }
 

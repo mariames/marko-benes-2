@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import TitleOFPage from "@/components/TitleOFPage";
 
 interface Service {
   name: string;
@@ -22,9 +23,7 @@ const services: Service[] = [
 const Portfolio: React.FC = () => {
   return (
     <div className="bg-gray-950 pb-10 px-6 md:px-10 lg:px-20 xl:px-40 2xl:px-64">
-      <p className="text-5xl text-center pt-5 pb-10 text-gray-300">
-        Portfolio
-      </p>
+      <TitleOFPage title="Portfolio" />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
         {services.map((service, index) => (
           <Link href={service.link} key={index} className="relative group">

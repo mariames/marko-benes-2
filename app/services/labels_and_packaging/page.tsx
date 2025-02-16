@@ -1,9 +1,11 @@
 import Faq from '@/components/Faq'
+import TitleOFPage from '@/components/TitleOFPage'
 import React from 'react'
 
 const page = () => {
   return (
     <>
+    <TitleOFPage title="Labels & Packaging" />
     {/** 
       <div className='flex justify-center christmas-title text-5xl my-16'>
         Labels & Packaging

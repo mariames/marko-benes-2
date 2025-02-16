@@ -1,26 +1,24 @@
-import HeroSection from '@/components/HeroSection'
-import ServicesSection from '@/components/ServiceCard'
-import DesignProcess from '@/components/DesignProcess'
 import React from 'react'
 import Services from '@/components/Services'
 import { Cta } from '@/components/Cta'
-import Stack from '@/components/Stack'
-import CardSection from '@/components/CardSection'
-import ProjectShowcase from '@/components/ProjectShowcase'
-import Faq from '@/components/Faq'
+import SmoothScroll from '@/components/SmoothScroll'
+import HorizontalScrollCard from '@/components/HorizontalScrollCard'
 
 const page = () => {
   return (
     <>
-        <HeroSection />
-        <Services />
+        {/** <HeroSection /> */}
+        {/** <Services /> */}
         {/** <ServicesSection /> */}
-        <DesignProcess />
-        <Stack />
-        <CardSection />
-        <ProjectShowcase />
-        <Faq />
-        <Cta />
+        {/* <DesignProcess /> */}
+        {/** <Stack /> */}
+        {/*<CardSection /> */}
+        {/*<ProjectShowcase />
+        <Faq /> */}
+        <HorizontalScrollCard />
+        <div className='text-7xl mb-10'>la la la</div>
+        <SmoothScroll />
+        {/** <Cta /> */}
     </>
   )
 }

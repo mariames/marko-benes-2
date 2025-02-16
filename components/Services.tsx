@@ -19,7 +19,7 @@ const services: Service[] = [
     src: "/service/labels-and-packaging.jpg",
     previewSrc1: "/service/labels-and-packaging-preview1.jpg",
     previewSrc2: "/service/labels-and-packaging-preview2.jpg",
-    types: ["Product Presentation", "UI/UX Design"],
+    types: ["Product Presentation"],
   },
   {
     name: "Posters & Flyers",
@@ -111,7 +111,7 @@ const Services: React.FC = () => {
                   />
                 </div>
               </div>
-              <div className="mt-3 text-white text-2xl font-thin">{service.name}</div>
+              <div className="mt-3 text-white text-3xl font-light ml-1">{service.name}</div>
               <div className="mt-1 flex gap-2 flex-wrap">
                 {service.types.map((type, idx) => (
                   <span

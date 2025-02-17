@@ -1,5 +1,5 @@
 .carousel {
-    background-color: grey;
+    background-color: black;
     height: 500vh;
 }
 
@@ -19,4 +19,66 @@
     grid-template-rows: 1fr;
     grid-gap: 8vw;
     padding: 0 4rem 0 4rem;
+    z-index: 2;
+}
+
+.backgroundText {
+    position: sticky;
+    top: 50%;
+    left: 0;
+    width: 100vw;
+    font-size: 18vw;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: rgba(28, 27, 24, 1); /* Light overlay effect */
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 0; /* Keeps it behind scrolling content */
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+
+.imageItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: rgba(20, 20, 20, 0.85); /* Dark background */
+    width: 300px; /* Adjust width as needed */
+    height: 450px; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #1f2937;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    padding: 16px;
+    text-align: center;
+}
+
+.image {
+    max-width: 80%; /* Image is smaller inside */
+    max-height: 80%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card-title {
+    color: white; /* Make sure it's visible */
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%; /* Ensure text stays inside card */
+    white-space: nowrap; /* Prevents breaking text into multiple lines */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 5;
 }

@@ -17,7 +17,7 @@ const page = () => {
         <Faq /> */}
         <HorizontalScrollCard />
         <div className='text-7xl mb-10'>la la la</div>
-        <SmoothScroll />
+        {/** <SmoothScroll /> */}
         {/** <Cta /> */}
     </>
   )

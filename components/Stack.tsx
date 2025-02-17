@@ -19,7 +19,7 @@ const Stack: React.FC = () => {
 
       <h2 className="text-3xl font-semibold mb-6 text-center">Stack</h2>
 
-      <div className="grid grid-cols-2 gap-4 border-t border-gray-700 pt-4">
+      <div className="grid grid-cols-2 gap-4 border-t border-x-gray-700 pt-4">
         {stackItems.map((item, index) => {
           const isLeftColumn = index % 2 === 0;
 

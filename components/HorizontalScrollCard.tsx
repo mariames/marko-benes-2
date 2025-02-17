@@ -13,29 +13,51 @@ const HorizontalScrollCard = () => {
     const x = useTransform(scrollYProgress, [0, 1], ["100%", "-55%"]);
 
     return <div className="carousel" ref={targetRef}>
+        <div className="backgroundText">SERVICES</div>
         <div className="contentContainer">
-            <motion.div className="images" style={{x}}>
-                <div className="imageItem">
-                    <ImageContainer 
-                        imageSource="/portfolio/billboards-banners-roll-ups/1_billboards-design.jpg" 
-                        description="la la" />
+        <motion.div className="images" style={{ x }}>
+            <div className="imageItem">
+                <div className="card">
+                    <p className="card-title">LABELS & PACKAGING</p>
+                    <img
+                        src="/portfolio/billboards-banners-roll-ups/1_billboards-design.jpg"
+                        alt="la la"
+                        className="image"
+                    />
                 </div>
-                <div className="imageItem">
-                    <ImageContainer 
-                        imageSource="/portfolio/billboards-banners-roll-ups/1_billboards-design.jpg" 
-                        description="la la" />
+            </div>
+            <div className="imageItem">
+                <div className="card">
+                    <p className="card-title">BILLBOARDS & BANNERS</p>
+                    <img
+                        src="/portfolio/billboards-banners-roll-ups/1_billboards-design.jpg"
+                        alt="la la"
+                        className="image"
+                    />
                 </div>
-                <div className="imageItem">
-                    <ImageContainer 
-                        imageSource="/portfolio/billboards-banners-roll-ups/1_billboards-design.jpg" 
-                        description="la la" />
+            </div>
+            <div className="imageItem">
+                <div className="card">
+                <p className="card-title">PROMO SHELVES</p>
+                    <img
+                        src="/portfolio/billboards-banners-roll-ups/1_billboards-design.jpg"
+                        alt="la la"
+                        className="image"
+                    />
                 </div>
-                <div className="imageItem">
-                    <ImageContainer 
-                        imageSource="/portfolio/billboards-banners-roll-ups/1_billboards-design.jpg" 
-                        description="la la" />
+            </div>
+            <div className="imageItem">
+                <div className="card">
+                <p className="card-title">VEHICLE BRANDING</p>
+                    <img
+                        src="/portfolio/billboards-banners-roll-ups/1_billboards-design.jpg"
+                        alt="la la"
+                        className="image"
+                    />
                 </div>
-            </motion.div>
+            </div>
+        </motion.div>
+
         </div>
     </div>;
 };

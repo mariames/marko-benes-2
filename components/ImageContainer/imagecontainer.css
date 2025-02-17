@@ -1,4 +1,4 @@
 img.image {
-    height: auto;
+    height: 300px;
     width: clamp(10rem, 50vw, 60rem);
 }

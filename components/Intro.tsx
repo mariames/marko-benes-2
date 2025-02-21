@@ -12,6 +12,8 @@ const Intro: React.FC = () => {
         <Image
           src="/hero_image.png" // replace with your image path
           alt="Sample"
+          width={300}
+          height={300}
           className="w-auto h-80 rounded-lg transform transition-all duration-700 ease-in-out hover:scale-105"
         />
       </div>

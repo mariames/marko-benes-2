@@ -6,11 +6,11 @@ const CallToAction = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-black">
       <p className="text-sm font-medium text-gray-500 mb-5">CONTACT ME</p>
-      <p className="text-5xl max-sm:text-lg font-semibold mb-5 tracking-wide autour-font text-white">Let's get in touch</p>
+      <p className="text-5xl max-sm:text-lg font-semibold mb-5 tracking-wide autour-font text-white">Let&apos;s get in touch</p>
       <p className="text-lg text-center mt-3 mb-8 text-gray-200 font-light">
         Need design or have question?
         <br></br>
-        I'm here to help.
+        I&apos;m here to help.
       </p>
       <AnimatedButton text="Contact me" link="/planner" />
     </div>

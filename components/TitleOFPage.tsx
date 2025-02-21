@@ -6,7 +6,7 @@ interface TitleOFPageProps {
 
 const TitleOFPage: React.FC<TitleOFPageProps> = ({ title }) => {
   return (
-    <p className="text-5xl text-center py-16 text-gray-300 popins-title">
+    <p className="text-5xl text-center py-16 text-gray-300 popins-title bg-black">
       {title}
     </p>
   );

@@ -34,7 +34,7 @@ const CardsParallax: React.FC<CardProps> = ({ i, title, description, src, color,
         <div className={styles.body}>
           <div className={styles.imageContainer}>
             <motion.div className={styles.inner} style={{ scale: imageScale }}>
-              <Image fill src={`${src}`} alt="image" />
+              <Image fill src={`${src}`} alt="image" className='w-full aspect-[4/3]' />
             </motion.div>
           </div>
         </div>

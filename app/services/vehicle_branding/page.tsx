@@ -1,5 +1,6 @@
 import CallToAction from '@/components/CallToAction';
 import InfoSection from '@/components/InfoSection'
+import ScrollingImages from '@/components/ScrollingImages';
 import TitleOFPage from '@/components/TitleOFPage'
 import React from 'react'
 
@@ -16,12 +17,13 @@ const page = () => {
     "Legal requirements (are there restrictions on certain advertising rules according to local laws)"
   ];
   return (
-    <>
+    <div className='bg-black'>
       <TitleOFPage title="Vehicle Branding" />
+      <ScrollingImages />
       <InfoSection title="What I need from you?"
       items={items} />
       <CallToAction />
-    </>
+    </div>
   )
 }
 

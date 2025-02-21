@@ -1,3 +1,4 @@
+import CallToAction from '@/components/CallToAction'
 import InfoSection from '@/components/InfoSection'
 import TitleOFPage from '@/components/TitleOFPage'
 import React from 'react'
@@ -18,6 +19,7 @@ const page = () => {
       <TitleOFPage title="Trade Promo Booths" />
       <InfoSection title="What I need from you?"
       items={items} />
+      <CallToAction />
     </>
   )
 }

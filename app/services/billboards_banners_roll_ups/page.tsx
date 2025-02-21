@@ -1,3 +1,5 @@
+import BillboardSection from '@/components/BillboardsSection'
+import CallToAction from '@/components/CallToAction'
 import InfoSection from '@/components/InfoSection'
 import TitleOFPage from '@/components/TitleOFPage'
 import React from 'react'
@@ -15,7 +17,9 @@ const page = () => {
   return (
     <>
       <TitleOFPage title="Billboards, Banners & Roll Ups" />
+      <BillboardSection />
       <InfoSection title="What I need from you?"  items={items} />
+      <CallToAction />
     </>
   )
 }

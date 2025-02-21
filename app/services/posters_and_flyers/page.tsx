@@ -1,4 +1,6 @@
+import CallToAction from '@/components/CallToAction';
 import InfoSection from '@/components/InfoSection';
+import PostersDesignSection from '@/components/PostersDesignSection';
 import TitleOFPage from '@/components/TitleOFPage'
 import React from 'react'
 
@@ -16,10 +18,12 @@ const page = () => {
   return (
     <>
     <TitleOFPage title="Posters & Flyers" />
+    <PostersDesignSection />
     <InfoSection
       title="What I need from you?"
       items={items}
     />
+    <CallToAction />
     </>
   )
 }

@@ -1,3 +1,4 @@
+import CallToAction from '@/components/CallToAction';
 import InfoSection from '@/components/InfoSection'
 import PackagingDesignSection from '@/components/PackagingDesignSection';
 import TitleOFPage from '@/components/TitleOFPage';
@@ -21,6 +22,7 @@ const page = () => {
       <InfoSection
         title="What I need from you?"
         items={items} />
+      <CallToAction />
     </>
   )
 }

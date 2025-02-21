@@ -26,7 +26,7 @@ const PackagingDesignSection: React.FC = () => {
           >
             <h2 className="text-3xl font-bold mb-4">Are you in need of an eye-catching and professionally designed label and packaging for your product?</h2>
             <p className="text-lg mb-4">
-              I'm here to help you create an impressive design that will captivate your target audience and elevate your brand. My approach combines creativity and strategic thinking to make your product stand out on the shelf.
+              I&apos;m here to help you create an impressive design that will captivate your target audience and elevate your brand. My approach combines creativity and strategic thinking to make your product stand out on the shelf.
             </p>
           </motion.div>
         </div>

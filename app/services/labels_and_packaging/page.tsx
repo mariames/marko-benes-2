@@ -1,41 +1,28 @@
-'use client';
-import styles from './page.module.scss'
-import { projects } from '@/data';
-import { useScroll } from 'framer-motion';
-import { useEffect, useRef } from 'react';
-import Lenis from 'lenis'; 
-import CardsParallax from '@/components/CardsParallax/CardsParallax';
+import InfoSection from '@/components/InfoSection'
+import PackagingDesignSection from '@/components/PackagingDesignSection';
+import TitleOFPage from '@/components/TitleOFPage';
+import React from 'react'
 
-export default function Home() {
-  const container = useRef<HTMLElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: container,
-    offset: ['start start', 'end end']
-  });
+const page = () => {
 
-  useEffect(() => {
-    const lenis = new Lenis();
-
-    function raf(time: number) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-
-    return () => {
-      lenis.destroy(); // Cleanup to avoid performance issues
-    };
-  }, []);
+  const items = [
+    "Dimensions (height x width) or dieline in vector format (ai, eps, pdf)",
+    "The logo of your brand or company (ai, eps, pdf) / vector file",
+    "Text which is necessary to put on the design and text of the declaration with pictograms, barcode, etc.",
+    "Examples of designs you like so I know what type of style you prefer, brand guideline",
+    "Packaging material (cardboard, plastic, glass, bag, can, etc.)",
+    "Printing method (offset, flexography, digital printing)",
+  ];
 
   return (
-    <main ref={container} className={styles.main}>
-      {
-        projects.map((project, i) => {
-          const targetScale = 1 - ((projects.length - i) * 0.05);
-          return <CardsParallax key={`p_${i}`} i={i} {...project} progress={scrollYProgress} range={[i * 0.25, 1]} targetScale={targetScale} />;
-        })
-      }
-    </main>
-  );
+    <>
+      <TitleOFPage title="Labels & Packaging" />
+      <PackagingDesignSection />
+      <InfoSection
+        title="What I need from you?"
+        items={items} />
+    </>
+  )
 }
+
+export default page

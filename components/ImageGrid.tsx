@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface ImageZoomProps {
   src: string;
@@ -18,7 +19,7 @@ const ImageZoom: React.FC<ImageZoomProps> = ({ src, alt, zoomArea }) => {
       whileHover={{ scale: 1.2 }}
       transition={{ duration: 0.3 }}
     >
-      <img
+      <Image
         src={src}
         alt={alt}
         className="object-cover w-full h-full"

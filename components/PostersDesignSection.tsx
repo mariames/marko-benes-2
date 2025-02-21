@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const PostersDesignSection: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ const PostersDesignSection: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <img src="/service-section/PostersAndFlyers/1_baby-kids-cosmetics-poster.jpg" alt="Promotional Design" className="w-full h-auto" />
+            <Image src="/service-section/PostersAndFlyers/1_baby-kids-cosmetics-poster.jpg" alt="Promotional Design" className="w-full h-auto" />
           </motion.div>
           <motion.div
             className="flex-1"
@@ -24,7 +25,7 @@ const PostersDesignSection: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl font-bold mb-4">Every detail is important when it comes to promoting your brand and event.</h2>
+            <p className="text-3xl font-bold mb-4">Every detail is important when it comes to promoting your brand and event.</p>
             <p className="text-lg mb-4">
               They must be completely tailored to your needs, target audience, and brand style. My goal is to help your business draw
               attention and leave a lasting impression with carefully designed posters, flyers, covers, and more.
@@ -51,7 +52,7 @@ const PostersDesignSection: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <img src="/service-section/PostersAndFlyers/4_magazine-ads-flyer-product.jpg" alt="Design Variety" className="w-full h-auto" />
+            <Image src="/service-section/PostersAndFlyers/4_magazine-ads-flyer-product.jpg" alt="Design Variety" className="w-full h-auto" />
           </motion.div>
           <motion.div
             className="flex-1"

@@ -1,5 +1,6 @@
 import React from "react";
 import "./imagecontainer.css";
+import Image from "next/image";
 
 // Define types for the component props
 interface ImageContainerProps {
@@ -10,7 +11,7 @@ interface ImageContainerProps {
 const ImageContainer: React.FC<ImageContainerProps> = ({ imageSource, description }) => {
   return (
     <div className="image-container">
-      <img className="image" src={imageSource} alt="Image description" />
+      <Image className="image" src={imageSource} alt="Image description" />
       <p className="date">{description}</p>
     </div>
   );

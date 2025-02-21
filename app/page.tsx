@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main>
       <Intro />
-      <CardsParallaxContainer />
+      {/** <CardsParallaxContainer /> */}
       <HorizontalScrollCard />
       <Logos />
       <Footer />      

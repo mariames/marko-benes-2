@@ -4,17 +4,17 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const stackItems = [
-    { name: "Adobe Photoshop", icon: "/icons/ph3.png" },
-    { name: "Adobe Illustrator", icon: "/icons/ph3.png" },
-    { name: "Adobe InDesign", icon: "/icons/ph3.png" },
-    { name: "Adobe After Effects", icon: "/icons/ph3.png" },
-    { name: "Adobe Premiere", icon: "/icons/ph3.png" },
-    { name: "Slack", icon: "/icons/ph3.png" },
+    { name: "Adobe Photoshop", icon: "/icons/photoshop.svg" },
+    { name: "Adobe Illustrator", icon: "/icons/illustrator.svg" },
+    { name: "Adobe InDesign", icon: "/icons/indesign.svg" },
+    { name: "Adobe After Effects", icon: "/icons/aftereffects.svg" },
+    { name: "Adobe Premiere", icon: "/icons/premier.svg" },
+    { name: "Adobe Lightroom", icon: "/icons/lightroom.svg" },
 ];
 
 const Stack: React.FC = () => {
   return (
-    <section className="bg-black text-white py-10 px-6">
+    <section className="bg-black text-white py-10 px-36">
     <div className="mx-24">
 
       <h2 className="text-3xl font-semibold mb-6 text-center">Stack</h2>

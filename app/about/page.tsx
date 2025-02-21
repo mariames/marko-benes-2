@@ -1,3 +1,4 @@
+import CallToAction from "@/components/CallToAction";
 import CardSection from "@/components/CardSection";
 import { Cta } from "@/components/Cta";
 import ImageGrid from "@/components/ImageGrid";
@@ -10,8 +11,7 @@ const About = () => {
       <TitleOFPage title="About" />
       <CardSection />
       <Stack />
-      <Cta />
-      <ImageGrid />
+      <CallToAction />
     </>
   );
 };

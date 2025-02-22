@@ -40,7 +40,7 @@ const Card: React.FC<CardProps> = ({ title, description }) => {
         transition: { duration: 0.8, ease: "easeOut", delay: 0.2 },
       }} // Trigger animation when in view
       viewport={{ once: true }} // Trigger the animation once when it's in view
-      className="bg-black text-white border border-gray-700 rounded-lg p-6"
+      className="bg-[#101010] text-white border border-gray-700 rounded-lg p-6"
     >
       <h2 className="text-xl font-semibold">{title}</h2>
       <hr className="border-gray-600 my-2" />
@@ -52,7 +52,7 @@ const Card: React.FC<CardProps> = ({ title, description }) => {
 const CardSection: React.FC = () => {
   return (
     <section className="bg-black px-6 py-10">
-      <div className="max-w-3xl mx-auto space-y-6">
+      <div className="max-w-5xl mx-auto space-y-6">
         {cardData.map((card, index) => (
           <Card key={index} {...card} />
         ))}

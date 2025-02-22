@@ -46,7 +46,7 @@ const steps = [
     content: (
       <div className='px-9'>
         <label className="block text-left text-white">Message</label>
-        <textarea className="w-full p-2 bg-transparent rounded min-h-56 resize-none border border-gray-700" placeholder="Enter your message"></textarea>
+        <textarea className="w-full p-2 bg-transparent rounded min-h-56 resize-none border border-gray-700" placeholder="Enter your message" rows={10}></textarea>
       </div>
     )
   },
@@ -98,7 +98,7 @@ const Wizard = () => {
   };
 
   return (
-    <div className="relative flex items-center justify-center min-h-[500px] border border-gray-700 rounded-lg mt-16">
+    <div className="relative flex items-center justify-center min-h-[500px] border border-gray-700 rounded-lg mt-16 bg-[#101010]">
       
       <div className="w-[670px] mx-auto text-center p-6">
         

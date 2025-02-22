@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import { Mail } from "lucide-react";
+import { FaDribbble, FaLinkedin, FaBehance } from "react-icons/fa";
 
 const socialLinks = [
-  { icon: <Mail size={24} />, href: "https://twitter.com/" },
-  { icon: <Mail size={24} />, href: "https://dribbble.com/" },
-  { icon: <Mail size={24} />, href: "https://www.behance.net/" },
-  { icon: <Mail size={24} />, href: "https://linkedin.com/" },
+  { icon: <FaDribbble size={24} />, href: "https://dribbble.com/maremb" },
+  { icon: <FaBehance size={24} />, href: "https://www.behance.net/markobenis" },
+  { icon: <FaLinkedin size={24} />, href: "https://www.linkedin.com/in/marko-beni%C5%A1-a4554ab6/" },
 ];
 
 const ContactSection: React.FC = () => {
@@ -14,7 +14,7 @@ const ContactSection: React.FC = () => {
     <section className="bg-black text-white py-10 px-6">
       <div className="max-w-3xl mx-auto">
         {/** <h2 className="text-3xl font-bold mb-6">Contact Me</h2> */}
-        <div className="border border-gray-700 rounded-lg p-6">
+        <div className="bg-[#101010] border border-gray-700 rounded-lg p-6">
           {/* Email Section */}
           <div className="mb-6">
             <span className="text-gray-400 flex items-center">
@@ -27,7 +27,7 @@ const ContactSection: React.FC = () => {
           {/* Socials Section */}
           <div>
             <span className="text-gray-400">Socials:</span>
-            <div className="grid grid-cols-4 gap-4 mt-4">
+            <div className="grid grid-cols-3 gap-4 mt-4">
               {socialLinks.map((social, index) => (
                 <a
                   key={index}

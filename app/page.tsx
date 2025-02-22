@@ -15,8 +15,7 @@ export default function Home() {
       {/** <HorizontalScrollCard /> */}
       <Services />
       <Logos />
-      <CallToAction />
-      <Footer />      
+      <CallToAction />     
     </main>
   );
 }

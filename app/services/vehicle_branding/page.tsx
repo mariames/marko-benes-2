@@ -1,7 +1,9 @@
 import CallToAction from '@/components/CallToAction';
 import InfoSection from '@/components/InfoSection'
 import ScrollingImages from '@/components/ScrollingImages';
+import TextThatSlidesIn from '@/components/TextThatSlidesIn';
 import TitleOFPage from '@/components/TitleOFPage'
+import VehicleStack from '@/components/VehicleStack';
 import React from 'react'
 
 const page = () => {
@@ -20,6 +22,8 @@ const page = () => {
     <div className='bg-black'>
       <TitleOFPage title="Vehicle Branding" />
       <ScrollingImages />
+      <TextThatSlidesIn />
+      <VehicleStack />
       <InfoSection title="What I need from you?"
       items={items} />
       <CallToAction />

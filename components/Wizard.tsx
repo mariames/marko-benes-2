@@ -10,11 +10,11 @@ const steps = [
     icon: <FaRocket />, // Icon for step 1
     content: (
       <div className='px-10'>
-        <label className="block text-left text-gray-700">Name or company name</label>
-        <input type="text" className="w-full p-2 border rounded mb-4" placeholder="Enter name or company name" />
+        <label className="block text-left text-white">Name or company name</label>
+        <input type="text" className="w-full p-2 rounded mb-4 border border-gray-700 bg-transparent" placeholder="Enter name or company name" />
         
-        <label className="block text-left text-gray-700">Email</label>
-        <input type="email" className="w-full p-2 border rounded" placeholder="Enter your email" />
+        <label className="block text-left text-white">Email</label>
+        <input type="email" className="w-full p-2 border border-gray-700 bg-transparent rounded" placeholder="Enter your email" />
       </div>
     )
   },
@@ -31,7 +31,7 @@ const steps = [
             "T-Shirt Design", "Video Design"].map((item, index) => (
             <div key={index} className="flex items-center mb-2">
               <input type="radio" name="service" value={item} className="mr-2" />
-              <label className="text-gray-700">{item}</label>
+              <label className="text-white">{item}</label>
             </div>
           ))}
         </fieldset>
@@ -45,8 +45,8 @@ const steps = [
     icon: <FaPen />, // Icon for step 3
     content: (
       <div className='px-9'>
-        <label className="block text-left text-gray-700">Message</label>
-        <textarea className="w-full p-2 border rounded min-h-56 resize-none" placeholder="Enter your message"></textarea>
+        <label className="block text-left text-white">Message</label>
+        <textarea className="w-full p-2 bg-transparent rounded min-h-56 resize-none border border-gray-700" placeholder="Enter your message"></textarea>
       </div>
     )
   },
@@ -57,14 +57,14 @@ const steps = [
     icon: <FaDollarSign />, // Icon for step 4
     content: (
       <div className='px-10 p-0'>
-        <label className="block text-left text-gray-700">From</label>
-        <input type="text" className="w-full p-2 border rounded mb-4" placeholder="Enter from" />
+        <label className="block text-left text-white">From</label>
+        <input type="text" className="w-full p-2 rounded mb-4 bg-transparent border border-gray-700" placeholder="Enter from" />
         
-        <label className="block text-left text-gray-700">To</label>
-        <input type="text" className="w-full p-2 border rounded mb-4" placeholder="Enter to" />
+        <label className="block text-left text-white">To</label>
+        <input type="text" className="w-full p-2 rounded mb-4 bg-transparent border border-gray-700" placeholder="Enter to" />
         
-        <label className="block text-left text-gray-700">Currency</label>
-        <select className="w-full p-2 border rounded">
+        <label className="block text-left text-white bg-transparent">Currency</label>
+        <select className="w-full p-2 border rounded bg-transparent">
           <option value="usd">Dollar</option>
           <option value="eur">Euro</option>
           <option value="gbp">Pound</option>
@@ -79,8 +79,8 @@ const steps = [
     icon: <FaClipboardList />, // Icon for step 5
     content: (
       <div className='px-10'>
-        <label className="block text-left text-gray-700">In an ideal world when will it be completed?</label>
-        <input type="text" className="w-full p-2 border rounded mb-4" placeholder="Have a date in mind?" />
+        <label className="block text-left text-white">In an ideal world when will it be completed?</label>
+        <input type="text" className="w-full p-2 border rounded mb-4 bg-transparent" placeholder="Have a date in mind?" />
       </div>
     )
   }
@@ -102,34 +102,33 @@ const Wizard = () => {
       
       <div className="w-[670px] mx-auto text-center p-6">
         
-        <p className="font-semibold my-10 text-5xl">Project Planner</p>
         <div className="relative flex items-center justify-between my-6 w-full px-10">
           {steps.map((step, index) => (
             <div key={step.id} className="relative flex items-center">
-              {index > 0 && <div className="absolute -left-7 top-1/2 w-8 h-0.5 bg-gray-300 xs:hidden"></div>}
-              <div className={`relative flex items-center justify-center w-16 h-16 rounded-full border-2 ${index === currentStep ? 'bg-custom-blue text-white border-custom-blue' : 'bg-white border-gray-300 text-gray-600'}`}>
+              {index > 0 && <div className="absolute -left-7 top-1/2 w-8 h-0.5 bg-gray-700 xs:hidden"></div>}
+              <div className={`relative flex items-center justify-center w-16 h-16 rounded-full border-2 ${index === currentStep ? 'bg-custom-blue text-white border-custom-blue' : 'bg-black border-gray-300 text-gray-600'}`}>
                 <span className="text-xl">{step.icon}</span>
               </div>
-              {index < steps.length - 1 && <div className="absolute -right-7 top-1/2 w-7 h-0.5 bg-gray-300 xs:hidden"></div>}
+              {index < steps.length - 1 && <div className="absolute -right-7 top-1/2 w-7 h-0.5 bg-gray-700 xs:hidden"></div>}
             </div>
           ))}
         </div>
-        <div className="relative p-6 rounded-lg shadow-lg min-h-[500px] bg-gray-50">
+        <div className="relative p-6 rounded-lg shadow-lg min-h-[500px] bg-transparent border border-gray-700">
           {/* Title - Horizontally centered at the top */}
           <div className="text-center">
-            <p className="font-semibold text-3xl my-5">{steps[currentStep].title}</p>
+            <p className="font-normal text-3xl my-5">{steps[currentStep].title}</p>
           </div>
 
           {/* Content */}
           <div className="text-gray-600">
-            <p className="text-gray-600 mt-5 mb-12">{steps[currentStep].subtitle}</p>
-            <div className="text-gray-600">{steps[currentStep].content}</div>
+            <p className="text-white mt-5 mb-12">{steps[currentStep].subtitle}</p>
+            <div className="text-white">{steps[currentStep].content}</div>
           </div>
         </div>
 
       <div className='flex justify-between mt-7'>
-        <button onClick={prevStep} disabled={currentStep === 0} className="px-4 font-semibold py-2 border-2 border-gray-300 rounded-lg w-24 h-16 bg-gray-50 disabled:opacity-50">previous</button>
-        <button onClick={nextStep} disabled={currentStep === steps.length - 1} className="px-4 py-2 font-semibold border-2 border-gray-300 bg-gray-50 rounded-lg w-24 h-16 disabled:opacity-50">next</button>
+        <button onClick={prevStep} disabled={currentStep === 0} className="px-4 font-semibold py-2 rounded-lg w-24 h-16 bg-transparent border border-gray-700 disabled:opacity-50">previous</button>
+        <button onClick={nextStep} disabled={currentStep === steps.length - 1} className="px-4 py-2 font-semibold border border-gray-700 rounded-lg w-24 h-16 disabled:opacity-50">next</button>
       </div>
 
       </div>

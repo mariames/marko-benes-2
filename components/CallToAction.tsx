@@ -12,7 +12,7 @@ const CallToAction = () => {
         <br></br>
         I&apos;m here to help.
       </p>
-      <AnimatedButton text="Contact me" link="/planner" />
+      <AnimatedButton text="Contact me" link="/contact" />
     </div>
   );
 };

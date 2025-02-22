@@ -113,7 +113,7 @@ const Wizard = () => {
             </div>
           ))}
         </div>
-        <div className="relative p-6 rounded-lg shadow-lg min-h-[500px] bg-transparent border border-gray-700">
+        <div className="relative p-6 rounded-lg shadow-lg min-h-[500px] bg-transparent">
           {/* Title - Horizontally centered at the top */}
           <div className="text-center">
             <p className="font-normal text-3xl my-5">{steps[currentStep].title}</p>

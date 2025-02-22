@@ -4,6 +4,7 @@ import Logos from "@/components/Logos";
 import HorizontalScrollCard from "@/components/HorizontalScrollCard";
 import CardsParallaxContainer from "@/components/CardsParallaxContainer/CardsParallaxContainer";
 import Services from "@/components/Services";
+import CallToAction from "@/components/CallToAction";
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       {/** <HorizontalScrollCard /> */}
       <Services />
       <Logos />
+      <CallToAction />
       <Footer />      
     </main>
   );

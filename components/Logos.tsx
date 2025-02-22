@@ -2,20 +2,21 @@
 
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 const logos = [
-  { src: "/logos/Kosili.svg", alt: "Kosili" },
-  { src: "/logos/Dobra-ovsena-kasa.svg", alt: "Dobra Ovsena Kasa" },
-  { src: "/logos/Holly.svg", alt: "Holly" },
-  { src: "/logos/LMX-TOX.svg", alt: "LMX TOX" },
-  { src: "/logos/Deft.svg", alt: "Deft" },
-  { src: "/logos/Unit.svg", alt: "Unit" },
-  { src: "/logos/Posh-33.svg", alt: "Posh 33" },
-  { src: "/logos/Maximalium.svg", alt: "Maximalium" },
-  { src: "/logos/Petroland.svg", alt: "Petroland" },
-  { src: "/logos/Petster.svg", alt: "Petster" },
-  { src: "/logos/Gentlemens-club.svg", alt: "Gentlemen's Club" },
-  { src: "/logos/Terminal-festival.svg", alt: "Terminal Festival" },
+  { src: "/logos/Kosili.svg", alt: "Kosili", link: "https://kosili.com" },
+  { src: "/logos/Dobra-ovsena-kasa.svg", alt: "Dobra Ovsena Kasa", link: "https://dobraovsena.com" },
+  { src: "/logos/Holly.svg", alt: "Holly", link: "https://holly.com" },
+  { src: "/logos/LMX-TOX.svg", alt: "LMX TOX", link: "https://lmx-tox.com" },
+  { src: "/logos/Deft.svg", alt: "Deft", link: "https://deft.com" },
+  { src: "/logos/Unit.svg", alt: "Unit", link: "https://unit.com" },
+  { src: "/logos/Posh-33.svg", alt: "Posh 33", link: "https://posh33.com" },
+  { src: "/logos/Maximalium.svg", alt: "Maximalium", link: "https://maximalium.com" },
+  { src: "/logos/Petroland.svg", alt: "Petroland", link: "https://petroland.com" },
+  { src: "/logos/Petster.svg", alt: "Petster", link: "https://petster.com" },
+  { src: "/logos/Gentlemens-club.svg", alt: "Gentlemen's Club", link: "https://gentlemensclub.com" },
+  { src: "/logos/Terminal-festival.svg", alt: "Terminal Festival", link: "https://terminalfestival.com" },
 ];
 
 const Logos = () => {
@@ -30,47 +31,34 @@ const Logos = () => {
         {/* Grid Container */}
         <div className="relative grid grid-cols-4 gap-4 max-w-5xl lg:h-[90vh] md:h-[80vh]">
           {logos.map((logo, index) => (
-            <div
+            <motion.div
               key={index}
               className="flex justify-center items-center p-5 border-2 border-transparent transition-all duration-300"
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              transition={{
+                duration: 1.5, // Longer duration for smoother transition
+                ease: [0.42, 0, 0.58, 1], // "ease-in-out" cubic bezier for smoother effect
+                delay: index * 0.1, // Delay for staggered effect
+              }}
+              viewport={{ once: true, amount: 0.3 }} // Triggers when 30% of the element is visible
             >
-              <Image
-                src={logo.src}
-                alt={logo.alt}
-                width={70}
-                height={70}
-                className="opacity-80 hover:opacity-100 w-[70px] h-[70px]"
-              />
-            </div>
+              {/* Adding Link Around the Logo */}
+              <a href={logo.link} target="_blank" rel="noopener noreferrer">
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  width={70}
+                  height={70}
+                  className="w-[70px] h-[70px] transition-transform duration-300 ease-in-out transform hover:scale-110"
+                />
+              </a>
+            </motion.div>
           ))}
         </div>
-
-        {/* Grid Lines with Fading Effect */}
-        <div className="absolute inset-0 pointer-events-none">
-          {/* Vertical Lines */}
-          <div className="absolute top-0 bottom-0 left-[40%] w-px bg-gradient-to-b from-transparent via-red-500 to-transparent opacity-0 animate-fadeIn"></div>
-          <div className="absolute top-0 bottom-0 left-[50%] w-px bg-gradient-to-b from-transparent via-red-500 to-transparent opacity-0 animate-fadeIn"></div>
-          <div className="absolute top-0 bottom-0 left-[60%] w-px bg-gradient-to-b from-transparent via-red-500 to-transparent opacity-0 animate-fadeIn"></div>
-
-          {/* Horizontal Lines */}
-          <div className="absolute mx-28 left-0 right-0 top-[33.33%] h-px bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-0 animate-fadeIn"></div>
-          <div className="absolute mx-20 left-0 right-0 top-[66.66%] h-px bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-0 animate-fadeIn"></div>
-        </div>
-
-        {/* Tailwind Custom Styles */}
-        <style jsx global>{`
-          @keyframes fadeIn {
-            from {
-              opacity: 0;
-            }
-            to {
-              opacity: 1;
-            }
-          }
-          .animate-fadeIn {
-            animation: fadeIn 2s ease-in forwards;
-          }
-        `}</style>
       </div>
     </div>
   );

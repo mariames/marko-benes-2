@@ -14,7 +14,7 @@ const stackItems = [
 
 const Stack: React.FC = () => {
   return (
-    <section className="bg-black text-white py-10 xl:px-36 lg:px-36 md:px-32 sm:px-1 ">
+    <section className="bg-black text-white py-10 xl:px-36 lg:px-36 md:px-32 sm:px-4 ">
     <div className="md:mx-24 sm:mx-4">
 
       <h2 className="text-3xl font-semibold mb-6 text-center">Stack</h2>

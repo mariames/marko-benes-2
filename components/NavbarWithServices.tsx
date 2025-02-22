@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 
 export default function NavbarWithServices() {
     const [navbar, setNavbar] = useState(false);
@@ -29,16 +30,16 @@ export default function NavbarWithServices() {
     }, []);
 
     return (
-        <nav className="w-full bg-white shadow z-50">
+        <nav className="w-full bg-transparent shadow z-50">
             <div className="justify-between px-2 mx-auto md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <Link href="/"  className="flex flex-row">
                             <Image
-                            src="/logo.svg"
+                            src="/Marko Benis_logo_beli.svg"
                             width={200}
                             height={50} 
-                            className=" object-contain ml-1"
+                            className=" object-contain ml-1 w-20 h-auto"
                             alt="Marko Benis" />
                         </Link>
                         <div className="md:hidden">
@@ -88,19 +89,31 @@ export default function NavbarWithServices() {
                     {/** className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0" */}
                     <ul className="items-end justify-end space-y-4 md:flex md:space-x-6 md:space-y-0">
                         <li className="relative" ref={dropdownRef}>
+                        <motion.div
+                            key={"services"}
+                            className="relative"
+                            whileHover="hover" >
                             <button
                                 onClick={() => setBlogOpen(!blogOpen)}
-                                className="flex items-center text-black"
+                                className="flex items-center text-gray-100"
                             >
                                 Services
                             </button>
+                            <motion.div
+                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
+                                initial={{ width: "0%" }}
+                                variants={{
+                                hover: { width: "100%", transition: { duration: 0.4 } },
+                                }}
+                            />
+                            </motion.div>
                             <div
                                 className={`overflow-hidden transition-all duration-300 ease-in-out ${
                                     blogOpen ? "max-h-96 w-80 mt-5 -ml-4 p-1" : "max-h-0"
                                 } md:absolute md:left-0 md:z-10 md:min-w-[16rem] md:max-w-[24rem] md:w-auto`}
                             >
                                 <ul
-                                    className={`bg-white shadow-lg z-50 ${
+                                    className={`bg-black shadow-lg z-50 ${
                                         blogOpen ? "opacity-100" : "opacity-0"
                                     } transition-opacity duration-300`}
                                 >
@@ -108,7 +121,7 @@ export default function NavbarWithServices() {
                                         <Link
                                             href="/services/labels_and_packaging"
                                             onClick={handleItemClick}
-                                            className="block px-3 py-2 text-black"
+                                            className="block px-3 py-2 text-gray-100"
                                         >
                                             Labels &amp; Packaging
                                         </Link>
@@ -117,7 +130,7 @@ export default function NavbarWithServices() {
                                         <Link
                                             href="/services/posters_and_flyers"
                                             onClick={handleItemClick}
-                                            className="block px-3 py-2 text-black"
+                                            className="block px-3 py-2 text-gray-100"
                                         >
                                             Posters &amp; Flyers
                                         </Link>
@@ -126,7 +139,7 @@ export default function NavbarWithServices() {
                                         <Link
                                             href="/services/billboards_banners_roll_ups"
                                             onClick={handleItemClick}
-                                            className="block px-3 py-2 text-black"
+                                            className="block px-3 py-2 text-gray-100"
                                         >
                                             Billboards, Banners & Roll Ups
                                         </Link>
@@ -135,7 +148,7 @@ export default function NavbarWithServices() {
                                         <Link
                                             href="/services/vehicle_branding"
                                             onClick={handleItemClick}
-                                            className="block px-3 py-2 text-black"
+                                            className="block px-3 py-2 text-gray-100"
                                         >
                                             Vehicle Branding
                                         </Link>
@@ -144,7 +157,7 @@ export default function NavbarWithServices() {
                                         <Link
                                             href="/services/trade_promo_booths"
                                             onClick={handleItemClick}
-                                            className="block px-3 py-2 text-black"
+                                            className="block px-3 py-2 text-gray-100"
                                         >
                                             Trade Promo Booths
                                         </Link>
@@ -153,7 +166,7 @@ export default function NavbarWithServices() {
                                         <Link
                                             href="/services/promo_shelves"
                                             onClick={handleItemClick}
-                                            className="block px-3 py-2 text-black"
+                                            className="block px-3 py-2 text-gray-100"
                                         >
                                             Promo Shelves
                                         </Link>
@@ -162,7 +175,7 @@ export default function NavbarWithServices() {
                                         <Link
                                             href="/services/logo"
                                             onClick={handleItemClick}
-                                            className="block px-3 py-2 text-black"
+                                            className="block px-3 py-2 text-gray-100"
                                         >
                                             Logo
                                         </Link>
@@ -171,7 +184,7 @@ export default function NavbarWithServices() {
                                         <Link
                                             href="/services/t-shirt_design"
                                             onClick={handleItemClick}
-                                            className="block px-3 py-2 text-black"
+                                            className="block px-3 py-2 text-gray-100"
                                         >
                                             T-Shirt design
                                         </Link>
@@ -180,7 +193,7 @@ export default function NavbarWithServices() {
                                         <Link
                                             href="/services/video_design"
                                             onClick={handleItemClick}
-                                            className="block px-3 py-2 text-black"
+                                            className="block px-3 py-2 text-white"
                                         >
                                             Video Design
                                         </Link>
@@ -188,25 +201,73 @@ export default function NavbarWithServices() {
                                 </ul>
                             </div>
                         </li>
-                        <li className="text-gray-700 hover:text-gray-950">
-                            <Link href="/portfolio">
-                                Portfolio
-                            </Link>
+                        <li className="text-white hover:text-gray-100">
+                            <motion.div
+                                key={"services"}
+                                className="relative"
+                                whileHover="hover" >
+                                <Link href="/portfolio">
+                                    Portfolio
+                                </Link>
+                            <motion.div
+                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
+                                initial={{ width: "0%" }}
+                                variants={{
+                                hover: { width: "100%", transition: { duration: 0.4 } },
+                                }}
+                            />
+                            </motion.div>
                         </li>
-                        <li className="text-gray-700 hover:text-gray-950">
-                            <Link href="/about">
-                                About
-                            </Link>
+                        <li className="text-white hover:text-gray-100">
+                            <motion.div
+                                key={"services"}
+                                className="relative"
+                                whileHover="hover" >
+                                    <Link href="/about">
+                                        About
+                                    </Link>
+                                <motion.div
+                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
+                                initial={{ width: "0%" }}
+                                variants={{
+                                hover: { width: "100%", transition: { duration: 0.4 } },
+                                }}
+                            />
+                            </motion.div>
                         </li>
-                        <li className="text-gray-700 hover:text-gray-950">
-                            <Link href="/collaborate">
-                                Collaborate
-                            </Link>
+                        <li className="text-white hover:text-gray-100">
+                            <motion.div
+                                key={"services"}
+                                className="relative"
+                                whileHover="hover" >
+                                <Link href="/collaborate">
+                                    Collaborate
+                                </Link>
+                            <motion.div
+                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
+                                initial={{ width: "0%" }}
+                                variants={{
+                                hover: { width: "100%", transition: { duration: 0.4 } },
+                                }}
+                            />
+                            </motion.div>
                         </li>
-                        <li className="text-gray-700 hover:text-gray-950">
-                            <Link href="/contact">
-                                Contact
-                            </Link>
+                        <li className="text-white hover:text-gray-100">
+                            <motion.div
+                                key={"services"}
+                                className="relative"
+                                whileHover="hover" >
+                                <Link href="/contact">
+                                    Contact
+                                </Link>
+                            <motion.div
+                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
+                                initial={{ width: "0%" }}
+                                variants={{
+                                hover: { width: "100%", transition: { duration: 0.4 } },
+                                }}
+                            />
+                            </motion.div>
                         </li>
                     </ul>
                 </div>

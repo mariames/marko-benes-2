@@ -13,19 +13,19 @@ const TargetAudienceCard: React.FC = () => {
       <hr className="border-gray-600 my-2" />
       <div className="space-y-2">
         <div className="flex items-center space-x-2">
-          <FaCheckCircle className="text-green-500" />
+          <FaCheckCircle className="text-green-300" />
           <p className="text-gray-300">Start-up companies</p>
         </div>
         <div className="flex items-center space-x-2">
-          <FaCheckCircle className="text-green-500" />
+          <FaCheckCircle className="text-green-300" />
           <p className="text-gray-300">Marketing agencies and teams</p>
         </div>
         <div className="flex items-center space-x-2">
-          <FaCheckCircle className="text-green-500" />
+          <FaCheckCircle className="text-green-300" />
           <p className="text-gray-300">Marketing agencies and teams</p>
         </div>
         <div className="flex items-center space-x-2">
-          <FaCheckCircle className="text-green-500" />
+          <FaCheckCircle className="text-green-300" />
           <p className="text-gray-300">Individuals with a vision</p>
         </div>
       </div>

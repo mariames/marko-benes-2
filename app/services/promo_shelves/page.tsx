@@ -1,5 +1,6 @@
 import CallToAction from '@/components/CallToAction';
 import InfoSection from '@/components/InfoSection';
+import PromoShelvesSection from '@/components/PromoShelvesSection';
 import TitleOFPage from '@/components/TitleOFPage'
 import React from 'react'
 
@@ -17,6 +18,7 @@ const page = () => {
   return (
     <>
       <TitleOFPage title="Promo Shelves" />
+      <PromoShelvesSection />
       <InfoSection
         title="What I need from you?"
         items={items} />

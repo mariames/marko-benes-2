@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import TargetAudienceCard from "./TargetAudienceCard";
 
 interface CollaborationStep {
   title: string;
@@ -67,6 +68,9 @@ const CollaborateSection: React.FC = () => {
         {collaborationSteps.map((step, index) => (
           <CollaborateCard key={index} {...step} />
         ))}
+        <div className="space-y-6">
+          <TargetAudienceCard />
+        </div>
       </div>
     </section>
   );

@@ -156,6 +156,7 @@ const tshirtServices: Service[] = [
   { name: ServiceType.TShirtDesign, src: "/portfolio/t-shirt/11_t-shirt-streetwear-design.jpg" },
 ];
 
+// Combine all services in a single array
 const allServices: Service[] = [
   ...labelsAndPackagingServices,
   ...postersAndFlyersServices,
@@ -173,11 +174,21 @@ const itemVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
 
+// Portfolio Component
 const Portfolio: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
+  const [selectedType, setSelectedType] = useState<ServiceType | null>(null);
 
-  const images = allServices.map(service => service.src);
+  const handleTypeChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedType(event.target.value as ServiceType);
+  };
+
+  const filteredServices = selectedType
+    ? allServices.filter(service => service.name === selectedType)
+    : allServices;
+
+  const images = filteredServices.map(service => service.src);
 
   const openModal = (index: number) => {
     setCurrentImageIndex(index);
@@ -193,17 +204,30 @@ const Portfolio: React.FC = () => {
   };
 
   const goToPrev = () => {
-    setCurrentImageIndex(
-      (currentImageIndex - 1 + images.length) % images.length
-    );
+    setCurrentImageIndex((currentImageIndex - 1 + images.length) % images.length);
   };
 
   return (
     <div className="bg-gray-950 pb-10 px-6 md:px-10 lg:px-20 xl:px-40 2xl:px-64">
       <TitleOFPage title="Portfolio" />
 
+      <div className="mb-4">
+        <select
+          className="p-2 rounded-md text-white border border-gray-700 bg-[#101010]"
+          onChange={handleTypeChange}
+          value={selectedType ?? ""}
+        >
+          <option value="">See all</option>
+          {Object.values(ServiceType).map((type) => (
+            <option key={type} value={type}>
+              {type}
+            </option>
+          ))}
+        </select>
+      </div>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
-        {allServices.map((service, index) => (
+        {filteredServices.map((service, index) => (
           <motion.div
             key={index}
             variants={itemVariants}
@@ -224,19 +248,17 @@ const Portfolio: React.FC = () => {
         ))}
       </div>
 
-
       {isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
           <div className="relative w-[45vw] max-w-screen-lg h-auto">
             {/* ModalImage component to show image in full size */}
-
             <ModalImage
               small={images[currentImageIndex]}
               large={images[currentImageIndex]}
               alt={`Image ${currentImageIndex + 1}`}
               className="w-full h-auto"
               hideDownload={true}
-            /> 
+            />
             <button
               onClick={closeModal}
               className="absolute top-0 right-0 text-white p-2 text-3xl"
@@ -258,11 +280,6 @@ const Portfolio: React.FC = () => {
           </div>
         </div>
       )}
-
-
-
-
-
     </div>
   );
 };

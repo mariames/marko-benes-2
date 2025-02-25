@@ -154,6 +154,7 @@ const labelsAndPackagingServices: Service[] = [
   { name: ServiceType.LabelsAndPackaging, src: "/portfolio/labels-packaging/15_detergent-label-design.jpg" },
   { name: ServiceType.LabelsAndPackaging, src: "/portfolio/labels-packaging/16_box-packaging-branding-medicine-cure.jpg" },
   { name: ServiceType.LabelsAndPackaging, src: "/portfolio/labels-packaging/17_laundry-detergent-design-label-packaging.jpg" },
+  { name: ServiceType.LabelsAndPackaging, src: "/portfolio/labels-packaging/17_b_aluminium-aerosol-can-design.jpg" },
   { name: ServiceType.LabelsAndPackaging, src: "/portfolio/labels-packaging/18_liquid-soap-label-design.jpg" },
 ];
 

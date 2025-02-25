@@ -1,6 +1,4 @@
 "use client";
-import { AnimatedTooltipPreview } from "./AnimatedTooltipPreview";
-import { TypewriterEffectSmooth } from "./ui/TypewriterEffect";
 export function TypewriterEffectSmoothDemo() {
   const words = [
     {
@@ -23,7 +21,6 @@ export function TypewriterEffectSmoothDemo() {
   return (
     <div className="flex flex-col items-center justify-center h-[12rem]">
       
-      {/** <TypewriterEffectSmooth words={words} /> */}
       <p className="farmhouse-title text-5xl mb-5">Hi! I am Marko!</p>  
       <p className="text-neutral-800 dark:text-neutral-200 font-semibold text-xs sm:text-base md:text-xl lg:text:2xl xl:text-2xl ">
         A <span className="text-gray-600">Graphic Designer</span> specializing in creating delightful designs.

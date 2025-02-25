@@ -1,6 +1,7 @@
 import CallToAction from '@/components/CallToAction';
 import InfoSection from '@/components/InfoSection';
 import TitleOFPage from '@/components/TitleOFPage'
+import TShirtDesignSection from '@/components/TShirtDesignSection';
 import React from 'react'
 
 const page = () => {
@@ -17,6 +18,7 @@ const page = () => {
   return (
     <>
       <TitleOFPage title="T-shirt design" />
+      <TShirtDesignSection />
       <InfoSection
         title="What I need from you?"
         items={items} />

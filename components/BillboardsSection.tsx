@@ -21,7 +21,7 @@ const BillboardSection: React.FC = () => {
               alt="Billboard Design"
               width={1500}
               height={1124} 
-              className="w-full h-auto" />
+              className="w-full h-auto rounded-xl" />
           </motion.div>
           <motion.div
             className="flex-1"
@@ -47,7 +47,7 @@ const BillboardSection: React.FC = () => {
               alt="Banner Design 1"
               width={1500}
               height={1124} 
-              className="w-full h-auto" />
+              className="w-full h-auto rounded-lg" />
           </motion.div>
           <motion.div
             initial={{ x: 100, opacity: 0 }}
@@ -60,7 +60,7 @@ const BillboardSection: React.FC = () => {
               alt="Banner Design 2"
               width={1500}
               height={1124} 
-              className="w-full h-auto" />
+              className="w-full h-auto rounded-lg" />
           </motion.div>
         </div>
 
@@ -78,7 +78,7 @@ const BillboardSection: React.FC = () => {
               alt="Outdoor Advertising"
               width={1500}
               height={1124} 
-              className="w-full h-auto" />
+              className="w-full h-auto rounded-lg" />
           </motion.div>
           <motion.div
             className="flex-1"

@@ -18,9 +18,8 @@ const InfoSection: React.FC<InfoSectionProps> = ({ title, items }) => {
     <section className="bg-black text-white py-10 px-6">
       <div className="max-w-3xl mx-auto">
         <div className="border border-gray-700 rounded-lg p-6">
-          <div className="mb-6">
             <div className="flex justify-between items-center">
-              <h2 className="text-2xl font-bold">{title}</h2>
+              <p className="text-2xl font-bold">{title}</p>
               <button
                 onClick={handleToggle}
                 className="text-gray-400 hover:text-white transition"
@@ -37,7 +36,6 @@ const InfoSection: React.FC<InfoSectionProps> = ({ title, items }) => {
                 </ul>
               </div>
             )}
-          </div>
         </div>
       </div>
     </section>

@@ -1,3 +1,4 @@
+import AboutTitle from "@/components/AboutTitle";
 import CallToAction from "@/components/CallToAction";
 import CardSection from "@/components/CardSection";
 import { Cta } from "@/components/Cta";
@@ -8,7 +9,8 @@ import TitleOFPage from "@/components/TitleOFPage";
 const About = () => {
   return (
     <>
-      <TitleOFPage title="About" />
+      {/** <TitleOFPage title="About" /> */}
+      <AboutTitle />
       <CardSection />
       <Stack />
       <CallToAction />

@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const PromoShelvesSection: React.FC = () => {
   return (
@@ -15,7 +16,11 @@ const PromoShelvesSection: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }} // Trigger only once when entering the viewport
           >
-            <img src="/service-section/PromoShelves/1_shelves-market-branding-design.jpg" alt="Packaging Design" className="w-full h-auto rounded-lg" />
+            <Image 
+              src="/service-section/PromoShelves/1_shelves-market-branding-design.jpg" alt="Packaging Design"
+              width={1500}
+              height={1124}  
+              className="w-full h-auto rounded-lg" />
           </motion.div>
           <motion.div
             className="flex-1"
@@ -37,7 +42,11 @@ const PromoShelvesSection: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <img src="/service-section/PromoShelves/2_standing-retail-display-shelves.jpg" alt="Packaging Design Example 1" className="w-full h-auto rounded-lg" />
+            <Image 
+              src="/service-section/PromoShelves/2_standing-retail-display-shelves.jpg" alt="Packaging Design Example 1" 
+              width={1500}
+              height={1124} 
+              className="w-full h-auto rounded-lg" />
           </motion.div>
           <motion.div
             initial={{ x: 100, opacity: 0 }} // Slide in from the right
@@ -45,7 +54,12 @@ const PromoShelvesSection: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <img src="/service-section/PromoShelves/3_product-display-design.jpg" alt="Packaging Design Example 2" className="w-full h-auto rounded-lg" />
+            <Image 
+              src="/service-section/PromoShelves/3_product-display-design.jpg" 
+              alt="Packaging Design Example 2" 
+              width={1500}
+              height={1124} 
+              className="w-full h-auto rounded-lg" />
           </motion.div>
         </div>
 

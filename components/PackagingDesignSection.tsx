@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const PackagingDesignSection: React.FC = () => {
   return (
@@ -15,7 +16,11 @@ const PackagingDesignSection: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }} // Trigger only once when entering the viewport
           >
-            <img src="/service-section/LabelsAndPackaging/1_packaging-design.jpg" alt="Packaging Design" className="w-full h-auto rounded-lg" />
+            <Image 
+              src="/service-section/LabelsAndPackaging/1_packaging-design.jpg" 
+              alt="Packaging Design" className="w-full h-auto rounded-lg"
+              width={1500}
+              height={1124}  />
           </motion.div>
           <motion.div
             className="flex-1"
@@ -39,7 +44,12 @@ const PackagingDesignSection: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <img src="/service-section/LabelsAndPackaging/2_label-design.jpg" alt="Packaging Design Example 1" className="w-full h-auto rounded-lg" />
+            <Image 
+              src="/service-section/LabelsAndPackaging/2_label-design.jpg" 
+              alt="Packaging Design Example 1"
+              width={1500}
+              height={1124}  
+              className="w-full h-auto rounded-lg" />
           </motion.div>
           <motion.div
             initial={{ x: 100, opacity: 0 }} // Slide in from the right
@@ -47,7 +57,12 @@ const PackagingDesignSection: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <img src="/service-section/LabelsAndPackaging/3_shelf-ready-packaging-design.jpg" alt="Packaging Design Example 2" className="w-full h-auto rounded-lg" />
+            <Image 
+              src="/service-section/LabelsAndPackaging/3_shelf-ready-packaging-design.jpg" 
+              alt="Packaging Design Example 2"
+              width={1500}
+              height={1124} 
+              className="w-full h-auto rounded-lg" />
           </motion.div>
         </div>
 
@@ -59,7 +74,12 @@ const PackagingDesignSection: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <img src="/service-section/LabelsAndPackaging/4_paneer-pouch-design.jpg" alt="Packaging Design Example 3" className="w-full h-auto rounded-lg" />
+            <Image 
+              src="/service-section/LabelsAndPackaging/4_paneer-pouch-design.jpg" 
+              alt="Packaging Design Example 3"
+              width={1500}
+              height={1124}  
+              className="w-full h-auto rounded-lg" />
           </motion.div>
           <motion.div
             initial={{ x: 100, opacity: 0 }} // Slide in from the right
@@ -67,7 +87,12 @@ const PackagingDesignSection: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <img src="/service-section/LabelsAndPackaging/5_product-label-design.jpg" alt="Packaging Design Example 4" className="w-full h-auto rounded-lg" />
+            <Image 
+              src="/service-section/LabelsAndPackaging/5_product-label-design.jpg"
+              alt="Packaging Design Example 4" 
+              width={1500}
+              height={1124} 
+              className="w-full h-auto rounded-lg" />
           </motion.div>
         </div>
 

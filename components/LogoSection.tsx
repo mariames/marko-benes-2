@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const LogoSection: React.FC = () => {
   return (
@@ -15,7 +16,12 @@ const LogoSection: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }} // Trigger only once when entering the viewport
           >
-            <img src="/service-section/Logo/1_logo-visual-identity-design.jpg" alt="Packaging Design" className="w-full h-auto rounded-lg" />
+            <Image 
+              src="/service-section/Logo/1_logo-visual-identity-design.jpg" 
+              alt="Packaging Design" 
+              width={1500}
+              height={1124} 
+              className="w-full h-auto rounded-lg" />
           </motion.div>
           <motion.div
             className="flex-1"
@@ -42,7 +48,12 @@ const LogoSection: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <img src="/service-section/Logo/2_logo-corporate-identity.jpg" alt="Packaging Design Example 1" className="w-full h-auto rounded-lg" />
+            <Image 
+              src="/service-section/Logo/2_logo-corporate-identity.jpg" 
+              alt="Packaging Design Example 1"
+              width={1500}
+              height={1124} 
+              className="w-full h-auto rounded-lg" />
           </motion.div>
           <motion.div
             initial={{ x: 100, opacity: 0 }} // Slide in from the right

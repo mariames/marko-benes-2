@@ -109,7 +109,7 @@ export default function NavbarWithServices() {
                             </motion.div>
                             <div
                                 className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                                    blogOpen ? "max-h-96 w-80 mt-5 -ml-4 p-1" : "max-h-0"
+                                    blogOpen ? "max-h-96 w-[450px] mt-5 -ml-4" : "max-h-0"
                                 } md:absolute md:left-0 md:z-10 md:min-w-[16rem] md:max-w-[24rem] md:w-auto`}
                             >
                                 <ul
@@ -118,42 +118,94 @@ export default function NavbarWithServices() {
                                     } transition-opacity duration-300`}
                                 >
                                     <li>
-                                        <Link
-                                            href="/services/labels_and_packaging"
-                                            onClick={handleItemClick}
-                                            className="block px-3 py-2 text-gray-100"
-                                        >
-                                            Labels &amp; Packaging
-                                        </Link>
+                                        <motion.div
+                                            key={"services"}
+                                            className="relative"
+                                            whileHover="hover" >
+                                            <Link
+                                                href="/services/labels_and_packaging"
+                                                onClick={handleItemClick}
+                                                className="block px-3 py-2 text-gray-100"
+                                            >
+                                                Labels &amp; Packaging
+                                            </Link>
+                                        <motion.div
+                                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
+                                                initial={{ width: "0%" }}
+                                                variants={{
+                                                hover: { width: "100%", transition: { duration: 0.4 } },
+                                            }}
+                                        />
+                                        </motion.div>
                                     </li>
                                     <li>
-                                        <Link
-                                            href="/services/posters_and_flyers"
-                                            onClick={handleItemClick}
-                                            className="block px-3 py-2 text-gray-100"
-                                        >
-                                            Posters &amp; Flyers
-                                        </Link>
+                                        <motion.div
+                                            key={"services"}
+                                            className="relative"
+                                            whileHover="hover" >
+                                            <Link
+                                                href="/services/posters_and_flyers"
+                                                onClick={handleItemClick}
+                                                className="block px-3 py-2 text-gray-100"
+                                                >
+                                                Posters &amp; Flyers
+                                            </Link>
+                                            <motion.div
+                                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
+                                                initial={{ width: "0%" }}
+                                                variants={{
+                                                hover: { width: "100%", transition: { duration: 0.4 } },
+                                            }}
+                                        />
+                                        </motion.div>
                                     </li>
                                     <li>
-                                        <Link
-                                            href="/services/billboards_banners_roll_ups"
-                                            onClick={handleItemClick}
-                                            className="block px-3 py-2 text-gray-100"
-                                        >
+                                        <motion.div
+                                            key={"services"}
+                                            className="relative"
+                                            whileHover="hover" >
+                                            <Link
+                                                href="/services/billboards_banners_roll_ups"
+                                                onClick={handleItemClick}
+                                                className="block px-3 py-2 text-gray-100"
+                                            >
                                             Billboards, Banners & Roll Ups
-                                        </Link>
+                                            </Link>
+                                            <motion.div
+                                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
+                                                initial={{ width: "0%" }}
+                                                variants={{
+                                                hover: { width: "100%", transition: { duration: 0.4 } },
+                                            }}
+                                        />
+                                        </motion.div>
                                     </li>
                                     <li>
-                                        <Link
-                                            href="/services/vehicle_branding"
-                                            onClick={handleItemClick}
-                                            className="block px-3 py-2 text-gray-100"
-                                        >
+                                        <motion.div
+                                            key={"services"}
+                                            className="relative"
+                                            whileHover="hover" >
+                                            <Link
+                                                href="/services/vehicle_branding"
+                                                onClick={handleItemClick}
+                                                className="block px-3 py-2 text-gray-100"
+                                            >
                                             Vehicle Branding
-                                        </Link>
+                                            </Link>
+                                            <motion.div
+                                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
+                                                initial={{ width: "0%" }}
+                                                variants={{
+                                                hover: { width: "100%", transition: { duration: 0.4 } },
+                                            }}
+                                        />
+                                        </motion.div>
                                     </li>
                                     <li>
+                                        <motion.div
+                                            key={"services"}
+                                            className="relative"
+                                            whileHover="hover" >
                                         <Link
                                             href="/services/trade_promo_booths"
                                             onClick={handleItemClick}
@@ -161,8 +213,20 @@ export default function NavbarWithServices() {
                                         >
                                             Trade Promo Booths
                                         </Link>
+                                        <motion.div
+                                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
+                                                initial={{ width: "0%" }}
+                                                variants={{
+                                                hover: { width: "100%", transition: { duration: 0.4 } },
+                                            }}
+                                        />
+                                        </motion.div>
                                     </li>
                                     <li>
+                                        <motion.div
+                                            key={"services"}
+                                            className="relative"
+                                            whileHover="hover" >
                                         <Link
                                             href="/services/promo_shelves"
                                             onClick={handleItemClick}
@@ -170,33 +234,77 @@ export default function NavbarWithServices() {
                                         >
                                             Promo Shelves
                                         </Link>
+                                        <motion.div
+                                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
+                                                initial={{ width: "0%" }}
+                                                variants={{
+                                                hover: { width: "100%", transition: { duration: 0.4 } },
+                                            }}
+                                        />
+                                        </motion.div>
                                     </li>
                                     <li>
-                                        <Link
-                                            href="/services/logo"
-                                            onClick={handleItemClick}
-                                            className="block px-3 py-2 text-gray-100"
-                                        >
-                                            Logo
-                                        </Link>
+                                        <motion.div
+                                            key={"services"}
+                                            className="relative"
+                                            whileHover="hover" >
+                                            <Link
+                                                href="/services/logo"
+                                                onClick={handleItemClick}
+                                                className="block px-3 py-2 text-gray-100"
+                                            >
+                                                Logo
+                                            </Link>
+                                            <motion.div
+                                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
+                                                initial={{ width: "0%" }}
+                                                variants={{
+                                                hover: { width: "100%", transition: { duration: 0.4 } },
+                                            }}
+                                        />
+                                        </motion.div>
                                     </li>
                                     <li>
-                                        <Link
-                                            href="/services/t-shirt_design"
-                                            onClick={handleItemClick}
-                                            className="block px-3 py-2 text-gray-100"
-                                        >
-                                            T-Shirt design
-                                        </Link>
+                                        <motion.div
+                                            key={"services"}
+                                            className="relative"
+                                            whileHover="hover" >
+                                            <Link
+                                                href="/services/t-shirt_design"
+                                                onClick={handleItemClick}
+                                                className="block px-3 py-2 text-gray-100"
+                                            >
+                                                T-Shirt design
+                                            </Link>
+                                        <motion.div
+                                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
+                                                initial={{ width: "0%" }}
+                                                variants={{
+                                                hover: { width: "100%", transition: { duration: 0.4 } },
+                                            }}
+                                        />
+                                        </motion.div>
                                     </li>
                                     <li>
-                                        <Link
-                                            href="/services/video_design"
-                                            onClick={handleItemClick}
-                                            className="block px-3 py-2 text-white"
-                                        >
-                                            Video Design
-                                        </Link>
+                                        <motion.div
+                                            key={"services"}
+                                            className="relative"
+                                            whileHover="hover" >
+                                            <Link
+                                                href="/services/video_design"
+                                                onClick={handleItemClick}
+                                                className="block px-3 py-2 text-white"
+                                            >
+                                                Video Design
+                                            </Link>
+                                            <motion.div
+                                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
+                                                initial={{ width: "0%" }}
+                                                variants={{
+                                                hover: { width: "100%", transition: { duration: 0.4 } },
+                                            }}
+                                        />
+                                        </motion.div>
                                     </li>
                                 </ul>
                             </div>

@@ -57,10 +57,10 @@ const BillboardSection: React.FC = () => {
           >
             <Image 
               src="/service-section/BillboardsBannersRollUps/3_city-light-ads-design.jpg"
-               alt="Banner Design 2"
-               width={1500}
+              alt="Banner Design 2"
+              width={1500}
               height={1124} 
-               className="w-full h-auto" />
+              className="w-full h-auto" />
           </motion.div>
         </div>
 
@@ -75,7 +75,9 @@ const BillboardSection: React.FC = () => {
           >
             <Image 
               src="/service-section/BillboardsBannersRollUps/4_roll-up-retractable- banners-design.jpg"
-              alt="Outdoor Advertising" 
+              alt="Outdoor Advertising"
+              width={1500}
+              height={1124} 
               className="w-full h-auto" />
           </motion.div>
           <motion.div

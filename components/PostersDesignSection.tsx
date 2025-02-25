@@ -16,7 +16,7 @@ const PostersDesignSection: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <Image src="/service-section/PostersAndFlyers/1_baby-kids-cosmetics-poster.jpg" alt="Promotional Design" className="w-full h-auto" />
+            <Image src="/service-section/PostersAndFlyers/1_baby-kids-cosmetics-poster.jpg" width={1500} height={1124} alt="Promotional Design" className="w-full h-auto" />
           </motion.div>
           <motion.div
             className="flex-1"
@@ -52,7 +52,7 @@ const PostersDesignSection: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <Image src="/service-section/PostersAndFlyers/4_magazine-ads-flyer-product.jpg" alt="Design Variety" className="w-full h-auto" />
+            <Image src="/service-section/PostersAndFlyers/4_magazine-ads-flyer-product.jpg" width={1500} height={1124} alt="Design Variety" className="w-full h-auto" />
           </motion.div>
           <motion.div
             className="flex-1"

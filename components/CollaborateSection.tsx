@@ -9,6 +9,11 @@ interface CollaborationStep {
 
 const collaborationSteps: CollaborationStep[] = [
   {
+    title: "Creative Design with a Purpose",
+    description:
+    "I adapt each project to the specific needs of clients and the market. I passionately believe in the power of design to enhance brand recognition and contribute to its success. I am dedicated to details and creative solutions. For each project, I research the latest industry trends, allowing me to deliver visually appealing and functional products.",
+  },
+  {
     title: "Understanding the Client's Needs",
     description:
       "Before starting any work, it's crucial to fully understand the client's needs and expectations, including project goals, target audience, and key visual elements.",

@@ -4,9 +4,9 @@ import { Mail } from "lucide-react";
 import { FaDribbble, FaLinkedin, FaBehance } from "react-icons/fa";
 
 const socialLinks = [
-  { icon: <FaDribbble size={24} />, href: "https://dribbble.com/maremb" },
-  { icon: <FaBehance size={24} />, href: "https://www.behance.net/markobenis" },
   { icon: <FaLinkedin size={24} />, href: "https://www.linkedin.com/in/marko-beni%C5%A1-a4554ab6/" },
+  { icon: <FaBehance size={24} />, href: "https://www.behance.net/markobenis" },
+  { icon: <FaDribbble size={24} />, href: "https://dribbble.com/maremb" },
 ];
 
 const ContactSection: React.FC = () => {
@@ -20,9 +20,15 @@ const ContactSection: React.FC = () => {
             <span className="text-gray-400 flex items-center">
               <Mail size={20} className="mr-2" /> Email:
             </span>
-            <p className="text-lg font-semibold mt-2">markobenis@gmail.com</p>
+            <a
+              href="mailto:marko@benis.studio"
+              className="text-lg font-semibold mt-2 hover:text-gray-200"
+            >
+              marko@benis.studio
+            </a>
             <hr className="border-gray-600 mt-2" />
           </div>
+
 
           {/* Socials Section */}
           <div>

@@ -5,18 +5,18 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const logos = [
-  { src: "/logos/Kosili.svg", alt: "Kosili", link: "https://kosili.com" },
-  { src: "/logos/Dobra-ovsena-kasa.svg", alt: "Dobra Ovsena Kasa", link: "https://dobraovsena.com" },
-  { src: "/logos/Holly.svg", alt: "Holly", link: "https://holly.com" },
-  { src: "/logos/LMX-TOX.svg", alt: "LMX TOX", link: "https://lmx-tox.com" },
-  { src: "/logos/Deft.svg", alt: "Deft", link: "https://deft.com" },
-  { src: "/logos/Unit.svg", alt: "Unit", link: "https://unit.com" },
-  { src: "/logos/Posh-33.svg", alt: "Posh 33", link: "https://posh33.com" },
-  { src: "/logos/Maximalium.svg", alt: "Maximalium", link: "https://maximalium.com" },
-  { src: "/logos/Petroland.svg", alt: "Petroland", link: "https://petroland.com" },
-  { src: "/logos/Petster.svg", alt: "Petster", link: "https://petster.com" },
-  { src: "/logos/Gentlemens-club.svg", alt: "Gentlemen's Club", link: "https://gentlemensclub.com" },
-  { src: "/logos/Terminal-festival.svg", alt: "Terminal Festival", link: "https://terminalfestival.com" },
+  { src: "/logos/Kosili.svg", alt: "Kosili", link: "https://www.kosili.rs/" },
+  { src: "/logos/Dobra-ovsena-kasa.svg", alt: "Dobra Ovsena Kasa", link: "https://www.instagram.com/dobra_ovsena_kasa/" },
+  { src: "/logos/Holly.svg", alt: "Holly", link: "https://holly.rs/" },
+  { src: "/logos/LMX-TOX.svg", alt: "LMX TOX", link: "https://www.instagram.com/ima_da_ih_nema/" },
+  { src: "/logos/Deft.svg", alt: "Deft", link: "https://www.lomax-company.com/proizvodi/deft-4" },
+  { src: "/logos/Unit.svg", alt: "Unit", link: "https://www.unit-sport.net/" },
+  { src: "/logos/Posh-33.svg", alt: "Posh 33", link: "https://posh-33.com/en" },
+  { src: "/logos/Maximalium.svg", alt: "Maximalium", link: "https://www.maximalium.rs/" },
+  { src: "/logos/Petroland.svg", alt: "Petroland", link: "https://www.petroland.rs/" },
+  { src: "/logos/Petster.svg", alt: "Petster", link: "https://www.instagram.com/petster.rs/" },
+  { src: "/logos/Gentlemens-club.svg", alt: "Gentlemen's Club", link: "https://www.facebook.com/gentlemens.club.33" },
+  { src: "/logos/Terminal-festival.svg", alt: "Terminal Festival", link: "https://www.facebook.com/gentlemens.club.33" },
 ];
 
 const Logos = () => {

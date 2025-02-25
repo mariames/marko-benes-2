@@ -227,15 +227,16 @@ const Portfolio: React.FC = () => {
 
       {isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-          <div className="relative">
+          <div className="relative w-[45vw] max-w-screen-lg h-auto">
             {/* ModalImage component to show image in full size */}
+
             <ModalImage
               small={images[currentImageIndex]}
               large={images[currentImageIndex]}
               alt={`Image ${currentImageIndex + 1}`}
-              className="max-w-7xl h-auto"
+              className="w-full h-auto"
               hideDownload={true}
-            />
+            /> 
             <button
               onClick={closeModal}
               className="absolute top-0 right-0 text-white p-2 text-3xl"

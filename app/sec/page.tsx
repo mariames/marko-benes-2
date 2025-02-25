@@ -15,7 +15,7 @@ const page = () => {
         {/*<CardSection /> */}
         {/*<ProjectShowcase />
         <Faq /> */}
-        <HorizontalScrollCard />
+        {/** <HorizontalScrollCard /> */}
         <div className='text-7xl mb-10'>la la la</div>
         {/** <SmoothScroll /> */}
         {/** <Cta /> */}

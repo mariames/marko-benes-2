@@ -81,7 +81,7 @@ const services: Service[] = [
 
 const Services: React.FC = () => {
   return (
-    <div className="bg-gray-950 pb-10 px-6 md:px-10 lg:px-20 xl:px-40 2xl:px-64">
+    <div className="bg-black pb-10 px-6 md:px-10 lg:px-20 xl:px-40 2xl:px-64">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 lg:gap-11 xl:gap-11">
         {services.map((service, index) => (
           <motion.div

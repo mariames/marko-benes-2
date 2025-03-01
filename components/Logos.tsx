@@ -22,12 +22,10 @@ const logos = [
 const Logos = () => {
   return (
     <div className="bg-black">
-      <p className="text-3xl text-white text-center pt-10 pb-5">
-        I work with brands I
-        <span className="font-semibold">&nbsp;believe&nbsp;</span>
-        in
+      <p className="text-3xl text-white text-center pt-40 pb-5 max-sm:pt-32 max-sm:pb-2 ">
+        Honored to be part of their story
       </p>
-      <div className="bg-black flex justify-center items-center min-h-screen relative">
+      <div className="bg-black flex justify-center items-center min-h-screen relative max-sm:px-3">
         {/* Grid Container */}
         <div className="relative grid grid-cols-4 max-sm:grid-cols-3 gap-4 max-w-5xl xl:h-[64vh] lg:h-[74vh] md:h-[70vh]">
           {logos.map((logo, index) => (

@@ -5,18 +5,18 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const logos = [
-  { src: "/logos/Kosili.svg", alt: "Kosili", link: "https://www.kosili.rs/" },
-  { src: "/logos/Dobra-ovsena-kasa.svg", alt: "Dobra Ovsena Kasa", link: "https://www.instagram.com/dobra_ovsena_kasa/" },
-  { src: "/logos/Holly.svg", alt: "Holly", link: "https://holly.rs/" },
-  { src: "/logos/LMX-TOX.svg", alt: "LMX TOX", link: "https://www.instagram.com/ima_da_ih_nema/" },
-  { src: "/logos/Deft.svg", alt: "Deft", link: "https://www.lomax-company.com/proizvodi/deft-4" },
-  { src: "/logos/Unit.svg", alt: "Unit", link: "https://www.unit-sport.net/" },
-  { src: "/logos/Posh-33.svg", alt: "Posh 33", link: "https://posh-33.com/en" },
-  { src: "/logos/Maximalium.svg", alt: "Maximalium", link: "https://www.maximalium.rs/" },
-  { src: "/logos/Petroland.svg", alt: "Petroland", link: "https://www.petroland.rs/" },
-  { src: "/logos/Petster.svg", alt: "Petster", link: "https://www.instagram.com/petster.rs/" },
-  { src: "/logos/Gentlemens-club.svg", alt: "Gentlemen's Club", link: "https://www.facebook.com/gentlemens.club.33" },
-  { src: "/logos/Terminal-festival.svg", alt: "Terminal Festival", link: "https://www.facebook.com/gentlemens.club.33" },
+  { src: "/logos/Kosili.svg", alt: "Kosili", link: "https://www.kosili.rs/", size: 100, padding: 6 },
+  { src: "/logos/Dobra-ovsena-kasa.svg", alt: "Dobra Ovsena Kasa", link: "https://www.instagram.com/dobra_ovsena_kasa/", size: 80, padding: 5 },
+  { src: "/logos/LMX-TOX.svg", alt: "LMX TOX", link: "https://www.instagram.com/ima_da_ih_nema/", size: 90, padding: 2 },
+  { src: "/logos/Holly.svg", alt: "Holly", link: "https://holly.rs/", size: 90, padding: 6 },
+  { src: "/logos/Deft.svg", alt: "Deft", link: "https://www.lomax-company.com/proizvodi/deft-4", size: 70, padding: 5 },
+  { src: "/logos/Unit.svg", alt: "Unit", link: "https://www.unit-sport.net/", size: 100, padding: 8 },
+  { src: "/logos/Posh-33.svg", alt: "Posh 33", link: "https://posh-33.com/en", size: 85, padding: 6 },
+  { src: "/logos/Maximalium.svg", alt: "Maximalium", link: "https://www.maximalium.rs/", size: 120, padding: 1 },
+  { src: "/logos/Petroland.svg", alt: "Petroland", link: "https://www.petroland.rs/", size: 88, padding: 5 },
+  { src: "/logos/Petster.svg", alt: "Petster", link: "https://www.instagram.com/petster.rs/", size: 80, padding: 4 },
+  { src: "/logos/Gentlemens-club.svg", alt: "Gentlemen's Club", link: "https://www.facebook.com/gentlemens.club.33", size: 75, padding: 5 },
+  { src: "/logos/Terminal-festival.svg", alt: "Terminal Festival", link: "https://www.facebook.com/gentlemens.club.33", size: 120, padding: 1 },
 ];
 
 const Logos = () => {
@@ -29,11 +29,11 @@ const Logos = () => {
       </p>
       <div className="bg-black flex justify-center items-center min-h-screen relative">
         {/* Grid Container */}
-        <div className="relative grid grid-cols-4 gap-4 max-w-5xl lg:h-[90vh] md:h-[80vh]">
+        <div className="relative grid grid-cols-4 gap-4 max-w-5xl xl:h-[64vh] lg:h-[74vh] md:h-[70vh]">
           {logos.map((logo, index) => (
             <motion.div
               key={index}
-              className="flex justify-center items-center p-5 border-2 border-transparent transition-all duration-300"
+              className="flex justify-center items-center h-[80px]"
               initial={{ opacity: 0, x: 100 }}
               whileInView={{
                 opacity: 1,
@@ -51,9 +51,9 @@ const Logos = () => {
                 <Image
                   src={logo.src}
                   alt={logo.alt}
-                  width={70}
-                  height={70}
-                  className="w-[70px] h-[70px] transition-transform duration-300 ease-in-out transform hover:scale-110"
+                  width={logo.size} // Dynamic size
+                  height={logo.size} // Dynamic size
+                  className={`w-[${logo.size}px] h-[70px] p-[${logo.padding}px] transition-transform duration-300 ease-in-out transform hover:scale-110`}
                 />
               </a>
             </motion.div>

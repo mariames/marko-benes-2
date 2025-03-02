@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import TitleOFPage from "@/components/TitleOFPage";
 import ModalImage from "react-modal-image";
+import MainTitleOfThePage from "@/components/MainTitleofThePage";
 
 // ✅ Define an Enum for Service Types
 enum ServiceType {
@@ -209,9 +210,8 @@ const Portfolio: React.FC = () => {
 
   return (
     <div className="bg-gray-950 pb-10 px-6 md:px-10 lg:px-20 xl:px-40 2xl:px-64">
-      <TitleOFPage title="Portfolio" />
-
-      <div className="mb-4">
+      <MainTitleOfThePage title={"Portfolio"} />
+      <div className=" flex justify-end my-10">
         <select
           className="p-2 rounded-md text-white border border-gray-700 bg-[#101010]"
           onChange={handleTypeChange}

@@ -27,7 +27,7 @@ const Logos = () => {
       </p>
       <div className="bg-black flex justify-center items-center min-h-screen relative max-sm:px-3">
         {/* Grid Container */}
-        <div className="relative grid grid-cols-4 max-sm:grid-cols-3 gap-4 max-w-5xl xl:h-[64vh] lg:h-[74vh] md:h-[70vh]">
+        <div className="relative grid grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-4 max-w-5xl xl:h-[64vh] lg:h-[74vh] md:h-[70vh]">
           {logos.map((logo, index) => (
             <motion.div
               key={index}

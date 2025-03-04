@@ -36,10 +36,10 @@ export default function NavbarWithServices() {
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <Link href="/"  className="flex flex-row">
                             <Image
-                            src="/Marko Benis_logo_beli.svg"
+                            src="/Marko-Benis-logo.svg"
                             width={200}
                             height={50} 
-                            className=" object-contain ml-1 w-20 h-auto"
+                            className=" object-contain ml-1 w-36 h-auto"
                             alt="Marko Benis" />
                         </Link>
                         <div className="md:hidden">

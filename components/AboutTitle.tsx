@@ -14,7 +14,7 @@ const AboutTitle: React.FC = () => {
             {/* Image Positioned Over Both Sections */}
             <div className="absolute top-[150px] transform -translate-y-1/2 ml-[700px]">
                 <img
-                src="/hero_image.png"
+                src="/slika-About.png"
                 alt="Profile"
                 className="w-auto h-64 rounded-full border-4 border-white shadow-lg z-10"
                 />

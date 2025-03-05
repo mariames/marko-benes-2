@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutTitle: React.FC = () => {
   return (
-    <div className="relative flex flex-col items-center w-full max-sm:mx-3">
+    <div className="relative flex flex-col items-center w-full max-sm:mx-7">
       {/* White Section (Larger & Centered) */}
       <div className="bg-white text-black text-center py-4 px-6 sm:px-8 rounded-xl shadow-lg w-full max-w-full sm:max-w-4xl relative">
         <p className="text-4xl sm:text-9xl pt-6 sm:pt-10 mn-title">About</p>
@@ -12,7 +12,7 @@ const AboutTitle: React.FC = () => {
       <div className="bg-black w-full h-20 mt-[-3rem]"></div>
 
       {/* Image Positioned Over Both Sections */}
-      <div className="absolute top-[150px] sm:top-[100] transform -translate-y-1/2 sm:ml-[650px] ml-[300px]">
+      <div className="absolute top-[150px] sm:top-[100] transform -translate-y-1/2 sm:ml-[650px] ml-[300px] max-sm:hidden">
         <img
           src="/slika-About.png"
           alt="Profile"

@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import TargetAudienceCard from "./TargetAudienceCard";
 import { FaCheckCircle } from "react-icons/fa";
+import DesignProcess from "./DesignProcess";
 
 interface CollaborationStep {
   title: string;
@@ -13,14 +14,17 @@ const collaborationSteps: CollaborationStep[] = [
   {
     title: "My approach",
     description: (
-      <>
-        <p>I adapt each project to the specific needs of clients and the market.</p>
-        <p>I passionately believe in the power of design to enhance
-        brand recognition and contribute to its success.</p>
-        <p>I am dedicated to details and creative solutions.</p>
-        <p>For each project, I research the latest
-        industry trends, allowing me to deliver visually appealing and functional
-        products.</p>
+      <>{/**
+          <p>I adapt each project to the specific needs of clients and the market.</p>
+          <p>I passionately believe in the power of design to enhance
+            brand recognition and contribute to its success.</p>
+          <p>I am dedicated to details and creative solutions.</p>
+          <p>For each project, I research the latest
+          industry trends, allowing me to deliver visually appealing and functional
+          products.</p>        
+        */}
+
+        <DesignProcess />
       </>
     ),
   },

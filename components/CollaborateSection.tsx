@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import TargetAudienceCard from "./TargetAudienceCard";
-import { FaCheckCircle } from "react-icons/fa";
+import { FaCheck } from "react-icons/fa";
 import DesignProcess from "./DesignProcess";
 
 interface CollaborationStep {
@@ -34,22 +34,22 @@ const collaborationSteps: CollaborationStep[] = [
       <div> 
         <p>Before starting any work, it is important to understand the client&#39;s needs and expectations fully.</p>
           <div className="flex items-center space-x-2 mt-3">
-            <FaCheckCircle className="text-green-300" />
+            <FaCheck className="text-[#e5dfd3]" />
             <p className="text-gray-300">What is the purpose of the project?</p>
           </div>
 
           <div className="flex items-center space-x-2 mt-2">
-            <FaCheckCircle className="text-green-300" />
+            <FaCheck className="text-[#e5dfd3]" />
             <p className="text-gray-300">Who is the target audience and preferred style?</p>
           </div>
 
           <div className="flex items-center space-x-2 mt-2">
-            <FaCheckCircle className="text-green-300" />
+            <FaCheck className="text-[#e5dfd3]" />
             <p className="text-gray-300">What are the key visual elements that need to be highlighted?</p>
           </div>
 
           <div className="flex items-center space-x-2 mt-2">
-            <FaCheckCircle className="text-green-300" />
+            <FaCheck className="text-[#e5dfd3]" />
             <p className="text-gray-300">Are there any reference materials or brand guidelines?</p>
           </div>
         <p className="mt-5">In the Services section, you can view all the necessary information that I need for each type of service.</p>
@@ -64,27 +64,27 @@ const collaborationSteps: CollaborationStep[] = [
         <p>Let&#39;s agree on
         the following:</p>
         <div className="flex items-center space-x-2 mt-3">
-            <FaCheckCircle className="text-green-300" />
+            <FaCheck className="text-[#e5dfd3]" />
             <p className="text-gray-300">Number of revisions</p>
           </div>
 
           <div className="flex items-center space-x-2 mt-2">
-            <FaCheckCircle className="text-green-300" />
+            <FaCheck className="text-[#e5dfd3]" />
             <p className="text-gray-300">Time frame for each phase of the project</p>
           </div>
 
           <div className="flex items-center space-x-2 mt-2">
-            <FaCheckCircle className="text-green-300" />
+            <FaCheck className="text-[#e5dfd3]" />
             <p className="text-gray-300">Method of communication and delivery of materials in specific formats</p>
           </div>
 
           <div className="flex items-center space-x-2 mt-2">
-            <FaCheckCircle className="text-green-300" />
+            <FaCheck className="text-[#e5dfd3]" />
             <p className="text-gray-300">Rights to use the final design solutions so that both parties are protected</p>
           </div>
 
           <div className="flex items-center space-x-2 mt-2">
-            <FaCheckCircle className="text-green-300" />
+            <FaCheck className="text-[#e5dfd3]" />
             <p className="text-gray-300">After the invoice is issued and the client makes full payment, I start work</p>
           </div>
       </>

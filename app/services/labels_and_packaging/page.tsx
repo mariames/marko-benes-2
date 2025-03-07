@@ -1,3 +1,4 @@
+import AnimatedLabels from '@/components/AnimatedLabels';
 import CallToAction from '@/components/CallToAction';
 import InfoSection from '@/components/InfoSection'
 import PackagingDesignSection from '@/components/PackagingDesignSection';
@@ -15,10 +16,26 @@ const page = () => {
     "Printing method (offset, flexography, digital printing)",
   ];
 
+  const labels = [
+    "PRODUCT LABEL",
+    "BOX DESIGN",
+    "SHELF READY PACKAGING",
+    "PANEER POUCH DESIGN",
+    "STAND-UP POUCH",
+    "DOYPACK",
+    "SPRAY BOTTLE PACKAGING",
+    "FOOD PACKAGING",
+    "COSMETICS PACKAGING",
+    "SUPPLEMENT PACKAGING",
+    "AMAZON PRODUCT PACKAGING"
+  ];
+
   return (
     <>
       <TitleOFPage title="Labels & Packaging" />
       <PackagingDesignSection />
+      <AnimatedLabels labels={labels} direction="left-to-right" />
+      <AnimatedLabels labels={labels} direction="right-to-left" />
       <InfoSection
         title="What I need from you?"
         items={items} />

@@ -104,10 +104,13 @@ const PackagingDesignSection: React.FC = () => {
           transition={{ delay: 0.5, duration: 1 }}
           viewport={{ once: true }}
         >
+          {/** 
           <p className="mb-2">PRODUCT LABEL | BOX DESIGN | SHELF READY PACKAGING | PANEER POUCH DESIGN | STAND-UP POUCH |</p>
           <p className="mb-2">DOYPACK | SPRAY BOTTLE PACKAGING | FOOD PACKAGING | COSMETICS PACKAGING | SUPPLEMENT PACKAGING |</p>
           <p className="mb-2">AMAZON PRODUCT PACKAGING | and Complete Product Packaging for any kind of product</p>
-        </motion.div>
+        */}
+          </motion.div>
+        
       </div>
     </section>
   );

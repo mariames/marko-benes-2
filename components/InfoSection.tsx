@@ -19,7 +19,7 @@ const InfoSection: React.FC<InfoSectionProps> = ({ title, items }) => {
       <div className="max-w-3xl mx-auto">
         <div className="border border-gray-700 rounded-lg p-6">
             <div className="flex justify-between items-center">
-              <p className="text-2xl font-bold">{title}</p>
+              <p className="text-3xl font-normal">{title}</p>
               <button
                 onClick={handleToggle}
                 className="text-gray-400 hover:text-white transition"

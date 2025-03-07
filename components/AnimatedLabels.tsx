@@ -2,47 +2,37 @@
 import { motion } from "framer-motion";
 
 interface AnimatedLabelsProps {
-  labels: string[]; // Array of strings to display in the animated labels
-  direction: "left-to-right" | "right-to-left"; // Direction of the scroll
+  labels: string[];
+  direction: "left-to-right" | "right-to-left";
 }
 
 const AnimatedLabels: React.FC<AnimatedLabelsProps> = ({ labels, direction }) => {
-  // Join labels into one string and duplicate it for a seamless scroll
-  const fullText = labels.join(" | ");
+  const fullText = labels.join(" | "); // Create a continuous string
+  const duplicatedText = `${fullText} | ${fullText} | ${fullText}`; // Triple duplication for smooth looping
 
-  // Set the animation direction based on the 'direction' prop
-  const animationDirection =
-    direction === "left-to-right"
-      ? ["-100%", "100%"] // Start from off-screen left, move to off-screen right
-      : ["0%", "-100%"]; // Start from off-screen right, move to off-screen left
+  const isLeftToRight = direction === "left-to-right";
 
   return (
-    <motion.div
-      className="overflow-hidden whitespace-nowrap text-white"
-      style={{
-        position: "relative",
-        width: "100%", // Ensure the container takes full width
-      }}
-    >
+    <div className="overflow-hidden whitespace-nowrap w-full text-white">
       <motion.div
         className="flex text-3xl"
         style={{
-          whiteSpace: "nowrap", // Ensure all text stays on one line
+          display: "inline-flex",
+          whiteSpace: "nowrap",
         }}
         animate={{
-          x: animationDirection, // Move the entire text based on the direction
+          x: isLeftToRight ? ["-33.3%", "0%"] : ["0%", "-33.3%"], // Moves 1/3 of text width
         }}
         transition={{
-          duration: 70, // Adjust the speed of the scroll
+          duration: 70, // Adjust speed
           ease: "linear",
-          repeat: Infinity, // Infinite loop
+          repeat: Infinity,
         }}
       >
-        {/* Duplicate the labels to create the infinite scroll effect */}
-        <span>{fullText}</span>
-        <span>{fullText}</span> {/* Duplicate text */}
+        {/* Triplicated text ensures continuous looping */}
+        <span>{duplicatedText}</span>
       </motion.div>
-    </motion.div>
+    </div>
   );
 };
 

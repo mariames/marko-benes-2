@@ -2,9 +2,9 @@ import React from "react";
 
 const DesignProcess: React.FC = () => {
   return (
-    <section className="bg-black text-white py-16">
-      <div className="max-w-4xl mx-auto text-center">
-        <p className="text-white text-xl 2xl:text-3xl christmas-title tracking-wide">
+    <section className="bg-[#101010] text-white py-16">
+      <div className="max-w-4xl bg-[#101010] mx-auto text-center">
+        <p className="text-white  text-xl 2xl:text-3xl christmas-title tracking-wide">
           “Every project is unique, but the path to great design is built on a clear and thoughtful approach.”
         </p>
       </div>

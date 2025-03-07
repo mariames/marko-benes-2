@@ -14,18 +14,7 @@ const collaborationSteps: CollaborationStep[] = [
   {
     title: "My approach",
     description: (
-      <>{/**
-          <p>I adapt each project to the specific needs of clients and the market.</p>
-          <p>I passionately believe in the power of design to enhance
-            brand recognition and contribute to its success.</p>
-          <p>I am dedicated to details and creative solutions.</p>
-          <p>For each project, I research the latest
-          industry trends, allowing me to deliver visually appealing and functional
-          products.</p>        
-        */}
-
-        <DesignProcess />
-      </>
+      <DesignProcess />
     ),
   },
   {
@@ -93,37 +82,37 @@ const collaborationSteps: CollaborationStep[] = [
   {
     title: "Research and Conceptualization",
     description: (
-      <>
+      <p className="2xl:text-2xl">
         Before designing, I analyze the industry and competition to create a
         solution that is both creative and aligned with trends.
-      </>
+      </p>
     ),
   },
   {
     title: "Transparent Communication",
     description: (
-      <>
+      <p className="2xl:text-2xl">
         I maintain regular communication with clients, providing updates and
         seeking feedback throughout the project.
-      </>
+      </p>
     ),
   },
   {
     title: "Flexibility and Adaptation",
     description: (
-      <>
+      <p className="2xl:text-2xl">
         While having a clear vision is important, I welcome constructive
         feedback and necessary adjustments to ensure client satisfaction.
-      </>
+      </p>
     ),
   },
   {
     title: "Delivery of Final Materials",
     description: (
-      <>
+      <p className="2xl:text-2xl">
         Once the design is approved, I provide print-ready files and all
         required formats (PSD, AI, PDF, PNG, etc.).
-      </>
+      </p>
     ),
   },
 ];

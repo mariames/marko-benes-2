@@ -42,7 +42,7 @@ const Card: React.FC<CardProps> = ({ title, description }) => {
       viewport={{ once: true }} // Trigger the animation once when it's in view
       className="bg-[#101010] text-white border border-gray-700 rounded-lg p-6"
     >
-      <h2 className="text-xl font-semibold">{title}</h2>
+      <p className="text-lg lg:text-3xl font-normal">{title}</p>
       <hr className="border-gray-600 my-2" />
       <p className="text-gray-300">{description}</p>
     </motion.div>

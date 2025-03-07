@@ -8,19 +8,9 @@ const DesignProcess: React.FC = () => {
           “Every project is unique, but the path to great design is built on a clear and thoughtful approach.”
         </p>
       </div>
-      {/** 
-      <div className="mt-14 grid grid-cols-1 gap-6">
-        {steps.map((step, index) => (
-          <div key={index} className="bg-black rounded-lg">
-            <p className="text-base 2xl:text-3xl text-gray-100 font-semibold uppercase opacity-75">{step.number} {step.title}</p>
-            <p className="text-gray-400 mt-2 2xl:text-2xl">{step.description}</p>
-          </div>
-        ))}
-      </div>
-      */}
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2  gap-6 max-w-6xl mx-auto">
         {steps.map((step, index) => (
-          <div key={index} className="bg-[#262626] border border-gray-100 p-6 rounded-lg">
+          <div key={index} className="bg-[#262626] border border-gray-700 p-6 rounded-lg">
             <h3 className="text-base 2xl:text-3xl text-gray-300 font-semibold uppercase">{step.number} {step.title}</h3>
             <p className="text-gray-100 mt-2 2xl:text-2xl text-wrap">{step.description}</p>
           </div>
@@ -71,8 +61,8 @@ const steps = [
   },
   {
     number: "04.",
-    title: "TEST & REFINE",
-    description: "Conduct usability testing to identify potential pain points."
+    title: "REVIEW & REFINE",
+    description: "Review user feedback and make improvements to the design."
   }
 ];
 export default DesignProcess;

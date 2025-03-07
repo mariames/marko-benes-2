@@ -138,7 +138,7 @@ const CollaborateCard: React.FC<CollaborationStep> = ({ title, description }) =>
         transition: { duration: 0.8, ease: "easeOut", delay: 0.2 },
       }}
       viewport={{ once: true }}
-      className="bg-black text-white border border-gray-700 rounded-lg p-6"
+      className="bg-[#101010] text-white border border-gray-700 rounded-lg p-6"
     >
       <p className="text-lg lg:text-3xl 2xl:text-4xl font-normal">{title}</p>
       <hr className="border-gray-600 my-2" />

@@ -8,6 +8,7 @@ const DesignProcess: React.FC = () => {
           “Every project is unique, but the path to great design is built on a clear and thoughtful approach.”
         </p>
       </div>
+      {/** 
       <div className="mt-14 grid grid-cols-1 gap-6">
         {steps.map((step, index) => (
           <div key={index} className="bg-black rounded-lg">
@@ -16,10 +17,19 @@ const DesignProcess: React.FC = () => {
           </div>
         ))}
       </div>
+      */}
+      <div className="mt-12 grid grid-cols-1 md:grid-cols-2  gap-6 max-w-6xl mx-auto">
+        {steps.map((step, index) => (
+          <div key={index} className="bg-black border border-gray-100 p-6 rounded-lg">
+            <h3 className="text-base 2xl:text-3xl text-gray-400 font-semibold uppercase">{step.number} {step.title}</h3>
+            <p className="text-gray-400 mt-2 2xl:text-2xl text-wrap">{step.description}</p>
+          </div>
+        ))}
+      </div>
     </section>
   );
 };
-
+/*
 const steps = [
   {
     number: "01.",
@@ -42,5 +52,27 @@ const steps = [
     description: "For each project, I research the latest industry trends, allowing me to deliver visually appealing and functional products."
   }
 ];
-
+*/
+const steps = [
+  {
+    number: "01.",
+    title: "DISCOVER",
+    description: "Understanding the problem and defining the goal."
+  },
+  {
+    number: "02.",
+    title: "IDEATE",
+    description: "Brainstorm ideas and explore multiple design directions."
+  },
+  {
+    number: "03.",
+    title: "DESIGN",
+    description: "Develop high-fidelity designs, focusing on usability and aesthetics."
+  },
+  {
+    number: "04.",
+    title: "TEST & REFINE",
+    description: "Conduct usability testing to identify potential pain points."
+  }
+];
 export default DesignProcess;

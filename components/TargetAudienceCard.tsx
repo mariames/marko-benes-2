@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaCheck, FaCheckCircle } from "react-icons/fa"; 
+import { FaCheckCircle } from "react-icons/fa"; 
 
 const TargetAudienceCard: React.FC = () => {
   return (
@@ -13,19 +13,19 @@ const TargetAudienceCard: React.FC = () => {
       <hr className="border-gray-600 my-2" />
       <div className="space-y-2">
         <div className="flex items-center space-x-2">
-          <FaCheck className="text-[#e5dfd3]" />
+          <FaCheckCircle className="text-[#e5dfd3]" />
           <p className="text-gray-300 2xl:text-2xl">Start-up companies</p>
         </div>
         <div className="flex items-center space-x-2">
-          <FaCheck className="text-[#e5dfd3]" />
+          <FaCheckCircle className="text-[#e5dfd3]" />
           <p className="text-gray-300 2xl:text-2xl">Marketing agencies and teams</p>
         </div>
         <div className="flex items-center space-x-2">
-          <FaCheck className="text-[#e5dfd3]" />
+          <FaCheckCircle className="text-[#e5dfd3]" />
           <p className="text-gray-300 2xl:text-2xl">Companies and entrepreneurs</p>
         </div>
         <div className="flex items-center space-x-2">
-          <FaCheck className="text-[#e5dfd3]" />
+          <FaCheckCircle className="text-[#e5dfd3]" />
           <p className="text-gray-300 2xl:text-2xl">Individuals with a vision</p>
         </div>
       </div>

@@ -158,7 +158,7 @@ const ServicesGallery: React.FC = () => {
       <MainTitleOfThePage title="Portfolio" />
 
       {/* ✅ Filter Dropdown */}
-      <div className="mb-6 flex justify-end my-14">
+      <div className="mb-6 flex justify-end my-14  mr-4 lg:mr-10">
         <label className="block text-lg font-semibold mb-2">Filter by Category:</label>
         <select
           value={selectedCategory}
@@ -175,9 +175,9 @@ const ServicesGallery: React.FC = () => {
 
       {/* ✅ Display Filtered Images with Titles */}
       {filteredServices.map(({ type, images }) => (
-        <div key={type} className="mb-12">
+        <div key={type} className="mb-12 mx-4 lg:mx-10">
           {/* ✅ Show Category Title */}
-          <p className="text-2xl font-bold mb-4 border-b-2 pb-2 text-white">{type}</p>
+          <p className="text-lg lg:text-3xl font-normal mb-4 border-b-2 border-gray-700 pb-2 text-white">{type}</p>
 
           {/* ✅ Display Images */}
           <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-10">

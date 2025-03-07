@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import TargetAudienceCard from "./TargetAudienceCard";
-import { FaCheck } from "react-icons/fa";
+import { FaCheck, FaCheckCircle } from "react-icons/fa";
 import DesignProcess from "./DesignProcess";
 
 interface CollaborationStep {
@@ -32,9 +32,9 @@ const collaborationSteps: CollaborationStep[] = [
     title: "Understanding the Client's Needs",
     description: (
       <div> 
-        <p className="2xl:text-3xl">Before starting any work, it is important to understand the client&#39;s needs and expectations fully.</p>
+        <p className="2xl:text-2xl">Before starting any work, it is important to understand the client&#39;s needs and expectations fully.</p>
           <div className="flex items-center space-x-2 mt-3">
-            <FaCheck className="text-[#e5dfd3]" />
+            <FaCheckCircle className="text-[#e5dfd3]" />
             <p className="text-gray-300">What is the purpose of the project?</p>
           </div>
 

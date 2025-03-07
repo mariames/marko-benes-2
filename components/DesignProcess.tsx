@@ -2,16 +2,16 @@ import React from "react";
 
 const DesignProcess: React.FC = () => {
   return (
-    <section className="bg-black text-white py-16 px-8">
+    <section className="bg-black text-white py-16">
       <div className="max-w-4xl mx-auto text-center">
         <p className="text-white text-xl 2xl:text-3xl christmas-title tracking-wide">
           “Every project is unique, but the path to great design is built on a clear and thoughtful approach.”
         </p>
       </div>
-      <div className="mt-14 grid grid-cols-1 gap-6 max-w-6xl mx-auto">
+      <div className="mt-14 grid grid-cols-1 gap-6">
         {steps.map((step, index) => (
-          <div key={index} className="bg-black p-6 rounded-lg">
-            <p className="text-base 2xl:text-xl text-gray-100 font-semibold uppercase opacity-75">{step.number} {step.title}</p>
+          <div key={index} className="bg-black rounded-lg">
+            <p className="text-base 2xl:text-3xl text-gray-100 font-semibold uppercase opacity-75">{step.number} {step.title}</p>
             <p className="text-gray-400 mt-2 2xl:text-2xl">{step.description}</p>
           </div>
         ))}

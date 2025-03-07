@@ -285,6 +285,7 @@ export default function NavbarWithServices() {
                                         />
                                         </motion.div>
                                     </li>
+                                    {/** 
                                     <li>
                                         <motion.div
                                             key={"services"}
@@ -306,6 +307,7 @@ export default function NavbarWithServices() {
                                         />
                                         </motion.div>
                                     </li>
+                                    */}
                                 </ul>
                             </div>
                         </li>

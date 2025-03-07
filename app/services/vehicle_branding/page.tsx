@@ -24,15 +24,18 @@ const page = () => {
     "CAR",
     "VAN",
     "TRUCK/LORRY",
+    "BUS",
+    "CAR",
+    "VAN",
+    "TRUCK/LORRY",
     "BUS"
   ];
 
   return (
     <div className='bg-black'>
       <TitleOFPage title="Vehicle Branding" />
-      <ScrollingImages />
       <TextThatSlidesIn />
-      <VehicleStack />
+      <ScrollingImages />
       <AnimatedLabels labels={labels} direction="left-to-right" />
       <AnimatedLabels labels={labels} direction="right-to-left" />
       <InfoSection title="What I need from you?"

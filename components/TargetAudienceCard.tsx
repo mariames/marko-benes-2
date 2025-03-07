@@ -9,7 +9,7 @@ const TargetAudienceCard: React.FC = () => {
       viewport={{ once: true }}
       className="bg-black text-white border border-gray-700 rounded-lg p-6"
     >
-      <h2 className="text-xl font-semibold">Who Hires Me</h2>
+      <h2 className="text-3xl font-normal">Who Hires Me</h2>
       <hr className="border-gray-600 my-2" />
       <div className="space-y-2">
         <div className="flex items-center space-x-2">

@@ -1,3 +1,4 @@
+import AnimatedLabels from '@/components/AnimatedLabels';
 import CallToAction from '@/components/CallToAction';
 import InfoSection from '@/components/InfoSection'
 import ScrollingImages from '@/components/ScrollingImages';
@@ -18,12 +19,22 @@ const page = () => {
     "Existing elements (handles, windows, sensors, relief surfaces, locks that should be avoided in the design)",
     "Legal requirements (are there restrictions on certain advertising rules according to local laws)"
   ];
+
+  const labels = [
+    "CAR",
+    "VAN",
+    "TRUCK/LORRY",
+    "BUS"
+  ];
+
   return (
     <div className='bg-black'>
       <TitleOFPage title="Vehicle Branding" />
       <ScrollingImages />
       <TextThatSlidesIn />
       <VehicleStack />
+      <AnimatedLabels labels={labels} direction="left-to-right" />
+      <AnimatedLabels labels={labels} direction="right-to-left" />
       <InfoSection title="What I need from you?"
       items={items} />
       <CallToAction />

@@ -140,7 +140,7 @@ const CollaborateCard: React.FC<CollaborationStep> = ({ title, description }) =>
       viewport={{ once: true }}
       className="bg-black text-white border border-gray-700 rounded-lg p-6"
     >
-      <h2 className="text-xl font-semibold">{title}</h2>
+      <p className="text-3xl font-normal">{title}</p>
       <hr className="border-gray-600 my-2" />
       {description}
     </motion.div>

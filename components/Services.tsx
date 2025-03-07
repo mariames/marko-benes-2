@@ -19,7 +19,7 @@ const services: Service[] = [
     src: "/service/labels-and-packaging.jpg",
     previewSrc1: "/service/labels-and-packaging-preview1.jpg",
     previewSrc2: "/service/labels-and-packaging-preview2.jpg",
-    types: ["Product Presentation"],
+    types: ["product label","box design", "shelf rady packaging"],
   },
   {
     name: "Posters & Flyers",
@@ -27,7 +27,7 @@ const services: Service[] = [
     src: "/service/posters-and-flyers.jpg",
     previewSrc1: "/service/posters-and-flyers-preview1.jpg",
     previewSrc2: "/service/posters-and-flyers-preview2.jpg",
-    types: ["Marketing", "Print Design"],
+    types: ["book covers", "magazine covers", "letterheads"],
   },
   {
     name: "Billboards, Banners & Roll Ups",
@@ -35,7 +35,7 @@ const services: Service[] = [
     src: "/service/billboards-banners-roll-ups.jpg",
     previewSrc1: "/service/billboards-banners-roll-ups-preview1.jpg",
     previewSrc2: "/service/billboards-banners-roll-ups-preview2.jpg",
-    types: ["Outdoor Advertising", "Large Format"],
+    types: ["city light advertising", "shop window branding"],
   },
   {
     name: "Vehicle Branding",
@@ -43,7 +43,7 @@ const services: Service[] = [
     src: "/service/vehicle-branding.jpg",
     previewSrc1: "/service/vehicle-branding-preview1.jpg",
     previewSrc2: "/service/vehicle-branding-preview2.jpg",
-    types: ["Brand Identity", "Vehicle Wrap"],
+    types: ["car", "van", "truck/lorry", "bus"],
   },
   {
     name: "Trade Promo Booths",
@@ -51,7 +51,7 @@ const services: Service[] = [
     src: "/service/trade-promo-booths.jpg",
     previewSrc1: "/service/trade-promo-booths-preview1.jpg",
     previewSrc2: "/service/trade-promo-booths-preview2.jpg",
-    types: ["Event Marketing", "Exhibitions"],
+    types: ["kiosk", "fair stand", "promo table"],
   },
   {
     name: "Promo Shelves",
@@ -59,7 +59,7 @@ const services: Service[] = [
     src: "/service/promo-shelves.jpg",
     previewSrc1: "/service/promo-shelves-preview1.jpg",
     previewSrc2: "/service/promo-shelves-preview2.jpg",
-    types: ["Retail", "Merchandising"],
+    types: ["standing retail display", "product display"],
   },
   {
     name: "Logo",

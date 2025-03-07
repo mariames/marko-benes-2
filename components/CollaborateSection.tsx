@@ -24,7 +24,7 @@ const collaborationSteps: CollaborationStep[] = [
         <p className="2xl:text-2xl">Before starting any work, it is important to understand the client&#39;s needs and expectations fully.</p>
           <div className="flex items-center space-x-2 mt-3">
             <FaCheckCircle className="text-[#e5dfd3]" />
-            <p className="text-gray-300 2xl:text-2xl">What is the purpose of the project?</p>
+            <p className="text-gray-200 2xl:text-2xl">What is the purpose of the project?</p>
           </div>
 
           <div className="flex items-center space-x-2 mt-2">

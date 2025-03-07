@@ -20,9 +20,9 @@ const DesignProcess: React.FC = () => {
       */}
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2  gap-6 max-w-6xl mx-auto">
         {steps.map((step, index) => (
-          <div key={index} className="bg-black border border-gray-100 p-6 rounded-lg">
-            <h3 className="text-base 2xl:text-3xl text-gray-400 font-semibold uppercase">{step.number} {step.title}</h3>
-            <p className="text-gray-400 mt-2 2xl:text-2xl text-wrap">{step.description}</p>
+          <div key={index} className="bg-[#262626] border border-gray-100 p-6 rounded-lg">
+            <h3 className="text-base 2xl:text-3xl text-gray-300 font-semibold uppercase">{step.number} {step.title}</h3>
+            <p className="text-gray-100 mt-2 2xl:text-2xl text-wrap">{step.description}</p>
           </div>
         ))}
       </div>

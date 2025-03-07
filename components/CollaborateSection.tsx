@@ -32,7 +32,7 @@ const collaborationSteps: CollaborationStep[] = [
     title: "Understanding the Client's Needs",
     description: (
       <div> 
-        <p>Before starting any work, it is important to understand the client&#39;s needs and expectations fully.</p>
+        <p className="2xl:text-3xl">Before starting any work, it is important to understand the client&#39;s needs and expectations fully.</p>
           <div className="flex items-center space-x-2 mt-3">
             <FaCheck className="text-[#e5dfd3]" />
             <p className="text-gray-300">What is the purpose of the project?</p>

@@ -14,7 +14,7 @@ const TargetAudienceCard: React.FC = () => {
       <div className="space-y-2">
         <div className="flex items-center space-x-2">
           <FaCheck className="text-[#e5dfd3]" />
-          <p className="text-gray-300">Start-up companies</p>
+          <p className="text-gray-300 2xl:text-2xl">Start-up companies</p>
         </div>
         <div className="flex items-center space-x-2">
           <FaCheck className="text-[#e5dfd3]" />

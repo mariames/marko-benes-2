@@ -99,8 +99,6 @@ const BillboardSection: React.FC = () => {
           transition={{ delay: 0.5, duration: 1 }}
           viewport={{ once: true }}
         >
-          <p className="mb-2">BILLBOARDS | ROLL-UPS/ RETRACTABLE BANNERS | CITY LIGHT ADVERTISING | BANNERS | VINYL BANNERS |</p>
-          <p className="mb-2">BACKDROP | SHOP WINDOW BRANDING | FEATHER AND BEACH FLAGS | YARD SIGNS |</p>
         </motion.div>
       </div>
     </section>

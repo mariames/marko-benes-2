@@ -74,7 +74,7 @@ const LogoSection: React.FC = () => {
           transition={{ delay: 0.5, duration: 1 }}
           viewport={{ once: true }}
         >
-          <p className="mb-2">LOGO | WORDMARK | VISUAL IDENTITY | CORPORATE IDENTITY</p>
+
         </motion.div>
       </div>
     </section>

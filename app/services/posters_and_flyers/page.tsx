@@ -1,3 +1,4 @@
+import AnimatedLabels from '@/components/AnimatedLabels';
 import CallToAction from '@/components/CallToAction';
 import InfoSection from '@/components/InfoSection';
 import PostersDesignSection from '@/components/PostersDesignSection';
@@ -15,10 +16,25 @@ const page = () => {
     "Usage (print or digital)",
   ];
 
+  const labels = [
+    "FLYERS",
+    "POSTERS",
+    "BANNERS",
+    "BOOK COVERS",
+    "MAGAZINE COVERS",
+    "LETTERHEADS",
+    "BROCHURES",
+    "TRI-FOLD",
+    "BROCHURES",
+    "BUSINESS CARDS"
+  ];
+
   return (
     <>
     <TitleOFPage title="Posters & Flyers" />
     <PostersDesignSection />
+    <AnimatedLabels labels={labels} direction="left-to-right" />
+    <AnimatedLabels labels={labels} direction="right-to-left" />
     <InfoSection
       title="What I need from you?"
       items={items}

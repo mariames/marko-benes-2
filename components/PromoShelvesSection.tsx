@@ -72,7 +72,7 @@ const PromoShelvesSection: React.FC = () => {
           transition={{ delay: 0.5, duration: 1 }}
           viewport={{ once: true }}
         >
-          <p className="mb-2">PROMO SHELVES | STANDING RETAIL DISPLAY | PRODUCT DISPLAY</p>
+
         </motion.div>
       </div>
     </section>

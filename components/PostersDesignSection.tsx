@@ -77,8 +77,6 @@ const PostersDesignSection: React.FC = () => {
           transition={{ delay: 0.5, duration: 1 }}
           viewport={{ once: true }}
         >
-          <p className="mb-2">FLYERS | POSTERS | BANNERS | BOOK COVERS | MAGAZINE COVERS | LETTERHEADS | BROCHURES | TRI-FOLD</p>
-          <p className="mb-2">BROCHURES | BUSINESS CARDS | and much more…</p>
         </motion.div>
       </div>
     </section>

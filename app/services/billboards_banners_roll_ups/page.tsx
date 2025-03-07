@@ -1,3 +1,4 @@
+import AnimatedLabels from '@/components/AnimatedLabels'
 import BillboardSection from '@/components/BillboardsSection'
 import CallToAction from '@/components/CallToAction'
 import InfoSection from '@/components/InfoSection'
@@ -14,10 +15,24 @@ const page = () => {
     "Examples of designs you like so I know what type of style you prefer, brand guideline",
   ]
 
+  const labels = [
+    "BILLBOARDS",
+    "ROLL-UPS/ RETRACTABLE BANNERS",
+    "CITY LIGHT ADVERTISING",
+    "BANNERS",
+    "VINYL BANNERS",
+    "BACKDROP",
+    "SHOP WINDOW BRANDING",
+    "FEATHER AND BEACH FLAGS",
+    "YARD SIGNS"
+  ];
+
   return (
     <>
       <TitleOFPage title="Billboards, Banners & Roll Ups" />
       <BillboardSection />
+      <AnimatedLabels labels={labels} direction="left-to-right" />
+      <AnimatedLabels labels={labels} direction="right-to-left" />
       <InfoSection title="What I need from you?"  items={items} />
       <CallToAction />
     </>

@@ -67,7 +67,6 @@ const TradePromoBoothSection: React.FC = () => {
           transition={{ delay: 0.5, duration: 1 }}
           viewport={{ once: true }}
         >
-          <p className="mb-2">TRADE PROMO BOOTHS | KIOSK | PROMO BOOTHS | PROMO TABLE | FAIR STAND</p>
         </motion.div>
       </div>
     </section>

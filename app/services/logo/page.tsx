@@ -1,3 +1,4 @@
+import AnimatedLabels from '@/components/AnimatedLabels';
 import CallToAction from '@/components/CallToAction';
 import InfoSection from '@/components/InfoSection';
 import LogoSection from '@/components/LogoSection';
@@ -14,10 +15,19 @@ const page = () => {
     "Logo Style (Minimalist, Luxury, Fun, Serious)",
     "If you have any samples/sketches you like",
   ];
+
+  const labels = [
+    "LOGO",
+    "WORDMARK",
+    "VISUAL IDENTITY",
+    "CORPORATE IDENTITY"
+  ];
   return (
     <>
       <TitleOFPage title="Logo" />
       <LogoSection />
+      <AnimatedLabels labels={labels} direction="left-to-right" />
+      <AnimatedLabels labels={labels} direction="right-to-left" />
       <InfoSection
         title="What I need from you?"
         items={items} />

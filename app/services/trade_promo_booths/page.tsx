@@ -1,3 +1,4 @@
+import AnimatedLabels from '@/components/AnimatedLabels'
 import CallToAction from '@/components/CallToAction'
 import InfoSection from '@/components/InfoSection'
 import TitleOFPage from '@/components/TitleOFPage'
@@ -15,10 +16,21 @@ const page = () => {
     "Examples of designs you like so I know what type of style you prefer, brand guideline",
     "Printed surfaces (which parts of the stand are branded - counter, sides, upper panels)",
   ]
+
+  const labels = [
+    "TRADE PROMO BOOTHS",
+    "KIOSK",
+    "PROMO BOOTHS",
+    "PROMO TABLE",
+    "FAIR STAND"
+  ];
+
   return (
     <>
       <TitleOFPage title="Trade Promo Booths" />
       <TradePromoBoothSection />
+      <AnimatedLabels labels={labels} direction="left-to-right" />
+      <AnimatedLabels labels={labels} direction="right-to-left" />
       <InfoSection title="What I need from you?"
       items={items} />
       <CallToAction />

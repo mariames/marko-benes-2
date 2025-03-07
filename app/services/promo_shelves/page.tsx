@@ -1,3 +1,4 @@
+import AnimatedLabels from '@/components/AnimatedLabels';
 import CallToAction from '@/components/CallToAction';
 import InfoSection from '@/components/InfoSection';
 import PromoShelvesSection from '@/components/PromoShelvesSection';
@@ -15,10 +16,19 @@ const page = () => {
     "Examples of designs you like so I know what type of style you prefer, brand guideline",
     "Printed surfaces (which parts of the shelf can be branded - sides, top panel, frontal part)",
   ];
+
+  const labels = [
+    "PROMO SHELVES",
+    "STANDING RETAIL DISPLAY",
+    "PRODUCT DISPLAY"
+  ];
+
   return (
     <>
       <TitleOFPage title="Promo Shelves" />
       <PromoShelvesSection />
+      <AnimatedLabels labels={labels} direction="left-to-right" />
+      <AnimatedLabels labels={labels} direction="right-to-left" />
       <InfoSection
         title="What I need from you?"
         items={items} />

@@ -19,30 +19,7 @@ const DesignProcess: React.FC = () => {
     </section>
   );
 };
-/*
-const steps = [
-  {
-    number: "01.",
-    title: "CUSTOMIZATION",
-    description: "I adapt each project to the specific needs of clients and the market."
-  },
-  {
-    number: "02.",
-    title: "EMPOWERMENT",
-    description: "I passionately believe in the power of design to enhance brand recognition and contribute to its success."
-  },
-  {
-    number: "03.",
-    title: "PRECISION",
-    description: "I am dedicated to details and creative solutions."
-  },
-  {
-    number: "04.",
-    title: "INNOVATION",
-    description: "For each project, I research the latest industry trends, allowing me to deliver visually appealing and functional products."
-  }
-];
-*/
+
 const steps = [
   {
     number: "01.",

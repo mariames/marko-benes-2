@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import TargetAudienceCard from "./TargetAudienceCard";
-import { FaCheck, FaCheckCircle } from "react-icons/fa";
+import { FaCheckCircle } from "react-icons/fa";
 import DesignProcess from "./DesignProcess";
 
 interface CollaborationStep {
@@ -39,17 +39,17 @@ const collaborationSteps: CollaborationStep[] = [
           </div>
 
           <div className="flex items-center space-x-2 mt-2">
-            <FaCheck className="text-[#e5dfd3]" />
+            <FaCheckCircle className="text-[#e5dfd3]" />
             <p className="text-gray-300 2xl:text-2xl">Who is the target audience and preferred style?</p>
           </div>
 
           <div className="flex items-center space-x-2 mt-2">
-            <FaCheck className="text-[#e5dfd3]" />
+            <FaCheckCircle className="text-[#e5dfd3]" />
             <p className="text-gray-300 2xl:text-2xl">What are the key visual elements that need to be highlighted?</p>
           </div>
 
           <div className="flex items-center space-x-2 mt-2">
-            <FaCheck className="text-[#e5dfd3]" />
+            <FaCheckCircle className="text-[#e5dfd3]" />
             <p className="text-gray-300 2xl:text-2xl">Are there any reference materials or brand guidelines?</p>
           </div>
         <p className="mt-5 2xl:text-2xl">In the Services section, you can view all the necessary information that I need for each type of service.</p>
@@ -60,31 +60,31 @@ const collaborationSteps: CollaborationStep[] = [
     title: "Setting Clear Expectations",
     description: (
       <>
-        <p>The scope of work, deadlines, and budget are clearly defined to avoid disagreements at a later stage.</p>
-        <p>Let&#39;s agree on
+        <p className="2xl:text-2xl">The scope of work, deadlines, and budget are clearly defined to avoid disagreements at a later stage.</p>
+        <p className="2xl:text-2xl">Let&#39;s agree on
         the following:</p>
         <div className="flex items-center space-x-2 mt-3">
-            <FaCheck className="text-[#e5dfd3]" />
+            <FaCheckCircle className="text-[#e5dfd3]" />
             <p className="text-gray-300 2xl:text-2xl">Number of revisions</p>
           </div>
 
           <div className="flex items-center space-x-2 mt-2">
-            <FaCheck className="text-[#e5dfd3]" />
+            <FaCheckCircle className="text-[#e5dfd3]" />
             <p className="text-gray-300 2xl:text-2xl">Time frame for each phase of the project</p>
           </div>
 
           <div className="flex items-center space-x-2 mt-2">
-            <FaCheck className="text-[#e5dfd3]" />
+            <FaCheckCircle className="text-[#e5dfd3]" />
             <p className="text-gray-300 2xl:text-2xl">Method of communication and delivery of materials in specific formats</p>
           </div>
 
           <div className="flex items-center space-x-2 mt-2">
-            <FaCheck className="text-[#e5dfd3]" />
+            <FaCheckCircle className="text-[#e5dfd3]" />
             <p className="text-gray-300 2xl:text-2xl">Rights to use the final design solutions so that both parties are protected</p>
           </div>
 
           <div className="flex items-center space-x-2 mt-2">
-            <FaCheck className="text-[#e5dfd3]" />
+            <FaCheckCircle className="text-[#e5dfd3]" />
             <p className="text-gray-300 2xl:text-2xl">After the invoice is issued and the client makes full payment, I start work</p>
           </div>
       </>
@@ -140,7 +140,7 @@ const CollaborateCard: React.FC<CollaborationStep> = ({ title, description }) =>
       viewport={{ once: true }}
       className="bg-black text-white border border-gray-700 rounded-lg p-6"
     >
-      <p className="text-lg lg:text-3xl 2xl:text-5xl font-normal">{title}</p>
+      <p className="text-lg lg:text-3xl 2xl:text-4xl font-normal">{title}</p>
       <hr className="border-gray-600 my-2" />
       {description}
     </motion.div>

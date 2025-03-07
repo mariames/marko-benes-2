@@ -22,7 +22,7 @@ const TargetAudienceCard: React.FC = () => {
         </div>
         <div className="flex items-center space-x-2">
           <FaCheck className="text-[#e5dfd3]" />
-          <p className="text-gray-300 2xl:text-2xl">Marketing agencies and teams</p>
+          <p className="text-gray-300 2xl:text-2xl">Companies and entrepreneurs</p>
         </div>
         <div className="flex items-center space-x-2">
           <FaCheck className="text-[#e5dfd3]" />

@@ -1,3 +1,4 @@
+"use client";
 import React, { useState, useEffect } from 'react';
 import { FaRocket, FaTools, FaPen, FaDollarSign, FaClipboardList } from 'react-icons/fa'; // Import icons from React Icons
 import Field from './Field'; 

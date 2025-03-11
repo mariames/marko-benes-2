@@ -29,42 +29,70 @@ const PackagingDesignSection: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }} // Trigger only once when entering the viewport
           >
-            <h2 className="text-3xl font-bold mb-4">Are you in need of an eye-catching and professionally designed label and packaging for your product?</h2>
-            <p className="text-lg mb-4">
-              I&apos;m here to help you create an impressive design that will captivate your target audience and elevate your brand. My approach combines creativity and strategic thinking to make your product stand out on the shelf.
+            <p className="text-2xl mb-4">
+              Labels provide important product information, help build brand identity, and make it easier for consumers to understand the product’s key details, such as ingredients and benefits.
             </p>
           </motion.div>
         </div>
 
-        {/* Second Row: Two images */}
-        <div className="grid grid-cols-2 gap-8">
+
+        {/* Second Row: Image on the left, text on the right */}
+        <div className="flex items-center space-x-8">
           <motion.div
-            initial={{ x: -100, opacity: 0 }} // Slide in from the left
+            className="flex-1"
+            initial={{ x: 100, opacity: 0 }} // Start off-screen to the right
             whileInView={{ x: 0, opacity: 1 }} // Slide into view and fade in
             transition={{ duration: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: true }} // Trigger only once when entering the viewport
+          >
+            <p className="text-2xl mb-4">
+            Packaging serves both protective and marketing purposes, influencing consumer emotions and behaviors through colors, shapes, and materials. It's crucial for packaging to align with the brand's identity and messaging.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="flex-1"
+            initial={{ x: -100, opacity: 0 }} // Start off-screen to the left
+            whileInView={{ x: 0, opacity: 1 }} // Slide into view and fade in
+            transition={{ duration: 1 }}
+            viewport={{ once: true }} // Trigger only once when entering the viewport
           >
             <Image 
               src="/service-section/LabelsAndPackaging/2_label-design.jpg" 
-              alt="Packaging Design Example 1"
+              alt="Packaging Design" className="w-full h-auto rounded-lg"
               width={1500}
-              height={1124}  
-              className="w-full h-auto rounded-lg" />
+              height={1124}  />
           </motion.div>
+        </div>
+
+        {/* First Row: Image on the left, text on the right */}
+        <div className="flex items-center space-x-8">
           <motion.div
-            initial={{ x: 100, opacity: 0 }} // Slide in from the right
+            className="flex-1"
+            initial={{ x: -100, opacity: 0 }} // Start off-screen to the left
             whileInView={{ x: 0, opacity: 1 }} // Slide into view and fade in
             transition={{ duration: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: true }} // Trigger only once when entering the viewport
           >
             <Image 
               src="/service-section/LabelsAndPackaging/3_shelf-ready-packaging-design.jpg" 
-              alt="Packaging Design Example 2"
+              alt="Packaging Design" className="w-full h-auto rounded-lg"
               width={1500}
-              height={1124} 
-              className="w-full h-auto rounded-lg" />
+              height={1124}  />
+          </motion.div>
+          <motion.div
+            className="flex-1"
+            initial={{ x: 100, opacity: 0 }} // Start off-screen to the right
+            whileInView={{ x: 0, opacity: 1 }} // Slide into view and fade in
+            transition={{ duration: 1 }}
+            viewport={{ once: true }} // Trigger only once when entering the viewport
+          >
+            <p className="text-2xl mb-4">
+              It is important to adapt the design to the production requirements, paying attention to colors, materials, folds, and finishing effects, ensuring that the print quality is flawless on any technology: flexography, offset, or digital.
+            </p>
           </motion.div>
         </div>
+
 
         {/* Third Row: Two images */}
         <div className="grid grid-cols-2 gap-8">
@@ -95,21 +123,6 @@ const PackagingDesignSection: React.FC = () => {
               className="w-full h-auto rounded-lg" />
           </motion.div>
         </div>
-
-        {/* Fourth Row: Text as a list */}
-        <motion.div
-          className="text-lg font-semibold mt-8"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }} // Fade in the text
-          transition={{ delay: 0.5, duration: 1 }}
-          viewport={{ once: true }}
-        >
-          {/** 
-          <p className="mb-2">PRODUCT LABEL | BOX DESIGN | SHELF READY PACKAGING | PANEER POUCH DESIGN | STAND-UP POUCH |</p>
-          <p className="mb-2">DOYPACK | SPRAY BOTTLE PACKAGING | FOOD PACKAGING | COSMETICS PACKAGING | SUPPLEMENT PACKAGING |</p>
-          <p className="mb-2">AMAZON PRODUCT PACKAGING | and Complete Product Packaging for any kind of product</p>
-        */}
-          </motion.div>
         
       </div>
     </section>

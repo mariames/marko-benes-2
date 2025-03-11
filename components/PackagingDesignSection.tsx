@@ -46,7 +46,7 @@ const PackagingDesignSection: React.FC = () => {
             viewport={{ once: true }} // Trigger only once when entering the viewport
           >
             <p className="text-2xl mb-4">
-            Packaging serves both protective and marketing purposes, influencing consumer emotions and behaviors through colors, shapes, and materials. It&apos;s crucial for packaging to align with the brand's identity and messaging.
+            Packaging serves both protective and marketing purposes, influencing consumer emotions and behaviors through colors, shapes, and materials. It&apos;s crucial for packaging to align with the brand&apos;s identity and messaging.
             </p>
           </motion.div>
 

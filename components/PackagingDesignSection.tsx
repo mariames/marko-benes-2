@@ -30,7 +30,7 @@ const PackagingDesignSection: React.FC = () => {
             viewport={{ once: true }} // Trigger only once when entering the viewport
           >
             <p className="text-2xl mb-4">
-              Labels provide important product information, help build brand identity, and make it easier for consumers to understand the product’s key details, such as ingredients and benefits.
+              Labels provide important product information, help build brand identity, and make it easier for consumers to understand the product&apos;s key details, such as ingredients and benefits.
             </p>
           </motion.div>
         </div>
@@ -46,7 +46,7 @@ const PackagingDesignSection: React.FC = () => {
             viewport={{ once: true }} // Trigger only once when entering the viewport
           >
             <p className="text-2xl mb-4">
-            Packaging serves both protective and marketing purposes, influencing consumer emotions and behaviors through colors, shapes, and materials. It's crucial for packaging to align with the brand's identity and messaging.
+            Packaging serves both protective and marketing purposes, influencing consumer emotions and behaviors through colors, shapes, and materials. It&apos;s crucial for packaging to align with the brand's identity and messaging.
             </p>
           </motion.div>
 

@@ -90,7 +90,7 @@ const ContactForm: React.FC = () => {
           <form onSubmit={handleSubmit}>
             {/* Name Field */}
             <div className="mb-4">
-              <label htmlFor="name" className="block text-sm text-gray-400">
+              <label htmlFor="name" className="block  text-gray-200 xs:text-sm md:text-xl 2xl:text-2xl">
                 Name
               </label>
               <input
@@ -99,7 +99,7 @@ const ContactForm: React.FC = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full p-3 bg-[#101010] border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-3 bg-[#101010] border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white"
                 placeholder="Your Name"
                 minLength={3}
                 maxLength={50}
@@ -109,7 +109,7 @@ const ContactForm: React.FC = () => {
 
             {/* Email Field */}
             <div className="mb-4">
-              <label htmlFor="email" className="block text-sm text-gray-400">
+              <label htmlFor="email" className="block text-gray-200 xs:text-sm md:text-xl 2xl:text-2xl">
                 Email
               </label>
               <input
@@ -118,7 +118,7 @@ const ContactForm: React.FC = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full p-3 bg-[#101010] border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-3 bg-[#101010] border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white"
                 placeholder="Your Email"
               />
               {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
@@ -126,7 +126,7 @@ const ContactForm: React.FC = () => {
 
             {/* Message Field */}
             <div className="mb-4">
-              <label htmlFor="message" className="block text-sm text-gray-400">
+              <label htmlFor="message" className="block text-gray-200 xs:text-sm md:text-xl 2xl:text-2xl">
                 Message
               </label>
               <textarea
@@ -135,7 +135,7 @@ const ContactForm: React.FC = () => {
                 value={formData.message}
                 onChange={handleChange}
                 rows={11}
-                className="w-full p-3 bg-[#101010] border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+                className="w-full p-3 bg-[#101010] border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white-500 resize-none"
                 placeholder="Your Message"
                 minLength={10}
                 maxLength={500}

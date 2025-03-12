@@ -2,6 +2,7 @@ import AnimatedLabels from '@/components/AnimatedLabels';
 import CallToAction from '@/components/CallToAction';
 import InfoSection from '@/components/InfoSection';
 import LogoSection from '@/components/LogoSection';
+import ServiceHero from '@/components/ServiceHero';
 import TitleOFPage from '@/components/TitleOFPage';
 import React from 'react'
 
@@ -22,9 +23,31 @@ const page = () => {
     "VISUAL IDENTITY",
     "CORPORATE IDENTITY"
   ];
+
+  const leftImgs = [
+    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/Logo/1_logo-visual-identity-design.jpg" },
+    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/Logo/2_logo-corporate-identity.jpg" },
+    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/Logo/3_logo-logotype-wordmark-design.jpg" },
+    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/Logo/3_logo-logotype-wordmark-design.jpg" },
+    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/Logo/3_logo-logotype-wordmark-design.jpg" },
+  ];
+
+  const rightImgs = [
+    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/Logo/1_logo-visual-identity-design.jpg" },
+    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/Logo/2_logo-corporate-identity.jpg" },
+    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/Logo/3_logo-logotype-wordmark-design.jpg" },
+    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/Logo/3_logo-logotype-wordmark-design.jpg" },
+    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/Logo/3_logo-logotype-wordmark-design.jpg" },
+  ];
   return (
     <>
-      <TitleOFPage title="Logo" />
+      <ServiceHero 
+        title="Logo"
+        subtitle="• Timeless & Versatile Logo Design"
+        description="A meticulously crafted logo that defines your brand with clarity, uniqueness, and impact."
+        leftImgs={leftImgs}
+        rightImgs={rightImgs}
+        portfolioLink="/portfolio"/>
       <LogoSection />
       <AnimatedLabels labels={labels} direction="left-to-right" />
       <AnimatedLabels labels={labels} direction="right-to-left" />

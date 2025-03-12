@@ -2,6 +2,7 @@ import AnimatedLabels from '@/components/AnimatedLabels';
 import CallToAction from '@/components/CallToAction';
 import InfoSection from '@/components/InfoSection'
 import ScrollingImages from '@/components/ScrollingImages';
+import ServiceHero from '@/components/ServiceHero';
 import TextThatSlidesIn from '@/components/TextThatSlidesIn';
 import TitleOFPage from '@/components/TitleOFPage'
 import VehicleStack from '@/components/VehicleStack';
@@ -31,9 +32,31 @@ const page = () => {
     "BUS"
   ];
 
+  const leftImgs = [
+    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/VehicleBranding/1_truck-lorry-branding-design.jpg" },
+    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/VehicleBranding/2_van-branding.jpg" },
+    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/VehicleBranding/3_van_branding_design.jpg" },
+    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/VehicleBranding/2_van-branding.jpg" },
+    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/VehicleBranding/2_van-branding.jpg" },
+  ];
+
+  const rightImgs = [
+    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/VehicleBranding/1_truck-lorry-branding-design.jpg" },
+    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/VehicleBranding/2_van-branding.jpg" },
+    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/VehicleBranding/3_van_branding_design.jpg" },
+    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/VehicleBranding/2_van-branding.jpg" },
+    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/VehicleBranding/2_van-branding.jpg" },
+  ];
+
   return (
     <div className='bg-black'>
-      <TitleOFPage title="Vehicle Branding" />
+      <ServiceHero 
+        title="Vehicle Branding"
+        subtitle="•  High-Performance Fleet Graphics"
+        description="Built for endurance, designed for visibility"
+        leftImgs={leftImgs}
+        rightImgs={rightImgs}
+        portfolioLink="/portfolio"/>
       <TextThatSlidesIn />
       <ScrollingImages />
       <AnimatedLabels labels={labels} direction="left-to-right" />

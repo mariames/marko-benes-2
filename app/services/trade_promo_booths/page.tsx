@@ -1,6 +1,7 @@
 import AnimatedLabels from '@/components/AnimatedLabels'
 import CallToAction from '@/components/CallToAction'
 import InfoSection from '@/components/InfoSection'
+import ServiceHero from '@/components/ServiceHero'
 import TitleOFPage from '@/components/TitleOFPage'
 import TradePromoBoothSection from '@/components/TradePromoBoothSection'
 import React from 'react'
@@ -25,9 +26,31 @@ const page = () => {
     "FAIR STAND"
   ];
 
+  const leftImgs = [
+    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/PromoBooths/1_promo-trade-booth-stand-fair-design.jpg" },
+    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/PromoBooths/2_promo-booth-stand-fair-branding-elements.jpg" },
+    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/PromoBooths/6_promo-table-design.jpg" },
+    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PromoBooths/6_promo-table-design.jpg" },
+    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PromoBooths/6_promo-table-design.jpg" },
+  ];
+
+  const rightImgs = [
+    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/PromoBooths/1_promo-trade-booth-stand-fair-design.jpg" },
+    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/PromoBooths/2_promo-booth-stand-fair-branding-elements.jpg" },
+    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/PromoBooths/6_promo-table-design.jpg" },
+    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PromoBooths/6_promo-table-design.jpg" },
+    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PromoBooths/6_promo-table-design.jpg" },
+  ];
+
   return (
     <>
-      <TitleOFPage title="Trade Promo Booths" />
+      <ServiceHero 
+        title="Trade Promo Booths"
+        subtitle="•  Next-Level Event Marketing Displays"
+        description="Combining cutting-edge materials, lighting, and interactive elements for an unforgettable brand showcase."
+        leftImgs={leftImgs}
+        rightImgs={rightImgs}
+        portfolioLink="/portfolio"/>
       <TradePromoBoothSection />
       <AnimatedLabels labels={labels} direction="left-to-right" />
       <AnimatedLabels labels={labels} direction="right-to-left" />

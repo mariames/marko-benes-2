@@ -1,12 +1,12 @@
 import ContactContent from "@/components/ContactContent";
-import ContactSection from "@/components/ContactSection";
-import MainTitleOfThePage from "@/components/MainTitleofThePage";
-import TitleOFPage from "@/components/TitleOFPage";
+import TitleAnimation from "@/components/TitleAnimation";
 
 export default function Contact() {
     return (
       <>
-        <MainTitleOfThePage title="Contact" />
+      <TitleAnimation
+        title="CONTACT / PLANNER / EMAIL "
+        message="LETS TALK ABOUT PROJECT" />
          <ContactContent />
         {/** <ContactSection /> */}
       </>

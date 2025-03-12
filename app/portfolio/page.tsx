@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import ModalImage from "react-modal-image";
-import MainTitleOfThePage from "@/components/MainTitleofThePage";
+import TitleAnimation from "@/components/TitleAnimation";
 
 // ✅ Define an Enum for Service Types
 enum ServiceType {
@@ -155,8 +155,9 @@ const ServicesGallery: React.FC = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <MainTitleOfThePage title="Portfolio" />
-
+      <TitleAnimation
+          title="WORK / PORTFOLIO / SOLUTIONS"
+          message="IMAGINE YOUR PROJECT HERE" />
       {/* ✅ Filter Dropdown */}
       <div className="mb-6 flex justify-end my-14  mr-4 lg:mr-10">
         <label className="block text-lg font-semibold mb-2">Filter by Category:</label>

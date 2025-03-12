@@ -19,7 +19,6 @@ const Intro: React.FC = () => {
             className="max-sm:mx-4 w-full lg:max-w-6xl 2xl:w-full h-auto rounded-lg transform transition-all duration-700 ease-in-out hover:scale-105"
           />
       </div>
-      <HorizontalScrollCard />
     </>
   );
 };

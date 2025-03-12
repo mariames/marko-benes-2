@@ -18,19 +18,17 @@ const page = () => {
   ];
 
   const leftImgs = [
-    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/PromoBooths/1_promo-trade-booth-stand-fair-design.jpg" },
-    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/PromoBooths/2_promo-booth-stand-fair-branding-elements.jpg" },
-    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/PromoBooths/6_promo-table-design.jpg" },
-    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PromoBooths/6_promo-table-design.jpg" },
-    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PromoBooths/6_promo-table-design.jpg" },
+    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/T-Shirt/8_printed-tee-design.jpg" },
+    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/T-Shirt/9_design-casual-wear.jpg" },
+    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/T-Shirt/10_graphic-tee-t-shirt.jpg" },
+    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/T-Shirt/8_printed-tee-design.jpg" },
   ];
 
   const rightImgs = [
-    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/PromoBooths/1_promo-trade-booth-stand-fair-design.jpg" },
-    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/PromoBooths/2_promo-booth-stand-fair-branding-elements.jpg" },
-    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/PromoBooths/6_promo-table-design.jpg" },
-    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PromoBooths/6_promo-table-design.jpg" },
-    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PromoBooths/6_promo-table-design.jpg" },
+    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/T-Shirt/3_graphic-tee-design.jpg" },
+    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/T-Shirt/5_t-shirt-custom-design.jpg" },
+    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/T-Shirt/7_fashion-design-t-shirt.jpg" },
+    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/T-Shirt/6_t-shirt-design-sublimation.jpg" }
   ];
   return (
     <>

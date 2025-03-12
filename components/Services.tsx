@@ -67,7 +67,7 @@ const services: Service[] = [
     src: "/service/logo.jpg",
     previewSrc1: "/service/logo-preview1.jpg",
     previewSrc2: "/service/logo-preview2.jpg",
-    types: ["Branding", "Logo Design"],
+    types: ["Branding", "Wordmark"],
   },
   {
     name: "T-Shirt Design",

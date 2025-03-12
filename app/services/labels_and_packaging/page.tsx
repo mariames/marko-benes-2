@@ -19,6 +19,22 @@ const page = () => {
     { id: 6, label: "Printing Method", description: "Preferred printing method (offset, flexography, digital printing)" }
   ];
 
+  const leftImgs = [
+    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/1_packaging-design.jpg" },
+    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/2_label-design.jpg" },
+    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/3_shelf-ready-packaging-design.jpg" },
+    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/4_paneer-pouch-design.jpg" },
+    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/5_product-label-design.jpg" },
+  ];
+
+  const rightImgs = [
+    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/5_product-label-design.jpg" },
+    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/4_paneer-pouch-design.jpg" },
+    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/3_shelf-ready-packaging-design.jpg" },
+    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/4_paneer-pouch-design.jpg" },
+    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/5_product-label-design.jpg" },
+  ];
+
   const requirements2 = (
     <>
           <div className="space-y-2">
@@ -66,7 +82,13 @@ const page = () => {
 
   return (
     <>
-      <ServiceHero />
+      <ServiceHero 
+        title="Labels & Packaging"
+        subtitle="• Industrial-Grade Packaging"
+        description="Engineered for reliability, offering custom solutions that meet rigorous standards."
+        leftImgs={leftImgs}
+        rightImgs={rightImgs}
+        portfolioLink="/portfolio"/>
       <div className='ml-10'>
         <SummaryCard 
           title="What I need from you?"

@@ -2,19 +2,26 @@
 
 import { motion } from "framer-motion";
 import AnimatedButton from "./AnimatedButton/AnimatedButton";
-import Link from "next/link";
 
-const mockData = [
-  { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/1_packaging-design.jpg" },
-  { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/2_label-design.jpg" },
-  { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/3_shelf-ready-packaging-design.jpg" },
-  { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/4_paneer-pouch-design.jpg" },
-  { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/5_product-label-design.jpgs" },
-];
 
-const duplicatedData = [...mockData, ...mockData]; // Duplicate for seamless loop
 
-const ServiceHero = () => {
+interface ServiceHeroPros {
+  title: string;
+  subtitle: string;
+  description: string;
+  portfolioLink: string;
+  leftImgs: { id: number; name: string; location: string; img: string }[];
+  rightImgs: { id: number; name: string; location: string; img: string }[];
+}
+const ServiceHero: React.FC<ServiceHeroPros> = ({
+  title,
+  subtitle,
+  description,
+  portfolioLink,
+  leftImgs,
+  rightImgs
+}) => {
+  
   return (
     <div className="flex h-screen w-full overflow-hidden">
       {/* Left Side */}
@@ -25,7 +32,7 @@ const ServiceHero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.1 }}
         >
-          • Industrial-Grade Packaging
+          {subtitle}
         </motion.span>
         <motion.p 
           className="sm:text-xl md:text-2xl xl:text-5xl  2xl:text-7xl font-bold mt-2 text-white tracking-wide"
@@ -33,7 +40,7 @@ const ServiceHero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2 }}
         >
-          Labels & Packaging
+          {title}
         </motion.p>
         <motion.p 
           className="text-gray-200 mt-4 2xl:text-2xl"
@@ -41,12 +48,12 @@ const ServiceHero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.3 }}
         >
-          Engineered for reliability, offering custom solutions that meet rigorous standards.
+          {description}
         </motion.p>
         <div className="flex gap-4 mt-6">
           <AnimatedButton text="Got a project?" link="/contact" />
           <motion.a
-            href="/portfolio"
+            href={portfolioLink}
             className="px-6 py-3 border border-white rounded-lg text-white"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -65,7 +72,7 @@ const ServiceHero = () => {
           transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
           style={{ willChange: "transform" }}
         >
-          {duplicatedData.map((item, index) => (
+          {leftImgs.map((item, index) => (
             <div key={index} className="relative mb-4 mx-3">
               <img src={item.img} alt={item.name} className="w-full h-full object-cover rounded-lg" />
             </div>
@@ -79,7 +86,7 @@ const ServiceHero = () => {
           transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
         style={{ willChange: "transform" }}
         >
-          {duplicatedData.map((item, index) => (
+          {rightImgs.map((item, index) => (
             <div key={index} className="relative mb-4">
               <img src={item.img} alt={item.name} className="w-full h-full object-cover rounded-lg" />
             </div>

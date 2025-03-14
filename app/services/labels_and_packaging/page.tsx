@@ -3,6 +3,7 @@ import AnimatedLabels from '@/components/AnimatedLabels';
 import CallToAction from '@/components/CallToAction';
 import PackagingDesignSection from '@/components/PackagingDesignSection';
 import ServiceHero from '@/components/ServiceHero';
+import SpotlightTitle from '@/components/SpotlightTitle';
 import { SummaryCard } from '@/components/SummaryCard';
 import React from 'react'
 import { FaCheckCircle } from 'react-icons/fa';
@@ -39,7 +40,7 @@ const page = () => {
     <>
           <div className="space-y-2">
             <div className="flex items-center space-x-2">
-              <FaCheckCircle className="text-[#e5dfd3]" />
+              <span className='text-[#e5dfd3]'>✓</span>
               <p className="text-gray-300 2xl:text-2xl">Dimensions (height x width) or dieline in vector format (ai, eps, pdf)</p>
             </div>
             <div className="flex items-center space-x-2">
@@ -89,15 +90,16 @@ const page = () => {
         leftImgs={leftImgs}
         rightImgs={rightImgs}
         portfolioLink="/portfolio"/>
-      <div className='ml-10'>
+      {/** <PackagingDesignSection /> */}
+      <div className='mx-10'>
         <SummaryCard 
           title="What I need from you?"
           description={requirements2} />
       </div>
-      <PackagingDesignSection />
       <AnimatedLabels labels={labels} direction="left-to-right" />
       <AnimatedLabels labels={labels} direction="right-to-left" />
       <CallToAction />
+      <SpotlightTitle />
     </>
   )
 }

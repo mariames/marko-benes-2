@@ -40,7 +40,8 @@ const page = () => {
     <>
           <div className="space-y-2">
             <div className="flex items-center space-x-2">
-              <span className='text-[#e5dfd3]'>✓</span>
+            <FaCheckCircle className="text-[#e5dfd3]" />
+              {/**<span className='text-[#e5dfd3]'>✓</span> */}
               <p className="text-gray-300 2xl:text-2xl">Dimensions (height x width) or dieline in vector format (ai, eps, pdf)</p>
             </div>
             <div className="flex items-center space-x-2">
@@ -91,7 +92,7 @@ const page = () => {
         rightImgs={rightImgs}
         portfolioLink="/portfolio"/>
       {/** <PackagingDesignSection /> */}
-      <div className='mx-10'>
+      <div className='mx-10 my-40'>
         <SummaryCard 
           title="What I need from you?"
           description={requirements2} />

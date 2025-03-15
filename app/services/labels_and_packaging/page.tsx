@@ -1,7 +1,6 @@
 "use client";
 import AnimatedLabels from '@/components/AnimatedLabels';
 import CallToAction from '@/components/CallToAction';
-import PackagingDesignSection from '@/components/PackagingDesignSection';
 import ServiceHero from '@/components/ServiceHero';
 import SpotlightTitle from '@/components/SpotlightTitle';
 import { SummaryCard } from '@/components/SummaryCard';
@@ -91,7 +90,6 @@ const page = () => {
         leftImgs={leftImgs}
         rightImgs={rightImgs}
         portfolioLink="/portfolio"/>
-      {/** <PackagingDesignSection /> */}
       <div className='mx-10 my-40'>
         <SummaryCard 
           title="What I need from you?"

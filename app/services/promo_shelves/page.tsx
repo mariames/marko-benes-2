@@ -1,22 +1,52 @@
+"use client";
 import AnimatedLabels from '@/components/AnimatedLabels';
 import CallToAction from '@/components/CallToAction';
-import InfoSection from '@/components/InfoSection';
 import PromoShelvesSection from '@/components/PromoShelvesSection';
 import ServiceHero from '@/components/ServiceHero';
-import TitleOFPage from '@/components/TitleOFPage'
+import { SummaryCard } from '@/components/SummaryCard';
 import React from 'react'
+import { FaCheckCircle } from 'react-icons/fa';
 
+const requirements = (
+    <>
+        <div className="space-y-2">
+          <div className="flex items-center space-x-2">
+            <FaCheckCircle className="text-[#e5dfd3]" />
+            {/**<span className='text-[#e5dfd3]'>✓</span> */}
+            <p className="text-gray-300 2xl:text-2xl">Dimensions for elements (height x width) or dieline for some irregular formats in vector file (ai, eps, pdf)</p>
+          </div>
+          <div className="flex items-center space-x-2">
+            <FaCheckCircle className="text-[#e5dfd3]" />
+            <p className="text-gray-300 2xl:text-2xl">Existing template or technical documentation (from shelf manufacturer)</p>
+          </div>
+          <div className="flex items-center space-x-2">
+            <FaCheckCircle className="text-[#e5dfd3]" />
+            <p className="text-gray-300 2xl:text-2xl">The logo of your brand or company (ai, eps, or pdf) / vector file</p>
+          </div>
+          <div className="flex items-center space-x-2">
+            <FaCheckCircle className="text-[#e5dfd3]" />
+            <p className="text-gray-300 2xl:text-2xl">Text you want to put on the design</p>
+          </div>
+          <div className="flex items-center space-x-2">
+            <FaCheckCircle className="text-[#e5dfd3]" />
+            <p className="text-gray-300 2xl:text-2xl">Key messages: (what should be highlighted on the shelf)</p>
+          </div>
+          <div className="flex items-center space-x-2">
+            <FaCheckCircle className="text-[#e5dfd3]" />
+            <p className="text-gray-300 2xl:text-2xl">Images/product model (if any)</p>
+          </div>
+          <div className="flex items-center space-x-2">
+            <FaCheckCircle className="text-[#e5dfd3]" />
+            <p className="text-gray-300 2xl:text-2xl">Examples of designs you like so I know what type of style you prefer, brand guideline</p>
+          </div>
+          <div className="flex items-center space-x-2">
+            <FaCheckCircle className="text-[#e5dfd3]" />
+            <p className="text-gray-300 2xl:text-2xl">Printed surfaces (which parts of the shelf can be branded - sides, top panel, frontal part)</p>
+          </div>
+        </div>
+    </>
+);
 const page = () => {
-  const items = [
-    "Dimensions for elements (height x width) or dieline for some irregular formats in vector file (ai, eps, pdf)",
-    "Existing template or technical documentation (from shelf manufacturer)",
-    "The logo of your brand or company (ai, eps, or pdf) / vector file",
-    "Text you want to put on the design",
-    "Key messages: (what should be highlighted on the shelf)",
-    "Images/product model (if any)",
-    "Examples of designs you like so I know what type of style you prefer, brand guideline",
-    "Printed surfaces (which parts of the shelf can be branded - sides, top panel, frontal part)",
-  ];
 
   const labels = [
     "PROMO SHELVES",
@@ -50,11 +80,13 @@ const page = () => {
         rightImgs={rightImgs}
         portfolioLink="/portfolio"/>
       <PromoShelvesSection />
+      <div className='mx-10 my-40'>
+        <SummaryCard 
+          title="What I need from you?"
+          description={requirements} />
+      </div>
       <AnimatedLabels labels={labels} direction="left-to-right" />
       <AnimatedLabels labels={labels} direction="right-to-left" />
-      <InfoSection
-        title="What I need from you?"
-        items={items} />
       <CallToAction />
     </>
   )

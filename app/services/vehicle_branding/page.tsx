@@ -1,25 +1,60 @@
+"use client";
 import AnimatedLabels from '@/components/AnimatedLabels';
 import CallToAction from '@/components/CallToAction';
-import InfoSection from '@/components/InfoSection'
 import ScrollingImages from '@/components/ScrollingImages';
 import ServiceHero from '@/components/ServiceHero';
+import { SummaryCard } from '@/components/SummaryCard';
 import TextThatSlidesIn from '@/components/TextThatSlidesIn';
-import TitleOFPage from '@/components/TitleOFPage'
-import VehicleStack from '@/components/VehicleStack';
 import React from 'react'
+import { FaCheckCircle } from 'react-icons/fa';
 
 const page = () => {
-  const items = [
-    "Make, model, and year of manufacture: (to obtain accurate dimensions and templates) * I can buy a vehicle template with dimensions for most vehicles on specialized sites for this purpose.",
-    "The logo of your brand or company (ai, eps, or pdf) / vector file",
-    "Vehicle color",
-    "Text you want to put on the design (titles, subtitles, product/service/contact details)",
-    "Key messages: (what should be highlighted - event, service, product, vision)",
-    "Images/product model (if any)",
-    "Examples of designs you like so I know what type of style you prefer, brand guideline",
-    "Existing elements (handles, windows, sensors, relief surfaces, locks that should be avoided in the design)",
-    "Legal requirements (are there restrictions on certain advertising rules according to local laws)"
-  ];
+
+      const requirements2 = (
+        <>
+              <div className="space-y-2">
+                <div className="flex items-center space-x-2">
+                <FaCheckCircle className="text-[#e5dfd3]" />
+                  <p className="text-gray-300 2xl:text-2xl">Make, model, and year of manufacture: (to obtain accurate dimensions and templates) * I can buy a vehicle template with dimensions for most vehicles on specialized sites for this purpose.</p>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <FaCheckCircle className="text-[#e5dfd3]" />
+                  <p className="text-gray-300 2xl:text-2xl">The logo of your brand or company (ai, eps, or pdf) / vector file</p>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <FaCheckCircle className="text-[#e5dfd3]" />
+                  <p className="text-gray-300 2xl:text-2xl">Vehicle color</p>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <FaCheckCircle className="text-[#e5dfd3]" />
+                  <p className="text-gray-300 2xl:text-2xl">Text you want to put on the design (titles, subtitles, product/service/contact details)</p>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <FaCheckCircle className="text-[#e5dfd3]" />
+                  <p className="text-gray-300 2xl:text-2xl">Key messages: (what should be highlighted - event, service, product, vision)</p>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <FaCheckCircle className="text-[#e5dfd3]" />
+                  <p className="text-gray-300 2xl:text-2xl">Images/product model (if any)</p>
+                </div>
+
+                <div className="flex items-center space-x-2">
+                  <FaCheckCircle className="text-[#e5dfd3]" />
+                  <p className="text-gray-300 2xl:text-2xl">Examples of designs you like so I know what type of style you prefer, brand guideline</p>
+                </div>
+
+                <div className="flex items-center space-x-2">
+                  <FaCheckCircle className="text-[#e5dfd3]" />
+                  <p className="text-gray-300 2xl:text-2xl">Existing elements (handles, windows, sensors, relief surfaces, locks that should be avoided in the design)</p>
+                </div>
+
+                <div className="flex items-center space-x-2">
+                  <FaCheckCircle className="text-[#e5dfd3]" />
+                  <p className="text-gray-300 2xl:text-2xl">Legal requirements (are there restrictions on certain advertising rules according to local laws)</p>
+                </div>
+              </div>
+              </>
+    );
 
   const labels = [
     "CAR",
@@ -57,12 +92,15 @@ const page = () => {
         leftImgs={leftImgs}
         rightImgs={rightImgs}
         portfolioLink="/portfolio"/>
-      <TextThatSlidesIn />
-      <ScrollingImages />
+      {/** <TextThatSlidesIn /> */}
+      {/** <ScrollingImages /> */}
+        <div className='mx-10 my-40'>
+          <SummaryCard 
+            title="What I need from you?"
+            description={requirements2} />
+        </div>
       <AnimatedLabels labels={labels} direction="left-to-right" />
       <AnimatedLabels labels={labels} direction="right-to-left" />
-      <InfoSection title="What I need from you?"
-      items={items} />
       <CallToAction />
     </div>
   )

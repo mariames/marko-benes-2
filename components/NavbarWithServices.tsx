@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import CrossTextEffect from "./CrossTextEffect";
 
 export default function NavbarWithServices() {
     const [navbar, setNavbar] = useState(false);
@@ -92,21 +93,34 @@ export default function NavbarWithServices() {
                         <motion.div
                             key={"services"}
                             className="relative"
-                            whileHover="hover" >
+                            whileHover="hover"
+                            >
                             <button
                                 onClick={() => setBlogOpen(!blogOpen)}
-                                className="flex items-center text-gray-100"
+                                className="flex items-center tracking-wide"
                             >
-                                Services
+                                {Array.from("SERVICES").map((letter, index) => (
+                                <motion.span
+                                    key={index}
+                                    className="text-gray-100"
+                                    variants={{
+                                    hover: { color: "#ef4444" }, // Tailwind red-500
+                                    }}
+                                    transition={{ duration: 0.3, delay: index * 0.05 }}
+                                >
+                                    {letter}
+                                </motion.span>
+                                ))}
                             </button>
                             <motion.div
-                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
+                                className="absolute bottom-0 top-3 left-0 h-[2px] bg-red-500"
                                 initial={{ width: "0%" }}
                                 variants={{
                                 hover: { width: "100%", transition: { duration: 0.4 } },
                                 }}
                             />
-                            </motion.div>
+                        </motion.div>
+
                             <div
                                 className={`overflow-hidden transition-all duration-300 ease-in-out ${
                                     blogOpen ? "max-h-96 w-[450px] mt-5 -ml-4" : "max-h-0"
@@ -117,267 +131,44 @@ export default function NavbarWithServices() {
                                         blogOpen ? "opacity-100" : "opacity-0"
                                     } transition-opacity duration-300`}
                                 >
-                                    <li>
-                                        <motion.div
-                                            key={"services"}
-                                            className="relative"
-                                            whileHover="hover" >
-                                            <Link
-                                                href="/services/labels_and_packaging"
-                                                onClick={handleItemClick}
-                                                className="block px-3 py-2 text-gray-100"
-                                            >
-                                                Labels &amp; Packaging
-                                            </Link>
-                                        <motion.div
-                                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
-                                                initial={{ width: "0%" }}
-                                                variants={{
-                                                hover: { width: "100%", transition: { duration: 0.4 } },
-                                            }}
-                                        />
-                                        </motion.div>
+                                    <li className="p-2">
+                                        <CrossTextEffect text="LABELS &amp; PACKAGING" href="/services/labels_and_packaging" />
                                     </li>
-                                    <li>
-                                        <motion.div
-                                            key={"services"}
-                                            className="relative"
-                                            whileHover="hover" >
-                                            <Link
-                                                href="/services/posters_and_flyers"
-                                                onClick={handleItemClick}
-                                                className="block px-3 py-2 text-gray-100"
-                                                >
-                                                Posters &amp; Flyers
-                                            </Link>
-                                            <motion.div
-                                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
-                                                initial={{ width: "0%" }}
-                                                variants={{
-                                                hover: { width: "100%", transition: { duration: 0.4 } },
-                                            }}
-                                        />
-                                        </motion.div>
+                                    <li className="p-2">
+                                        <CrossTextEffect text="POSTERS &amp; FLYERS" href="/services/posters_and_flyers" />
                                     </li>
-                                    <li>
-                                        <motion.div
-                                            key={"services"}
-                                            className="relative"
-                                            whileHover="hover" >
-                                            <Link
-                                                href="/services/billboards_banners_roll_ups"
-                                                onClick={handleItemClick}
-                                                className="block px-3 py-2 text-gray-100"
-                                            >
-                                            Billboards, Banners & Roll Ups
-                                            </Link>
-                                            <motion.div
-                                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
-                                                initial={{ width: "0%" }}
-                                                variants={{
-                                                hover: { width: "100%", transition: { duration: 0.4 } },
-                                            }}
-                                        />
-                                        </motion.div>
+                                    <li className="p-2">
+                                        <CrossTextEffect text="BILLBOARDS, BANNERS & ROLL UPS" href="/services/billboards_banners_roll_ups" />
                                     </li>
-                                    <li>
-                                        <motion.div
-                                            key={"services"}
-                                            className="relative"
-                                            whileHover="hover" >
-                                            <Link
-                                                href="/services/vehicle_branding"
-                                                onClick={handleItemClick}
-                                                className="block px-3 py-2 text-gray-100"
-                                            >
-                                            Vehicle Branding
-                                            </Link>
-                                            <motion.div
-                                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
-                                                initial={{ width: "0%" }}
-                                                variants={{
-                                                hover: { width: "100%", transition: { duration: 0.4 } },
-                                            }}
-                                        />
-                                        </motion.div>
+                                    <li className="p-2">
+                                        <CrossTextEffect text="VEHICLE BRANDING" href="/services/vehicle_branding" />
                                     </li>
-                                    <li>
-                                        <motion.div
-                                            key={"services"}
-                                            className="relative"
-                                            whileHover="hover" >
-                                        <Link
-                                            href="/services/trade_promo_booths"
-                                            onClick={handleItemClick}
-                                            className="block px-3 py-2 text-gray-100"
-                                        >
-                                            Trade Promo Booths
-                                        </Link>
-                                        <motion.div
-                                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
-                                                initial={{ width: "0%" }}
-                                                variants={{
-                                                hover: { width: "100%", transition: { duration: 0.4 } },
-                                            }}
-                                        />
-                                        </motion.div>
+                                    <li className="p-2">
+                                        <CrossTextEffect text="TRADE PROMO BOOTHS" href="/services/trade_promo_booths" />
                                     </li>
-                                    <li>
-                                        <motion.div
-                                            key={"services"}
-                                            className="relative"
-                                            whileHover="hover" >
-                                        <Link
-                                            href="/services/promo_shelves"
-                                            onClick={handleItemClick}
-                                            className="block px-3 py-2 text-gray-100"
-                                        >
-                                            Promo Shelves
-                                        </Link>
-                                        <motion.div
-                                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
-                                                initial={{ width: "0%" }}
-                                                variants={{
-                                                hover: { width: "100%", transition: { duration: 0.4 } },
-                                            }}
-                                        />
-                                        </motion.div>
+                                    <li className="p-2">
+                                        <CrossTextEffect text="PROMO SHELVES" href="/services/promo_shelves" />
                                     </li>
-                                    <li>
-                                        <motion.div
-                                            key={"services"}
-                                            className="relative"
-                                            whileHover="hover" >
-                                            <Link
-                                                href="/services/logo"
-                                                onClick={handleItemClick}
-                                                className="block px-3 py-2 text-gray-100"
-                                            >
-                                                Logo
-                                            </Link>
-                                            <motion.div
-                                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
-                                                initial={{ width: "0%" }}
-                                                variants={{
-                                                hover: { width: "100%", transition: { duration: 0.4 } },
-                                            }}
-                                        />
-                                        </motion.div>
+                                    <li className="p-2">
+                                        <CrossTextEffect text="LOGO" href="/services/logo" />
                                     </li>
-                                    <li>
-                                        <motion.div
-                                            key={"services"}
-                                            className="relative"
-                                            whileHover="hover" >
-                                            <Link
-                                                href="/services/t-shirt_design"
-                                                onClick={handleItemClick}
-                                                className="block px-3 py-2 text-gray-100"
-                                            >
-                                                T-Shirt design
-                                            </Link>
-                                        <motion.div
-                                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
-                                                initial={{ width: "0%" }}
-                                                variants={{
-                                                hover: { width: "100%", transition: { duration: 0.4 } },
-                                            }}
-                                        />
-                                        </motion.div>
+                                    <li className="p-2">
+                                        <CrossTextEffect text="T-SHIRT DESIGN" href="/services/t-shirt_design" />
                                     </li>
-                                    {/** 
-                                    <li>
-                                        <motion.div
-                                            key={"services"}
-                                            className="relative"
-                                            whileHover="hover" >
-                                            <Link
-                                                href="/services/video_design"
-                                                onClick={handleItemClick}
-                                                className="block px-3 py-2 text-white"
-                                            >
-                                                Video Design
-                                            </Link>
-                                            <motion.div
-                                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
-                                                initial={{ width: "0%" }}
-                                                variants={{
-                                                hover: { width: "100%", transition: { duration: 0.4 } },
-                                            }}
-                                        />
-                                        </motion.div>
-                                    </li>
-                                    */}
                                 </ul>
                             </div>
                         </li>
-                        <li className="text-white hover:text-gray-100">
-                            <motion.div
-                                key={"services"}
-                                className="relative"
-                                whileHover="hover" >
-                                <Link href="/portfolio">
-                                    Portfolio
-                                </Link>
-                            <motion.div
-                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
-                                initial={{ width: "0%" }}
-                                variants={{
-                                hover: { width: "100%", transition: { duration: 0.4 } },
-                                }}
-                            />
-                            </motion.div>
+                        <li className="text-white">
+                            <CrossTextEffect text="PORTFOLIO" href="/portfolio" />
                         </li>
-                        <li className="text-white hover:text-gray-100">
-                            <motion.div
-                                key={"services"}
-                                className="relative"
-                                whileHover="hover" >
-                                    <Link href="/about">
-                                        About
-                                    </Link>
-                                <motion.div
-                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
-                                initial={{ width: "0%" }}
-                                variants={{
-                                hover: { width: "100%", transition: { duration: 0.4 } },
-                                }}
-                            />
-                            </motion.div>
+                        <li className="text-white">
+                            <CrossTextEffect text="ABOUT" href="/about" />
                         </li>
-                        <li className="text-white hover:text-gray-100">
-                            <motion.div
-                                key={"services"}
-                                className="relative"
-                                whileHover="hover" >
-                                <Link href="/collaborate">
-                                    Collaborate
-                                </Link>
-                            <motion.div
-                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
-                                initial={{ width: "0%" }}
-                                variants={{
-                                hover: { width: "100%", transition: { duration: 0.4 } },
-                                }}
-                            />
-                            </motion.div>
+                        <li className="text-white">
+                            <CrossTextEffect text="COLLABORATE" href="/collaborate" />
                         </li>
-                        <li className="text-white hover:text-gray-100">
-                            <motion.div
-                                key={"services"}
-                                className="relative"
-                                whileHover="hover" >
-                                <Link href="/contact">
-                                    Contact
-                                </Link>
-                            <motion.div
-                                className="absolute bottom-0 top-8 left-0 h-[2px] bg-white"
-                                initial={{ width: "0%" }}
-                                variants={{
-                                hover: { width: "100%", transition: { duration: 0.4 } },
-                                }}
-                            />
-                            </motion.div>
+                        <li className="text-white">
+                            <CrossTextEffect text="CONTACT" href="/contact" />
                         </li>
                     </ul>
                 </div>

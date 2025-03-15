@@ -1,21 +1,50 @@
+"use client";
 import CallToAction from '@/components/CallToAction';
-import InfoSection from '@/components/InfoSection';
 import ServiceHero from '@/components/ServiceHero';
-import TitleOFPage from '@/components/TitleOFPage'
+import { SummaryCard } from '@/components/SummaryCard';
 import TShirtDesignSection from '@/components/TShirtDesignSection';
-import React from 'react'
+import { FaCheckCircle } from 'react-icons/fa';
+
+const requirements = (
+    <>
+        <div className="space-y-2">
+          <div className="flex items-center space-x-2">
+            <FaCheckCircle className="text-[#e5dfd3]" />
+            <p className="text-gray-300 2xl:text-2xl">Brand line, special event, gift, or something else</p>
+          </div>
+          <div className="flex items-center space-x-2">
+            <FaCheckCircle className="text-[#e5dfd3]" />
+            <p className="text-gray-300 2xl:text-2xl">Age, interests, gender, and people who will wear the shirts</p>
+          </div>
+          <div className="flex items-center space-x-2">
+            <FaCheckCircle className="text-[#e5dfd3]" />
+            <p className="text-gray-300 2xl:text-2xl">Specific theme for style: retro, minimalist, urban, sports, etc.</p>
+          </div>
+          <div className="flex items-center space-x-2">
+            <FaCheckCircle className="text-[#e5dfd3]" />
+            <p className="text-gray-300 2xl:text-2xl">Brand logo, tagline, text, or other graphic elements (if any)</p>
+          </div>
+          <div className="flex items-center space-x-2">
+            <FaCheckCircle className="text-[#e5dfd3]" />
+            <p className="text-gray-300 2xl:text-2xl">Is the design on the front, back, or sleeves</p>
+          </div>
+          <div className="flex items-center space-x-2">
+            <FaCheckCircle className="text-[#e5dfd3]" />
+            <p className="text-gray-300 2xl:text-2xl">Design dimensions for each part of the shirt</p>
+          </div>
+          <div className="flex items-center space-x-2">
+            <FaCheckCircle className="text-[#e5dfd3]" />
+            <p className="text-gray-300 2xl:text-2xl">Examples of designs you like so I know what type of style you prefer, brand guideline</p>
+          </div>
+          <div className="flex items-center space-x-2">
+            <FaCheckCircle className="text-[#e5dfd3]" />
+            <p className="text-gray-300 2xl:text-2xl">Type of printing (screen printing, sublimation, embroidery)</p>
+          </div>
+        </div>
+    </>
+);
 
 const page = () => {
-  const items = [
-    "Brand line, special event, gift, or something else",
-    "Age, interests, gender, and people who will wear the shirts",
-    "Specific theme for style: retro, minimalist, urban, sports, etc.",
-    "Brand logo, tagline, text, or other graphic elements (if any)",
-    "Is the design on the front, back, or sleeves",
-    "Design dimensions for each part of the shirt",
-    "Examples of designs you like so I know what type of style you prefer, brand guideline",
-    "Type of printing (screen printing, sublimation, embroidery)",
-  ];
 
   const leftImgs = [
     { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/T-Shirt/8_printed-tee-design.jpg" },
@@ -39,10 +68,12 @@ const page = () => {
         leftImgs={leftImgs}
         rightImgs={rightImgs}
         portfolioLink="/portfolio"/>
-      <TShirtDesignSection />
-      <InfoSection
-        title="What I need from you?"
-        items={items} />
+      <div className='mx-10 my-40'>
+        <SummaryCard 
+          title="What I need from you?"
+          description={requirements} />
+      </div>
+      {/** <TShirtDesignSection /> */}
       <CallToAction />
     </>
   )

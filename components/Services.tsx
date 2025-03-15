@@ -111,8 +111,8 @@ const Services: React.FC = () => {
                   />
                 </div>
               </div>
-              <div className="mt-3 text-white text-3xl font-light ml-1">{service.name}</div>
-              <div className="mt-1 flex gap-2 flex-wrap">
+              <div className="mt-3 text-white text-xl md:text-2xl 4xl:text-3xl 5xl:text-4xl font-bold ml-1 uppercase">{service.name}</div>
+              <div className="mt-1 flex gap-2 flex-wrap 5xl:hidden">
                 {service.types.map((type, idx) => (
                   <span
                     key={idx}

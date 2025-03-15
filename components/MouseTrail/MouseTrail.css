@@ -1,0 +1,30 @@
+.trail-container {
+    position: fixed;
+    pointer-events: none; /* Prevents trail from interacting with other elements */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+  }
+  
+  .circle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(32, 6, 81, 0.8); /* Change color for different effects */
+    animation: fade 0.5s forwards;
+  }
+  
+  @keyframes fade {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0);
+      opacity: 0;
+    }
+  }
+  

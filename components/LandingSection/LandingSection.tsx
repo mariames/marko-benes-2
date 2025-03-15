@@ -6,7 +6,7 @@ const LandingSection: React.FC = () => {
   const { scrollYProgress } = useScroll(); // Get the scroll position
 
   // Scale the image dynamically until it reaches full screen
-  const imageScale = useTransform(scrollYProgress, [0, 0.2], [0.5, 1]);
+  const imageScale = useTransform(scrollYProgress, [0, 0.2], [0.7, 1]);
 
   // Fade out text as user scrolls
   const textOpacity = useTransform(scrollYProgress, [0, 0.1], [1, 0]);
@@ -15,7 +15,7 @@ const LandingSection: React.FC = () => {
     <section className="relative w-full h-[300vh] bg-black">
       {/* Text Section */}
       <motion.div
-        className="absolute text-center w-full top-[18vh] px-4"  // Moved text down
+        className="absolute text-center w-full top-[14vh] px-4"  // Moved text down
         style={{ opacity: textOpacity }}
       >
         <p className="sm:text-base md:text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-7xl 5xl:text-9xl  font-bold farmhouse-title text-white mb-4">

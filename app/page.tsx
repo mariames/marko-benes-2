@@ -17,10 +17,12 @@ export default function Home() {
       <MouseTrail />
       <LandingSection />
       {/** <Intro /> */}
+      <div className="flex flex-col mx-10 5xl:mx-48">
       <Word paragraph={paragraph} />
       <Word paragraph={p1} />
       <Word paragraph={p2} />
       <Word paragraph={p3} />
+      </div>
       <Services />
       <Logos />
       <CallToAction />     

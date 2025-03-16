@@ -178,10 +178,10 @@ const ServicesGallery: React.FC = () => {
       {filteredServices.map(({ type, images }) => (
         <div key={type} className="mb-12 mx-4 lg:mx-10">
           {/* ✅ Show Category Title */}
-          <p className="text-lg lg:text-3xl 2xl:text-4xl font-normal mb-4 border-b-2 border-gray-700 pb-2 text-white">{type}</p>
+          <p className="text-lg lg:text-3xl 2xl:text-4xl 4xl:text-5xl 5xl:text-7xl font-bold mb-10 border-b-2 border-gray-700 pb-2 text-white uppercase mt-36">{type}</p>
 
           {/* ✅ Display Images */}
-          <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-10">
+          <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-12 3xl:gap-14 4xl:gap-14 5xl:gap-16">
             {images.map((service, index) => (
               <motion.div key={index} 
                 variants={itemVariants}

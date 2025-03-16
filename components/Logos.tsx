@@ -22,12 +22,12 @@ const logos = [
 const Logos = () => {
   return (
     <div className="bg-black">
-      <p className="text-3xl text-white text-center pt-40 pb-5 max-sm:pt-32 max-sm:pb-2 ">
+      <p className="text-3xl 3xl:text-3xl 4xl:text-5xl 5xl:text-9xl text-white text-center pt-40 5xl:pt-96 pb-5 max-sm:pt-32 max-sm:pb-2 uppercase 4xl:font-bold">
         Honored to be part of their story
       </p>
       <div className="bg-black flex justify-center items-center min-h-screen relative max-sm:px-3">
         {/* Grid Container */}
-        <div className="relative grid grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-4 max-w-5xl xl:h-[64vh] lg:h-[74vh] md:h-[70vh]">
+        <div className="relative grid grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-4 max-w-5xl 5xl:h-[35vh] 4xl:h-[40vh] 3xl:h-[45vh]  xl:h-[64vh] lg:h-[74vh] md:h-[70vh]">
           {logos.map((logo, index) => (
             <motion.div
               key={index}

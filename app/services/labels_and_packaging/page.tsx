@@ -10,29 +10,21 @@ import { FaCheckCircle } from 'react-icons/fa';
 const page = () => {
 
 
-  const requirements = [
-    { id: 1, label: "Dimensions", description: "Height x width or dieline in vector format (ai, eps, pdf)" },
-    { id: 2, label: "Logo", description: "The logo of your brand or company (ai, eps, pdf) / vector file" },
-    { id: 3, label: "Text & Declaration", description: "Text necessary for the design including declaration, pictograms, barcode, etc." },
-    { id: 4, label: "Design Examples", description: "Examples of designs you like to understand the style you prefer, brand guidelines" },
-    { id: 5, label: "Packaging Material", description: "Packaging material types (cardboard, plastic, glass, bag, can, etc.)" },
-    { id: 6, label: "Printing Method", description: "Preferred printing method (offset, flexography, digital printing)" }
-  ];
-
   const leftImgs = [
     { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/1_packaging-design.jpg" },
-    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/2_label-design.jpg" },
+    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/2_label-design_print.jpg" },
     { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/3_shelf-ready-packaging-design.jpg" },
-    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/4_paneer-pouch-design.jpg" },
-    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/5_product-label-design.jpg" },
+    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/4_shelf_ready_box_die_cutting_packaging.jpg" },
+    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/5_paneer-pouch-design.jpg" },
+    { id: 6, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/6_product-label-design.jpg" }
   ];
 
   const rightImgs = [
-    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/5_product-label-design.jpg" },
-    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/4_paneer-pouch-design.jpg" },
-    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/3_shelf-ready-packaging-design.jpg" },
-    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/4_paneer-pouch-design.jpg" },
-    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/5_product-label-design.jpg" },
+    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/4_shelf_ready_box_die_cutting_packaging.jpg" },
+    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/6_product-label-design.jpg" },
+    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/5_paneer-pouch-design.jpg" },
+    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/1_packaging-design.jpg" },
+    { id: 6, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/LabelsAndPackaging/3_shelf-ready-packaging-design.jpg" },
   ];
 
   const requirements2 = (

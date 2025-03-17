@@ -27,7 +27,7 @@ const ServiceHero: React.FC<ServiceHeroPros> = ({
       {/* Left Side */}
       <div className="w-1/2 bg-black flex flex-col justify-center px-16">
         <motion.span 
-          className="text-base 2xl:text-2xl text-gray-200"
+          className="text-base 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl text-gray-200"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.1 }}
@@ -35,7 +35,7 @@ const ServiceHero: React.FC<ServiceHeroPros> = ({
           {subtitle}
         </motion.span>
         <motion.p 
-          className="sm:text-xl md:text-2xl xl:text-5xl  2xl:text-7xl font-bold mt-2 text-white tracking-wide"
+          className="sm:text-xl md:text-2xl xl:text-5xl  2xl:text-7xl 3xl:text-8xl 4xl:text-9xl 5xl:text-[140px] font-bold mt-2 text-white tracking-wide"
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2 }}
@@ -43,7 +43,7 @@ const ServiceHero: React.FC<ServiceHeroPros> = ({
           {title}
         </motion.p>
         <motion.p 
-          className="text-gray-200 mt-4 2xl:text-2xl"
+          className="text-gray-200 mt-4 text-base 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl"
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.3 }}

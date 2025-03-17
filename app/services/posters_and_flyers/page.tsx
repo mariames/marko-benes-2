@@ -59,18 +59,18 @@ const page = () => {
 
   const leftImgs = [
     { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/PostersAndFlyers/1_baby-kids-cosmetics-poster.jpg" },
-    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/PostersAndFlyers/2_sport-ads-instagram-poster.jpg" },
-    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/PostersAndFlyers/3_music-party-event-poster.jpg" },
-    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PostersAndFlyers/4_magazine-ads-flyer-product.jpg" },
-    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PostersAndFlyers/1_baby-kids-cosmetics-poster.jpg" },
+    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/PostersAndFlyers/2_nightlife-poster-music.jpg" },
+    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/PostersAndFlyers/3_magazine-ads-flyer-product.jpg" },
+    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PostersAndFlyers/4_music-party-event-poster.jpg" },
+    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PostersAndFlyers/5_kindergarten-kids-poster-instagram-ad.jpg" },
   ];
 
   const rightImgs = [
+    { id: 6, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/PostersAndFlyers/6_flyer-dessert-restaurant-design.jpg" },
+    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PostersAndFlyers/5_kindergarten-kids-poster-instagram-ad.jpg" },
+    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PostersAndFlyers/4_music-party-event-poster.jpg" },
+    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PostersAndFlyers/5_kindergarten-kids-poster-instagram-ad.jpg" },
     { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/PostersAndFlyers/1_baby-kids-cosmetics-poster.jpg" },
-    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/PostersAndFlyers/2_sport-ads-instagram-poster.jpg" },
-    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/PostersAndFlyers/3_music-party-event-poster.jpg" },
-    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PostersAndFlyers/4_magazine-ads-flyer-product.jpg" },
-    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PostersAndFlyers/1_baby-kids-cosmetics-poster.jpg" },
   ];
 
   return (

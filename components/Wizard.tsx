@@ -160,7 +160,7 @@ const Wizard = () => {
               >
                 <span className="text-xl">{step.icon}</span>
               </div>
-              {index < steps.length - 1 && <div className="absolute -right-7 top-1/2 w-7 h-0.5 bg-gray-700 xs:hidden"></div>}
+              {index < steps.length - 1 && <div className="absolute -right-7 top-1/2 w-7 h-0.5 bg-gray-700 sm:hidden "></div>}
             </div>
           ))}
         </div>

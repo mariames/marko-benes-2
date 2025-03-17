@@ -56,18 +56,17 @@ const page = () => {
 
   const leftImgs = [
     { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/PromoShelves/1_shelves-market-branding-design.jpg" },
-    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/PromoShelves/2_standing-retail-display-shelves.jpg" },
-    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/PromoShelves/3_product-display-design.jpg" },
-    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PromoShelves/3_product-display-design.jpg" },
-    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PromoShelves/3_product-display-design.jpg" },
+    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/PromoShelves/2_standing-retail-display-design.jpg" },
+    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/PromoShelves/3_standing-retail-display-shelves.jpg" },
+    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PromoShelves/4_shelves-display-supermarket.jpg" },
+    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PromoShelves/5_product-display-design.jpg" },
   ];
 
   const rightImgs = [
-    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/PromoShelves/1_shelves-market-branding-design.jpg" },
-    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/PromoShelves/2_standing-retail-display-shelves.jpg" },
-    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/PromoShelves/3_product-display-design.jpg" },
+    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/PromoShelves/5_product-display-design.jpg" },
+    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/PromoShelves/6_merchandise-rack-hanging.jpg" },
+    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/PromoShelves/4_shelves-display-supermarket.jpg" },
     { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PromoShelves/3_product-display-design.jpg" },
-    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PromoShelves/3_product-display-design.jpg" },
   ];
 
   return (

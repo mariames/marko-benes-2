@@ -69,18 +69,18 @@ const page = () => {
 
   const leftImgs = [
     { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/VehicleBranding/1_truck-lorry-branding-design.jpg" },
-    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/VehicleBranding/2_van-branding.jpg" },
+    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/VehicleBranding/2_truck-vehicle-vinyl-wrap.jpg" },
     { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/VehicleBranding/3_van_branding_design.jpg" },
-    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/VehicleBranding/2_van-branding.jpg" },
-    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/VehicleBranding/2_van-branding.jpg" },
+    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/VehicleBranding/4_van-vehicle-branding.jpg" },
+    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/VehicleBranding/5_van-vehicle-wrap.jpg" },
   ];
 
   const rightImgs = [
-    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/VehicleBranding/1_truck-lorry-branding-design.jpg" },
-    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/VehicleBranding/2_van-branding.jpg" },
+    { id: 6, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/VehicleBranding/6_car-branding-design.jpg" },
+    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/VehicleBranding/5_van-vehicle-wrap.jpg" },
+    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/VehicleBranding/4_van-vehicle-branding.jpg" },
     { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/VehicleBranding/3_van_branding_design.jpg" },
-    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/VehicleBranding/2_van-branding.jpg" },
-    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/VehicleBranding/2_van-branding.jpg" },
+    { id: 6, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/VehicleBranding/6_car-branding-design.jpg" },
   ];
 
   return (

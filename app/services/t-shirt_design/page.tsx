@@ -47,17 +47,18 @@ const requirements = (
 const page = () => {
 
   const leftImgs = [
-    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/T-Shirt/8_printed-tee-design.jpg" },
-    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/T-Shirt/9_design-casual-wear.jpg" },
-    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/T-Shirt/10_graphic-tee-t-shirt.jpg" },
-    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/T-Shirt/8_printed-tee-design.jpg" },
+    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/T-Shirt/1_t-shirt-design.jpg" },
+    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/T-Shirt/2_casual-wear-t-shirt-fashion.jpg" },
+    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/T-Shirt/3_printed-tee-design.jpg" },
+    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/T-Shirt/4_graphic-tee-design.jpg" },
+    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/T-Shirt/5_t-shirt-design-sublimation-sweetwear.jpg" },
   ];
 
   const rightImgs = [
-    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/T-Shirt/3_graphic-tee-design.jpg" },
-    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/T-Shirt/5_t-shirt-custom-design.jpg" },
-    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/T-Shirt/7_fashion-design-t-shirt.jpg" },
-    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/T-Shirt/6_t-shirt-design-sublimation.jpg" }
+    { id: 6, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/T-Shirt/6_design-casual-wear-print.jpg" },
+    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/T-Shirt/5_t-shirt-design-sublimation-sweetwear.jpg" },
+    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/T-Shirt/4_graphic-tee-design.jpg" },
+    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/T-Shirt/1_t-shirt-design.jpg" }
   ];
   return (
     <>

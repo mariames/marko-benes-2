@@ -132,22 +132,22 @@ export default function NavbarWithServices() {
                                     } transition-opacity duration-300`}
                                 >
                                     <li className="p-2">
-                                        <CrossTextEffect text="LABELS &amp; PACKAGING" href="/services/labels_and_packaging" />
+                                        <CrossTextEffect text="LABELS&nbsp;&amp;&nbsp;PACKAGING" href="/services/labels_and_packaging" />
                                     </li>
                                     <li className="p-2">
-                                        <CrossTextEffect text="POSTERS &amp; FLYERS" href="/services/posters_and_flyers" />
+                                        <CrossTextEffect text="POSTERS&nbsp;&amp;&nbsp;FLYERS" href="/services/posters_and_flyers" />
                                     </li>
                                     <li className="p-2">
-                                        <CrossTextEffect text="BILLBOARDS, BANNERS & ROLL UPS" href="/services/billboards_banners_roll_ups" />
+                                        <CrossTextEffect text="BILLBOARDS,&nbsp;BANNERS&nbsp;&&nbsp;ROLL UPS" href="/services/billboards_banners_roll_ups" />
                                     </li>
                                     <li className="p-2">
-                                        <CrossTextEffect text="VEHICLE BRANDING" href="/services/vehicle_branding" />
+                                        <CrossTextEffect text="VEHICLE&nbsp;BRANDING" href="/services/vehicle_branding" />
                                     </li>
                                     <li className="p-2">
-                                        <CrossTextEffect text="TRADE PROMO BOOTHS" href="/services/trade_promo_booths" />
+                                        <CrossTextEffect text="TRADE&nbsp;PROMO&nbsp;BOOTHS" href="/services/trade_promo_booths" />
                                     </li>
                                     <li className="p-2">
-                                        <CrossTextEffect text="PROMO SHELVES" href="/services/promo_shelves" />
+                                        <CrossTextEffect text="PROMO&nbsp;SHELVES" href="/services/promo_shelves" />
                                     </li>
                                     <li className="p-2">
                                         <CrossTextEffect text="LOGO" href="/services/logo" />

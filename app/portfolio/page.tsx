@@ -66,6 +66,9 @@ const allServices: { type: ServiceType; images: Service[] }[] = [
       { name: ServiceType.PostersAndFlyers, src: "/portfolio/posters-flyers/11_music-night-club-poster.jpg" },
       { name: ServiceType.PostersAndFlyers, src: "/portfolio/posters-flyers/12_product-ads-city-light-poster.jpg" },
       { name: ServiceType.PostersAndFlyers, src: "/portfolio/posters-flyers/13_magazine-ad-healthy-food.jpg" },
+      { name: ServiceType.PostersAndFlyers, src: "/portfolio/posters-flyers/14_techno-music-event-ads.jpg"},
+      { name: ServiceType.PostersAndFlyers, src: "/portfolio/posters-flyers/15_night-club-event-led-display.jpg"},
+      { name: ServiceType.PostersAndFlyers, src: "/portfolio/posters-flyers/16_club-party-dance-billboards.jpg"}
     ],
   },
   {

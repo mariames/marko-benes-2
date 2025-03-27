@@ -184,7 +184,7 @@ const ServicesGallery: React.FC = () => {
           <p className="text-lg lg:text-3xl 2xl:text-4xl 4xl:text-5xl 5xl:text-7xl font-bold mb-10 border-b-2 border-gray-700 pb-2 text-white uppercase mt-36">{type}</p>
 
           {/* ✅ Display Images */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 4xl:grid-cols-6 gap-12 3xl:gap-14 4xl:gap-14 5xl:gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 4xl:grid-cols-6 gap-12 3xl:gap-14 4xl:gap-14 5xl:gap-16">
             {images.map((service, index) => (
               <motion.div key={index} 
                 variants={itemVariants}

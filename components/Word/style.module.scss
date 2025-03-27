@@ -57,3 +57,27 @@
     font-size: 60px;
   }
 }
+
+/* 3XL screens (3xl) - ≥1920px */
+@media (min-width: 1920px) {
+  /* Add your styles here */
+  .paragraph{
+    font-size: 72px;
+  }
+}
+
+/* 4XL screens (4xl) - ≥2560px */
+@media (min-width: 2560px) {
+  /* Add your styles here */
+  .paragraph{
+    font-size: 80px;
+  }
+}
+
+/* 5XL screens (5xl) - ≥3840px */
+@media (min-width: 3840px) {
+  /* Add your styles here */
+  .paragraph{
+    font-size: 92px;
+  }
+}

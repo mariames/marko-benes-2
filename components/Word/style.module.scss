@@ -1,6 +1,6 @@
 .paragraph{
     display: flex;
-    font-size: 60px;
+    font-size: 18px;
     line-height: 1;
     padding: 40px;
     max-width: 1280px;
@@ -17,3 +17,43 @@
     }
     
   }
+
+  /* Small screens (sm) - ≥640px */
+@media (min-width: 640px) {
+  /* Add your styles here */
+  .paragraph{
+    font-size: 20px;
+  }
+}
+
+/* Medium screens (md) - ≥768px */
+@media (min-width: 768px) {
+  /* Add your styles here */
+  .paragraph{
+    font-size: 24px;
+  }
+}
+
+/* Large screens (lg) - ≥1024px */
+@media (min-width: 1024px) {
+  /* Add your styles here */
+  .paragraph{
+    font-size: 32px;
+  }
+}
+
+/* Extra large screens (xl) - ≥1280px */
+@media (min-width: 1280px) {
+  /* Add your styles here */
+  .paragraph{
+    font-size: 36px;
+  }
+}
+
+/* 2XL screens (2xl) - ≥1536px */
+@media (min-width: 1536px) {
+  /* Add your styles here */
+  .paragraph{
+    font-size: 60px;
+  }
+}

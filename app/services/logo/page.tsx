@@ -1,6 +1,7 @@
 "use client";
 import AnimatedLabels from '@/components/AnimatedLabels';
 import CallToAction from '@/components/CallToAction';
+import ServiceContent from '@/components/ServiceContent';
 import ServiceHero from '@/components/ServiceHero';
 import { SummaryCard } from '@/components/SummaryCard';
 import React from 'react'
@@ -81,6 +82,7 @@ const page = () => {
                 title="What I need from you?"
                 description={requirements} />
             </div>
+            <ServiceContent />
       <AnimatedLabels labels={labels} direction="left-to-right" />
       <AnimatedLabels labels={labels} direction="right-to-left" />
         <CallToAction />

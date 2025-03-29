@@ -24,9 +24,9 @@ const cardData: CardProps[] = [
       "Besides design itself, I have experience in pre-press which is an important part of getting the final print product, where design should be technically adjusted and prepared with quality for the printing process. Printing techniques for which I can prepare print files are: offset, flexo, digital, screen printing, pad printing, solvent, and others. I can say that my knowledge of graphic design, pre-press, and printing techniques is at a high level.",
   },
   {
-    title: "Freelance Career (Since 2022)",
+    title: "Freelance Career (Since 2012)",
     description:
-      "Since November 2022, I have been working entirely as a self-employed designer.",
+      "My career developed through a double path - working in a company and simultaneously engaging in freelance projects. The experience gained through cooperation with clients of different profiles allowed me to improve my communication and negotiation skills, as well as to acquire the knowledge necessary for the entrepreneurial world. All that prepared me for the next step, and from November 2022 I opened my studio as a self-employed designer.",
   },
 ];
 

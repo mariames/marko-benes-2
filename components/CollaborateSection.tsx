@@ -74,8 +74,26 @@ const collaborationSteps: CollaborationStep[] = [
 
           <div className="flex items-center space-x-2 mt-2">
             <FaCheckCircle className="text-[#e5dfd3]" />
-            <p className="text-gray-300 2xl:text-2xl">After the invoice is issued and the client makes full payment, I start work</p>
+            <p className="text-gray-300 2xl:text-2xl">We conclude a contract/agreement with all clearly defined conditions</p>
           </div>
+
+          <div className="flex items-center space-x-2 mt-2">
+            <FaCheckCircle className="text-[#e5dfd3]" />
+            <p className="text-gray-300 2xl:text-2xl">After the invoice is issued and the client makes full payment or a certain agreed percentage, I start
+            work</p>
+          </div>
+
+          <p className="2xl:text-2xl mt-3">
+          I work on a flat fee basis for projects, so I&#39;ll quote you a single project price instead of an hourly rate so
+          there&#39;s no hidden fees. Of course, if the need arises for additional work beyond the agreed scope, I will be
+          free to adjust the price accordingly.
+          </p>
+          <p className="2xl:text-2xl mt-3">
+          Most of the works showcased on this site took somewhere between 4—10 days to complete, and vary in
+          cost.<br></br> The scope of work, types of servises, and a host of other influences are factored into my pricing,
+          meaning every project is different. But as a general rule of thumb, most of my projects tend to range from
+          $70–$1000, again depending on the specifics.
+          </p>
       </>
     ),
   },
@@ -102,7 +120,7 @@ const collaborationSteps: CollaborationStep[] = [
     description: (
       <p className="2xl:text-2xl">
         While having a clear vision is important, I welcome constructive
-        feedback and necessary adjustments to ensure client satisfaction.
+        feedback and additional adjustments to ensure client satisfaction.
       </p>
     ),
   },

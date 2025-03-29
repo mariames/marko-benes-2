@@ -59,7 +59,7 @@ const FaqToggle = () => {
         {faqs.map((faq, index) => (
           <div key={index} className="border-b border-gray-300">
             <button
-              className="w-full text-left flex justify-between items-center py-3 text-lg font-medium text-white hover:text-[#B2905E] focus:outline-none"
+              className="w-full text-left flex justify-between items-center py-3 text-lg 2xl:text-2xl 3xl:text-4xl font-medium text-white hover:text-[#B2905E] focus:outline-none"
               onClick={() => toggleFAQ(index)}  // Toggle FAQ on button click
             >
               {faq.question}

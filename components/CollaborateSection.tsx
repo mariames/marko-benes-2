@@ -92,7 +92,7 @@ const collaborationSteps: CollaborationStep[] = [
           Most of the works showcased on this site took somewhere between 4—10 days to complete, and vary in
           cost.<br></br> The scope of work, types of servises, and a host of other influences are factored into my pricing,
           meaning every project is different. But as a general rule of thumb, most of my projects tend to range from
-          $70–$1000, again depending on the specifics.
+          $70&ndash;$1000, again depending on the specifics.
           </p>
       </>
     ),

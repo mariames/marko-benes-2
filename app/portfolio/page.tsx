@@ -192,7 +192,7 @@ const ServicesGallery: React.FC = () => {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.2 }}>
                 <ModalImage
-                  small={service.src}
+                  small={`/sm/${service.src}`}
                   large={service.src}
                   alt={service.name}
                   className="w-full h-auto rounded-lg shadow-md"

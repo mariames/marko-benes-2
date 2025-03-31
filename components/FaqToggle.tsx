@@ -24,7 +24,7 @@ const FaqToggle = () => {
     },
     {
       question: "Do you work on other types of designs that are not listed in the Services section?",
-      answer: "Certainly. Any type of design similar to those listed in the &quot;Services&quot; section, created using the same software, can also be offered as part of my services."
+      answer: "Certainly. Any type of design similar to those listed in the \"Services\" section, created using the same software, can also be offered as part of my services."
     }
   ];
 

@@ -13,8 +13,8 @@ const About = () => {
     <>
       {/** <TitleOFPage title="About" /> */}
       <TitleAnimation
-          title="ABOUT "
-          message="MARKO BENIS" />
+          title="ABOUT / CAREER"
+          message="DESIGN AS A CALLING" />
       <CardSection />
       <Image src="/about/6406_frellance-carrier.jpg" width={3840} height={1679} alt="Marko Benis" className="w-full h-auto" />
       <Stack />

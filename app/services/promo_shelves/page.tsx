@@ -4,6 +4,7 @@ import CallToAction from '@/components/CallToAction';
 import PromoShelvesSection from '@/components/PromoShelvesSection';
 import ServiceHero from '@/components/ServiceHero';
 import { SummaryCard } from '@/components/SummaryCard';
+import TextBlock from '@/components/TextBlock';
 import React from 'react'
 import { FaCheckCircle } from 'react-icons/fa';
 
@@ -78,14 +79,37 @@ const page = () => {
         leftImgs={leftImgs}
         rightImgs={rightImgs}
         portfolioLink="/portfolio"/>
-      <PromoShelvesSection />
+      {/** <PromoShelvesSection /> */}
+      <TextBlock>
+        In supermarkets and stores, customers make decisions in just a few seconds - that&#39;s why it&#39;s crucial that your
+        products are visible, attractive and easily accessible.
+      </TextBlock>
+      <TextBlock>
+        Each design is designed with the aim of highlighting the brand, attracting attention and conveying key messages,
+        using a well-thought-out combination of colors, graphics and arrangement of elements. In addition to visual appeal, I
+        take care of technical preparation and optimization for production, ensuring that everything looks perfect in the final
+        version.
+      </TextBlock>
+      <TextBlock>
+        Promo shelves can be made of cardboard, wood or metal, and each material requires a specific design approach.
+        Cardboard shelves are light, flexible and ideal for short-term promotions, while wooden and metal variants provide
+        greater durability and a premium look.
+      </TextBlock>
+      <TextBlock>
+        Whether it is displays for promotional products, exclusive collections or long-term setups, the design will be adapted
+        to your needs and market requirements.
+      </TextBlock>
+      <TextBlock>
+        Get your products noticed - because good visibility means more sales!
+      </TextBlock>
+      <AnimatedLabels labels={labels} direction="left-to-right" />
+      <AnimatedLabels labels={labels} direction="right-to-left" />
       <div className='mx-10 my-40'>
         <SummaryCard 
           title="What I need from you?"
           description={requirements} />
       </div>
-      <AnimatedLabels labels={labels} direction="left-to-right" />
-      <AnimatedLabels labels={labels} direction="right-to-left" />
+
       <CallToAction />
     </>
   )

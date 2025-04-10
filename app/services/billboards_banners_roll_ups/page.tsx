@@ -4,6 +4,7 @@ import BillboardSection from '@/components/BillboardsSection'
 import CallToAction from '@/components/CallToAction'
 import ServiceHero from '@/components/ServiceHero'
 import { SummaryCard } from '@/components/SummaryCard'
+import TextBlock from '@/components/TextBlock';
 import React from 'react'
 import { FaCheckCircle } from 'react-icons/fa'
 
@@ -82,13 +83,35 @@ const page = () => {
         rightImgs={rightImgs}
         portfolioLink="/portfolio"/>
       {/** <BillboardSection /> */}
+      <TextBlock>
+        Large format design requires a clear and effective style, with special attention to readability and visibility from
+        different distances. Regardless of whether it is roadside billboards, mega-banners on building facades, roll-up
+        banners, marketing displays for retail spaces or city light ads in urban areas, it is crucial to correctly balance the size
+        of text, images and compositions to ensure maximum visibility and visual impact.
+      </TextBlock>
+      <TextBlock>
+        All design elements such as texts, colors, contrasts and layout of information etc. must be carefully selected and
+        placed so that passers-by and onlookers can quickly and easily spot key messages, even in motion. The text must be
+        large enough to remain legible from a greater distance, while the visual elements should attract attention and clearly
+        communicate the message of the brand or event.
+      </TextBlock>
+      <TextBlock>
+        Apart from the creative approach, I pay special attention to the technical preparation, because the quality of printing
+        in large formats depends on the professional preparation of the file. It is important to take care of the appropriate
+        resolution, dimensions, safe zones, tolerances and printing standards, so that the final product is flawlessly executed
+        without loss of quality or unforeseen printing errors.
+      </TextBlock>
+      <TextBlock>
+        Properly designed large format design attracts attention and conveys the message effectively, leaving a strong
+        impression that contributes to brand recognition and campaign success.
+      </TextBlock>
+      <AnimatedLabels labels={labels} direction="left-to-right" />
+      <AnimatedLabels labels={labels} direction="right-to-left" />
       <div className='mx-10 my-40'>
         <SummaryCard 
           title="What I need from you?"
           description={requirements2} />
       </div>
-      <AnimatedLabels labels={labels} direction="left-to-right" />
-      <AnimatedLabels labels={labels} direction="right-to-left" />
       <CallToAction />
     </>
   )

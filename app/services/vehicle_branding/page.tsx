@@ -4,6 +4,7 @@ import CallToAction from '@/components/CallToAction';
 import ScrollingImages from '@/components/ScrollingImages';
 import ServiceHero from '@/components/ServiceHero';
 import { SummaryCard } from '@/components/SummaryCard';
+import TextBlock from '@/components/TextBlock';
 import TextThatSlidesIn from '@/components/TextThatSlidesIn';
 import React from 'react'
 import { FaCheckCircle } from 'react-icons/fa';
@@ -92,6 +93,20 @@ const page = () => {
         leftImgs={leftImgs}
         rightImgs={rightImgs}
         portfolioLink="/portfolio"/>
+        <TextBlock>
+          Branding a vehicle requires the precise creation of a design that is fully adapted to the dimensions and technical
+          characteristics of the vehicle itself. I start each project with a detailed analysis of the technical drawings, taking care
+          of all the specific elements, such as rounded edges, doors, handles, mirrors and lights, so that the key visual elements remain clearly visible and uninterrupted.
+        </TextBlock>
+        <TextBlock>
+          By correctly positioning logos, text and graphic elements, I ensure that branded vehicles express a strong and clear
+          message, whether they are in motion or parked. In addition to the aesthetic appeal, I pay special attention to the
+          technical preparation in order to obtain the appropriate quality in the press.
+        </TextBlock>
+        <TextBlock>
+          And know, your vehicle is more than a means of transportation &mdash; it&#39;s a mobile advertisement that works for you all
+          the time! Creating attractive and effective vehicle branding solutions will make your brand stand out wherever you go.
+        </TextBlock>
       {/** <TextThatSlidesIn /> */}
       {/** <ScrollingImages /> */}
         <div className='mx-10 my-40'>

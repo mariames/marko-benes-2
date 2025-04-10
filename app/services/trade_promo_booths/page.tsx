@@ -3,6 +3,7 @@ import AnimatedLabels from '@/components/AnimatedLabels'
 import CallToAction from '@/components/CallToAction'
 import ServiceHero from '@/components/ServiceHero'
 import { SummaryCard } from '@/components/SummaryCard'
+import TextBlock from '@/components/TextBlock';
 import TradePromoBoothSection from '@/components/TradePromoBoothSection'
 import React from 'react'
 import { FaCheckCircle } from 'react-icons/fa'
@@ -88,13 +89,31 @@ const page = () => {
         rightImgs={rightImgs}
         portfolioLink="/portfolio"/>
       {/** <TradePromoBoothSection /> */}
+      <TextBlock>
+        A successful promo stand must not blend in with its surroundings - it must attract, retain and interest passers-by.
+        Modern design for stands, promo tables, displays and other exhibition materials will be adapted to your brand and promotion goals.
+      </TextBlock>
+      <TextBlock>
+        The design is always carefully planned with a clear focus made up of a combination of colors, fonts, products and
+        visuals that ensure recognition and ease of reading from a distance. Each element is carefully positioned so that the
+        key messages are highlighted, and the stand appears neat and attractive.
+      </TextBlock>
+      <TextBlock>
+        Taking into account the technical aspects of production, dimensions, materials and press preparation that will
+        contribute to a perfectly prepared design, ready for quick assembly and maximum effect on the exhibition from all angles.
+      </TextBlock>
+      <TextBlock>
+        Whether you&#39;re presenting at a major trade show, business conference or smaller promotion, the right design can
+        make a huge difference!
+      </TextBlock>
+      <AnimatedLabels labels={labels} direction="left-to-right" />
+      <AnimatedLabels labels={labels} direction="right-to-left" />
       <div className='mx-10 my-40'>
         <SummaryCard 
           title="What I need from you?"
           description={requirements2} />
       </div>
-      <AnimatedLabels labels={labels} direction="left-to-right" />
-      <AnimatedLabels labels={labels} direction="right-to-left" />
+
       <CallToAction />
     </>
   )

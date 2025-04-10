@@ -4,6 +4,9 @@ import CallToAction from '@/components/CallToAction';
 import ServiceHero from '@/components/ServiceHero';
 import SpotlightTitle from '@/components/SpotlightTitle';
 import { SummaryCard } from '@/components/SummaryCard';
+import TextBlock from '@/components/TextBlock';
+import TextInfo from '@/components/TextInfo';
+import TradePromoBoothSection from '@/components/TradePromoBoothSection';
 import React from 'react'
 import { FaCheckCircle } from 'react-icons/fa';
 
@@ -83,6 +86,16 @@ const page = () => {
         rightImgs={rightImgs}
         portfolioLink="/portfolio"/>
       <div className='mx-10 my-40'>
+        <TextBlock>
+          The key goal of every design is to strengthen brand identity and capture consumer attention on the shelf. That&#39;s why I develop every packaging and label design strategically, considering all essential elements such as striking visuals, customized backgrounds, carefully positioned text, well-designed icons, and a harmonious color palette. This ensures that the final product is visually powerful, recognizable, and flawlessly executed in every aspect—from concept to the finished product.
+        </TextBlock>
+        <TextBlock>
+          Thanks to many years of experience in graphic design and engineering knowledge of printing techniques, it allows me to create labels and packages that look attractive and technically impeccably prepared for printing, taking care of colors, materials, overlays and final effects, so that the printing is error-free on any printing technique: flexography, offset or digital.
+        </TextBlock>
+        <TextBlock>
+          Each packaging is designed to be visually appealing and intuitive to use, providing customers with a complete brand experience.
+        </TextBlock>
+        <TextInfo />
         <SummaryCard 
           title="What I need from you?"
           description={requirements2} />

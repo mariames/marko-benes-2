@@ -19,7 +19,7 @@ const PrintTechniques: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <Image src="/service-section/PostersAndFlyers/1_baby-kids-cosmetics-poster.jpg" width={1500} height={1124} alt="Promotional Design" className="w-full h-auto rounded-lg" />
+            <Image src="/service-section/LabelsAndPackaging/print_finishing_techniques/dry_stamp_embossing_debossing_label_design.jpg" width={1400} height={972} alt="Promotional Design" className="w-full h-auto rounded-lg" />
           </motion.div>
           <motion.div
             className="flex-1"
@@ -38,7 +38,7 @@ const PrintTechniques: React.FC = () => {
             <FoilStamping />
           </motion.div>
           <motion.div initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}>
-            <img src="/service-section/PostersAndFlyers/3_music-party-event-poster.jpg" alt="Poster Design" className="w-full h-auto rounded-lg" />
+            <Image src="/service-section/LabelsAndPackaging/print_finishing_techniques/hot_foil_stamping_foil_blocking_packaging_design.jpg" alt="Foil stamping" className="w-full h-auto rounded-lg" width={1400} height={972} />
           </motion.div>
         </div>
 
@@ -51,7 +51,7 @@ const PrintTechniques: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <Image src="/service-section/PostersAndFlyers/4_magazine-ads-flyer-product.jpg" width={1500} height={1124} alt="Design Variety" className="w-full h-auto rounded-lg" />
+            <Image src="/service-section/LabelsAndPackaging/print_finishing_techniques/uv_varnish_uv_coating_spot_label_design.jpg" width={1400} height={972} alt="Design Variety" className="w-full h-auto rounded-lg" />
           </motion.div>
           <motion.div
             className="flex-1"

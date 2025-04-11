@@ -11,8 +11,8 @@ const UvVarnish: React.FC = () => {
     >
       <h2 className="text-lg lg:text-3xl 2xl:text-4xl font-normal">UV varnish</h2>
       <hr className="border-gray-600 my-2" />
-      <p>UV varnish or UV coating is a surface finishing technique in which a transparent varnish is applied to certain parts of the printed surface and dried using ultraviolet (UV) light. This technique is used to emphasize slightly raised design elements and add a premium visual and tactile effect.</p>
-      <p>Characteristics of UV varnish:</p>
+      <p className="text-lg 2xl:text-2xl text-justify">UV varnish or UV coating is a surface finishing technique in which a transparent varnish is applied to certain parts of the printed surface and dried using ultraviolet (UV) light. This technique is used to emphasize slightly raised design elements and add a premium visual and tactile effect.</p>
+      <p className="text-lg 2xl:text-2xl my-7">Characteristics of UV varnish:</p>
       <div className="space-y-2">
         <div className="flex items-center space-x-2">
           <FaCheckCircle className="text-[#e5dfd3]" />

@@ -1,12 +1,12 @@
 "use client";
 import AnimatedLabels from '@/components/AnimatedLabels';
 import CallToAction from '@/components/CallToAction';
+import PrintTechniques from '@/components/PrintTechniques';
 import ServiceHero from '@/components/ServiceHero';
 import SpotlightTitle from '@/components/SpotlightTitle';
 import { SummaryCard } from '@/components/SummaryCard';
 import TextBlock from '@/components/TextBlock';
 import TextInfo from '@/components/TextInfo';
-import TradePromoBoothSection from '@/components/TradePromoBoothSection';
 import React from 'react'
 import { FaCheckCircle } from 'react-icons/fa';
 
@@ -96,6 +96,7 @@ const page = () => {
           Each packaging is designed to be visually appealing and intuitive to use, providing customers with a complete brand experience.
         </TextBlock>
         <TextInfo />
+        <PrintTechniques />
         <SummaryCard 
           title="What I need from you?"
           description={requirements2} />

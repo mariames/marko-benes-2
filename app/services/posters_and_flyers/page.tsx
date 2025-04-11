@@ -2,6 +2,7 @@
 import AnimatedLabels from '@/components/AnimatedLabels';
 import CallToAction from '@/components/CallToAction';
 import PostersDesignSection from '@/components/PostersDesignSection';
+import PostersPrintTechnique from '@/components/PostersPrintTechniques';
 import ServiceHero from '@/components/ServiceHero';
 import { SummaryCard } from '@/components/SummaryCard';
 import TextBlock from '@/components/TextBlock';
@@ -102,6 +103,7 @@ const page = () => {
     <TextBlock>
       My goal is for your message to be not only noticed, but also remembered.
     </TextBlock>
+    <PostersPrintTechnique />
     <div className='mx-10 my-40'>
       <SummaryCard 
         title="What I need from you?"

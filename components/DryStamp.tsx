@@ -17,19 +17,19 @@ const DryStamp: React.FC = () => {
       <div className="space-y-2">
         <div className="flex items-center space-x-2">
           <FaCheckCircle className="text-[#e5dfd3]" />
-          <p className="text-gray-300 2xl:text-2xl">Embossing – the design is raised above the surface of the paper, Debossing – the design is pressed below the surface of the paper.</p>
+          <p className="text-gray-300 2xl:text-2xl">Embossing &mdash; the design is raised above the surface of the paper, Debossing &mdash; the design is pressed below the surface of the paper.</p>
         </div>
         <div className="flex items-center space-x-2">
           <FaCheckCircle className="text-[#e5dfd3]" />
-          <p className="text-gray-300 2xl:text-2xl">No ink or foil – only pressure is applied using a specially crafted die.</p>
+          <p className="text-gray-300 2xl:text-2xl">No ink or foil &mdash; only pressure is applied using a specially crafted die.</p>
         </div>
         <div className="flex items-center space-x-2">
           <FaCheckCircle className="text-[#e5dfd3]" />
-          <p className="text-gray-300 2xl:text-2xl">Visual effect – gives 3D dimensionality and premium look.</p>
+          <p className="text-gray-300 2xl:text-2xl">Visual effect &mdash; gives 3D dimensionality and premium look.</p>
         </div>
         <div className="flex items-center space-x-2">
           <FaCheckCircle className="text-[#e5dfd3]" />
-          <p className="text-gray-300 2xl:text-2xl">Best effect on thicker paper – softer and thicker papers or special art papers give the most pronounced
+          <p className="text-gray-300 2xl:text-2xl">Best effect on thicker paper &mdash; softer and thicker papers or special art papers give the most pronounced
           effect</p>
         </div>
       </div>

@@ -20,11 +20,11 @@ const FoilStamping: React.FC = () => {
         </div>
         <div className="flex items-center space-x-2">
           <FaCheckCircle className="text-[#e5dfd3]" />
-          <p className="text-gray-300 2xl:text-2xl">High precision – enables sharp details and fine lines.</p>
+          <p className="text-gray-300 2xl:text-2xl">High precision &mdash; enables sharp details and fine lines.</p>
         </div>
         <div className="flex items-center space-x-2">
           <FaCheckCircle className="text-[#e5dfd3]" />
-          <p className="text-gray-300 2xl:text-2xl">Visual premium experience – the foil reflects light, giving an elegant look.</p>
+          <p className="text-gray-300 2xl:text-2xl">Visual premium experience &mdash; the foil reflects light, giving an elegant look.</p>
         </div>
         <div className="flex items-center space-x-2">
           <FaCheckCircle className="text-[#e5dfd3]" />

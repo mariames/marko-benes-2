@@ -16,19 +16,19 @@ const UvVarnish: React.FC = () => {
       <div className="space-y-2">
         <div className="flex items-center space-x-2">
           <FaCheckCircle className="text-[#e5dfd3]" />
-          <p className="text-gray-300 2xl:text-2xl">Glossy or matte effect - can be high gloss or matte finish.</p>
+          <p className="text-gray-300 2xl:text-2xl">Glossy or matte effect &mdash; can be high gloss or matte finish.</p>
         </div>
         <div className="flex items-center space-x-2">
           <FaCheckCircle className="text-[#e5dfd3]" />
-          <p className="text-gray-300 2xl:text-2xl">Tactile and visual feeling - parts with UV varnish are smoother and reflect light.</p>
+          <p className="text-gray-300 2xl:text-2xl">Tactile and visual feeling &mdash; parts with UV varnish are smoother and reflect light.</p>
         </div>
         <div className="flex items-center space-x-2">
           <FaCheckCircle className="text-[#e5dfd3]" />
-          <p className="text-gray-300 2xl:text-2xl">Contrast with matte paper - especially effective on matte lamination.</p>
+          <p className="text-gray-300 2xl:text-2xl">Contrast with matte paper &mdash; especially effective on matte lamination.</p>
         </div>
         <div className="flex items-center space-x-2">
           <FaCheckCircle className="text-[#e5dfd3]" />
-          <p className="text-gray-300 2xl:text-2xl">Abrasion Protection – adds a layer of resistance to scratches and moisture.</p>
+          <p className="text-gray-300 2xl:text-2xl">Abrasion Protection &mdash; adds a layer of resistance to scratches and moisture.</p>
         </div>
       </div>
     </motion.div>

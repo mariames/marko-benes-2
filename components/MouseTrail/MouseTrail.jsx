@@ -14,17 +14,15 @@ const MouseTrail = () => {
       };
       setTrail((prevTrail) => [...prevTrail, newCircle]);
 
-      // Remove the circle after it fades out
       setTimeout(() => {
-        setTrail((prevTrail) => prevTrail.filter((circle) => circle.id !== newCircle.id));
-      }, 500); // Remove after 500ms
+        setTrail((prevTrail) =>
+          prevTrail.filter((circle) => circle.id !== newCircle.id)
+        );
+      }, 500);
     };
 
     window.addEventListener('mousemove', handleMouseMove);
-
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-    };
+    return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
   return (
@@ -32,12 +30,15 @@ const MouseTrail = () => {
       {trail.map((circle) => (
         <div
           key={circle.id}
-          className="circle"
+          className="circle-wrapper"
           style={{
-            left: `${circle.x - 20}px`, // Offset to center the circle on the cursor
+            left: `${circle.x - 20}px`,
             top: `${circle.y - 20}px`,
           }}
-        />
+        >
+          <div className="inner-circle" />
+          <div className="outer-circle" />
+        </div>
       ))}
     </div>
   );

@@ -1,0 +1,35 @@
+/* Hide the actual cursor globally */
+body {
+    cursor: none;
+  }
+  
+  .cursor-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+  }
+  
+  .cursor-inner {
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .cursor-outer {
+    width: 32px;
+    height: 32px;
+    background-color: rgba(255, 0, 0, 0.5); /* 10% opacity red */
+    border-radius: 50%;
+    border-color: red 2px solid;
+    position: absolute;
+    top: -12px;
+    left: -12px;
+  }
+  

@@ -1,10 +1,9 @@
 "use client";
-import Intro from "@/components/Intro";
 import Logos from "@/components/Logos";
 import Services from "@/components/Services";
 import CallToAction from "@/components/CallToAction";
 import LandingSection from "@/components/LandingSection/LandingSection";
-import MouseTrail from "@/components/MouseTrail/MouseTrail";
+import CustomCursor from "@/components/CustomCursor/CustomCursor";
 import Word from "@/components/Word/Word";
 
 const paragraph = "Design is more than just visuals—it’s about creating an experience."
@@ -14,7 +13,8 @@ const p3=" I’m here to help your brand leave a lasting impression and create m
 export default function Home() {
   return (
     <main>
-      <MouseTrail />
+      {/** <MouseTrail /> */}
+      <CustomCursor />
       <LandingSection />
       {/** <Intro /> */}
       <div className="flex flex-col mx-10 5xl:mx-48">

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import ModalImage from "react-modal-image";
 import TitleAnimation from "@/components/TitleAnimation";
@@ -23,6 +23,11 @@ interface Service {
   name: ServiceType;
   src: string;
 }
+
+type ServiceImage = {
+  src: string;
+  name: string;
+};
 
 // ✅ Group All Services into One Array
 const allServices: { type: ServiceType; images: Service[] }[] = [
@@ -150,11 +155,39 @@ const itemVariants = {
 const ServicesGallery: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<ServiceType>(ServiceType.All);
 
+
+
   // ✅ Filtered Images Based on Selection
   const filteredServices =
     selectedCategory === ServiceType.All
       ? allServices // Show all categories
       : allServices.filter((service) => service.type === selectedCategory); // Show only selected category
+
+  // ✅ Lightbox States
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [activeCategoryImages, setActiveCategoryImages] = useState<ServiceImage[]>([]);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // ✅ Keyboard Navigation for Lightbox
+  useEffect(() => {
+      const handleKeyDown = (e: KeyboardEvent) => {
+        if (!lightboxOpen) return;
+  
+        if (e.key === "ArrowLeft") {
+          setCurrentImageIndex((prev) => (prev > 0 ? prev - 1 : activeCategoryImages.length - 1));
+        } else if (e.key === "ArrowRight") {
+          setCurrentImageIndex((prev) => (prev < activeCategoryImages.length - 1 ? prev + 1 : 0));
+        } else if (e.key === "Escape") {
+          setLightboxOpen(false);
+        }
+      };
+
+      window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [lightboxOpen, activeCategoryImages.length]);
+
+
+
 
   return (
     <div className="container mx-auto p-4">
@@ -178,22 +211,32 @@ const ServicesGallery: React.FC = () => {
       </div>
 
       {/* ✅ Display Filtered Images with Titles */}
+      {/* ✅ Display Filtered Images with Titles */}
       {filteredServices.map(({ type, images }) => (
         <div key={type} className="mb-12 mx-4 lg:mx-10">
           {/* ✅ Show Category Title */}
-          <p className="text-lg lg:text-3xl 2xl:text-4xl 4xl:text-5xl 5xl:text-7xl font-bold mb-10 border-b-2 border-gray-700 pb-2 text-white uppercase mt-36">{type}</p>
+          <p className="text-lg lg:text-3xl 2xl:text-4xl 4xl:text-5xl 5xl:text-7xl font-bold mb-10 border-b-2 border-gray-700 pb-2 text-white uppercase mt-36">
+            {type}
+          </p>
 
           {/* ✅ Display Images */}
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 4xl:grid-cols-6 gap-12 3xl:gap-14 4xl:gap-14 5xl:gap-16">
             {images.map((service, index) => (
-              <motion.div key={index} 
+              <motion.div
+                key={index}
                 variants={itemVariants}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.2 }}>
-                <ModalImage
-                  small={`/sm/${service.src}`}
-                  large={service.src}
+                viewport={{ once: true, amount: 0.2 }}
+                className="cursor-pointer"
+                onClick={() => {
+                  setActiveCategoryImages(images);
+                  setCurrentImageIndex(index);
+                  setLightboxOpen(true);
+                }}
+              >
+                <img
+                  src={`/sm/${service.src}`}
                   alt={service.name}
                   className="w-full h-auto rounded-lg shadow-md"
                 />
@@ -202,6 +245,56 @@ const ServicesGallery: React.FC = () => {
           </div>
         </div>
       ))}
+
+
+      {/* ✅ Custom Lightbox Modal */}
+      {lightboxOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center">
+          <button
+            className="absolute top-4 right-6 text-white text-4xl"
+            onClick={() => setLightboxOpen(false)}
+            aria-label="Close"
+          >
+            &times;
+          </button>
+
+          <button
+            className="absolute left-4 text-white text-4xl"
+            onClick={() =>
+              setCurrentImageIndex((prev) =>
+                prev > 0 ? prev - 1 : activeCategoryImages.length - 1
+              )
+            }
+            aria-label="Previous"
+          >
+            &#8592;
+          </button>
+
+          <img
+            src={activeCategoryImages[currentImageIndex].src}
+            alt={activeCategoryImages[currentImageIndex].name}
+            className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-xl"
+          />
+
+          <button
+            className="absolute right-4 text-white text-4xl"
+            onClick={() =>
+              setCurrentImageIndex((prev) =>
+                prev < activeCategoryImages.length - 1 ? prev + 1 : 0
+              )
+            }
+            aria-label="Next"
+          >
+            &#8594;
+          </button>
+        </div>
+      )}
+
+
+
+
+
+
     </div>
   );
 };

@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { FaCheckCircle } from "react-icons/fa"; 
 import TextBlock from "./TextBlock";
 
 const TextInfo: React.FC = () => {

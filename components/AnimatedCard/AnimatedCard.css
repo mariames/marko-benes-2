@@ -1,0 +1,21 @@
+.card-data {
+    animation: none;
+  }
+  
+  div:hover > .card-data {
+    animation: rise-up 1s forwards;
+    opacity: 1;
+  }
+  
+  @keyframes rise-up {
+    0% {
+      transform: translateX(-50%) translateY(0);
+    }
+    50% {
+      transform: translateX(-50%) translateY(-6rem);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-4rem);
+    }
+  }
+  

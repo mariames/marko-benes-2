@@ -1,17 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import { Mail } from "lucide-react";
-import ContactSection from "./ContactSection";
 import ContactForm from "./ContactForm";
 import Wizard from "./Wizard";
 import { motion } from "framer-motion"; // Import Framer Motion
 
-const socialLinks = [
-  { icon: <Mail size={24} />, href: "https://twitter.com/" },
-  { icon: <Mail size={24} />, href: "https://dribbble.com/" },
-  { icon: <Mail size={24} />, href: "https://www.behance.net/" },
-  { icon: <Mail size={24} />, href: "https://linkedin.com/" },
-];
 
 const ContactContent: React.FC = () => {
   const [activeTab, setActiveTab] = useState(1); // 1 for content, 2 for contact form
@@ -41,14 +33,6 @@ const ContactContent: React.FC = () => {
           >
             Send Email
           </button>
-          <button
-            onClick={() => handleTabClick(3)}
-            className={`py-2 px-6 text-2xl font-normal transition ${
-              activeTab === 3 ? "border-b-2 border-white" : ""
-            }`}
-          >
-            Social Networks
-          </button>
         </div>
 
         {/* Tabs Content */}
@@ -61,7 +45,6 @@ const ContactContent: React.FC = () => {
         >
           {activeTab === 1 && <Wizard />}
           {activeTab === 2 && <ContactForm />}
-          {activeTab === 3 && <ContactSection />}
         </motion.div>
       </div>
     </section>

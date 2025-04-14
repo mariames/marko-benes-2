@@ -106,13 +106,13 @@ const page = () => {
         Whether you&#39;re presenting at a major trade show, business conference or smaller promotion, the right design can
         make a huge difference!
       </TextBlock>
+      
       <AnimatedLabels labels={labels} direction="left-to-right" />
       <AnimatedLabels labels={labels} direction="right-to-left" />
-      <div className='mx-10 my-40'>
+
         <SummaryCard 
           title="What I need from you?"
           description={requirements2} />
-      </div>
 
       <CallToAction />
     </>

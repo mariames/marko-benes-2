@@ -89,12 +89,11 @@ const page = () => {
         Well-designed t-shirts not only attract attention, but create a strong association with your brand and the message
         you want to convey.
       </TextBlock>
-      <div className='mx-10 my-40'>
-        <SummaryCard 
-          title="What I need from you?"
-          description={requirements} />
-      </div>
-      {/** <TShirtDesignSection /> */}
+
+      <SummaryCard 
+        title="What I need from you?"
+        description={requirements} />
+
       <CallToAction />
     </>
   )

@@ -1,11 +1,9 @@
 "use client";
 import AnimatedLabels from '@/components/AnimatedLabels';
 import CallToAction from '@/components/CallToAction';
-import ScrollingImages from '@/components/ScrollingImages';
 import ServiceHero from '@/components/ServiceHero';
 import { SummaryCard } from '@/components/SummaryCard';
 import TextBlock from '@/components/TextBlock';
-import TextThatSlidesIn from '@/components/TextThatSlidesIn';
 import React from 'react'
 import { FaCheckCircle } from 'react-icons/fa';
 
@@ -93,6 +91,7 @@ const page = () => {
         leftImgs={leftImgs}
         rightImgs={rightImgs}
         portfolioLink="/portfolio"/>
+
         <TextBlock>
           Branding a vehicle requires the precise creation of a design that is fully adapted to the dimensions and technical
           characteristics of the vehicle itself. I start each project with a detailed analysis of the technical drawings, taking care
@@ -107,16 +106,16 @@ const page = () => {
           And know, your vehicle is more than a means of transportation &mdash; it&#39;s a mobile advertisement that works for you all
           the time! Creating attractive and effective vehicle branding solutions will make your brand stand out wherever you go.
         </TextBlock>
-      {/** <TextThatSlidesIn /> */}
-      {/** <ScrollingImages /> */}
-        <div className='mx-10 my-40'>
-          <SummaryCard 
-            title="What I need from you?"
-            description={requirements2} />
-        </div>
-      <AnimatedLabels labels={labels} direction="left-to-right" />
-      <AnimatedLabels labels={labels} direction="right-to-left" />
-      <CallToAction />
+
+        <AnimatedLabels labels={labels} direction="left-to-right" />
+        <AnimatedLabels labels={labels} direction="right-to-left" />
+
+
+        <SummaryCard 
+          title="What I need from you?"
+          description={requirements2} />
+
+        <CallToAction />
     </div>
   )
 }

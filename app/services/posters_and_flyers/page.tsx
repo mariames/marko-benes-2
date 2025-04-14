@@ -103,14 +103,17 @@ const page = () => {
     <TextBlock>
       My goal is for your message to be not only noticed, but also remembered.
     </TextBlock>
+    
     <PostersPrintTechnique />
-    <div className='mx-10 my-40'>
-      <SummaryCard 
-        title="What I need from you?"
-        description={requirements2} />
-    </div>
+
     <AnimatedLabels labels={labels} direction="left-to-right" />
     <AnimatedLabels labels={labels} direction="right-to-left" />
+
+    <SummaryCard 
+      title="What I need from you?"
+      description={requirements2} />
+
+
     <CallToAction />
     </>
   )

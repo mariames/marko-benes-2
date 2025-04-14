@@ -14,7 +14,7 @@ export const SummaryCard: React.FC<CollaborationStep> = ({ title, description })
           transition: { duration: 0.8, ease: "easeOut", delay: 0.2 },
         }}
         viewport={{ once: true }}
-        className="bg-[#101010] text-white border border-gray-700 rounded-lg p-6 my-20"
+        className="bg-[#101010] text-white border border-gray-700 rounded-lg p-6 my-20 mx-1 lg:mx-3"
       >
         <p className="text-lg lg:text-3xl 2xl:text-4xl font-normal">{title}</p>
         <hr className="border-gray-600 my-2" />

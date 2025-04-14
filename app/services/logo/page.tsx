@@ -96,17 +96,15 @@ const page = () => {
       <TextBlock>
         A logo is not just an image – it is the foundation of your brand. Let your logo tell the real story!
       </TextBlock>
+
       <AnimatedLabels labels={labels} direction="left-to-right" />
       <AnimatedLabels labels={labels} direction="right-to-left" />
 
-            <div className='mx-10 my-40'>
-              <SummaryCard 
-                title="What I need from you?"
-                description={requirements} />
-            </div>
-            <ServiceContent />
+      <SummaryCard 
+        title="What I need from you?"
+        description={requirements} />
 
-        <CallToAction />
+      <CallToAction />
     </>
   )
 }

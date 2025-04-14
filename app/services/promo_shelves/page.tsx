@@ -102,13 +102,13 @@ const page = () => {
       <TextBlock>
         Get your products noticed - because good visibility means more sales!
       </TextBlock>
+      
       <AnimatedLabels labels={labels} direction="left-to-right" />
       <AnimatedLabels labels={labels} direction="right-to-left" />
-      <div className='mx-10 my-40'>
+
         <SummaryCard 
           title="What I need from you?"
           description={requirements} />
-      </div>
 
       <CallToAction />
     </>

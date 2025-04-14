@@ -50,7 +50,7 @@ const Logos = () => {
                   alt={logo.alt}
                   width={logo.size}
                   height={logo.size}
-                  className={`w-[${logo.size}px] h-[70px] p-[${logo.padding}px] transition-transform duration-300 ease-in-out transform hover:scale-110 4xl:w-[${logo.size * 3}px] 4xl:h-[100px] 5xl:p-[${logo.padding * 1.5}px]`}
+                  className={`w-[${logo.size}px] h-[70px] p-[${logo.padding}px] transition-transform duration-300 ease-in-out transform hover:scale-110 4xl:w-[${logo.size * 5}px] 4xl:h-[100px] 5xl:p-[${logo.padding * 1.5}px]`}
                 />
               </a>
             </motion.div>

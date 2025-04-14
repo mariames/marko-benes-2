@@ -22,36 +22,35 @@ const logos = [
 const Logos = () => {
   return (
     <div className="bg-black">
-      <p className="text-3xl 3xl:text-3xl 4xl:text-5xl 5xl:text-9xl text-white text-center pt-40 5xl:pt-96 pb-5 max-sm:pt-32 max-sm:pb-2 uppercase 4xl:font-bold">
+      <p className="text-3xl 3xl:text-3xl 4xl:text-5xl 5xl:text-[11rem] text-white text-center pt-40 5xl:pt-[28rem] pb-5 5xl:pb-20 max-sm:pt-32 max-sm:pb-2 uppercase 4xl:font-bold">
         Honored to be part of their story
       </p>
+
       <div className="bg-black flex justify-center items-center min-h-screen relative max-sm:px-3">
-        {/* Grid Container */}
-        <div className="relative grid grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-4 max-w-5xl 5xl:h-[35vh] 4xl:h-[40vh] 3xl:h-[45vh]  xl:h-[64vh] lg:h-[74vh] md:h-[70vh]">
+        <div className="relative grid grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-4 max-w-5xl 5xl:grid-cols-6 5xl:gap-10 5xl:max-w-[90rem] 5xl:h-[45vh] 4xl:h-[40vh] 3xl:h-[45vh] xl:h-[64vh] lg:h-[74vh] md:h-[70vh]">
           {logos.map((logo, index) => (
             <motion.div
               key={index}
-              className="flex justify-center items-center h-[80px]"
+              className="flex justify-center items-center h-[80px] 5xl:h-[120px]"
               initial={{ opacity: 0, x: 100 }}
               whileInView={{
                 opacity: 1,
                 x: 0,
               }}
               transition={{
-                duration: 1.5, // Longer duration for smoother transition
-                ease: [0.42, 0, 0.58, 1], // "ease-in-out" cubic bezier for smoother effect
-                delay: index * 0.1, // Delay for staggered effect
+                duration: 1.5,
+                ease: [0.42, 0, 0.58, 1],
+                delay: index * 0.1,
               }}
-              viewport={{ once: true, amount: 0.3 }} // Triggers when 30% of the element is visible
+              viewport={{ once: true, amount: 0.3 }}
             >
-              {/* Adding Link Around the Logo */}
               <a href={logo.link} target="_blank" rel="noopener noreferrer">
                 <Image
                   src={logo.src}
                   alt={logo.alt}
-                  width={logo.size} // Dynamic size
-                  height={logo.size} // Dynamic size
-                  className={`w-[${logo.size}px] h-[70px] p-[${logo.padding}px] transition-transform duration-300 ease-in-out transform hover:scale-110`}
+                  width={logo.size}
+                  height={logo.size}
+                  className={`w-[${logo.size}px] h-[70px] p-[${logo.padding}px] transition-transform duration-300 ease-in-out transform hover:scale-110 5xl:w-[${logo.size * 1.4}px] 5xl:h-[100px] 5xl:p-[${logo.padding * 1.5}px]`}
                 />
               </a>
             </motion.div>

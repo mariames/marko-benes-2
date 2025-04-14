@@ -22,16 +22,16 @@ const logos = [
 const Logos = () => {
   return (
     <div className="bg-black">
-      <p className="text-3xl 3xl:text-3xl 4xl:text-5xl 5xl:text-[11rem] text-white text-center pt-40 5xl:pt-[28rem] pb-5 5xl:pb-20 max-sm:pt-32 max-sm:pb-2 uppercase 4xl:font-bold">
+      <p className="text-3xl 3xl:text-3xl 4xl:text-5xl 5xl:text-[11rem] text-white text-center pt-40 5xl:pt-[28rem] pb-5 5xl:pb-20 max-sm:pt-32 max-sm:pb-2 uppercase 4xl:font-bold 4xl:mb-10">
         Honored to be part of their story
       </p>
 
-      <div className="bg-black flex justify-center items-center min-h-screen relative max-sm:px-3">
-        <div className="relative grid grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-4 max-w-5xl 5xl:grid-cols-6 5xl:gap-10 5xl:max-w-[90rem] 5xl:h-[45vh] 4xl:h-[40vh] 3xl:h-[45vh] xl:h-[64vh] lg:h-[74vh] md:h-[70vh]">
+      <div className="flex justify-center items-center max-2xl:min-h-screen relative max-sm:px-3">
+      <div className="relative grid grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-x-4 gap-y-2 max-w-5xl 5xl:grid-cols-6 5xl:gap-x-5 5xl:gap-y-3 5xl:max-w-[90rem]">
           {logos.map((logo, index) => (
             <motion.div
               key={index}
-              className="flex justify-center items-center h-[80px] 5xl:h-[120px]"
+              className="flex justify-center items-center h-[80px] 4xl:h-[90px] 5xl:h-[100px]"
               initial={{ opacity: 0, x: 100 }}
               whileInView={{
                 opacity: 1,
@@ -50,7 +50,7 @@ const Logos = () => {
                   alt={logo.alt}
                   width={logo.size}
                   height={logo.size}
-                  className={`w-[${logo.size}px] h-[70px] p-[${logo.padding}px] transition-transform duration-300 ease-in-out transform hover:scale-110 5xl:w-[${logo.size * 1.4}px] 5xl:h-[100px] 5xl:p-[${logo.padding * 1.5}px]`}
+                  className={`w-[${logo.size}px] h-[70px] p-[${logo.padding}px] transition-transform duration-300 ease-in-out transform hover:scale-110 4xl:w-[${logo.size * 3}px] 4xl:h-[100px] 5xl:p-[${logo.padding * 1.5}px]`}
                 />
               </a>
             </motion.div>

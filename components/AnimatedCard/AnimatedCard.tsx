@@ -1,14 +1,17 @@
 import React from 'react';
 import './AnimatedCard.css'; // We'll write minimal CSS for animation separately
+import Image from 'next/image';
 
 const AnimatedCard = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-black">
       <div className="relative w-full px-7">
-        <img
+        <Image
           src="/about/6406_frellance-carrier.jpg"
           alt="The Great Path"
           className="rounded-2xl w-full"
+          width={3840}
+          height={1679}
         />
 
         <div className="card-data absolute left-1/2 transform -translate-x-1/2 bottom-[-9rem] w-[680px] bg-gray-50 rounded-xl p-10 shadow-lg opacity-0 transition-all duration-1000">

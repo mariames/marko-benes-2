@@ -5,20 +5,79 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const logos = [
-  { src: "/logos/Kosili.svg", alt: "Kosili", link: "https://www.kosili.rs/", size: 100, sizeXl: 160, padding: 6 },
-  { src: "/logos/Dobra-ovsena-kasa.svg", alt: "Dobra Ovsena Kasa", link: "https://www.instagram.com/dobra_ovsena_kasa/", size: 80, sizeXl: 130, padding: 5 },
-  { src: "/logos/LMX-TOX.svg", alt: "LMX TOX", link: "https://www.instagram.com/ima_da_ih_nema/", size: 90, sizeXl: 140, padding: 2 },
-  { src: "/logos/Holly.svg", alt: "Holly", link: "https://holly.rs/", size: 90, sizeXl: 140, padding: 6 },
-  { src: "/logos/Deft.svg", alt: "Deft", link: "https://www.lomax-company.com/proizvodi/deft-4", size: 70, sizeXl: 110, padding: 5 },
-  { src: "/logos/Unit.svg", alt: "Unit", link: "https://www.unit-sport.net/", size: 100, sizeXl: 160, padding: 8 },
-  { src: "/logos/Posh-33.svg", alt: "Posh 33", link: "https://posh-33.com/en", size: 85, sizeXl: 135, padding: 6 },
-  { src: "/logos/Maximalium.svg", alt: "Maximalium", link: "https://www.maximalium.rs/", size: 120, sizeXl: 180, padding: 1 },
-  { src: "/logos/Petroland.svg", alt: "Petroland", link: "https://www.petroland.rs/", size: 88, sizeXl: 138, padding: 5 },
-  { src: "/logos/Petster.svg", alt: "Petster", link: "https://www.instagram.com/petster.rs/", size: 80, sizeXl: 125, padding: 4 },
-  { src: "/logos/Gentlemens-club.svg", alt: "Gentlemen's Club", link: "https://www.facebook.com/gentlemens.club.33", size: 75, sizeXl: 120, padding: 5 },
-  { src: "/logos/Terminal-festival.svg", alt: "Terminal Festival", link: "https://www.facebook.com/gentlemens.club.33", size: 120, sizeXl: 180, padding: 1 },
+  {
+    src: "/logos/Kosili.svg",
+    alt: "Kosili",
+    link: "https://www.kosili.rs/",
+    className: "w-[100px] 4xl:w-[170px] p-[6px]",
+  },
+  {
+    src: "/logos/Dobra-ovsena-kasa.svg",
+    alt: "Dobra Ovsena Kasa",
+    link: "https://www.instagram.com/dobra_ovsena_kasa/",
+    className: "w-[80px] 4xl:w-[130px] p-[5px]",
+  },
+  {
+    src: "/logos/LMX-TOX.svg",
+    alt: "LMX TOX",
+    link: "https://www.instagram.com/ima_da_ih_nema/",
+    className: "w-[90px] 4xl:w-[140px] p-[2px]",
+  },
+  {
+    src: "/logos/Holly.svg",
+    alt: "Holly",
+    link: "https://holly.rs/",
+    className: "w-[90px] 4xl:w-[140px] p-[6px]",
+  },
+  {
+    src: "/logos/Deft.svg",
+    alt: "Deft",
+    link: "https://www.lomax-company.com/proizvodi/deft-4",
+    className: "w-[70px] 4xl:w-[110px] p-[5px]",
+  },
+  {
+    src: "/logos/Unit.svg",
+    alt: "Unit",
+    link: "https://www.unit-sport.net/",
+    className: "w-[100px] 4xl:w-[160px] p-[8px]",
+  },
+  {
+    src: "/logos/Posh-33.svg",
+    alt: "Posh 33",
+    link: "https://posh-33.com/en",
+    className: "w-[85px] 4xl:w-[135px] p-[6px]",
+  },
+  {
+    src: "/logos/Maximalium.svg",
+    alt: "Maximalium",
+    link: "https://www.maximalium.rs/",
+    className: "w-[120px] 4xl:w-[180px] p-[1px]",
+  },
+  {
+    src: "/logos/Petroland.svg",
+    alt: "Petroland",
+    link: "https://www.petroland.rs/",
+    className: "w-[88px] 4xl:w-[138px] p-[5px]",
+  },
+  {
+    src: "/logos/Petster.svg",
+    alt: "Petster",
+    link: "https://www.instagram.com/petster.rs/",
+    className: "w-[80px] 4xl:w-[125px] p-[4px]",
+  },
+  {
+    src: "/logos/Gentlemens-club.svg",
+    alt: "Gentlemen's Club",
+    link: "https://www.facebook.com/gentlemens.club.33",
+    className: "w-[75px] 4xl:w-[120px] p-[5px]",
+  },
+  {
+    src: "/logos/Terminal-festival.svg",
+    alt: "Terminal Festival",
+    link: "https://www.facebook.com/gentlemens.club.33",
+    className: "w-[120px] 4xl:w-[180px] p-[1px]",
+  },
 ];
-
 
 const Logos = () => {
   return (
@@ -28,16 +87,13 @@ const Logos = () => {
       </p>
 
       <div className="flex justify-center items-center max-2xl:min-h-screen relative max-sm:px-3">
-      <div className="relative grid grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-x-4 gap-y-2 max-w-5xl 5xl:grid-cols-6 5xl:gap-x-5 5xl:gap-y-3 5xl:max-w-[90rem]">
+        <div className="relative grid grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-x-4 gap-y-2 max-w-5xl 5xl:grid-cols-6 5xl:gap-x-5 5xl:gap-y-3 5xl:max-w-[90rem]">
           {logos.map((logo, index) => (
             <motion.div
               key={index}
-              className="flex justify-center items-center h-[80px] 4xl:h-[90px] 5xl:h-[100px]"
+              className="flex justify-center items-center h-[80px] 4xl:h-[140px] bg-gray-700"
               initial={{ opacity: 0, x: 100 }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-              }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{
                 duration: 1.5,
                 ease: [0.42, 0, 0.58, 1],
@@ -49,9 +105,9 @@ const Logos = () => {
                 <Image
                   src={logo.src}
                   alt={logo.alt}
-                  width={logo.size}
-                  height={logo.size}
-                  className={`w-[${logo.size}px] h-[70px] p-[${logo.padding}px] transition-transform duration-300 ease-in-out transform hover:scale-110 4xl:w-[${logo.sizeXl}px] 4xl:h-[100px] ]`}
+                  width={200}
+                  height={100}
+                  className={`${logo.className} h-[70px] 4xl:h-[140px] transition-transform duration-300 ease-in-out transform hover:scale-110`}
                 />
               </a>
             </motion.div>

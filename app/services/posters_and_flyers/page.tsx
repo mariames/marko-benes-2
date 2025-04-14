@@ -1,7 +1,6 @@
 "use client";
 import AnimatedLabels from '@/components/AnimatedLabels';
 import CallToAction from '@/components/CallToAction';
-import PostersDesignSection from '@/components/PostersDesignSection';
 import PostersPrintTechnique from '@/components/PostersPrintTechniques';
 import ServiceHero from '@/components/ServiceHero';
 import { SummaryCard } from '@/components/SummaryCard';
@@ -84,26 +83,27 @@ const page = () => {
         leftImgs={leftImgs}
         rightImgs={rightImgs}
         portfolioLink="/portfolio"/>
-    {/** <PostersDesignSection /> */}
-    <TextBlock>
-      A good poster or flyer is not just an aesthetically pleasing visual – it must quickly attract attention, convey a clear
-      message and make a strong impression on the target audience. The focus is on being eye-catching, easy to read and
-      tailored to the specific needs and interests of your audience, whether you&#39;re promoting a product, business event,
-      festival, concert or night party.
-    </TextBlock>
-    <TextBlock>
-      I carefully craft every design element to create a visually appealing material. From a harmonious and enticing
-      composition, carefully selected typography, effective photos and optimal color combination to a customized format
-      that best suits your promotional channel, every detail contributes to a satisfying end result.
-    </TextBlock>
-    <TextBlock>
-      In addition to the visual aspect, I also take care of technical precision, ensuring that each design is flawlessly
-      production-ready, whether for print or digital use.
-    </TextBlock>
-    <TextBlock>
-      My goal is for your message to be not only noticed, but also remembered.
-    </TextBlock>
-    
+
+    <div className='mx-3 my-40'>
+      <TextBlock>
+        A good poster or flyer is not just an aesthetically pleasing visual – it must quickly attract attention, convey a clear
+        message and make a strong impression on the target audience. The focus is on being eye-catching, easy to read and
+        tailored to the specific needs and interests of your audience, whether you&#39;re promoting a product, business event,
+        festival, concert or night party.
+      </TextBlock>
+      <TextBlock>
+        I carefully craft every design element to create a visually appealing material. From a harmonious and enticing
+        composition, carefully selected typography, effective photos and optimal color combination to a customized format
+        that best suits your promotional channel, every detail contributes to a satisfying end result.
+      </TextBlock>
+      <TextBlock>
+        In addition to the visual aspect, I also take care of technical precision, ensuring that each design is flawlessly
+        production-ready, whether for print or digital use.
+      </TextBlock>
+      <TextBlock>
+        My goal is for your message to be not only noticed, but also remembered.
+      </TextBlock>
+    </div>
     <PostersPrintTechnique />
 
     <AnimatedLabels labels={labels} direction="left-to-right" />

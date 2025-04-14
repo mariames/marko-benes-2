@@ -153,7 +153,7 @@ export default function NavbarWithServices() {
                                         <CrossTextEffect text="LOGO" href="/services/logo" />
                                     </li>
                                     <li className="p-2">
-                                        <CrossTextEffect text="T-SHIRT DESIGN" href="/services/t-shirt_design" />
+                                        <CrossTextEffect text="T-SHIRT&nbsp;DESIGN" href="/services/t-shirt_design" />
                                     </li>
                                 </ul>
                             </div>

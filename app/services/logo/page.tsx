@@ -1,7 +1,6 @@
 "use client";
 import AnimatedLabels from '@/components/AnimatedLabels';
 import CallToAction from '@/components/CallToAction';
-import ServiceContent from '@/components/ServiceContent';
 import ServiceHero from '@/components/ServiceHero';
 import { SummaryCard } from '@/components/SummaryCard';
 import TextBlock from '@/components/TextBlock';
@@ -77,26 +76,26 @@ const page = () => {
         leftImgs={leftImgs}
         rightImgs={rightImgs}
         portfolioLink="/portfolio"/>
-      {/** <LogoSection /> */}
 
-      <TextBlock>
-        A logo is the foundation of your visual identity and the first impression people get of your brand. That&#39;s why it&#39;s
-        important to be clear, recognizable and communicate your story in the right way.
-      </TextBlock>
-      <TextBlock>
-        When creating a logo, my approach is based on a combination of strategy, creativity and functionality. Before
-        starting the design, I thoroughly analyze your business, brand values ​​and specific industry requirements, to ensure
-        that the final solution is unique, tailored to your needs and attractive in the long term.
-      </TextBlock>
-      <TextBlock>
-        Regardless of whether you are starting a new business, refreshing an existing logo or planning a complete
-        rebranding, you will receive a design that is attractive, easily applicable on all platforms and effectively represents
-        your company.
-      </TextBlock>
-      <TextBlock>
-        A logo is not just an image – it is the foundation of your brand. Let your logo tell the real story!
-      </TextBlock>
-
+      <div className='mx-3 my-40'>
+        <TextBlock>
+          A logo is the foundation of your visual identity and the first impression people get of your brand. That&#39;s why it&#39;s
+          important to be clear, recognizable and communicate your story in the right way.
+        </TextBlock>
+        <TextBlock>
+          When creating a logo, my approach is based on a combination of strategy, creativity and functionality. Before
+          starting the design, I thoroughly analyze your business, brand values ​​and specific industry requirements, to ensure
+          that the final solution is unique, tailored to your needs and attractive in the long term.
+        </TextBlock>
+        <TextBlock>
+          Regardless of whether you are starting a new business, refreshing an existing logo or planning a complete
+          rebranding, you will receive a design that is attractive, easily applicable on all platforms and effectively represents
+          your company.
+        </TextBlock>
+        <TextBlock>
+          A logo is not just an image – it is the foundation of your brand. Let your logo tell the real story!
+        </TextBlock>
+      </div>
       <AnimatedLabels labels={labels} direction="left-to-right" />
       <AnimatedLabels labels={labels} direction="right-to-left" />
 

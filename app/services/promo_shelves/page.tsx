@@ -1,7 +1,6 @@
 "use client";
 import AnimatedLabels from '@/components/AnimatedLabels';
 import CallToAction from '@/components/CallToAction';
-import PromoShelvesSection from '@/components/PromoShelvesSection';
 import ServiceHero from '@/components/ServiceHero';
 import { SummaryCard } from '@/components/SummaryCard';
 import TextBlock from '@/components/TextBlock';
@@ -13,7 +12,6 @@ const requirements = (
         <div className="space-y-2">
           <div className="flex items-center space-x-2">
             <FaCheckCircle className="text-[#e5dfd3]" />
-            {/**<span className='text-[#e5dfd3]'>✓</span> */}
             <p className="text-gray-300 2xl:text-2xl">Dimensions for elements (height x width) or dieline for some irregular formats in vector file (ai, eps, pdf)</p>
           </div>
           <div className="flex items-center space-x-2">
@@ -79,30 +77,31 @@ const page = () => {
         leftImgs={leftImgs}
         rightImgs={rightImgs}
         portfolioLink="/portfolio"/>
-      {/** <PromoShelvesSection /> */}
-      <TextBlock>
-        In supermarkets and stores, customers make decisions in just a few seconds - that&#39;s why it&#39;s crucial that your
-        products are visible, attractive and easily accessible.
-      </TextBlock>
-      <TextBlock>
-        Each design is designed with the aim of highlighting the brand, attracting attention and conveying key messages,
-        using a well-thought-out combination of colors, graphics and arrangement of elements. In addition to visual appeal, I
-        take care of technical preparation and optimization for production, ensuring that everything looks perfect in the final
-        version.
-      </TextBlock>
-      <TextBlock>
-        Promo shelves can be made of cardboard, wood or metal, and each material requires a specific design approach.
-        Cardboard shelves are light, flexible and ideal for short-term promotions, while wooden and metal variants provide
-        greater durability and a premium look.
-      </TextBlock>
-      <TextBlock>
-        Whether it is displays for promotional products, exclusive collections or long-term setups, the design will be adapted
-        to your needs and market requirements.
-      </TextBlock>
-      <TextBlock>
-        Get your products noticed - because good visibility means more sales!
-      </TextBlock>
-      
+
+      <div className='mx-3 my-40'>
+        <TextBlock>
+          In supermarkets and stores, customers make decisions in just a few seconds - that&#39;s why it&#39;s crucial that your
+          products are visible, attractive and easily accessible.
+        </TextBlock>
+        <TextBlock>
+          Each design is designed with the aim of highlighting the brand, attracting attention and conveying key messages,
+          using a well-thought-out combination of colors, graphics and arrangement of elements. In addition to visual appeal, I
+          take care of technical preparation and optimization for production, ensuring that everything looks perfect in the final
+          version.
+        </TextBlock>
+        <TextBlock>
+          Promo shelves can be made of cardboard, wood or metal, and each material requires a specific design approach.
+          Cardboard shelves are light, flexible and ideal for short-term promotions, while wooden and metal variants provide
+          greater durability and a premium look.
+        </TextBlock>
+        <TextBlock>
+          Whether it is displays for promotional products, exclusive collections or long-term setups, the design will be adapted
+          to your needs and market requirements.
+        </TextBlock>
+        <TextBlock>
+          Get your products noticed - because good visibility means more sales!
+        </TextBlock>
+      </div>
       <AnimatedLabels labels={labels} direction="left-to-right" />
       <AnimatedLabels labels={labels} direction="right-to-left" />
 

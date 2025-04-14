@@ -13,7 +13,7 @@ const AnimatedLabels: React.FC<AnimatedLabelsProps> = ({ labels, direction }) =>
   const isLeftToRight = direction === "left-to-right";
 
   return (
-    <div className="overflow-hidden whitespace-nowrap w-full text-white">
+    <div className="overflow-hidden whitespace-nowrap w-full text-black bg-white">
       <motion.div
         className="flex text-3xl"
         style={{

@@ -95,16 +95,15 @@ const page = () => {
         <TextBlock>
           Each packaging is designed to be visually appealing and intuitive to use, providing customers with a complete brand experience.
         </TextBlock>
+        </div>
         <TextInfo />
         <PrintTechniques />
+        <AnimatedLabels labels={labels} direction="left-to-right" />
+        <AnimatedLabels labels={labels} direction="right-to-left" />
         <SummaryCard 
           title="What I need from you?"
           description={requirements2} />
-      </div>
-      <AnimatedLabels labels={labels} direction="left-to-right" />
-      <AnimatedLabels labels={labels} direction="right-to-left" />
-      <CallToAction />
-      <SpotlightTitle />
+        <CallToAction />
     </>
   )
 }

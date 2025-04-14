@@ -22,7 +22,7 @@ const logos = [
 const Logos = () => {
   return (
     <div className="bg-black">
-      <p className="text-3xl 3xl:text-3xl 4xl:text-5xl 5xl:text-[11rem] text-white text-center pt-40 5xl:pt-[28rem] pb-5 5xl:pb-20 max-sm:pt-32 max-sm:pb-2 uppercase 4xl:font-bold 4xl:mb-10">
+      <p className="text-3xl 3xl:text-3xl 4xl:text-5xl 5xl:text-[11rem] text-white text-center pt-40 5xl:pt-[28rem] pb-5 5xl:pb-20 max-sm:pt-32 max-sm:pb-2 uppercase 4xl:font-bold 4xl:mb-20">
         Honored to be part of their story
       </p>
 

@@ -8,8 +8,8 @@ import UvVarnish from "./UvVarnish";
 
 const PrintTechniques: React.FC = () => {
   return (
-    <section className="bg-black text-white py-16 relative">
-      <div className="w-full space-y-12">
+    <section className="bg-black text-white py-16 relative flex justify-center">
+      <div className="w-full space-y-12 4xl:max-w-[2080px]">
         {/* First Row: Image on the left, text on the right */}
         <div className="flex items-center space-x-8">
           <motion.div
@@ -19,7 +19,7 @@ const PrintTechniques: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <Image src="/service-section/LabelsAndPackaging/print_finishing_techniques/dry_stamp_embossing_debossing_label_design.jpg" width={1400} height={972} alt="Promotional Design" className="w-full h-auto rounded-lg" />
+            <Image src="/service-section/LabelsAndPackaging/print_finishing_techniques/dry_stamp_embossing_debossing_label_design.jpg" width={1400} height={972} alt="Promotional Design" className="w-full h-auto 4xl:h-[500] 4xl:w-auto rounded-lg" />
           </motion.div>
           <motion.div
             className="flex-1"

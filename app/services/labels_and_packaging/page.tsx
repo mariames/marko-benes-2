@@ -97,6 +97,8 @@ const page = () => {
         </TextBlock>
         </div>
         <TextInfo />
+
+        
         <PrintTechniques />
 
 

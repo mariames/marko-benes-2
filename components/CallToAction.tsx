@@ -4,7 +4,7 @@ import AnimatedButton from './AnimatedButton/AnimatedButton';
 const CallToAction = () => {
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-black">
+    <div className="flex flex-col items-center justify-center h-screen 4xl:h-[30vw] bg-black">
       <p className="text-sm font-medium text-gray-500 mb-5">CONTACT ME</p>
       <p className="text-5xl max-sm:text-lg font-semibold mb-5 tracking-wide autour-font text-white">Let&apos;s get in touch</p>
       <p className="text-lg text-center mt-3 mb-8 text-gray-200 font-light">

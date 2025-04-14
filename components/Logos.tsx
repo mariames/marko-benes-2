@@ -5,19 +5,20 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const logos = [
-  { src: "/logos/Kosili.svg", alt: "Kosili", link: "https://www.kosili.rs/", size: 100, padding: 6 },
-  { src: "/logos/Dobra-ovsena-kasa.svg", alt: "Dobra Ovsena Kasa", link: "https://www.instagram.com/dobra_ovsena_kasa/", size: 80, padding: 5 },
-  { src: "/logos/LMX-TOX.svg", alt: "LMX TOX", link: "https://www.instagram.com/ima_da_ih_nema/", size: 90, padding: 2 },
-  { src: "/logos/Holly.svg", alt: "Holly", link: "https://holly.rs/", size: 90, padding: 6 },
-  { src: "/logos/Deft.svg", alt: "Deft", link: "https://www.lomax-company.com/proizvodi/deft-4", size: 70, padding: 5 },
-  { src: "/logos/Unit.svg", alt: "Unit", link: "https://www.unit-sport.net/", size: 100, padding: 8 },
-  { src: "/logos/Posh-33.svg", alt: "Posh 33", link: "https://posh-33.com/en", size: 85, padding: 6 },
-  { src: "/logos/Maximalium.svg", alt: "Maximalium", link: "https://www.maximalium.rs/", size: 120, padding: 1 },
-  { src: "/logos/Petroland.svg", alt: "Petroland", link: "https://www.petroland.rs/", size: 88, padding: 5 },
-  { src: "/logos/Petster.svg", alt: "Petster", link: "https://www.instagram.com/petster.rs/", size: 80, padding: 4 },
-  { src: "/logos/Gentlemens-club.svg", alt: "Gentlemen's Club", link: "https://www.facebook.com/gentlemens.club.33", size: 75, padding: 5 },
-  { src: "/logos/Terminal-festival.svg", alt: "Terminal Festival", link: "https://www.facebook.com/gentlemens.club.33", size: 120, padding: 1 },
+  { src: "/logos/Kosili.svg", alt: "Kosili", link: "https://www.kosili.rs/", size: 100, sizeXl: 160, padding: 6 },
+  { src: "/logos/Dobra-ovsena-kasa.svg", alt: "Dobra Ovsena Kasa", link: "https://www.instagram.com/dobra_ovsena_kasa/", size: 80, sizeXl: 130, padding: 5 },
+  { src: "/logos/LMX-TOX.svg", alt: "LMX TOX", link: "https://www.instagram.com/ima_da_ih_nema/", size: 90, sizeXl: 140, padding: 2 },
+  { src: "/logos/Holly.svg", alt: "Holly", link: "https://holly.rs/", size: 90, sizeXl: 140, padding: 6 },
+  { src: "/logos/Deft.svg", alt: "Deft", link: "https://www.lomax-company.com/proizvodi/deft-4", size: 70, sizeXl: 110, padding: 5 },
+  { src: "/logos/Unit.svg", alt: "Unit", link: "https://www.unit-sport.net/", size: 100, sizeXl: 160, padding: 8 },
+  { src: "/logos/Posh-33.svg", alt: "Posh 33", link: "https://posh-33.com/en", size: 85, sizeXl: 135, padding: 6 },
+  { src: "/logos/Maximalium.svg", alt: "Maximalium", link: "https://www.maximalium.rs/", size: 120, sizeXl: 180, padding: 1 },
+  { src: "/logos/Petroland.svg", alt: "Petroland", link: "https://www.petroland.rs/", size: 88, sizeXl: 138, padding: 5 },
+  { src: "/logos/Petster.svg", alt: "Petster", link: "https://www.instagram.com/petster.rs/", size: 80, sizeXl: 125, padding: 4 },
+  { src: "/logos/Gentlemens-club.svg", alt: "Gentlemen's Club", link: "https://www.facebook.com/gentlemens.club.33", size: 75, sizeXl: 120, padding: 5 },
+  { src: "/logos/Terminal-festival.svg", alt: "Terminal Festival", link: "https://www.facebook.com/gentlemens.club.33", size: 120, sizeXl: 180, padding: 1 },
 ];
+
 
 const Logos = () => {
   return (
@@ -50,7 +51,7 @@ const Logos = () => {
                   alt={logo.alt}
                   width={logo.size}
                   height={logo.size}
-                  className={`w-[${logo.size}px] h-[70px] p-[${logo.padding}px] transition-transform duration-300 ease-in-out transform hover:scale-110 4xl:w-[${logo.size * 10}px] 4xl:h-[100px] 5xl:p-[${logo.padding * 1.5}px]`}
+                  className={`w-[${logo.size}px] h-[70px] p-[${logo.padding}px] transition-transform duration-300 ease-in-out transform hover:scale-110 4xl:w-[${logo.sizeXl}px] 4xl:h-[100px] ]`}
                 />
               </a>
             </motion.div>

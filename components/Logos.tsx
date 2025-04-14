@@ -27,13 +27,13 @@ const logos = [
     src: "/logos/Holly.svg",
     alt: "Holly",
     link: "https://holly.rs/",
-    className: "w-[90px] 4xl:w-[140px] p-[6px]",
+    className: "w-[90px] 4xl:w-[170px] p-[6px]",
   },
   {
     src: "/logos/Deft.svg",
     alt: "Deft",
     link: "https://www.lomax-company.com/proizvodi/deft-4",
-    className: "w-[70px] 4xl:w-[110px] p-[5px]",
+    className: "w-[70px] 4xl:w-[120px] p-[5px]",
   },
   {
     src: "/logos/Unit.svg",
@@ -45,7 +45,7 @@ const logos = [
     src: "/logos/Posh-33.svg",
     alt: "Posh 33",
     link: "https://posh-33.com/en",
-    className: "w-[85px] 4xl:w-[135px] p-[6px]",
+    className: "w-[85px] 4xl:w-[140px] p-[6px]",
   },
   {
     src: "/logos/Maximalium.svg",
@@ -91,7 +91,7 @@ const Logos = () => {
           {logos.map((logo, index) => (
             <motion.div
               key={index}
-              className="flex justify-center items-center h-[80px] 4xl:h-[140px] bg-gray-700"
+              className="flex justify-center items-center h-[80px] 4xl:h-[140px]"
               initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{

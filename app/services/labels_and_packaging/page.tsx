@@ -98,8 +98,12 @@ const page = () => {
         </div>
         <TextInfo />
         <PrintTechniques />
+
+
         <AnimatedLabels labels={labels} direction="left-to-right" />
         <AnimatedLabels labels={labels} direction="right-to-left" />
+
+      
         <SummaryCard 
           title="What I need from you?"
           description={requirements2} />

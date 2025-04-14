@@ -10,7 +10,7 @@ export default function Home() {
     <main>
       <CustomCursor />
       <AnimatedCard />
-      <div className="h-56"></div>
+      <div className="h-96"></div>
       <Services />
       <Logos />
       <CallToAction />    

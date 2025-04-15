@@ -4,7 +4,7 @@ import React from 'react'
 const HeroSection2 = () => {
   return (
     <>
-        <div className='p-52'>
+        <div className='px-56 pt-10'>
         <Image
             src="/about/6406_frellance-carrier.jpg"
             alt="The Great Path"

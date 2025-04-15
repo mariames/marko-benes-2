@@ -3,7 +3,7 @@ import React from "react";
 
 const AnimatedCard = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen max-md:h-96 bg-black px-4">
+    <div className="flex justify-center items-start min-h-screen md:h-auto max-sm:h-72 4xl:h-3/4 bg-purple-500 4xl:px-40 px-4 overflow-hidden">
       <div className="relative group w-full">
         {/* Image */}
         <Image
@@ -17,14 +17,15 @@ const AnimatedCard = () => {
         {/* Hidden content that appears on hover */}
         <div
           className="
-            absolute left-0 right-0 mx-auto
+            absolute left-1/2 top-1/2 transform -translate-x-1/2 
+            translate-y-[100%] group-hover:translate-y-[-10%]
             bg-white rounded-xl shadow-lg
-            md:w-[680px] sm:w-[316px]
+            w-[90%]
             px-6 py-7
             opacity-0 group-hover:opacity-100
-            translate-y-32 group-hover:translate-y-[-7rem]
-            transition-all duration-700
+            transition-all duration-700 ease-in-out
             z-10
+            pointer-events-none group-hover:pointer-events-auto
           "
         >
           <span className="sm:text-2xl md:text-4xl 2xl:text-5xl 3xl:text-5xl 4xl:text-7xl 5xl:text-9xl  font-medium farmhouse-title text-black mb-4 text-center">

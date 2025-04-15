@@ -105,11 +105,8 @@ const page = () => {
         <TextInfo />
       </div>
         
-          <PrintTechniques />
+      <PrintTechniques />
         
-
-
-
 
         <SummaryCard 
           title="What I need from you?"

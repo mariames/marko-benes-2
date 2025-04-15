@@ -13,6 +13,7 @@ const HeroSection2 = () => {
             height={1679}
             />
         </div>
+        {/* 
         <div className='pt-32'>
         <span className="sm:text-2xl md:text-4xl 2xl:text-5xl 3xl:text-5xl 4xl:text-7xl 5xl:text-9xl  font-medium farmhouse-title text-white mb-4 text-center flex justify-center">
             Hi! I am Marko!
@@ -21,6 +22,7 @@ const HeroSection2 = () => {
             A graphic designer specializing in creating delightful designs.
           </p>
         </div>
+        */}
     </>
   )
 }

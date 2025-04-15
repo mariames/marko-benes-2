@@ -3,7 +3,7 @@ import React from "react";
 
 const AnimatedCard = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-black px-4">
+    <div className="flex justify-center items-center min-h-screen max-md:h-96 bg-black px-4">
       <div className="relative group w-full">
         {/* Image */}
         <Image

@@ -10,7 +10,7 @@ const socialLinks = [
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-black text-white py-4 border-t border-gray-500">
+    <footer className="w-full bg-black text-white py-4 border-t border-gray-500 4xl:pb-20">
       <div className="flex justify-around items-center container mx-auto px-4">
         {/* Left Side: Copyright Text */}
         <div>
@@ -49,7 +49,7 @@ const Footer = () => {
         
           <a
               href="mailto:marko@benis.studio"
-              className="text-lg font-semibold mt-2 hover:text-gray-200"
+              className="text-lg font-semibold mt-2 hover:text-gray-200 4xl:text-2xl"
             >
               marko@benis.studio
             </a>

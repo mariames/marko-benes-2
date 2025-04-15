@@ -33,7 +33,7 @@ const PrintTechniques: React.FC = () => {
         </div>
 
         {/* Second Row: Two images */}
-        <div className="grid grid-cols-2 gap-8 flex items-center">
+        <div className="grid grid-cols-2 gap-8 items-center">
           <motion.div initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}>
             <FoilStamping />
           </motion.div>

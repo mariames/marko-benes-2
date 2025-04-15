@@ -8,7 +8,7 @@ const AnimatedCard = () => {
         {/* Image */}
         <Image
           src="/about/6406_frellance-carrier.jpg"
-          alt="The Great Path"
+          alt="Marko Benis"
           className="rounded-2xl w-full"
           width={3840}
           height={1679}

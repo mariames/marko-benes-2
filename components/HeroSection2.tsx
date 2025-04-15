@@ -4,11 +4,11 @@ import React from 'react'
 const HeroSection2 = () => {
   return (
     <>
-        <div className='4xl:px-56 pt-10 px-4'>
+        <div className='pt-10 px-4 md:px-10 4xl:px-56'>
         <Image
             src="/about/6406_frellance-carrier.jpg"
-            alt="Marko BEnis"
-            className="rounded-2xl w-full"
+            alt="Marko Benis"
+            className="rounded-2xl w-full h-auto"
             width={3840}
             height={1679}
             />

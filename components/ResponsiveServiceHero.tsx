@@ -94,13 +94,15 @@ const ResponsiveServiceHero: React.FC<ServiceHeroProps> = ({
         </motion.div>
 
 
-        {/* Mobile - Horizontal Infinite Scroll */}
-        <div className="flex lg:hidden flex-col gap-6 py-6 px-2 w-full">
-          <ScrollImages images={leftImgs} direction="left-to-right" />
-          <ScrollImages images={rightImgs} direction="right-to-left" />
-        </div>
+
 
       </div>
+
+            {/* Mobile - Horizontal Infinite Scroll */}
+            <div className="flex lg:hidden flex-col gap-6 py-6 px-2 w-full">
+                <ScrollImages images={leftImgs} direction="left-to-right" />
+                <ScrollImages images={rightImgs} direction="right-to-left" />
+            </div>
     </div>
   );
 };

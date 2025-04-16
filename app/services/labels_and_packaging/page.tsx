@@ -100,15 +100,15 @@ const page = () => {
           Each packaging is designed to be visually appealing and intuitive to use, providing customers with a complete brand experience.
         </TextBlock>
       </TextInServiceWrapper>
+
       
-      {/**
       <AnimatedLabels labels={labels} direction="left-to-right" />
       <AnimatedLabels labels={labels} direction="right-to-left" />
 
       <div className='mx-3 my-40 4xl:mx-56'>
         <TextInfo />
       </div>
-        
+        {/**
       <PrintTechniques />
         
       

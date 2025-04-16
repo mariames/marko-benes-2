@@ -11,7 +11,7 @@ const PrintTechniques: React.FC = () => {
     <section className="bg-black text-white py-16 relative flex justify-center">
       <div className="w-full space-y-12 4xl:max-w-[2080px]">
         {/* First Row: Image on the left, text on the right */}
-        <div className="flex items-center space-x-8">
+        <div className="flex flex-col lg:flex-row space-y-8 items-center space-x-8 lg:space-y-1">
           <motion.div
             className="flex-1"
             initial={{ x: -100, opacity: 0 }}

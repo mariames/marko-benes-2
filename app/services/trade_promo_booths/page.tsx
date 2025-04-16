@@ -1,6 +1,7 @@
 "use client";
 import AnimatedLabels from '@/components/AnimatedLabels'
 import CallToAction from '@/components/CallToAction'
+import ResponsiveServiceHero from '@/components/ResponsiveServiceHero';
 import ServiceHero from '@/components/ServiceHero'
 import { SummaryCard } from '@/components/SummaryCard'
 import TextBlock from '@/components/TextBlock';
@@ -81,7 +82,7 @@ const page = () => {
 
   return (
     <>
-      <ServiceHero 
+      <ResponsiveServiceHero
         title="Trade Promo Booths"
         subtitle="•  Next-Level Event Marketing Displays"
         description="Combining cutting-edge materials, lighting, and interactive elements for an unforgettable brand showcase."

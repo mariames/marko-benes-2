@@ -1,6 +1,7 @@
 "use client";
 import AnimatedLabels from '@/components/AnimatedLabels';
 import CallToAction from '@/components/CallToAction';
+import ResponsiveServiceHero from '@/components/ResponsiveServiceHero';
 import ServiceHero from '@/components/ServiceHero';
 import { SummaryCard } from '@/components/SummaryCard';
 import TextBlock from '@/components/TextBlock';
@@ -70,7 +71,7 @@ const page = () => {
   ];
   return (
     <>
-      <ServiceHero 
+      <ResponsiveServiceHero 
         title="Logo"
         subtitle="• Timeless & Versatile Logo Design"
         description="A meticulously crafted logo that defines your brand with clarity, uniqueness, and impact."

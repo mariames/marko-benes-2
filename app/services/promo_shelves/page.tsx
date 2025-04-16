@@ -1,6 +1,7 @@
 "use client";
 import AnimatedLabels from '@/components/AnimatedLabels';
 import CallToAction from '@/components/CallToAction';
+import ResponsiveServiceHero from '@/components/ResponsiveServiceHero';
 import ServiceHero from '@/components/ServiceHero';
 import { SummaryCard } from '@/components/SummaryCard';
 import TextBlock from '@/components/TextBlock';
@@ -71,7 +72,7 @@ const page = () => {
 
   return (
     <>
-      <ServiceHero 
+      <ResponsiveServiceHero
         title="Promo Shelves"
         subtitle="• Smart Shelf Branding Solutions"
         description="Seamlessly integrating promotional graphics with retail shelving to maximize visual impact"

@@ -1,6 +1,7 @@
 "use client";
 import AnimatedLabels from '@/components/AnimatedLabels'
 import CallToAction from '@/components/CallToAction'
+import ResponsiveServiceHero from '@/components/ResponsiveServiceHero';
 import ServiceHero from '@/components/ServiceHero'
 import { SummaryCard } from '@/components/SummaryCard'
 import TextBlock from '@/components/TextBlock';
@@ -74,7 +75,7 @@ const page = () => {
 
   return (
     <>
-      <ServiceHero
+      <ResponsiveServiceHero
         title="Billboards, Banners & Roll Ups"
         subtitle="• Strategic Design for Maximum Reach"
         description="Structured layouts and data-driven typography for high conversion and audience retention."

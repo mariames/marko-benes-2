@@ -11,8 +11,8 @@ const socialLinks = [
 const Footer = () => {
   return (
     <footer className="w-full bg-black text-white py-4 border-t border-gray-500 4xl:pb-20">
-      <div className="flex justify-around items-center container mx-auto px-4">
-        {/* Left Side: Copyright Text */}
+      <div className="flex flex-col lg:flex-row justify-around items-center container mx-auto px-4">
+        {/* Left Side: Logo */}
         <div>
           <Image
             src="/Marko-Benis-logo.svg"
@@ -20,11 +20,6 @@ const Footer = () => {
             height={50} 
             className="object-contain ml-1 w-52 h-auto"
             alt="Marko Benis" />
-            {/** 
-            <p className="text-sm text-slate-900">
-              &copy; 2025 Marijana Vujovic | marijanavujovic92@gmail.com
-            </p>
-            */}
         </div>
         
         {/* Socials Section */}
@@ -45,7 +40,7 @@ const Footer = () => {
           
 
 
-        {/* Right Side: Contact Icons */}
+        {/* Right Side: Email */}
         
           <a
               href="mailto:marko@benis.studio"

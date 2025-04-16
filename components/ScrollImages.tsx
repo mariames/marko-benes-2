@@ -16,7 +16,7 @@ const ScrollImages: React.FC<ScrollImagesProps> = ({ images, direction }) => {
         
         
       <motion.div
-        className="absolute left-0 top-0 flex flex-nowrap gap-6"
+        className="absolute left-0 top-0 flex flex-nowrap gap-4"
         style={{ willChange: "transform" }}
         animate={{
           x: isLeftToRight ? ["-33.33%", "0%"] : ["0%", "-33.33%"],

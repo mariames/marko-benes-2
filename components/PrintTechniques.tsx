@@ -38,7 +38,7 @@ const PrintTechniques: React.FC = () => {
             <FoilStamping />
           </motion.div>
           <motion.div initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}>
-            <Image src="/service-section/LabelsAndPackaging/print_finishing_techniques/hot_foil_stamping_foil_blocking_packaging_design.jpg" alt="Foil stamping" className="w-64 lg:w-full  h-auto rounded-lg" width={1400} height={972} />
+            <Image src="/service-section/LabelsAndPackaging/print_finishing_techniques/hot_foil_stamping_foil_blocking_packaging_design.jpg" alt="Foil stamping" className="w-72 lg:w-full  h-auto rounded-lg" width={1400} height={972} />
           </motion.div>
         </div>
 
@@ -51,7 +51,7 @@ const PrintTechniques: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <Image src="/service-section/LabelsAndPackaging/print_finishing_techniques/uv_varnish_uv_coating_spot_label_design.jpg" width={1400} height={972} alt="Design Variety" className="w-64 lg:w-full  h-auto rounded-lg" />
+            <Image src="/service-section/LabelsAndPackaging/print_finishing_techniques/uv_varnish_uv_coating_spot_label_design.jpg" width={1400} height={972} alt="Design Variety" className="w-72 lg:w-full  h-auto rounded-lg" />
           </motion.div>
           <motion.div
             className="flex-1"

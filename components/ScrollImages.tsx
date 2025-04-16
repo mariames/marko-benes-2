@@ -28,11 +28,11 @@ const ScrollImages: React.FC<ScrollImagesProps> = ({ images, direction }) => {
         }}
       >
         {imageRow.map((item, index) => (
-          <div key={index} className="min-w-[200px] min-h-[300px] flex-shrink-0 bg-pink-500">
+          <div key={index} className="min-w-[200px] h-[300px] flex-shrink-0 bg-pink-500">
             <img
               src={item.img}
               alt={item.name}
-              className="w-28 h-auto object-cover rounded-lg"
+              className="w-full h-auto object-cover rounded-lg"
             />
           </div>
         ))}

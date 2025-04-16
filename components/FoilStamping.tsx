@@ -13,7 +13,7 @@ const FoilStamping: React.FC = () => {
       viewport={{ once: true }}
       className="bg-black text-white lg:border lg:border-gray-700 rounded-lg p-6"
     >
-      <h2 className="text-2xl lg:text-3xl 2xl:text-4xl font-semibold">Foil stamping</h2>
+      <h2 className="text-2xl lg:text-3xl 2xl:text-4xl font-semibold">Foil Stamping</h2>
       <hr className="border-gray-600 my-2" />
       <p className="text-lg 2xl:text-2xl text-left lg:text-justify">
         Foil stamping or foil blocking is a printing technique in which a metallic or pigmented foil is transferred to the surface of the paper using a heated die and pressure. This technique gives a reflective glossy or matte effect and is used for luxury and premium materials.

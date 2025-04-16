@@ -13,7 +13,7 @@ const UvVarnish: React.FC = () => {
       viewport={{ once: true }}
       className="bg-black text-white lg:border lg:border-gray-700 rounded-lg p-6"
     >
-      <p className="text-2xl lg:text-3xl 2xl:text-4xl font-semibold">UV varnish</p>
+      <p className="text-2xl lg:text-3xl 2xl:text-4xl font-semibold">UV Varnish</p>
       <hr className="border-gray-600 my-2" />
       <p className="text-lg 2xl:text-2xl text-left lg:text-justify">
         UV varnish or UV coating is a surface finishing technique in which a transparent varnish is applied to certain parts of the printed surface and dried using ultraviolet (UV) light. This technique is used to emphasize slightly raised design elements and add a premium visual and tactile effect.

@@ -1,3 +1,4 @@
+import AboutMarko from "@/components/AboutMarko";
 import CallToAction from "@/components/CallToAction";
 import CardSection from "@/components/CardSection";
 import LandingSection from "@/components/LandingSection/LandingSection";
@@ -11,7 +12,8 @@ const About = () => {
       <TitleAnimation
           title="ABOUT / CAREER"
           message="DESIGN AS A CALLING" />
-      <LandingSection />
+        <AboutMarko />
+      {/** <LandingSection /> */}
       <CardSection />
       <Stack />
       <CallToAction />

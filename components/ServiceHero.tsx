@@ -64,7 +64,7 @@ const ServiceHero: React.FC<ServiceHeroPros> = ({
       </div>
 
       {/* Right Side - Infinite Looping Scroll */}
-      <div className="w-full lg:w-1/2 flex">
+      <div className="w-full lg:w-1/2 flex mt-32 lg:mt-0">
         {/* Left Column - Moves Up */}
         <motion.div
           className="w-1/2 flex flex-col items-center"

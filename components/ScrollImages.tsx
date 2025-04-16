@@ -14,7 +14,7 @@ const ScrollImages: React.FC<ScrollImagesProps> = ({ images, direction }) => {
   return (
     <div className="relative overflow-hidden w-full">
         <p className="text-3xl text-white"> HELLO WORD </p>
-        {/** 
+        
       <motion.div
         className="absolute left-0 top-0 flex flex-nowrap gap-4"
         style={{ willChange: "transform" }}
@@ -37,7 +37,7 @@ const ScrollImages: React.FC<ScrollImagesProps> = ({ images, direction }) => {
           </div>
         ))}
       </motion.div>
-      */}
+      
     </div>
   );
 };

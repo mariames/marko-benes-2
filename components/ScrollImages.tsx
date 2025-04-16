@@ -28,7 +28,7 @@ const ScrollImages: React.FC<ScrollImagesProps> = ({ images, direction }) => {
         }}
       >
         {imageRow.map((item, index) => (
-          <div key={index} className="min-w-[200px] h-[200px] flex-shrink-0 bg-pink-500">
+          <div key={index} className="min-w-[200px] h-[400px] flex-shrink-0 bg-pink-500">
             <img
               src={item.img}
               alt={item.name}

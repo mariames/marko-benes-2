@@ -37,7 +37,7 @@ const page = () => {
           <div className="space-y-2">
             <div className="flex items-start space-x-3">
               <div className="pt-1">
-                <FaCheckCircle className="text-[#e5dfd3] w-6 h-6 2xl:w-8 2xl:h-8" />
+                <FaCheckCircle className="text-[#e5dfd3] w-3 h-3 lg:w-6 lg:h-6 2xl:w-8 2xl:h-8" />
               </div>
               <p className="text-gray-300 2xl:text-2xl">
                 Dimensions (height x width) or dieline in vector format (ai, eps, pdf)
@@ -46,7 +46,7 @@ const page = () => {
 
             <div className="flex items-start space-x-3">
               <div className="pt-1">
-                <FaCheckCircle className="text-[#e5dfd3] w-6 h-6 2xl:w-8 2xl:h-8" />
+                <FaCheckCircle className="text-[#e5dfd3] w-3 h-3 lg:w-6 lg:h-6 2xl:w-8 2xl:h-8" />
               </div>
               <p className="text-gray-300 2xl:text-2xl">
                 The logo of your brand or company (ai, eps, pdf) / vector file
@@ -55,7 +55,7 @@ const page = () => {
             
             <div className="flex items-start space-x-3">
               <div className="pt-1">
-                <FaCheckCircle className="text-[#e5dfd3] w-6 h-6 2xl:w-8 2xl:h-8" />
+                <FaCheckCircle className="text-[#e5dfd3] w-3 h-3 lg:w-6 lg:h-6 2xl:w-8 2xl:h-8" />
               </div>
               <p className="text-gray-300 2xl:text-2xl">
                 The logo of your brand or company (ai, eps, pdf) / vector file
@@ -64,7 +64,7 @@ const page = () => {
 
             <div className="flex items-start space-x-3">
               <div className="pt-1">
-                <FaCheckCircle className="text-[#e5dfd3] w-6 h-6 2xl:w-8 2xl:h-8" />
+                <FaCheckCircle className="text-[#e5dfd3] w-3 h-3 lg:w-6 lg:h-6 2xl:w-8 2xl:h-8" />
               </div>
               <p className="text-gray-300 2xl:text-2xl">
               Text which is necessary to put on the design and text of the declaration with pictograms, barcode, etc.
@@ -73,7 +73,7 @@ const page = () => {
 
             <div className="flex items-start space-x-3">
               <div className="pt-1">
-                <FaCheckCircle className="text-[#e5dfd3] w-6 h-6 2xl:w-8 2xl:h-8" />
+                <FaCheckCircle className="text-[#e5dfd3] w-3 h-3 lg:w-6 lg:h-6 2xl:w-8 2xl:h-8" />
               </div>
               <p className="text-gray-300 2xl:text-2xl">
               Examples of designs you like so I know what type of style you prefer, brand guideline
@@ -82,7 +82,7 @@ const page = () => {
 
             <div className="flex items-start space-x-3">
               <div className="pt-1">
-                <FaCheckCircle className="text-[#e5dfd3] w-6 h-6 2xl:w-8 2xl:h-8" />
+                <FaCheckCircle className="text-[#e5dfd3] w-3 h-3 lg:w-6 lg:h-6 2xl:w-8 2xl:h-8" />
               </div>
               <p className="text-gray-300 2xl:text-2xl">
               Packaging material (cardboard, plastic, glass, bag, can, etc.)
@@ -91,7 +91,7 @@ const page = () => {
 
             <div className="flex items-start space-x-3">
               <div className="pt-1">
-                <FaCheckCircle className="text-[#e5dfd3] w-6 h-6 2xl:w-8 2xl:h-8" />
+                <FaCheckCircle className="text-[#e5dfd3] w-3 h-3 lg:w-6 lg:h-6 2xl:w-8 2xl:h-8" />
               </div>
               <p className="text-gray-300 2xl:text-2xl">
                 Printing method (offset, flexography, digital printing)

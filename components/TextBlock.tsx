@@ -6,7 +6,7 @@ type TextBlockProps = {
 
 const TextBlock: React.FC<TextBlockProps> = ({ children }) => {
   return (
-    <div className="text-gray-100 text-2xl text-justify m-5">
+    <div className="text-gray-100 text-lg md:text-xl lg:text-2xl text-justify m-5">
       {children}
     </div>
   );

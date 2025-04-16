@@ -35,7 +35,7 @@ const ResponsiveServiceHero: React.FC<ServiceHeroProps> = ({
           {subtitle}
         </motion.span>
         <motion.p 
-          className="text-2xl md:text-3xl xl:text-5xl  2xl:text-7xl 3xl:text-8xl 4xl:text-9xl 5xl:text-[140px] font-bold mt-2 text-white tracking-wide"
+          className="text-3xl md:text-3xl xl:text-5xl  2xl:text-7xl 3xl:text-8xl 4xl:text-9xl 5xl:text-[140px] font-bold mt-2 text-white tracking-wide"
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2 }}

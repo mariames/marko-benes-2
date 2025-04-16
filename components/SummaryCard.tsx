@@ -7,7 +7,7 @@ interface CollaborationStep {
 export const SummaryCard: React.FC<CollaborationStep> = ({ title, description }) => {
     return (
       <div className="flex justify-center">
-        <div className="4xl:max-w-[2080px] w-full">
+        <div className="w-[90%] 4xl:max-w-[2080px] ">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{

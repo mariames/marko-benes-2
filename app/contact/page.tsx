@@ -1,14 +1,14 @@
-import ContactContent from "@/components/ContactContent";
+import ProjectPlaner from "@/components/ProjectPlanner";
 import TitleAnimation from "@/components/TitleAnimation";
 
 export default function Contact() {
     return (
       <>
       <TitleAnimation
-        title="CONTACT / PLANNER / EMAIL "
+        title="PROJECT PLANNER "
         message="LETS TALK ABOUT PROJECT" />
-         <ContactContent />
-        {/** <ContactSection /> */}
+         
+      <ProjectPlaner />        
       </>
     );
 }

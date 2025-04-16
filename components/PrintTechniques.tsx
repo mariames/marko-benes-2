@@ -19,7 +19,7 @@ const PrintTechniques: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <Image src="/service-section/LabelsAndPackaging/print_finishing_techniques/dry_stamp_embossing_debossing_label_design.jpg" width={1400} height={972} alt="Promotional Design" className="w-64 lg:w-full h-auto rounded-lg" />
+            <Image src="/service-section/LabelsAndPackaging/print_finishing_techniques/dry_stamp_embossing_debossing_label_design.jpg" width={1400} height={972} alt="Promotional Design" className="w-72 lg:w-full h-auto rounded-lg" />
           </motion.div>
           <motion.div
             className="flex-1"

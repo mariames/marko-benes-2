@@ -108,9 +108,9 @@ const page = () => {
       <div className='mx-3 my-40 4xl:mx-56'>
         <TextInfo />
       </div>
-        
-      <PrintTechniques />
         {/**
+      <PrintTechniques />
+        
       
         <SummaryCard 
           title="What I need from you?"

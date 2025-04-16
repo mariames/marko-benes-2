@@ -4,7 +4,7 @@ interface TextInServiceWrapperProps {
     children: ReactNode;
   }
 const TextInServiceWrapper: React.FC<TextInServiceWrapperProps> = ({ children }) => {
-    return <div className="mx-3 my-40 4xl:mx-56">{children}</div>;
+    return <div className="mx-3 my-20 lg:my-40 4xl:mx-56">{children}</div>;
 }
 
 export default TextInServiceWrapper

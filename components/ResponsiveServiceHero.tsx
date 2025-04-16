@@ -51,7 +51,7 @@ const ResponsiveServiceHero: React.FC<ServiceHeroProps> = ({
           {description}
         </motion.p>
         <div className="flex gap-4 mt-6">
-          <AnimatedButton text="Got a project?" link="/contact" />
+          <AnimatedButton text="Got&nbsp;a&nbsp;project?" link="/contact" />
           <motion.a
             href={portfolioLink}
             className="px-1 py-2 lg:px-6 lg:py-3 border border-white rounded-lg text-white"

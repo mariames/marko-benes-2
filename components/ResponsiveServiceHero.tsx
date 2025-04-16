@@ -58,7 +58,7 @@ const ResponsiveServiceHero: React.FC<ServiceHeroProps> = ({
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            View&nbsp;Full&nbsp;Portf
+            View&nbsp;Full&nbsp;Portfolio
           </motion.a>
         </div>
       </div>
@@ -67,7 +67,7 @@ const ResponsiveServiceHero: React.FC<ServiceHeroProps> = ({
       <div className="w-full lg:w-1/2 flex mt-32 lg:mt-0">
         {/* Left Column - Moves Up */}
         <motion.div
-          className="w-1/2 flex flex-col items-center"
+          className="w-1/2 hidden lg:flex flex-col items-center"
           animate={{ y: ["0%", "-50%"] }}
           transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
           style={{ willChange: "transform" }}
@@ -81,7 +81,7 @@ const ResponsiveServiceHero: React.FC<ServiceHeroProps> = ({
 
         {/* Right Column - Moves Down */}
         <motion.div
-          className="w-1/2 flex flex-col items-center"
+          className="w-1/2 hidden lg:flex flex-col items-center"
           animate={{ y: ["-50%", "0%"] }} // Move only half, allowing seamless looping
           transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
         style={{ willChange: "transform" }}
@@ -92,6 +92,14 @@ const ResponsiveServiceHero: React.FC<ServiceHeroProps> = ({
             </div>
           ))}
         </motion.div>
+
+
+        {/* Mobile - Horizontal Infinite Scroll */}
+        <div className="flex lg:hidden flex-col gap-6 py-6 px-2 w-full">
+          <ScrollImages images={leftImgs} direction="left-to-right" />
+          <ScrollImages images={rightImgs} direction="right-to-left" />
+        </div>
+
       </div>
     </div>
   );

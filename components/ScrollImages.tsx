@@ -9,12 +9,12 @@ interface ScrollImagesProps {
 
 const ScrollImages: React.FC<ScrollImagesProps> = ({ images, direction }) => {
   const isLeftToRight = direction === "left-to-right";
-  const imageRow = [...images, ...images, ...images]; // tripled for smooth loop
+  const imageRow = [...images, ...images, ...images]; // tripled for looping
 
   return (
-    <div className="overflow-hidden w-full">
+    <div className="relative overflow-hidden w-full">
       <motion.div
-        className="flex gap-4"
+        className="absolute left-0 top-0 flex flex-nowrap gap-4"
         style={{ willChange: "transform" }}
         animate={{
           x: isLeftToRight ? ["-33.33%", "0%"] : ["0%", "-33.33%"],

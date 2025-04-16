@@ -16,7 +16,7 @@ const ScrollImages: React.FC<ScrollImagesProps> = ({ images, direction }) => {
         
         
       <motion.div
-        className="absolute left-0 top-0 flex flex-nowrap gap-2"
+        className="absolute left-0 top-0 flex flex-nowrap gap-6"
         style={{ willChange: "transform" }}
         animate={{
           x: isLeftToRight ? ["-33.33%", "0%"] : ["0%", "-33.33%"],
@@ -28,11 +28,11 @@ const ScrollImages: React.FC<ScrollImagesProps> = ({ images, direction }) => {
         }}
       >
         {imageRow.map((item, index) => (
-          <div key={index} className="min-w-[176px] h-[176px] flex-shrink-0"> {/*** bg-pink-500  */}
+          <div key={index} className="min-w-[224px] h-[170px] flex-shrink-0 "> {/***   */}
             <img
               src={item.img}
               alt={item.name}
-              className="w-44 h-auto object-cover rounded-lg"
+              className="w-56 h-auto object-cover rounded-lg"
             />
           </div>
         ))}

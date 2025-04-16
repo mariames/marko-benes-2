@@ -23,9 +23,9 @@ const ServiceHero: React.FC<ServiceHeroPros> = ({
 }) => {
   
   return (
-    <div className="flex h-screen w-full overflow-hidden">
+    <div className="flex flex-col lg:flex-row h-screen w-full overflow-hidden">
       {/* Left Side */}
-      <div className="w-1/2 bg-black flex flex-col justify-center px-16">
+      <div className="w-full lg:w-1/2 bg-black flex flex-col justify-center px-16">
         <motion.span 
           className="text-base 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl text-gray-200"
           initial={{ opacity: 0, x: -20 }}
@@ -64,7 +64,7 @@ const ServiceHero: React.FC<ServiceHeroPros> = ({
       </div>
 
       {/* Right Side - Infinite Looping Scroll */}
-      <div className="w-1/2 flex">
+      <div className="w-full lg:w-1/2 flex">
         {/* Left Column - Moves Up */}
         <motion.div
           className="w-1/2 flex flex-col items-center"

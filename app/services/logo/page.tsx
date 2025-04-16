@@ -4,6 +4,7 @@ import CallToAction from '@/components/CallToAction';
 import ServiceHero from '@/components/ServiceHero';
 import { SummaryCard } from '@/components/SummaryCard';
 import TextBlock from '@/components/TextBlock';
+import TextInServiceWrapper from '@/components/TextInServiceWrapper';
 import React from 'react'
 import { FaCheckCircle } from 'react-icons/fa';
 
@@ -77,7 +78,7 @@ const page = () => {
         rightImgs={rightImgs}
         portfolioLink="/portfolio"/>
 
-      <div className='mx-3 my-40'>
+      <TextInServiceWrapper>
         <TextBlock>
           A logo is the foundation of your visual identity and the first impression people get of your brand. That&#39;s why it&#39;s
           important to be clear, recognizable and communicate your story in the right way.
@@ -95,7 +96,7 @@ const page = () => {
         <TextBlock>
           A logo is not just an image – it is the foundation of your brand. Let your logo tell the real story!
         </TextBlock>
-      </div>
+      </TextInServiceWrapper>
       <AnimatedLabels labels={labels} direction="left-to-right" />
       <AnimatedLabels labels={labels} direction="right-to-left" />
 

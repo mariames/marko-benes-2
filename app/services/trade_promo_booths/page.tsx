@@ -4,6 +4,7 @@ import CallToAction from '@/components/CallToAction'
 import ServiceHero from '@/components/ServiceHero'
 import { SummaryCard } from '@/components/SummaryCard'
 import TextBlock from '@/components/TextBlock';
+import TextInServiceWrapper from '@/components/TextInServiceWrapper';
 import React from 'react'
 import { FaCheckCircle } from 'react-icons/fa'
 
@@ -88,7 +89,7 @@ const page = () => {
         rightImgs={rightImgs}
         portfolioLink="/portfolio"/>
 
-      <div className='mx-3 my-40'>
+      <TextInServiceWrapper>
         <TextBlock>
           A successful promo stand must not blend in with its surroundings - it must attract, retain and interest passers-by.
           Modern design for stands, promo tables, displays and other exhibition materials will be adapted to your brand and promotion goals.
@@ -106,7 +107,7 @@ const page = () => {
           Whether you&#39;re presenting at a major trade show, business conference or smaller promotion, the right design can
           make a huge difference!
         </TextBlock>
-      </div>
+      </TextInServiceWrapper>
 
       <AnimatedLabels labels={labels} direction="left-to-right" />
       <AnimatedLabels labels={labels} direction="right-to-left" />

@@ -3,6 +3,7 @@ import CallToAction from '@/components/CallToAction';
 import ServiceHero from '@/components/ServiceHero';
 import { SummaryCard } from '@/components/SummaryCard';
 import TextBlock from '@/components/TextBlock';
+import TextInServiceWrapper from '@/components/TextInServiceWrapper';
 import TShirtDesignSection from '@/components/TShirtDesignSection';
 import { FaCheckCircle } from 'react-icons/fa';
 
@@ -70,7 +71,7 @@ const page = () => {
         leftImgs={leftImgs}
         rightImgs={rightImgs}
         portfolioLink="/portfolio"/>
-      <div className='mx-3 my-40'>
+      <TextInServiceWrapper>
         <TextBlock>
           T-shirts are the canvas on which your brand can tell its story. Whether you are creating branded t-shirts for a
           company, promotional products, sports jerseys or a fashion collection, I adapt each design to your visual identity,
@@ -89,7 +90,7 @@ const page = () => {
           Well-designed t-shirts not only attract attention, but create a strong association with your brand and the message
           you want to convey.
         </TextBlock>
-      </div>
+      </TextInServiceWrapper>
       
       <SummaryCard 
         title="What I need from you?"

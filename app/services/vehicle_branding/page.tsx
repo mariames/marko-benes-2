@@ -4,6 +4,7 @@ import CallToAction from '@/components/CallToAction';
 import ServiceHero from '@/components/ServiceHero';
 import { SummaryCard } from '@/components/SummaryCard';
 import TextBlock from '@/components/TextBlock';
+import TextInServiceWrapper from '@/components/TextInServiceWrapper';
 import React from 'react'
 import { FaCheckCircle } from 'react-icons/fa';
 
@@ -92,7 +93,7 @@ const page = () => {
         rightImgs={rightImgs}
         portfolioLink="/portfolio"/>
 
-        <div className='mx-3 my-40'>
+        <TextInServiceWrapper>
           <TextBlock>
             Branding a vehicle requires the precise creation of a design that is fully adapted to the dimensions and technical
             characteristics of the vehicle itself. I start each project with a detailed analysis of the technical drawings, taking care
@@ -107,7 +108,7 @@ const page = () => {
             And know, your vehicle is more than a means of transportation &mdash; it&#39;s a mobile advertisement that works for you all
             the time! Creating attractive and effective vehicle branding solutions will make your brand stand out wherever you go.
           </TextBlock>
-        </div>
+        </TextInServiceWrapper>
         <AnimatedLabels labels={labels} direction="left-to-right" />
         <AnimatedLabels labels={labels} direction="right-to-left" />
 

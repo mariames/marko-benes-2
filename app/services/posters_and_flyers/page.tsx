@@ -5,6 +5,7 @@ import PostersPrintTechnique from '@/components/PostersPrintTechniques';
 import ServiceHero from '@/components/ServiceHero';
 import { SummaryCard } from '@/components/SummaryCard';
 import TextBlock from '@/components/TextBlock';
+import TextInServiceWrapper from '@/components/TextInServiceWrapper';
 import React from 'react'
 import { FaCheckCircle } from 'react-icons/fa';
 
@@ -84,7 +85,7 @@ const page = () => {
         rightImgs={rightImgs}
         portfolioLink="/portfolio"/>
 
-    <div className='mx-3 my-40'>
+    <TextInServiceWrapper>
       <TextBlock>
         A good poster or flyer is not just an aesthetically pleasing visual – it must quickly attract attention, convey a clear
         message and make a strong impression on the target audience. The focus is on being eye-catching, easy to read and
@@ -103,7 +104,7 @@ const page = () => {
       <TextBlock>
         My goal is for your message to be not only noticed, but also remembered.
       </TextBlock>
-    </div>
+    </TextInServiceWrapper>
     <PostersPrintTechnique />
 
     <AnimatedLabels labels={labels} direction="left-to-right" />

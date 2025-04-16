@@ -7,6 +7,7 @@ import SpotlightTitle from '@/components/SpotlightTitle';
 import { SummaryCard } from '@/components/SummaryCard';
 import TextBlock from '@/components/TextBlock';
 import TextInfo from '@/components/TextInfo';
+import TextInServiceWrapper from '@/components/TextInServiceWrapper';
 import React from 'react'
 import { FaCheckCircle } from 'react-icons/fa';
 
@@ -86,7 +87,7 @@ const page = () => {
         rightImgs={rightImgs}
         portfolioLink="/portfolio"/>
 
-      <div className='mx-3 my-40 4xl:mx-56'>
+      <TextInServiceWrapper>
         <TextBlock>
           The key goal of every design is to strengthen brand identity and capture consumer attention on the shelf. That&#39;s why I develop every packaging and label design strategically, considering all essential elements such as striking visuals, customized backgrounds, carefully positioned text, well-designed icons, and a harmonious color palette. This ensures that the final product is visually powerful, recognizable, and flawlessly executed in every aspect—from concept to the finished product.
         </TextBlock>
@@ -96,7 +97,7 @@ const page = () => {
         <TextBlock>
           Each packaging is designed to be visually appealing and intuitive to use, providing customers with a complete brand experience.
         </TextBlock>
-      </div>
+      </TextInServiceWrapper>
 
       <AnimatedLabels labels={labels} direction="left-to-right" />
       <AnimatedLabels labels={labels} direction="right-to-left" />

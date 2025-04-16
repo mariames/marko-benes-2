@@ -4,6 +4,7 @@ import CallToAction from '@/components/CallToAction';
 import ServiceHero from '@/components/ServiceHero';
 import { SummaryCard } from '@/components/SummaryCard';
 import TextBlock from '@/components/TextBlock';
+import TextInServiceWrapper from '@/components/TextInServiceWrapper';
 import React from 'react'
 import { FaCheckCircle } from 'react-icons/fa';
 
@@ -78,7 +79,7 @@ const page = () => {
         rightImgs={rightImgs}
         portfolioLink="/portfolio"/>
 
-      <div className='mx-3 my-40'>
+      <TextInServiceWrapper>
         <TextBlock>
           In supermarkets and stores, customers make decisions in just a few seconds - that&#39;s why it&#39;s crucial that your
           products are visible, attractive and easily accessible.
@@ -101,7 +102,7 @@ const page = () => {
         <TextBlock>
           Get your products noticed - because good visibility means more sales!
         </TextBlock>
-      </div>
+      </TextInServiceWrapper>
       <AnimatedLabels labels={labels} direction="left-to-right" />
       <AnimatedLabels labels={labels} direction="right-to-left" />
 

@@ -4,6 +4,7 @@ import CallToAction from '@/components/CallToAction'
 import ServiceHero from '@/components/ServiceHero'
 import { SummaryCard } from '@/components/SummaryCard'
 import TextBlock from '@/components/TextBlock';
+import TextInServiceWrapper from '@/components/TextInServiceWrapper';
 import React from 'react'
 import { FaCheckCircle } from 'react-icons/fa'
 
@@ -81,7 +82,7 @@ const page = () => {
         rightImgs={rightImgs}
         portfolioLink="/portfolio"/>
 
-      <div className='mx-3 my-40'>
+      <TextInServiceWrapper>
         <TextBlock>
           Large format design requires a clear and effective style, with special attention to readability and visibility from
           different distances. Regardless of whether it is roadside billboards, mega-banners on building facades, roll-up
@@ -104,7 +105,7 @@ const page = () => {
           Properly designed large format design attracts attention and conveys the message effectively, leaving a strong
           impression that contributes to brand recognition and campaign success.
         </TextBlock>
-      </div>
+      </TextInServiceWrapper>
       <AnimatedLabels labels={labels} direction="left-to-right" />
       <AnimatedLabels labels={labels} direction="right-to-left" />
         <SummaryCard 

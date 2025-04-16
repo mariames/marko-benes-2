@@ -32,7 +32,7 @@ const ScrollImages: React.FC<ScrollImagesProps> = ({ images, direction }) => {
             <img
               src={item.img}
               alt={item.name}
-              className="w-full h-full object-cover rounded-lg"
+              className="w-24 h-auto object-cover rounded-lg"
             />
           </div>
         ))}

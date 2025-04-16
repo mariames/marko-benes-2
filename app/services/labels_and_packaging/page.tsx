@@ -2,6 +2,7 @@
 import AnimatedLabels from '@/components/AnimatedLabels';
 import CallToAction from '@/components/CallToAction';
 import PrintTechniques from '@/components/PrintTechniques';
+import ResponsiveServiceHero from '@/components/ResponsiveServiceHero';
 import ServiceHero from '@/components/ServiceHero';
 import SpotlightTitle from '@/components/SpotlightTitle';
 import { SummaryCard } from '@/components/SummaryCard';
@@ -79,7 +80,7 @@ const page = () => {
 
   return (
     <>
-      <ServiceHero 
+      <ResponsiveServiceHero 
         title="Labels & Packaging"
         subtitle="• Industrial-Grade Packaging"
         description="Engineered for reliability, offering custom solutions that meet rigorous standards."

@@ -7,7 +7,7 @@ const TextInfo: React.FC = () => {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut", delay: 0.2 } }}
       viewport={{ once: true }}
-      className="bg-black text-white lg:border lg:border-gray-700 rounded-lg p-6 my-10 lg:my-20 mx-1 lg:mx-3"
+      className="bg-black text-white lg:border lg:border-gray-700 rounded-lg p-6 my-6  lg:my-20 mx-1 lg:mx-3"
     >
       <p className="text-2xl lg:text-3xl 2xl:text-4xl font-semibold">Print Finishing Techniques</p>
       <hr className="border-gray-600 my-2" />

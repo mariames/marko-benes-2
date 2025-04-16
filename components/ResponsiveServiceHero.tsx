@@ -51,14 +51,14 @@ const ResponsiveServiceHero: React.FC<ServiceHeroProps> = ({
           {description}
         </motion.p>
         <div className="flex gap-4 mt-6">
-          <AnimatedButton text="Got a project?" link="/contact" />
+          <AnimatedButton text="Got&nbsp;a&nbsp;project?" link="/contact" />
           <motion.a
             href={portfolioLink}
-            className="px-6 py-3 border border-white rounded-lg text-white"
+            className="px-1 lg:px-6 py-3 border border-white rounded-lg text-white"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            View Full Portfolio
+            View&nbsp;Full&nbsp;Portfolio
           </motion.a>
         </div>
       </div>

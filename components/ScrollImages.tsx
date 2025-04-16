@@ -12,7 +12,7 @@ const ScrollImages: React.FC<ScrollImagesProps> = ({ images, direction }) => {
   const imageRow = [...images, ...images, ...images]; // tripled for looping
 
   return (
-    <div className="relative overflow-hidden w-full">
+    <div className="relative overflow-hidden w-full h-auto">
         <p className="text-3xl text-white"> HELLO WORD </p>
         
       <motion.div
@@ -28,11 +28,11 @@ const ScrollImages: React.FC<ScrollImagesProps> = ({ images, direction }) => {
         }}
       >
         {imageRow.map((item, index) => (
-          <div key={index} className="min-w-[200px] h-[300px] flex-shrink-0 bg-pink-500">
+          <div key={index} className="min-w-[300px] h-[300px] flex-shrink-0 bg-pink-500">
             <img
               src={item.img}
               alt={item.name}
-              className="w-full h-auto object-cover rounded-lg"
+              className="w-32 h-auto object-cover rounded-lg"
             />
           </div>
         ))}

@@ -25,7 +25,7 @@ const ResponsiveServiceHero: React.FC<ServiceHeroProps> = ({
   return (
     <div className="flex flex-col lg:flex-row h-auto lg:h-screen w-full overflow-hidden">
       {/* Left Side */}
-      <div className="w-full lg:w-1/2 bg-black flex flex-col justify-center px-6 lg:px-16  py-12 lg:py-0">
+      <div className="w-full lg:w-1/2 bg-black flex flex-col justify-center px-6 lg:px-16  pt-12 lg:py-0">
         <motion.span 
           className="text-base 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl text-gray-200"
           initial={{ opacity: 0, x: -20 }}

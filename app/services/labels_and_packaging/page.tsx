@@ -90,11 +90,11 @@ const page = () => {
       
       <AnimatedLabels labels={labels} direction="left-to-right" />
       <AnimatedLabels labels={labels} direction="right-to-left" />
-
+      {/** 
       <div className='mx-3 my-40 4xl:mx-56'>
         <TextInfo />
       </div>
-        
+        */}
       <PrintTechniques />
         
       

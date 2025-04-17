@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FaCheckCircle } from "react-icons/fa";
+import LiItem from "./LiItem";
 
 const UvVarnish: React.FC = () => {
   return (
@@ -21,45 +22,12 @@ const UvVarnish: React.FC = () => {
       <p className="text-lg 2xl:text-2xl my-7">Characteristics of UV varnish:</p>
 
       <div className="space-y-4">
-        {/* List item 1 */}
-        <div className="flex items-start space-x-3">
-          <div className="pt-1">
-            <FaCheckCircle className="text-[#e5dfd3] w-6 h-6 2xl:w-8 2xl:h-8" />
-          </div>
-          <p className="text-gray-300 2xl:text-2xl">
-            Glossy or matte effect &mdash; can be high gloss or matte finish.
-          </p>
-        </div>
-
-        {/* List item 2 */}
-        <div className="flex items-start space-x-3">
-          <div className="pt-1">
-            <FaCheckCircle className="text-[#e5dfd3] w-6 h-6 2xl:w-8 2xl:h-8" />
-          </div>
-          <p className="text-gray-300 2xl:text-2xl">
-            Tactile and visual feeling &mdash; parts with UV varnish are smoother and reflect light.
-          </p>
-        </div>
-
-        {/* List item 3 */}
-        <div className="flex items-start space-x-3">
-          <div className="pt-1">
-            <FaCheckCircle className="text-[#e5dfd3] w-6 h-6 2xl:w-8 2xl:h-8" />
-          </div>
-          <p className="text-gray-300 2xl:text-2xl">
-            Contrast with matte paper &mdash; especially effective on matte lamination.
-          </p>
-        </div>
-
-        {/* List item 4 */}
-        <div className="flex items-start space-x-3">
-          <div className="pt-1">
-            <FaCheckCircle className="text-[#e5dfd3] w-6 h-6 2xl:w-8 2xl:h-8" />
-          </div>
-          <p className="text-gray-300 2xl:text-2xl">
-            Abrasion protection &mdash; adds a layer of resistance to scratches and moisture.
-          </p>
-        </div>
+        
+        <LiItem>Glossy or matte effect &mdash; can be high gloss or matte finish.</LiItem>
+        <LiItem>Tactile and visual feeling &mdash; parts with UV varnish are smoother and reflect light.</LiItem>
+        <LiItem>Contrast with matte paper &mdash; especially effective on matte lamination.</LiItem>
+        <LiItem>Abrasion protection &mdash; adds a layer of resistance to scratches and moisture.</LiItem>
+        
       </div>
     </motion.div>
   );

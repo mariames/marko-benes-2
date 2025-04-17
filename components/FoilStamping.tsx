@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FaCheckCircle } from "react-icons/fa";
+import LiItem from "./LiItem";
 
 const FoilStamping: React.FC = () => {
   return (
@@ -21,45 +22,15 @@ const FoilStamping: React.FC = () => {
       <p className="text-lg 2xl:text-2xl my-7">Characteristics of foil stamping:</p>
 
       <div className="space-y-4">
-        {/* List item 1 */}
-        <div className="flex items-start space-x-3">
-          <div className="pt-1">
-            <FaCheckCircle className="text-[#e5dfd3] w-6 h-6 2xl:w-8 2xl:h-8" />
-          </div>
-          <p className="text-gray-300 2xl:text-2xl">
-            Glossy or matte effect &mdash; most common in gold, silver, copper and various other colors.
-          </p>
-        </div>
 
-        {/* List item 2 */}
-        <div className="flex items-start space-x-3">
-          <div className="pt-1">
-            <FaCheckCircle className="text-[#e5dfd3] w-6 h-6 2xl:w-8 2xl:h-8" />
-          </div>
-          <p className="text-gray-300 2xl:text-2xl">
-            High precision &mdash; enables sharp details and fine lines.
-          </p>
-        </div>
+        <LiItem>Glossy or matte effect &mdash; most common in gold, silver, copper and various other colors.</LiItem>
 
-        {/* List item 3 */}
-        <div className="flex items-start space-x-3">
-          <div className="pt-1">
-            <FaCheckCircle className="text-[#e5dfd3] w-6 h-6 2xl:w-8 2xl:h-8" />
-          </div>
-          <p className="text-gray-300 2xl:text-2xl">
-            Visual premium experience &mdash; the foil reflects light, giving an elegant look.
-          </p>
-        </div>
+        <LiItem>High precision &mdash; enables sharp details and fine lines.</LiItem>
 
-        {/* List item 4 */}
-        <div className="flex items-start space-x-3">
-          <div className="pt-1">
-            <FaCheckCircle className="text-[#e5dfd3] w-6 h-6 2xl:w-8 2xl:h-8" />
-          </div>
-          <p className="text-gray-300 2xl:text-2xl">
-            Can be combined with embossing for added dimension.
-          </p>
-        </div>
+        <LiItem>Visual premium experience &mdash; the foil reflects light, giving an elegant look.</LiItem>
+
+        <LiItem>Can be combined with embossing for added dimension.</LiItem>
+        
       </div>
     </motion.div>
   );

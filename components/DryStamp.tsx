@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FaCheckCircle } from "react-icons/fa";
+import LiItem from "./LiItem";
 
 const DryStamp: React.FC = () => {
   return (
@@ -21,45 +22,15 @@ const DryStamp: React.FC = () => {
       </p>
       <p className="text-lg 2xl:text-2xl my-7">Characteristics of dry stamp:</p>
       <div className="space-y-4">
-        {/* List item 1 */}
-        <div className="flex items-start space-x-3">
-          <div className="pt-1">
-            <FaCheckCircle className="text-[#e5dfd3] w-6 h-6 2xl:w-8 2xl:h-8" />
-          </div>
-          <p className="text-gray-300 2xl:text-2xl">
-            Embossing &mdash; the design is raised above the surface of the paper, Debossing &mdash; the design is pressed below the surface of the paper.
-          </p>
-        </div>
 
-        {/* List item 2 */}
-        <div className="flex items-start space-x-3">
-          <div className="pt-1">
-            <FaCheckCircle className="text-[#e5dfd3] w-6 h-6 2xl:w-8 2xl:h-8" />
-          </div>
-          <p className="text-gray-300 2xl:text-2xl">
-            No ink or foil &mdash; only pressure is applied using a specially crafted die.
-          </p>
-        </div>
+        <LiItem>Embossing &mdash; the design is raised above the surface of the paper, Debossing &mdash; the design is pressed below the surface of the paper.</LiItem>
 
-        {/* List item 3 */}
-        <div className="flex items-start space-x-3">
-          <div className="pt-1">
-            <FaCheckCircle className="text-[#e5dfd3] w-6 h-6 2xl:w-8 2xl:h-8" />
-          </div>
-          <p className="text-gray-300 2xl:text-2xl">
-            Visual effect &mdash; gives 3D dimensionality and premium look.
-          </p>
-        </div>
+        <LiItem>No ink or foil &mdash; only pressure is applied using a specially crafted die.</LiItem>
 
-        {/* List item 4 */}
-        <div className="flex items-start space-x-3">
-          <div className="pt-1">
-            <FaCheckCircle className="text-[#e5dfd3] w-6 h-6 2xl:w-8 2xl:h-8" />
-          </div>
-          <p className="text-gray-300 2xl:text-2xl">
-            Best effect on thicker paper &mdash; softer and thicker papers or special art papers give the most pronounced effect.
-          </p>
-        </div>
+        <LiItem>Visual effect &mdash; gives 3D dimensionality and premium look.</LiItem>
+
+        <LiItem>Best effect on thicker paper &mdash; softer and thicker papers or special art papers give the most pronounced effect.</LiItem>
+
       </div>
     </motion.div>
   );

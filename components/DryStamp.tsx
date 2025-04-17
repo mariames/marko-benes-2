@@ -15,14 +15,16 @@ const DryStamp: React.FC = () => {
     >
       <p className="text-2xl lg:text-3xl 2xl:text-4xl font-semibold">Dry Stamp</p>
       <hr className="border-gray-600 my-2" />
-      <p className="text-lg 2xl:text-2xl text-left lg:text-justify break-words overflow-wrap">
+      <p className="text-base 2xl:text-2xl text-left lg:text-justify break-words overflow-wrap">
         Dry stamp is a technique of embossing a design into paper or cardboard without using ink or foil, which results in a
         relief effect. This technique is often used to add a refined and luxurious look to printed materials.
       </p>
-      <p className="text-lg 2xl:text-2xl my-7">Characteristics of dry stamp:</p>
+      <p className="text-base 2xl:text-2xl my-7">Characteristics of dry stamp:</p>
       <div className="space-y-4">
 
-        <LiItem>Embossing &mdash; the design is raised above the surface of the paper, Debossing &mdash; the design is pressed below the surface of the paper.</LiItem>
+        <LiItem>Embossing &mdash; the design is raised above the surface of the paper.</LiItem>
+        
+        <LiItem>Debossing &mdash; the design is pressed below the surface of the paper.</LiItem>
 
         <LiItem>No ink or foil &mdash; only pressure is applied using a specially crafted die.</LiItem>
 

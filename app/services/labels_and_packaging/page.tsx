@@ -4,14 +4,11 @@ import CallToAction from '@/components/CallToAction';
 import LiItem from '@/components/LiItem';
 import PrintTechniques from '@/components/PrintTechniques';
 import ResponsiveServiceHero from '@/components/ResponsiveServiceHero';
-import ServiceHero from '@/components/ServiceHero';
-import SpotlightTitle from '@/components/SpotlightTitle';
 import { SummaryCard } from '@/components/SummaryCard';
 import TextBlock from '@/components/TextBlock';
 import TextInfo from '@/components/TextInfo';
 import TextInServiceWrapper from '@/components/TextInServiceWrapper';
 import React from 'react'
-import { FaCheckCircle } from 'react-icons/fa';
 
 const page = () => {
 

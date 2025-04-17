@@ -2,12 +2,9 @@
 import CallToAction from '@/components/CallToAction';
 import LiItem from '@/components/LiItem';
 import ResponsiveServiceHero from '@/components/ResponsiveServiceHero';
-import ServiceHero from '@/components/ServiceHero';
 import { SummaryCard } from '@/components/SummaryCard';
 import TextBlock from '@/components/TextBlock';
 import TextInServiceWrapper from '@/components/TextInServiceWrapper';
-import TShirtDesignSection from '@/components/TShirtDesignSection';
-import { FaCheckCircle } from 'react-icons/fa';
 
 const requirements = (
     <>

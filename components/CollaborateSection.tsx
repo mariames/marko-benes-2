@@ -2,7 +2,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import TargetAudienceCard from "./TargetAudienceCard";
-import { FaCheckCircle } from "react-icons/fa";
 import DesignProcess from "./DesignProcess";
 import LiItem from "./LiItem";
 

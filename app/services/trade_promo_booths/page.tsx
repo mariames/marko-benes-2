@@ -3,19 +3,17 @@ import AnimatedLabels from '@/components/AnimatedLabels'
 import CallToAction from '@/components/CallToAction'
 import LiItem from '@/components/LiItem';
 import ResponsiveServiceHero from '@/components/ResponsiveServiceHero';
-import ServiceHero from '@/components/ServiceHero'
 import { SummaryCard } from '@/components/SummaryCard'
 import TextBlock from '@/components/TextBlock';
 import TextInServiceWrapper from '@/components/TextInServiceWrapper';
-import React from 'react'
-import { FaCheckCircle } from 'react-icons/fa'
+import React from 'react';
 
 const page = () => {
 
   const requirements2 = (
     <>
       <div className="space-y-2">
-        
+
         <LiItem>
           Dimensions for elements (height x width) or dieline for some irregular formats in vector file (ai, eps, pdf)
         </LiItem>

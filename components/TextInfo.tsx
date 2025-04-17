@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import TextBlock from "./TextBlock";
 
 const TextInfo: React.FC = () => {
   return (

@@ -35,7 +35,7 @@ const PrintTechniques: React.FC = () => {
         {/* Second Row: Two images */}
         <div className="flex flex-col-reverse lg:flex-row gap-4 items-center">
           <motion.div
-            className="order-1 lg:order-2" 
+            className="flex-1" 
             initial={{ x: -100, opacity: 0 }} 
             whileInView={{ x: 0, opacity: 1 }} 
             transition={{ duration: 1 }} 
@@ -43,7 +43,7 @@ const PrintTechniques: React.FC = () => {
             <FoilStamping />
           </motion.div>
           <motion.div 
-            className="order-1 lg:order-2"
+            className="flex-1"
             initial={{ x: 100, opacity: 0 }} 
             whileInView={{ x: 0, opacity: 1 }} 
             transition={{ duration: 1 }} 

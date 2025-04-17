@@ -33,7 +33,7 @@ const PrintTechniques: React.FC = () => {
         </div>
 
         {/* Second Row: Two images */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="flex flex-col-reverse lg:flex-row gap-4 items-center">
           <motion.div
             className="order-1 lg:order-2" 
             initial={{ x: -100, opacity: 0 }} 

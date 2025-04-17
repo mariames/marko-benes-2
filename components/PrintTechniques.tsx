@@ -8,7 +8,7 @@ import UvVarnish from "./UvVarnish";
 
 const PrintTechniques: React.FC = () => {
   return (
-    <section className="bg-black text-white py-16 relative flex justify-center">
+    <section className="bg-black text-white py-10 lg:py-16 relative flex justify-center">
       <div className="w-full space-y-12 4xl:max-w-[2080px]">
         {/* First Row: Image on the left, text on the right */}
         <div className="flex flex-col lg:flex-row gap-4  items-center  bg-pink-500">
@@ -42,6 +42,7 @@ const PrintTechniques: React.FC = () => {
             viewport={{ once: true }}>
             <FoilStamping />
           </motion.div>
+
           <motion.div 
             className="flex-1"
             initial={{ x: 100, opacity: 0 }} 

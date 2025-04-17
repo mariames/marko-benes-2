@@ -51,7 +51,7 @@ const FaqToggle = () => {
           <span className='text-[#B2905E] uppercase text-sm tracking-wider'>Help and Support</span>
           <span className='text-[#B2905E]'>◆</span>
         </p>
-        <h2 className="xl:text-5xl lg:text-5xl max-md:text-4xl font-bold text-white">FAQ</h2>
+        <p className="xl:text-5xl lg:text-5xl max-md:text-4xl font-bold text-white">FAQ</p>
       </div>
 
       {/* Accordion */}

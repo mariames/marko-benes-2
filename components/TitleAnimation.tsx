@@ -18,7 +18,7 @@ const TitleAnimation: React.FC<TitleAnimationProps> = ({
         initial={{ scale: 0.5, opacity: 0.5 }}
         animate={{ scale: 1.5, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="absolute text-white font-bold uppercase text-xl md:text-5xl"
+        className="absolute text-white font-bold uppercase text-lg md:text-5xl"
       >
         {title}
       </motion.h1>
@@ -28,7 +28,7 @@ const TitleAnimation: React.FC<TitleAnimationProps> = ({
         initial={{ scale: 0.5, opacity: 0 }}
         animate={{ scale: 1.5, opacity: 0.3 }}
         transition={{ duration: 1.5, ease: "easeOut", delay: 0.2 }}
-        className="absolute text-gray-200 font-bold uppercase text-xl md:text-5xl translate-y-8 top-24"
+        className="absolute text-gray-200 font-bold uppercase text-lg md:text-5xl translate-y-8 top-24"
       >
         {message}
       </motion.h1>

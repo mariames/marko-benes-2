@@ -34,10 +34,20 @@ const PrintTechniques: React.FC = () => {
 
         {/* Second Row: Two images */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <motion.div initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}>
+          <motion.div
+            className="order-1 lg:order-2" 
+            initial={{ x: -100, opacity: 0 }} 
+            whileInView={{ x: 0, opacity: 1 }} 
+            transition={{ duration: 1 }} 
+            viewport={{ once: true }}>
             <FoilStamping />
           </motion.div>
-          <motion.div initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: true }}>
+          <motion.div 
+            className="order-1 lg:order-2"
+            initial={{ x: 100, opacity: 0 }} 
+            whileInView={{ x: 0, opacity: 1 }} 
+            transition={{ duration: 1 }} 
+            viewport={{ once: true }}>
             <Image src="/service-section/LabelsAndPackaging/print_finishing_techniques/hot_foil_stamping_foil_blocking_packaging_design.jpg" alt="Foil stamping" className="w-72 lg:w-full  h-auto rounded-lg" width={1400} height={972} />
           </motion.div>
         </div>

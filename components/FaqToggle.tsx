@@ -20,7 +20,7 @@ const FaqToggle = () => {
     },
     {
       question: "What are the payment methods?",
-      answer: "Payments can be made in two ways. Via official company invoice/account or Payooner account. If you prefer Paypal, no problem! Depending on the type and scope of work, it is necessary to pay the entire amount of money or a certain agreed percentage. After that I start working."
+      answer: "Payments can be made in two ways. Via official company invoice/account or Payooner account. Depending on the type and scope of work, it is necessary to pay the entire amount of money or a certain agreed percentage. After that I start working."
     },
     {
       question: "Do you work on other types of designs that are not listed in the Services section?",

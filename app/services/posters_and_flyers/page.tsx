@@ -1,6 +1,7 @@
 "use client";
 import AnimatedLabels from '@/components/AnimatedLabels';
 import CallToAction from '@/components/CallToAction';
+import LiItem from '@/components/LiItem';
 import PostersPrintTechnique from '@/components/PostersPrintTechniques';
 import ResponsiveServiceHero from '@/components/ResponsiveServiceHero';
 import ServiceHero from '@/components/ServiceHero';
@@ -15,35 +16,34 @@ const page = () => {
   const requirements2 = (
       <>
             <div className="space-y-2">
-              <div className="flex items-center space-x-2">
-              <FaCheckCircle className="text-[#e5dfd3]" />
-                {/**<span className='text-[#e5dfd3]'>✓</span> */}
-                <p className="text-gray-300 2xl:text-2xl">Dimensions (height x width) or dieline for some irregular formats in vector file (ai, eps, pdf)</p>
-              </div>
-              <div className="flex items-center space-x-2">
-                <FaCheckCircle className="text-[#e5dfd3]" />
-                <p className="text-gray-300 2xl:text-2xl">The logo of your brand or company (ai, eps, or pdf) / vector file</p>
-              </div>
-              <div className="flex items-center space-x-2">
-                <FaCheckCircle className="text-[#e5dfd3]" />
-                <p className="text-gray-300 2xl:text-2xl">Text you want to put on the design (titles, subtitles, event/product/service/contact details)</p>
-              </div>
-              <div className="flex items-center space-x-2">
-                <FaCheckCircle className="text-[#e5dfd3]" />
-                <p className="text-gray-300 2xl:text-2xl">Key messages: (what should be highlighted - event, service, product, vision)</p>
-              </div>
-              <div className="flex items-center space-x-2">
-                <FaCheckCircle className="text-[#e5dfd3]" />
-                <p className="text-gray-300 2xl:text-2xl">Images/product model (if any)</p>
-              </div>
-              <div className="flex items-center space-x-2">
-                <FaCheckCircle className="text-[#e5dfd3]" />
-                <p className="text-gray-300 2xl:text-2xl">Examples of designs you like so I know what type of style you prefer, brand guideline</p>
-              </div>
-              <div className="flex items-center space-x-2">
-                <FaCheckCircle className="text-[#e5dfd3]" />
-                <p className="text-gray-300 2xl:text-2xl">Usage (print or digital)</p>
-              </div>
+            <LiItem>
+                Dimensions (height x width) or dieline for some irregular formats in vector file (ai, eps, pdf)
+            </LiItem>
+
+              <LiItem>
+                The logo of your brand or company (ai, eps, or pdf) / vector file
+              </LiItem>
+
+              <LiItem>
+                Text you want to put on the design (titles, subtitles, event/product/service/contact details)
+              </LiItem>
+
+              <LiItem>
+                Key messages: (what should be highlighted - event, service, product, vision)
+              </LiItem>
+
+              <LiItem>
+                Images/product model (if any)
+              </LiItem>
+
+              <LiItem>
+                Examples of designs you like so I know what type of style you prefer, brand guideline
+              </LiItem>
+
+              <LiItem>
+                Usage (print or digital)
+              </LiItem>
+
             </div>
             </>
   );

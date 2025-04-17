@@ -1,6 +1,7 @@
 "use client";
 import AnimatedLabels from '@/components/AnimatedLabels';
 import CallToAction from '@/components/CallToAction';
+import LiItem from '@/components/LiItem';
 import ResponsiveServiceHero from '@/components/ResponsiveServiceHero';
 import ServiceHero from '@/components/ServiceHero';
 import { SummaryCard } from '@/components/SummaryCard';
@@ -12,38 +13,38 @@ import { FaCheckCircle } from 'react-icons/fa';
 const requirements = (
     <>
         <div className="space-y-2">
-          <div className="flex items-center space-x-2">
-            <FaCheckCircle className="text-[#e5dfd3]" />
-            <p className="text-gray-300 2xl:text-2xl">Dimensions for elements (height x width) or dieline for some irregular formats in vector file (ai, eps, pdf)</p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <FaCheckCircle className="text-[#e5dfd3]" />
-            <p className="text-gray-300 2xl:text-2xl">Existing template or technical documentation (from shelf manufacturer)</p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <FaCheckCircle className="text-[#e5dfd3]" />
-            <p className="text-gray-300 2xl:text-2xl">The logo of your brand or company (ai, eps, or pdf) / vector file</p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <FaCheckCircle className="text-[#e5dfd3]" />
-            <p className="text-gray-300 2xl:text-2xl">Text you want to put on the design</p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <FaCheckCircle className="text-[#e5dfd3]" />
-            <p className="text-gray-300 2xl:text-2xl">Key messages: (what should be highlighted on the shelf)</p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <FaCheckCircle className="text-[#e5dfd3]" />
-            <p className="text-gray-300 2xl:text-2xl">Images/product model (if any)</p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <FaCheckCircle className="text-[#e5dfd3]" />
-            <p className="text-gray-300 2xl:text-2xl">Examples of designs you like so I know what type of style you prefer, brand guideline</p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <FaCheckCircle className="text-[#e5dfd3]" />
-            <p className="text-gray-300 2xl:text-2xl">Printed surfaces (which parts of the shelf can be branded - sides, top panel, frontal part)</p>
-          </div>
+          <LiItem>
+            Dimensions for elements (height x width) or dieline for some irregular formats in vector file (ai, eps, pdf)
+          </LiItem>
+
+          <LiItem>
+            Existing template or technical documentation (from shelf manufacturer)
+          </LiItem>
+
+          <LiItem>
+            The logo of your brand or company (ai, eps, or pdf) / vector file
+          </LiItem>
+
+          <LiItem>
+            Text you want to put on the design
+          </LiItem>
+
+          <LiItem>
+            Key messages: (what should be highlighted on the shelf)
+          </LiItem>
+
+          <LiItem>
+            Images/product model (if any)
+          </LiItem>
+
+          <LiItem>
+            Examples of designs you like so I know what type of style you prefer, brand guideline
+          </LiItem>
+
+          <LiItem>
+            Printed surfaces (which parts of the shelf can be branded - sides, top panel, frontal part)
+          </LiItem>
+
         </div>
     </>
 );

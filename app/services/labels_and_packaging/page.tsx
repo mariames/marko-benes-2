@@ -1,6 +1,7 @@
 "use client";
 import AnimatedLabels from '@/components/AnimatedLabels';
 import CallToAction from '@/components/CallToAction';
+import LiItem from '@/components/LiItem';
 import PrintTechniques from '@/components/PrintTechniques';
 import ResponsiveServiceHero from '@/components/ResponsiveServiceHero';
 import ServiceHero from '@/components/ServiceHero';
@@ -35,70 +36,21 @@ const page = () => {
   const requirements2 = (
     <>
           <div className="space-y-2">
-            <div className="flex items-start space-x-3">
-              <div className="pt-1">
-                <FaCheckCircle className="text-[#e5dfd3] w-3 h-3 lg:w-6 lg:h-6 2xl:w-8 2xl:h-8" />
-              </div>
-              <p className="text-gray-300 2xl:text-2xl">
-                Dimensions (height x width) or dieline in vector format (ai, eps, pdf)
-              </p>
-            </div>
+            <LiItem>Dimensions (height x width) or dieline in vector format (ai, eps, pdf)</LiItem>
 
-            <div className="flex items-start space-x-3">
-              <div className="pt-1">
-                <FaCheckCircle className="text-[#e5dfd3] w-3 h-3 lg:w-6 lg:h-6 2xl:w-8 2xl:h-8" />
-              </div>
-              <p className="text-gray-300 2xl:text-2xl">
-                The logo of your brand or company (ai, eps, pdf) / vector file
-              </p>
-            </div>
+            <LiItem>The logo of your brand or company (ai, eps, pdf) / vector file</LiItem>
             
-            <div className="flex items-start space-x-3">
-              <div className="pt-1">
-                <FaCheckCircle className="text-[#e5dfd3] w-3 h-3 lg:w-6 lg:h-6 2xl:w-8 2xl:h-8" />
-              </div>
-              <p className="text-gray-300 2xl:text-2xl">
-                The logo of your brand or company (ai, eps, pdf) / vector file
-              </p>
-            </div>
+            <LiItem>The logo of your brand or company (ai, eps, pdf) / vector file</LiItem>
+            
+            <LiItem>Text which is necessary to put on the design and text of the declaration with pictograms, barcode, etc.</LiItem>
 
-            <div className="flex items-start space-x-3">
-              <div className="pt-1">
-                <FaCheckCircle className="text-[#e5dfd3] w-3 h-3 lg:w-6 lg:h-6 2xl:w-8 2xl:h-8" />
-              </div>
-              <p className="text-gray-300 2xl:text-2xl">
-              Text which is necessary to put on the design and text of the declaration with pictograms, barcode, etc.
-              </p>
-            </div>
+            <LiItem>Examples of designs you like so I know what type of style you prefer, brand guideline</LiItem>
 
-            <div className="flex items-start space-x-3">
-              <div className="pt-1">
-                <FaCheckCircle className="text-[#e5dfd3] w-3 h-3 lg:w-6 lg:h-6 2xl:w-8 2xl:h-8" />
-              </div>
-              <p className="text-gray-300 2xl:text-2xl">
-              Examples of designs you like so I know what type of style you prefer, brand guideline
-              </p>
-            </div>
+            <LiItem>Packaging material (cardboard, plastic, glass, bag, can, etc.)</LiItem>
 
-            <div className="flex items-start space-x-3">
-              <div className="pt-1">
-                <FaCheckCircle className="text-[#e5dfd3] w-3 h-3 lg:w-6 lg:h-6 2xl:w-8 2xl:h-8" />
-              </div>
-              <p className="text-gray-300 2xl:text-2xl">
-              Packaging material (cardboard, plastic, glass, bag, can, etc.)
-              </p>
-            </div>
-
-            <div className="flex items-start space-x-3">
-              <div className="pt-1">
-                <FaCheckCircle className="text-[#e5dfd3] w-3 h-3 lg:w-6 lg:h-6 2xl:w-8 2xl:h-8" />
-              </div>
-              <p className="text-gray-300 2xl:text-2xl">
-                Printing method (offset, flexography, digital printing)
-              </p>
-            </div>
+            <LiItem>Printing method (offset, flexography, digital printing)</LiItem>
           </div>
-          </>
+    </>
   );
 
   const labels = [

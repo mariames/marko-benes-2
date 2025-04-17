@@ -1,5 +1,6 @@
 "use client";
 import CallToAction from '@/components/CallToAction';
+import LiItem from '@/components/LiItem';
 import ResponsiveServiceHero from '@/components/ResponsiveServiceHero';
 import ServiceHero from '@/components/ServiceHero';
 import { SummaryCard } from '@/components/SummaryCard';
@@ -11,38 +12,38 @@ import { FaCheckCircle } from 'react-icons/fa';
 const requirements = (
     <>
         <div className="space-y-2">
-          <div className="flex items-center space-x-2">
-            <FaCheckCircle className="text-[#e5dfd3]" />
-            <p className="text-gray-300 2xl:text-2xl">Brand line, special event, gift, or something else</p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <FaCheckCircle className="text-[#e5dfd3]" />
-            <p className="text-gray-300 2xl:text-2xl">Age, interests, gender, and people who will wear the shirts</p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <FaCheckCircle className="text-[#e5dfd3]" />
-            <p className="text-gray-300 2xl:text-2xl">Specific theme for style: retro, minimalist, urban, sports, etc.</p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <FaCheckCircle className="text-[#e5dfd3]" />
-            <p className="text-gray-300 2xl:text-2xl">Brand logo, tagline, text, or other graphic elements (if any)</p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <FaCheckCircle className="text-[#e5dfd3]" />
-            <p className="text-gray-300 2xl:text-2xl">Is the design on the front, back, or sleeves</p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <FaCheckCircle className="text-[#e5dfd3]" />
-            <p className="text-gray-300 2xl:text-2xl">Design dimensions for each part of the shirt</p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <FaCheckCircle className="text-[#e5dfd3]" />
-            <p className="text-gray-300 2xl:text-2xl">Examples of designs you like so I know what type of style you prefer, brand guideline</p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <FaCheckCircle className="text-[#e5dfd3]" />
-            <p className="text-gray-300 2xl:text-2xl">Type of printing (screen printing, sublimation, embroidery)</p>
-          </div>
+        <LiItem>
+          Brand line, special event, gift, or something else
+        </LiItem>
+
+        <LiItem>
+          Age, interests, gender, and people who will wear the shirts
+        </LiItem>
+
+        <LiItem>
+          Specific theme for style: retro, minimalist, urban, sports, etc.
+        </LiItem>
+
+        <LiItem>
+          Brand logo, tagline, text, or other graphic elements (if any)
+        </LiItem>
+
+        <LiItem>
+          Is the design on the front, back, or sleeves
+        </LiItem>
+
+        <LiItem>
+          Design dimensions for each part of the shirt
+        </LiItem>
+
+        <LiItem>
+          Examples of designs you like so I know what type of style you prefer, brand guideline
+        </LiItem>
+
+        <LiItem>
+          Type of printing (screen printing, sublimation, embroidery)
+        </LiItem>
+
         </div>
     </>
 );

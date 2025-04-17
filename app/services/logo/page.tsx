@@ -1,8 +1,8 @@
 "use client";
 import AnimatedLabels from '@/components/AnimatedLabels';
 import CallToAction from '@/components/CallToAction';
+import LiItem from '@/components/LiItem';
 import ResponsiveServiceHero from '@/components/ResponsiveServiceHero';
-import ServiceHero from '@/components/ServiceHero';
 import { SummaryCard } from '@/components/SummaryCard';
 import TextBlock from '@/components/TextBlock';
 import TextInServiceWrapper from '@/components/TextInServiceWrapper';
@@ -12,34 +12,13 @@ import { FaCheckCircle } from 'react-icons/fa';
 const requirements = (
     <>
         <div className="space-y-2">
-          <div className="flex items-center space-x-2">
-            <FaCheckCircle className="text-[#e5dfd3]" />
-            <p className="text-gray-300 2xl:text-2xl">Brand/company name (the exact name that will be on the logo)</p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <FaCheckCircle className="text-[#e5dfd3]" />
-            <p className="text-gray-300 2xl:text-2xl">Slogan (if any - should it be part of the logo)</p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <FaCheckCircle className="text-[#e5dfd3]" />
-            <p className="text-gray-300 2xl:text-2xl">Type of logo (textual - logo with letters, symbolic - icon, combination of text and symbols)</p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <FaCheckCircle className="text-[#e5dfd3]" />
-            <p className="text-gray-300 2xl:text-2xl">Colors (do you have certain preferred colors)</p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <FaCheckCircle className="text-[#e5dfd3]" />
-            <p className="text-gray-300 2xl:text-2xl">Fonts (do you want modern, classic, handwritten style, etc.)</p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <FaCheckCircle className="text-[#e5dfd3]" />
-            <p className="text-gray-300 2xl:text-2xl">Logo Style (Minimalist, Luxury, Fun, Serious)</p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <FaCheckCircle className="text-[#e5dfd3]" />
-            <p className="text-gray-300 2xl:text-2xl">If you have any samples/sketches you like</p>
-          </div>
+          <LiItem>Brand/company name (the exact name that will be on the logo)</LiItem>
+          <LiItem>Slogan (if any - should it be part of the logo)</LiItem>
+          <LiItem>Type of logo (textual - logo with letters, symbolic - icon, combination of text and symbols)</LiItem>
+          <LiItem>Colors (do you have certain preferred colors)</LiItem>
+          <LiItem>Fonts (do you want modern, classic, handwritten style, etc.)</LiItem>
+          <LiItem>Logo Style (Minimalist, Luxury, Fun, Serious)</LiItem>
+          <LiItem>If you have any samples/sketches you like</LiItem>
         </div>
     </>
 );

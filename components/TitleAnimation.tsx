@@ -16,7 +16,7 @@ const TitleAnimation: React.FC<TitleAnimationProps> = ({
 }) => {
 
   return (
-    <div className="relative flex justify-center items-center h-72 lg:h-80 overflow-hidden bg-black">
+    <div className="relative flex justify-center items-center h-52 lg:h-80 overflow-hidden bg-black">
       {/* Main Title - LAPTOP */}
       <motion.h1
         initial={{ scale: 0.5, opacity: 0.5 }}
@@ -53,7 +53,7 @@ const TitleAnimation: React.FC<TitleAnimationProps> = ({
         initial={{ scale: 0.5, opacity: 0 }}
         animate={{ scale: 1.5, opacity: 0.3 }}
         transition={{ duration: 1.5, ease: "easeOut", delay: 0.2 }}
-        className="absolute text-gray-200 font-bold uppercase text-base translate-y-8 top-24 flex lg:hidden"
+        className="absolute text-gray-200 font-bold uppercase text-sm translate-y-8 top-24 flex lg:hidden"
       >
         {smallMessage}
       </motion.h1>

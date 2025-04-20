@@ -53,7 +53,7 @@ const TitleAnimation: React.FC<TitleAnimationProps> = ({
         initial={{ scale: 0.5, opacity: 0 }}
         animate={{ scale: 1.5, opacity: 0.3 }}
         transition={{ duration: 1.5, ease: "easeOut", delay: 0.2 }}
-        className="absolute text-gray-200 font-bold uppercase text-sm translate-y-8 top-24 flex lg:hidden"
+        className="absolute text-gray-200 font-bold uppercase text-sm translate-y-8 top-16 flex lg:hidden"
       >
         {smallMessage}
       </motion.h1>

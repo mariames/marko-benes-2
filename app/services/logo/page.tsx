@@ -51,7 +51,7 @@ const page = () => {
   return (
     <>
       <ResponsiveServiceHero 
-        title="Logo"
+        title={["Logo"]}
         subtitle="• Timeless & Versatile Logo Design"
         description="A meticulously crafted logo that defines your brand with clarity, uniqueness, and impact."
         leftImgs={leftImgs}

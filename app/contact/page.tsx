@@ -5,8 +5,10 @@ export default function Contact() {
     return (
       <>
       <TitleAnimation
-        title="PROJECT PLANNER "
-        message="LETS TALK ABOUT PROJECT" />
+        title="PROJECT PLANNER"
+        message="LETS TALK ABOUT PROJECT"
+        smallTitle="PROJECT PLANNER"
+        smallMessage="LETS TALK ABOUT PROJECT" />
          
       <ProjectPlaner />        
       </>

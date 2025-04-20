@@ -10,7 +10,9 @@ export default function Collaborate() {
       <div>
         <TitleAnimation
           title="APPROACH / COLLABORATE "
-          message="LET'S MAKE YOUR IDEAS HAPPEN" />
+          message="LET'S MAKE YOUR IDEAS HAPPEN"
+          smallTitle="COLLABORATE"
+          smallMessage="LET'S MAKE YOUR IDEAS HAPPEN" />
         <CollaborateSection />
         <FaqToggle />
         <CallToAction />

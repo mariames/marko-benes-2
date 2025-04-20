@@ -193,7 +193,9 @@ const ServicesGallery: React.FC = () => {
     <div className="container mx-auto p-4">
       <TitleAnimation
           title="WORK / PORTFOLIO / SOLUTIONS"
-          message="IMAGINE YOUR PROJECT HERE" />
+          message="IMAGINE YOUR PROJECT HERE"
+          smallTitle="PORTFOLIO"
+          smallMessage="IMAGINE YOUR PROJECT HERE" />
       {/* ✅ Filter Dropdown */}
       <div className="mb-6 flex justify-end my-14  mr-4 lg:mr-10">
         <label className="block text-lg font-semibold mb-2">Filter by Category:</label>

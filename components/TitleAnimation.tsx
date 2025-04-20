@@ -5,32 +5,57 @@ import { motion } from "framer-motion";
 interface TitleAnimationProps {
     title: string;
     message: string;
+    smallTitle: string;
+    smallMessage: string;
   }
 const TitleAnimation: React.FC<TitleAnimationProps> = ({
     title,
-    message
+    message,
+    smallTitle,
+    smallMessage
 }) => {
 
   return (
     <div className="relative flex justify-center items-center h-80 overflow-hidden bg-black">
-      {/* Main Title */}
+      {/* Main Title - LAPTOP */}
       <motion.h1
         initial={{ scale: 0.5, opacity: 0.5 }}
         animate={{ scale: 1.5, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="absolute text-white font-bold uppercase text-lg md:text-5xl"
+        className="absolute text-white font-bold uppercase text-lg lg:text-5xl hidden lg:flex"
       >
         {title}
       </motion.h1>
 
-      {/* Shadow Text (Below Main) */}
+      {/* Shadow Text (Below Main) - LAPTOP */}
       <motion.h1
         initial={{ scale: 0.5, opacity: 0 }}
         animate={{ scale: 1.5, opacity: 0.3 }}
         transition={{ duration: 1.5, ease: "easeOut", delay: 0.2 }}
-        className="absolute text-gray-200 font-bold uppercase text-lg md:text-5xl translate-y-8 top-24"
+        className="absolute text-gray-200 font-bold uppercase text-lg lg:text-5xl translate-y-8 top-24 hidden lg:flex"
       >
-        {message}
+        {smallMessage}
+      </motion.h1>
+
+
+      {/* Main Title - MOBILE */}
+      <motion.h1
+        initial={{ scale: 0.5, opacity: 0.5 }}
+        animate={{ scale: 1.5, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="absolute text-white font-bold uppercase text-lg lg:text-5xl flex lg:hidden"
+      >
+        {smallTitle}
+      </motion.h1>
+
+      {/* Shadow Text (Below Main) - MOBILE */}
+      <motion.h1
+        initial={{ scale: 0.5, opacity: 0 }}
+        animate={{ scale: 1.5, opacity: 0.3 }}
+        transition={{ duration: 1.5, ease: "easeOut", delay: 0.2 }}
+        className="absolute text-gray-200 font-bold uppercase text-lg lg:text-5xl translate-y-8 top-24 flex lg:hidden"
+      >
+        {smallMessage}
       </motion.h1>
 
       {/* Extra Shadow Layer (Even Lighter) */}

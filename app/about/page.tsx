@@ -11,7 +11,9 @@ const About = () => {
       {/** <TitleOFPage title="About" /> */}
       <TitleAnimation
           title="ABOUT / CAREER"
-          message="DESIGN AS A CALLING" />
+          message="DESIGN AS A CALLING"
+          smallTitle="ABOUT"
+          smallMessage="DESIGN AS A CALLING" />
         <AboutMarko />
       {/** <LandingSection /> */}
       <CardSection />

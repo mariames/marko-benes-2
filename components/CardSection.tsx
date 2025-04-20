@@ -51,7 +51,7 @@ const Card: React.FC<CardProps> = ({ title, description }) => {
 
 const CardSection: React.FC = () => {
   return (
-    <section className="bg-black px-6 py-10">
+    <section className="px-6 pb-10 bg-pink-500"> {/** bg-black */}
       <div className="max-w-5xl mx-auto space-y-6">
         {cardData.map((card, index) => (
           <Card key={index} {...card} />

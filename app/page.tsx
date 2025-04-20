@@ -11,7 +11,7 @@ export default function Home() {
       <CustomCursor />
       {/** <AnimatedCard /> */}
       <HeroSection2 />
-      <div className="h-7 lg:h-96"></div>
+      <div className="h-10 lg:h-96"></div>
       <Services />
       <Logos />
       <CallToAction />    

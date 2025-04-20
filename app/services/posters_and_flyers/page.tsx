@@ -77,7 +77,7 @@ const page = () => {
   return (
     <>
     <ResponsiveServiceHero
-        title="Posters & Flyers"
+        title={["Posters & Flyers"]}
         subtitle="• Strategic Design for Maximum Reach"
         description="Structured layouts and data-driven typography for high conversion and audience retention."
         leftImgs={leftImgs}

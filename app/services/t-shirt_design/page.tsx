@@ -64,7 +64,7 @@ const page = () => {
   return (
     <>
       <ResponsiveServiceHero 
-        title="T-shirt Design"
+        title={["T-shirt Design"]}
         subtitle="• Cutting-Edge Print & Embroidery"
         description="Featuring advanced printing techniques for crisp, fade-resistant designs that stand out"
         leftImgs={leftImgs}

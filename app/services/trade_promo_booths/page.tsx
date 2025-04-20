@@ -80,7 +80,7 @@ const page = () => {
   return (
     <>
       <ResponsiveServiceHero
-        title="Trade Promo Booths"
+        title={["Trade Promo Booths"]}
         subtitle="•  Next-Level Event Marketing Displays"
         description="Combining cutting-edge materials, lighting, and interactive elements for an unforgettable brand showcase."
         leftImgs={leftImgs}

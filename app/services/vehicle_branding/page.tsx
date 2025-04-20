@@ -83,7 +83,7 @@ const page = () => {
   return (
     <div className='bg-black'>
       <ResponsiveServiceHero
-        title="Vehicle Branding"
+        title={["Vehicle Branding"]}
         subtitle="•  High-Performance Fleet Graphics"
         description="Built for endurance, designed for visibility"
         leftImgs={leftImgs}

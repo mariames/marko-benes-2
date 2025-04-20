@@ -67,7 +67,7 @@ const page = () => {
   return (
     <>
       <ResponsiveServiceHero 
-        title="Labels & Packaging"
+        title={["Labels & Packaging"]}
         subtitle="• Industrial-Grade Packaging"
         description="Engineered for reliability, offering custom solutions that meet rigorous standards."
         leftImgs={leftImgs}

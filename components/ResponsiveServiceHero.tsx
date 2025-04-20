@@ -6,7 +6,7 @@ import ScrollImages from "./ScrollImages";
 
 
 interface ServiceHeroProps {
-  title: string;
+  title: string[];
   subtitle: string;
   description: string;
   portfolioLink: string;
@@ -34,14 +34,21 @@ const ResponsiveServiceHero: React.FC<ServiceHeroProps> = ({
         >
           {subtitle}
         </motion.span>
-        <motion.p 
-          className="text-3xl md:text-3xl xl:text-5xl  2xl:text-7xl 3xl:text-8xl 4xl:text-9xl 5xl:text-[140px] font-bold mt-2 text-white tracking-wide"
-          initial={{ opacity: 0, x: -30 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.2 }}
-        >
-          {title}
-        </motion.p>
+        {
+          title.map((text, index) =>(
+
+            <motion.p 
+              key={index}
+              className="text-3xl md:text-3xl xl:text-5xl  2xl:text-7xl 3xl:text-8xl 4xl:text-9xl 5xl:text-[140px] font-bold mt-2 text-white tracking-wide"
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.2 }}>
+              {text}
+            </motion.p>
+
+          ))
+        }
+
         <motion.p 
           className="text-gray-200 mt-4 text-base 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl 5xl:text-5xl"
           initial={{ opacity: 0, x: -30 }}

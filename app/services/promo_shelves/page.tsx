@@ -72,7 +72,7 @@ const page = () => {
   return (
     <>
       <ResponsiveServiceHero
-        title="Promo Shelves"
+        title={["Promo Shelves"]}
         subtitle="• Smart Shelf Branding Solutions"
         description="Seamlessly integrating promotional graphics with retail shelving to maximize visual impact"
         leftImgs={leftImgs}

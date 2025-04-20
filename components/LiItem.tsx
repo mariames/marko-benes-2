@@ -8,7 +8,7 @@ interface LiItemProps {
 const LiItem: React.FC<LiItemProps> = ({ children }) => {
   return (
     <div className="flex items-start space-x-3 mt-2">
-        <div className="flex self-center">
+        <div className="flex self-start"> 
             <FaCheckCircle className="text-[#e5dfd3] w-3 h-3 lg:w-4 lg:h-4 2xl:w-5 2xl:h-5" />
         </div>
         <p className="text-gray-300 2xl:text-2xl">

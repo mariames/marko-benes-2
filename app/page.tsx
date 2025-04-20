@@ -9,7 +9,6 @@ export default function Home() {
   return (
     <main>
       <CustomCursor />
-      {/** <AnimatedCard /> */}
       <HeroSection2 />
       <div className="h-10 lg:h-96"></div>
       <Services />

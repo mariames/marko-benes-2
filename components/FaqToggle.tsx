@@ -46,7 +46,7 @@ const FaqToggle = () => {
       */}
       {/* Header Section */}
       <div className="relative w-full mx-auto text-center ">
-        <p className="text-lg font-semibold text-[#B2905E] flex items-center justify-center space-x-2">
+        <p className="text-lg font-semibold text-[#B2905E] flex items-center justify-center space-x-2 mb-2">
           <span className='text-[#B2905E]'>◆</span>
           <span className='text-[#B2905E] uppercase text-sm tracking-wider'>Help and Support</span>
           <span className='text-[#B2905E]'>◆</span>

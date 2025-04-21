@@ -29,7 +29,7 @@ const PrintTechniques: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            {/** <DryStamp /> */}
+            <DryStamp />
           </motion.div>
         </div>
         
@@ -42,7 +42,7 @@ const PrintTechniques: React.FC = () => {
             whileInView={{ x: 0, opacity: 1 }} 
             transition={{ duration: 1 }} 
             viewport={{ once: true }}>
-            {/** <FoilStamping /> */}
+            <FoilStamping />
           </motion.div>
 
           <motion.div 

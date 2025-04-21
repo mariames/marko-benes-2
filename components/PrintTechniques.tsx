@@ -73,7 +73,7 @@ const PrintTechniques: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            {/** <UvVarnish /> */}
+            <UvVarnish />
           </motion.div>
         </div>
 

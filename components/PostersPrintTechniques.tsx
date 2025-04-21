@@ -13,10 +13,10 @@ const PostersPrintTechnique: React.FC = () => {
       <h2 className="text-2xl lg:text-3xl 2xl:text-4xl font-semibold">Print Finishing Techniques</h2>
       <hr className="border-gray-600 my-2" />
       <div className="space-y-2">
-        <p className="text-gray-100 text-2xl text-justify">
+        <p className="text-gray-100 text-lg 2xl:text-2xl text-left lg:text-justify">
             Effects such as dry stamp, folio printing and UV varnish add elegance and a premium effect to printed materials. These effects are mainly used for luxurious materials such as business cards, invitations or promotional materials to emphasize the design, provide a luxurious touch and leave a strong impression.
         </p>
-        <p className="text-gray-100 text-2xl text-justify">
+        <p className="text-gray-100 text-lg 2xl:text-2xl text-left lg:text-justify">
             If you want to apply any of these effects I will be happy to help you with suggestions and advice on how and in what way it would be appropriate to apply it to your design.
         </p>
       </div>

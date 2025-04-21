@@ -8,11 +8,11 @@ import UvVarnish from "./UvVarnish";
 
 const PrintTechniques: React.FC = () => {
   return (
-    <section className="bg-black text-white py-10 lg:py-16 relative flex justify-center">
-      <div className="w-full space-y-12 "> {/** 4xl:max-w-[2080px] */}
-        {/* First Row: Image on the left, text on the right */}
+    <section className="bg-black text-white py-10 lg:py-16 relative flex justify-center w-full overflow-x-hidden">
+      <div className="w-full max-w-screen-xl space-y-12">
         
-        <div className="flex flex-col lg:flex-row gap-4  items-center">
+        {/* First Row: Image on the left, text on the right */}
+        <div className="flex flex-col lg:flex-row gap-4 items-center">
           <motion.div
             className="flex-1"
             initial={{ x: -100, opacity: 0 }}
@@ -20,7 +20,13 @@ const PrintTechniques: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <Image src="/service-section/LabelsAndPackaging/print_finishing_techniques/dry_stamp_embossing_debossing_label_design.jpg" width={1400} height={972} alt="Promotional Design" className="w-72 lg:w-full h-auto rounded-lg" />
+            <Image 
+              src="/service-section/LabelsAndPackaging/print_finishing_techniques/dry_stamp_embossing_debossing_label_design.jpg" 
+              width={1400} 
+              height={972} 
+              alt="Promotional Design" 
+              className="w-72 lg:w-full h-auto rounded-lg" 
+            />
           </motion.div>
           <motion.div
             className="flex-1"
@@ -32,7 +38,6 @@ const PrintTechniques: React.FC = () => {
             <DryStamp />
           </motion.div>
         </div>
-        
 
         {/* Second Row: Two images */}
         <div className="flex flex-col-reverse lg:flex-row items-center">
@@ -41,7 +46,8 @@ const PrintTechniques: React.FC = () => {
             initial={{ x: -100, opacity: 0 }} 
             whileInView={{ x: 0, opacity: 1 }} 
             transition={{ duration: 1 }} 
-            viewport={{ once: true }}>
+            viewport={{ once: true }}
+          >
             <FoilStamping />
           </motion.div>
 
@@ -50,8 +56,15 @@ const PrintTechniques: React.FC = () => {
             initial={{ x: 100, opacity: 0 }} 
             whileInView={{ x: 0, opacity: 1 }} 
             transition={{ duration: 1 }} 
-            viewport={{ once: true }}>
-            <Image src="/service-section/LabelsAndPackaging/print_finishing_techniques/hot_foil_stamping_foil_blocking_packaging_design.jpg" alt="Foil stamping" className="w-72 lg:w-full  h-auto rounded-lg" width={1400} height={972} />
+            viewport={{ once: true }}
+          >
+            <Image 
+              src="/service-section/LabelsAndPackaging/print_finishing_techniques/hot_foil_stamping_foil_blocking_packaging_design.jpg" 
+              alt="Foil stamping" 
+              className="w-72 lg:w-full h-auto rounded-lg" 
+              width={1400} 
+              height={972} 
+            />
           </motion.div>
         </div>
 
@@ -64,7 +77,13 @@ const PrintTechniques: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <Image src="/service-section/LabelsAndPackaging/print_finishing_techniques/uv_varnish_uv_coating_spot_label_design.jpg" width={1400} height={972} alt="Design Variety" className="w-72 lg:w-full  h-auto rounded-lg" />
+            <Image 
+              src="/service-section/LabelsAndPackaging/print_finishing_techniques/uv_varnish_uv_coating_spot_label_design.jpg" 
+              width={1400} 
+              height={972} 
+              alt="Design Variety" 
+              className="w-72 lg:w-full h-auto rounded-lg" 
+            />
           </motion.div>
           <motion.div
             className="flex-1"
@@ -77,15 +96,6 @@ const PrintTechniques: React.FC = () => {
           </motion.div>
         </div>
 
-        {/* List of Design Types */}
-        <motion.div
-          className="text-lg font-semibold mt-8"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 1 }}
-          viewport={{ once: true }}
-        >
-        </motion.div>
       </div>
     </section>
   );

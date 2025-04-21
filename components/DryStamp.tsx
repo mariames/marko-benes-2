@@ -11,8 +11,7 @@ const DryStamp: React.FC = () => {
         transition: { duration: 0.8, ease: "easeOut", delay: 0.2 },
       }}
       viewport={{ once: true }}
-      className="bg-black text-white lg:border lg:border-gray-700 rounded-lg p-6"
-    >
+      className="bg-black text-white rounded-lg p-6">
       <p className="text-2xl lg:text-3xl 2xl:text-4xl font-semibold">Dry Stamp</p>
       <hr className="border-gray-600 my-2" />
       <p className="text-base 2xl:text-2xl text-left lg:text-justify break-words overflow-wrap">

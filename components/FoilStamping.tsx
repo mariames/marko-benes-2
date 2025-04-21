@@ -11,7 +11,7 @@ const FoilStamping: React.FC = () => {
         transition: { duration: 0.8, ease: "easeOut", delay: 0.2 },
       }}
       viewport={{ once: true }}
-      className="bg-black text-white lg:border lg:border-gray-700 rounded-lg p-6"
+      className="bg-black text-white rounded-lg p-6"
     >
       <h2 className="text-2xl lg:text-3xl 2xl:text-4xl font-semibold">Foil Stamping</h2>
       <hr className="border-gray-600 my-2" />

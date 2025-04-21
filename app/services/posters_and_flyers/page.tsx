@@ -104,6 +104,7 @@ const page = () => {
         My goal is for your message to be not only noticed, but also remembered.
       </TextBlock>
     </TextInServiceWrapper>
+    
     <PostersPrintTechnique />
 
     <AnimatedLabels labels={labels} direction="left-to-right" />

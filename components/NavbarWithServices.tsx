@@ -102,7 +102,7 @@ export default function NavbarWithServices() {
                                 {Array.from("SERVICES").map((letter, index) => (
                                 <motion.span
                                     key={index}
-                                    className="text-gray-100 pl-3"
+                                    className="text-gray-100"
                                     variants={{
                                     hover: { color: "#ef4444" }, // Tailwind red-500
                                     }}

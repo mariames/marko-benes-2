@@ -23,7 +23,7 @@ const CrossTextEffect: React.FC<CrossTextEffectProps> = ({ text, href }) => {
         ))}
       </a>
       <motion.div
-        className="absolute bottom-0 top-3 left-0 h-[2px] bg-red-500"
+        className="pointer-events-none absolute bottom-0 top-3 left-0 h-[2px] bg-red-500"
         initial={{ width: "0%" }}
         variants={{
           hover: { width: "100%", transition: { duration: 0.4 } },

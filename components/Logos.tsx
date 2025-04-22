@@ -88,9 +88,9 @@ const Logos = () => {
         of their story
       </p>
 
-      {/** 
+      
       <div className="flex justify-center items-center max-2xl:min-h-screen relative max-sm:px-3">
-        <div className="relative grid grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-x-4 gap-y-2 max-w-5xl 5xl:grid-cols-6 5xl:gap-x-5 5xl:gap-y-3 5xl:max-w-[90rem]">
+        <div className="relative grid grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-x-4 gap-y-2 max-md:w-full lg:max-w-5xl 5xl:grid-cols-6 5xl:gap-x-5 5xl:gap-y-3 5xl:max-w-[90rem]">
           {logos.map((logo, index) => (
             <motion.div
               key={index}
@@ -117,7 +117,8 @@ const Logos = () => {
           ))}
         </div>
       </div>
-      */}
+      
+
     </div>
   );
 };

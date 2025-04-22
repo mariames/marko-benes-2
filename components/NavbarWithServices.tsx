@@ -123,7 +123,7 @@ export default function NavbarWithServices() {
 
                             <div
                                 className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                                    blogOpen ? "max-h-96 w-[450px] mt-5 -ml-4" : "max-h-0"
+                                    blogOpen ? "max-h-96 w-[450px] mt-4 -ml-2 " : "max-h-0"
                                 } md:absolute md:left-0 md:z-10 md:min-w-[16rem] md:max-w-[24rem] md:w-auto`}
                             >
                                 <ul

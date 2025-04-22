@@ -94,7 +94,7 @@ const Logos = () => {
           {logos.map((logo, index) => (
             <motion.div
               key={index}
-              className="flex justify-center items-center h-[80px] 4xl:h-[140px] bg-purple-500"
+              className="flex justify-center items-center max-sm:w-44 h-[80px] 4xl:h-[140px] bg-purple-500"
               initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{

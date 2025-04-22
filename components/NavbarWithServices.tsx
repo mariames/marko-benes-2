@@ -88,7 +88,7 @@ export default function NavbarWithServices() {
                     }`}
                 >
                     {/** className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0" */}
-                    <ul className="items-end justify-end space-y-4 md:flex md:space-x-6 md:space-y-0">
+                    <ul className="items-end justify-end space-y-4 md:flex md:space-x-6 md:space-y-0 max-md:pl-5">
                         <li className="relative" ref={dropdownRef}>
                         <motion.div
                             key={"services"}

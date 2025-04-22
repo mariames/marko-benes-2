@@ -12,9 +12,9 @@ export default function Home() {
         <HeroSection2 />
     
       <div className="h-10 lg:h-96"></div>
-      {/**
-       * <Services />
-       */}
+      
+       <Services />
+      
       {/** 
        * <Logos />
        * 

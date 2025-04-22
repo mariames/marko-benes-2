@@ -15,10 +15,9 @@ export default function Home() {
       
        <Services />
       
-      {/** 
-       * <Logos />
-       * 
-      */} 
+      
+        <Logos />
+         
       <CallToAction />    
     </main>
   );

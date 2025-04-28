@@ -146,6 +146,7 @@ const Wizard = () => {
 
   return (
     <div className="relative flex items-center justify-center min-h-[500px] border border-gray-700 rounded-lg mt-16 bg-[#101010]">
+      {/** 
       <form onSubmit={handleSubmit} className="w-[670px] mx-auto text-center p-6">
         <div className="relative flex items-center justify-between my-6 w-full px-10">
           {steps.map((step, index) => (
@@ -214,6 +215,7 @@ const Wizard = () => {
           Submit
         </button>
       </form>
+      */}
     </div>
   );
 };

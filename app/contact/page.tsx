@@ -13,7 +13,9 @@ export default function Contact() {
         <div className="flex justify-center text-center">
           <p className='text-white text-lg md:text-xl 2xl:text-3xl 4xl:text-4xl'>Submit the planner form or email me at marko@benis.studio.</p>
         </div>
-      <ProjectPlaner />        
+        {/** 
+      <ProjectPlaner />
+      */}        
       </>
     );
 }

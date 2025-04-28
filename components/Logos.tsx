@@ -3,7 +3,6 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-import useIsMobile from "./useIsMobile";
 
 const logos = [
   {
@@ -81,8 +80,6 @@ const logos = [
 ];
 
 const Logos = () => {
-  const isMobile = useIsMobile();
-
   return (
     <div className="bg-black">
       <p className="text-3xl 3xl:text-3xl 4xl:text-5xl 5xl:text-[11rem] text-white text-center pt-40 5xl:pt-[28rem] pb-5 5xl:pb-20 max-sm:pt-32 max-sm:pb-2 uppercase 4xl:font-bold 4xl:mb-24">
@@ -98,7 +95,7 @@ const Logos = () => {
             <motion.div
               key={index}
               className="flex justify-center items-center h-[80px] 4xl:h-[140px]"
-              initial={{ opacity: 0, x: isMobile ? 0 : 100 }}
+              initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{
                 duration: 1.5,

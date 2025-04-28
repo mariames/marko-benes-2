@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 
 const logos = [
@@ -80,30 +80,22 @@ const logos = [
 ];
 
 const Logos = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth < 800);
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
-  }, []);
-
   return (
     <div className="bg-black">
       <p className="text-3xl 3xl:text-3xl 4xl:text-5xl 5xl:text-[11rem] text-white text-center pt-40 5xl:pt-[28rem] pb-5 5xl:pb-20 max-sm:pt-32 max-sm:pb-2 uppercase 4xl:font-bold 4xl:mb-24">
-        Honored to be part&nbsp;
+        Honored to be part&nbsp; 
         <br className="sm:hidden" />
         of their story
       </p>
 
+      
       <div className="flex justify-center items-center max-2xl:min-h-screen relative max-sm:px-3">
         <div className="relative grid grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-x-4 gap-y-2 max-w-5xl 5xl:grid-cols-6 5xl:gap-x-5 5xl:gap-y-3 5xl:max-w-[90rem]">
           {logos.map((logo, index) => (
             <motion.div
               key={index}
               className="flex justify-center items-center h-[80px] 4xl:h-[140px]"
-              initial={{ opacity: 0, x: isMobile ? 0 : 100  }}
+              initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{
                 duration: 1.5,
@@ -125,6 +117,7 @@ const Logos = () => {
           ))}
         </div>
       </div>
+      
     </div>
   );
 };

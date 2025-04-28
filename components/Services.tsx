@@ -19,7 +19,7 @@ const services: Service[] = [
     src: "/service/labels-and-packaging.jpg",
     previewSrc1: "/service/labels-and-packaging-preview1.jpg",
     previewSrc2: "/service/labels-and-packaging-preview2.jpg",
-    types: ["product label","box design", "shelf rady packaging"],
+    types: ["product label","box design", "shelf ready packaging"],
   },
   {
     name: "Posters & Flyers",

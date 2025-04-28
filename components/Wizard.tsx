@@ -208,7 +208,7 @@ const Wizard = () => {
         <button
           type="submit"
           onClick={handleSubmit}
-          className="px-4 max-sm:px-7 py-2 font-semibold border border-gray-700 rounded-lg w-full h-16 mt-4"
+          className="px-4 py-2 font-semibold border border-gray-700 rounded-lg w-full max-sm:w-4/5 h-16 mt-4"
           disabled={currentStep !== steps.length - 1 || Object.keys(errors).length > 0}
         >
           Submit

@@ -148,25 +148,25 @@ const Wizard = () => {
     <div className="relative flex items-center justify-center min-h-[500px] border border-gray-700 rounded-lg mt-16 bg-[#101010]">
 
       <form onSubmit={handleSubmit} className="w-[670px] mx-auto text-center p-6">
-      {/** 
+      
         <div className="relative flex items-center justify-between my-6 w-full px-10">
           {steps.map((step, index) => (
             <div key={step.id} className="relative flex items-center">
               {index > 0 && <div className="absolute -left-7 top-1/2 w-8 h-0.5 bg-gray-700 max-sm:hidden"></div>}
               <div
-                className={`relative flex items-center justify-center w-16 h-16 rounded-full border-2 ${
+                className={`relative flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full border-2 ${
                   index === currentStep
                     ? 'bg-custom-blue text-white border-custom-blue'
                     : 'bg-black border-gray-500 text-gray-50'
                 }`}
               >
-                <span className="text-xl">{step.icon}</span>
+                <span className="text-lg md:text-xl">{step.icon}</span>
               </div>
               {index < steps.length - 1 && <div className="absolute -right-7 top-1/2 w-7 h-0.5 bg-gray-700 max-sm:hidden "></div>}
             </div>
           ))}
         </div>
-      */}
+      
         <div className="relative p-6 rounded-lg shadow-lg min-h-[500px] bg-transparent">
           <div className="text-center">
             <p className="font-normal text-3xl my-5">{steps[currentStep].title}</p>

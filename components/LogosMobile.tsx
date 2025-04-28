@@ -79,9 +79,9 @@ const logos = [
   },
 ];
 
-const Logos = () => {
+const LogosMobile = () => {
   return (
-    <div className="bg-black hidden lg:block">
+    <div className="bg-black lg:hidden">
       <p className="text-3xl 3xl:text-3xl 4xl:text-5xl 5xl:text-[11rem] text-white text-center pt-40 5xl:pt-[28rem] pb-5 5xl:pb-20 max-sm:pt-32 max-sm:pb-2 uppercase 4xl:font-bold 4xl:mb-24">
         Honored to be part&nbsp; 
         <br className="sm:hidden" />
@@ -95,7 +95,7 @@ const Logos = () => {
             <motion.div
               key={index}
               className="flex justify-center items-center h-[80px] 4xl:h-[140px]"
-              initial={{ opacity: 0, x: 100 }}
+              initial={{ opacity: 0, x: 0 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{
                 duration: 1.5,
@@ -122,4 +122,4 @@ const Logos = () => {
   );
 };
 
-export default Logos;
+export default LogosMobile;

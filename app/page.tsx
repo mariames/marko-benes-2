@@ -4,6 +4,7 @@ import Services from "@/components/Services";
 import CallToAction from "@/components/CallToAction";
 import CustomCursor from "@/components/CustomCursor/CustomCursor";
 import HeroSection2 from "@/components/HeroSection2";
+import LogosMobie from "@/components/LogosMobile";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       
       
         <Logos />
+        <LogosMobie />
          
       <CallToAction />    
     </main>

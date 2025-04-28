@@ -9,7 +9,7 @@ import LogosMobie from "@/components/LogosMobile";
 export default function Home() {
   return (
     <main>
-      <CustomCursor />
+      {/** <CustomCursor /> */}
         <HeroSection2 />
     
       <div className="h-10 lg:h-96"></div>

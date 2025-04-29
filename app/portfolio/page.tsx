@@ -197,7 +197,7 @@ const ServicesGallery: React.FC = () => {
           smallTitle="PORTFOLIO"
           smallMessage="IMAGINE YOUR PROJECT HERE" />
       {/* ✅ Filter Dropdown */}
-      <div className="md:mb-6 flex justify-end my-3 md:my-14  mr-4 lg:mr-10">
+      <div className="md:mb-6 flex justify-end my-1 md:my-14  mr-4 lg:mr-10">
         <label className="block text-lg font-semibold mb-2">Filter by Category:</label>
         <select
           value={selectedCategory}

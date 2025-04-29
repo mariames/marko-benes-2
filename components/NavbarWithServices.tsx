@@ -124,7 +124,7 @@ export default function NavbarWithServices() {
                             <div
                                 className={`overflow-hidden transition-all duration-300 ease-in-out ${
                                     blogOpen ? "max-h-96 w-[450px] mt-4  " : "max-h-0"
-                                } md:absolute md:left-0 md:z-10 w-[90%] md:min-w-[16rem] md:max-w-[24rem] md:w-auto`}
+                                } md:absolute md:left-0 md:z-10 w-[92%] md:min-w-[16rem] md:max-w-[24rem] md:w-auto`}
                             > {/** -ml-2 */}
                                 <ul
                                     className={`bg-black shadow-lg z-50 ${
@@ -138,7 +138,7 @@ export default function NavbarWithServices() {
                                         <CrossTextEffect text="POSTERS&nbsp;&amp;&nbsp;FLYERS" href="/services/posters_and_flyers" />
                                     </li>
                                     <li className="p-2">
-                                        <CrossTextEffect text="BILLBOARDS,&nbsp;BANNERS&nbsp;&&nbsp;ROLL UPS" href="/services/billboards_banners_roll_ups" />
+                                        <CrossTextEffect text="BILLBOARDS,&nbsp;BANNERS&nbsp;&&nbsp;ROLL&nbsp;UPS" href="/services/billboards_banners_roll_ups" />
                                     </li>
                                     <li className="p-2">
                                         <CrossTextEffect text="VEHICLE&nbsp;BRANDING" href="/services/vehicle_branding" />

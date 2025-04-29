@@ -11,7 +11,9 @@ export default function Contact() {
         smallMessage="LETS TALK ABOUT PROJECT" />
         
         <div className="flex justify-center text-center">
-          <p className='text-white text-lg md:text-xl 2xl:text-3xl 4xl:text-4xl'>Submit the planner form or email me at marko@benis.studio.</p>
+          <p className='text-white text-lg md:text-xl 2xl:text-3xl 4xl:text-4xl font-medium'>
+            Submit the <span className="font-semibold">planner form</span > or email me at <span className="font-semibold">marko@benis.studio</span>
+          </p>
         </div>
         
       <ProjectPlaner />

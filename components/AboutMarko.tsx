@@ -17,7 +17,7 @@ const AboutMarko: React.FC = () => {
         <div className="top-[40vh] 2xl:top-[21vh] 3xl:top-[25vh] 4xl:top-[20vh] h-screen flex items-baseline justify-center">  {/* Move image down */}
           {/** "/About_Marko.jpg" */}
           <motion.img
-            src= "/About/About_primer-BW.JPG"
+            src= "/About/marko.jpg"
             alt="About Marko"
             className="w-auto h-auto max-w-full max-h-full object-contain"
             style={{

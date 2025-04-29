@@ -124,7 +124,7 @@ export default function NavbarWithServices() {
                             <div
                                 className={`overflow-hidden transition-all duration-300 ease-in-out ${
                                     blogOpen ? "max-h-96 w-[450px] mt-4  " : "max-h-0"
-                                } md:absolute md:left-0 md:z-10 w-[92%] md:min-w-[16rem] md:max-w-[24rem] md:w-auto`}
+                                } md:absolute md:left-0 md:z-10 w-[95%] md:min-w-[16rem] md:max-w-[24rem] md:w-auto`}
                             > {/** -ml-2 */}
                                 <ul
                                     className={`bg-black shadow-lg z-50 ${

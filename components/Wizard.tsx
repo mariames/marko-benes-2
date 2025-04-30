@@ -20,7 +20,7 @@ const steps = [
     subtitle: "Please select all that apply.",
     icon: <FaTools />,
     content: [
-      { label: "Service", name: "service", type: "radio", options: ["Labels & Packaging", "Posters & Flyers", "Billboards, Banners & Roll Ups"] },
+      { label: "Service", name: "service", type: "radio", options: ["Labels & Packaging", "Posters & Flyers", "Billboards, Banners & Roll Ups", "Vehicle Branding", "Trade Promo Booths", "Promo Shelves", "Logo", "T-Shirt Design"] },
     ],
   },
   {
@@ -131,7 +131,7 @@ const Wizard = () => {
   const prevStep = () => {
     setCurrentStep((prevStep) => Math.max(prevStep - 1, 0));
   };
-
+/*
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const stepErrors = validateStep();
@@ -142,6 +142,40 @@ const Wizard = () => {
       alert(JSON.stringify(formData));
     }
   };
+*/
+
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  const stepErrors = validateStep();
+  setErrors(stepErrors);
+
+  if (Object.keys(stepErrors).length === 0) {
+    try {
+      const res = await fetch('/api/sendEmail', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify( formData ), // Send the form data
+      });
+
+      if (!res.ok) {
+        const errorData = await res.json();
+        throw new Error(errorData.message || 'Something went wrong');
+      }
+
+      const result = await res.json();
+      alert('Form submitted successfully!');
+      console.log('Server response:', result);
+
+      // Reset form if needed
+      setFormData(initialFormData);
+      setCurrentStep(0);
+    } catch (error) {
+      console.error('Submit error:', error);
+      alert('There was a problem submitting the form. Please try again.');
+    }
+  }
+};
+
   
 
   return (

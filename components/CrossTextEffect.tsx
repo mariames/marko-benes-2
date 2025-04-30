@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 interface CrossTextEffectProps {
   text: string;
@@ -8,7 +9,7 @@ interface CrossTextEffectProps {
 const CrossTextEffect: React.FC<CrossTextEffectProps> = ({ text, href }) => {
   return (
     <motion.div key={text} className="relative inline-block" whileHover="hover">
-      <a href={href} className="flex items-center tracking-wide">
+      <Link href={href} className="flex items-center tracking-wide"> {/** a */}
         {Array.from(text).map((letter, index) => (
           <motion.span
             key={index}
@@ -21,7 +22,7 @@ const CrossTextEffect: React.FC<CrossTextEffectProps> = ({ text, href }) => {
             {letter}
           </motion.span>
         ))}
-      </a>
+      </Link>
       <motion.div
         className="pointer-events-none absolute bottom-0 top-3 left-0 h-[2px] bg-red-500"
         initial={{ width: "0%" }}

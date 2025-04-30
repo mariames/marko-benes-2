@@ -159,16 +159,16 @@ export default function NavbarWithServices() {
                             </div>
                         </li>
                         <li className="text-white">
-                            <CrossTextEffect text="PORTFOLIO" href="/portfolio" />
+                            <CrossTextEffect text="PORTFOLIO" href="/portfolio/" />
                         </li>
                         <li className="text-white">
-                            <CrossTextEffect text="ABOUT" href="/about" />
+                            <CrossTextEffect text="ABOUT" href="/about/" />
                         </li>
                         <li className="text-white">
-                            <CrossTextEffect text="COLLABORATE" href="/collaborate" />
+                            <CrossTextEffect text="COLLABORATE" href="/collaborate/" />
                         </li>
                         <li className="text-white">
-                            <CrossTextEffect text="CONTACT" href="/contact" />
+                            <CrossTextEffect text="CONTACT" href="/contact/" />
                         </li>
                     </ul>
                 </div>

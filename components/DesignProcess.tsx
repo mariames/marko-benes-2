@@ -17,7 +17,8 @@ const DesignProcess: React.FC = () => {
           </div>
         ))}
       </div>
-      <Image src="/collaborate/6391_collaborate.jpg" width={3840} height={2363} alt="M" className="rounded-lg mt-20 object-cover" />
+      {/*<Image src="/collaborate/6391_collaborate.jpg" width={3840} height={2363} alt="M" className="rounded-lg mt-20 object-cover" /> */}
+      <img src="/collaborate/6391_collaborate.jpg" alt="Marko" className="rounded-lg mt-20 object-cover"  />
     </section>
   );
 };

@@ -5,6 +5,7 @@ const HeroSection2 = () => {
   return (
     <>
       <div className="max-w-full px-4 mx-auto">
+        {/*
         <Image
           src="/about/6406_frellance-carrier.jpg"
           alt="Marko Benis"
@@ -12,6 +13,12 @@ const HeroSection2 = () => {
           width={3840}
           height={1679}
           priority
+        />
+        */}
+        <img
+          src="/about/6406_frellance-carrier.jpg"
+          alt="Marko Benis"
+          className="rounded-2xl w-full h-auto"
         />
 
         <div className="pt-16 lg:pt-32 text-center">

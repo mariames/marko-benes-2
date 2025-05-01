@@ -144,6 +144,8 @@ const Wizard = () => {
   };
 */
 
+/*
+ HANDLE SUBMIT THAT WORKS ON VERCEL
 const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
   const stepErrors = validateStep();
@@ -175,8 +177,79 @@ const handleSubmit = async (e: React.FormEvent) => {
     }
   }
 };
+*/
+{/*
+  HANDLE SUBMIT that send multipart/form-data — not raw JSON
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  const stepErrors = validateStep();
+  setErrors(stepErrors);
 
-  
+  if (Object.keys(stepErrors).length === 0) {
+    try {
+      const formDataToSend = new FormData();
+
+      // Append each field from your form
+      Object.entries(formData).forEach(([key, value]) => {
+        formDataToSend.append(key, value);
+      });
+
+      const res = await fetch('https://benis.studio/sendEmail.php', {
+        method: 'POST',
+        body: formDataToSend,
+      });
+
+      if (!res.ok) {
+        throw new Error('Server error');
+      }
+
+      const text = await res.text(); // Assuming your PHP script returns text
+      alert('Form submitted successfully!');
+      console.log('Server response:', text);
+
+      // Optionally reset the form
+      setFormData(initialFormData);
+      setCurrentStep(0);
+    } catch (error) {
+      console.error('Submit error:', error);
+      alert('There was a problem submitting the form. Please try again.');
+    }
+  }
+};
+*/}
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  const stepErrors = validateStep();
+  setErrors(stepErrors);
+
+  if (Object.keys(stepErrors).length === 0) {
+    try {
+      const res = await fetch('https://benis.studio/sendEmail.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) {
+        const err = await res.text();
+        throw new Error(err || 'Server error');
+      }
+
+      const text = await res.text();
+      alert('Form submitted successfully!');
+      console.log('Server response:', text);
+
+      setFormData(initialFormData);
+      setCurrentStep(0);
+    } catch (error) {
+      console.error('Submit error:', error);
+      alert('There was a problem submitting the form. Please try again.');
+    }
+  }
+};
+
 
   return (
     <div className="relative flex items-center justify-center min-h-[500px] border border-gray-700 rounded-lg mt-16 bg-[#101010]">

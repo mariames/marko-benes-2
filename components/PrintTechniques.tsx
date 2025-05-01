@@ -13,6 +13,7 @@ const PrintTechniques: React.FC = () => {
         
         {/* First Row: Image on the left, text on the right */}
         <div className="flex flex-col lg:flex-row gap-4 items-center">
+          {/* 
           <motion.div
             className="flex-1"
             initial={{ x: -100, opacity: 0 }}
@@ -20,6 +21,7 @@ const PrintTechniques: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
+          
             <Image 
               src="/service-section/LabelsAndPackaging/print_finishing_techniques/dry_stamp_embossing_debossing_label_design.jpg" 
               width={1400} 
@@ -27,7 +29,20 @@ const PrintTechniques: React.FC = () => {
               alt="Promotional Design" 
               className="w-72 lg:w-full h-auto rounded-lg" 
             />
-          </motion.div>
+          </motion.div>          
+          
+          */}
+          <motion.img
+            className="flex-1 w-72 lg:w-full h-auto rounded-lg"
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            src="/service-section/LabelsAndPackaging/print_finishing_techniques/dry_stamp_embossing_debossing_label_design.jpg" 
+              width={1400} 
+              height={972} 
+              alt="Promotional Design" 
+          />
           <motion.div
             className="flex-1"
             initial={{ x: 100, opacity: 0 }}

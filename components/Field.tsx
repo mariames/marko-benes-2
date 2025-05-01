@@ -30,7 +30,8 @@ const Field: React.FC<FieldProps> = ({ field, value, onChange, error }) => {
           value={value}
           onChange={handleChange}
           placeholder={field.placeholder}
-          className="w-full p-2 rounded bg-transparent border border-gray-700"
+          rows={10}
+          className="w-full p-2 rounded bg-transparent border border-gray-700 resize-none"
         />
       ) : field.type === 'select' ? (
         <select name={field.name} value={value} onChange={handleChange} className="w-full p-2 rounded bg-transparent border border-gray-700 2xl:text-2xl">

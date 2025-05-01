@@ -6,9 +6,9 @@ export default function Contact() {
       <>
       <TitleAnimation
         title="PROJECT PLANNER"
-        message="LETS TALK ABOUT PROJECT"
+        message="LET'S TALK ABOUT PROJECT"
         smallTitle="PROJECT PLANNER"
-        smallMessage="LETS TALK ABOUT PROJECT" />
+        smallMessage="LET'S TALK ABOUT PROJECT" />
         
         <div className="flex justify-center text-center">
           <p className='text-white text-lg md:text-xl 2xl:text-3xl 4xl:text-4xl font-normal'>

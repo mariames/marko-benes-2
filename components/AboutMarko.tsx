@@ -14,7 +14,7 @@ const AboutMarko: React.FC = () => {
     return (
       <section className="relative w-full h-[50vh] lg:h-[100vh] bg-black"> 
   
-        <div className="top-[40vh] 2xl:top-[21vh] 3xl:top-[25vh] 4xl:top-[20vh] h-screen flex items-baseline justify-center">  {/* Move image down */}
+        <div className="top-[40vh] md:top-[30vh] 2xl:top-[30vh] 3xl:top-[25vh] 4xl:top-[20vh] h-screen flex items-baseline justify-center">  {/* Move image down */}
           {/** "/About_Marko.jpg" */}
           <motion.img
             src= "/about/marko.jpg"

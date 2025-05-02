@@ -91,7 +91,7 @@ const page = () => {
       <AnimatedLabels labels={labels} direction="left-to-right" />
       <AnimatedLabels labels={labels} direction="right-to-left" />
       
-      <div className='mx-3 my-40 4xl:mx-56'>
+      <div className='mx-1 my-10 md:mx-3 md:my-40 4xl:mx-56'>
         <TextInfo />
       </div>
       

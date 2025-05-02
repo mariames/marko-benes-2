@@ -222,7 +222,7 @@ const ServicesGallery: React.FC = () => {
           </p>
 
           {/* ✅ Display Images */}
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 4xl:grid-cols-6 gap-12 3xl:gap-14 4xl:gap-14 5xl:gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 4xl:grid-cols-6 gap-4 2xl:gap-10 3xl:gap-11 4xl:gap-12 5xl:gap-14">
             {images.map((service, index) => (
               <motion.div
                 key={index}

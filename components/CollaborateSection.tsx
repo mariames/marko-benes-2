@@ -12,7 +12,7 @@ interface CollaborationStep {
 
 const collaborationSteps: CollaborationStep[] = [
   {
-    title: "My approach",
+    title: "My Approach",
     description: (
       <DesignProcess />
     ),
@@ -108,7 +108,7 @@ const CollaborateCard: React.FC<CollaborationStep> = ({ title, description }) =>
       viewport={{ once: true }}
       className="bg-[#101010] text-white border border-gray-700 rounded-lg p-6"
     >
-      <p className="text-lg lg:text-3xl 2xl:text-4xl font-normal">{title}</p>
+      <p className="text-lg lg:text-3xl 2xl:text-4xl font-semibold">{title}</p>
       <hr className="border-gray-600 my-2" />
       {description}
     </motion.div>

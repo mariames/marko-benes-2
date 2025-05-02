@@ -5,14 +5,14 @@ const DesignProcess: React.FC = () => {
   return (
     <section className="bg-[#101010] text-white pt-16">
       <div className="max-w-4xl bg-[#101010] mx-auto text-center">
-        <p className="text-white  text-xl 2xl:text-3xl christmas-title tracking-wide">
+        <p className="text-[#B2905E]  text-xl 2xl:text-3xl christmas-title tracking-wide">
           “Every project is unique, but the path to great design is built on a clear and thoughtful approach.”
         </p>
       </div>
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2  gap-6 max-w-6xl mx-auto">
         {steps.map((step, index) => (
-          <div key={index} className="bg-[#262626] border border-gray-700 p-6 rounded-lg">
-            <h3 className="text-base 2xl:text-3xl text-gray-300 font-semibold uppercase">{step.number} {step.title}</h3>
+          <div key={index} className="bg-[#262626] border border-gray-900 p-6 rounded-lg">
+            <h3 className="text-base 2xl:text-3xl text-[#B2905E] font-semibold uppercase">{step.number} {step.title}</h3>
             <p className="text-gray-100 mt-2 2xl:text-2xl text-wrap">{step.description}</p>
           </div>
         ))}

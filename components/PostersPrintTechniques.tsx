@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import TextBlock from "./TextBlock";
 import Image from "next/image";
 
 const PostersPrintTechnique: React.FC = () => {

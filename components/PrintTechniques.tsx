@@ -7,7 +7,7 @@ import UvVarnish from "./UvVarnish";
 
 const PrintTechniques: React.FC = () => {
   return (
-    <section className="bg-black text-white py-10 lg:py-16 relative flex justify-center w-full overflow-x-hidden max-sm:overflow-y-hidden">
+    <section className="bg-black text-white py-10 lg:py-16 relative flex justify-center w-full overflow-x-hidden max-sm:overflow-y-hidden bg-pink-500">
       <div className="w-full max-w-screen-xl 4xl:max-w-screen-3xl space-y-12">
         
         {/* DRY STAMP */}
@@ -33,7 +33,7 @@ const PrintTechniques: React.FC = () => {
           */}
           <div className="flex-1">
             <motion.img
-              className="w-72 lg:w-full h-auto rounded-lg"
+              className="w-80 lg:w-full h-auto rounded-lg"
               initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 1 }}
@@ -85,7 +85,7 @@ const PrintTechniques: React.FC = () => {
           */}
           <div className="flex-1">
             <motion.img 
-              className="w-72 lg:w-full h-auto rounded-lg"
+              className="w-80 lg:w-full h-auto rounded-lg"
               initial={{ x: 100, opacity: 0 }} 
               whileInView={{ x: 0, opacity: 1 }} 
               transition={{ duration: 1 }} 
@@ -121,7 +121,7 @@ const PrintTechniques: React.FC = () => {
           */}
           <div className="flex-1">
             <motion.img
-              className="w-72 lg:w-full h-auto rounded-lg"
+              className="w-80 lg:w-full h-auto rounded-lg"
               initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 1 }}

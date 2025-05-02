@@ -11,7 +11,7 @@ const PrintTechniques: React.FC = () => {
       <div className="w-full max-w-screen-xl 4xl:max-w-screen-3xl space-y-12">
         
         {/* DRY STAMP */}
-        <div className="flex flex-col lg:flex-row gap-4 items-center">
+        <div className="flex flex-col-reverse lg:flex-row gap-4 items-center">
           {/* 
           <motion.div
             className="flex-1"
@@ -32,17 +32,17 @@ const PrintTechniques: React.FC = () => {
           
           */}
           <div className="flex-1">
-          <motion.img
-            className="w-72 lg:w-full h-auto rounded-lg"
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-            src="/service-section/LabelsAndPackaging/print_finishing_techniques/dry_stamp_embossing_debossing_label_design.jpg" 
-              width={1400} 
-              height={972} 
-              alt="Dry Stamp" 
-          />
+            <motion.img
+              className="w-72 lg:w-full h-auto rounded-lg"
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+              src="/service-section/LabelsAndPackaging/print_finishing_techniques/dry_stamp_embossing_debossing_label_design.jpg" 
+                width={1400} 
+                height={972} 
+                alt="Dry Stamp" 
+            />
           </div>
           <motion.div
             className="flex-1"
@@ -56,7 +56,7 @@ const PrintTechniques: React.FC = () => {
         </div>
 
         {/* FOIL STAMPING */}
-        <div className="flex flex-col-reverse lg:flex-row items-center">
+        <div className="flex flex-col lg:flex-row items-center">
           <motion.div
             className="flex-1" 
             initial={{ x: -100, opacity: 0 }} 
@@ -101,7 +101,7 @@ const PrintTechniques: React.FC = () => {
         </div>
 
         {/* UV VARNISH */}
-        <div className="flex flex-col lg:flex-row gap-4 items-center">
+        <div className="flex flex-col-reverse lg:flex-row gap-4 items-center">
           {/** 
           <motion.div
             className="flex-1"

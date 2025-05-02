@@ -7,7 +7,7 @@ import UvVarnish from "./UvVarnish";
 
 const PrintTechniques: React.FC = () => {
   return (
-    <section className="bg-black text-white py-10 lg:py-16 relative flex justify-center w-full overflow-x-hidden max-sm:overflow-y-hidden bg-pink-500">
+    <section className="bg-black text-white py-10 lg:py-16 relative flex justify-center w-full overflow-x-hidden max-sm:overflow-y-hidden">
       <div className="w-full max-w-screen-xl 4xl:max-w-screen-3xl space-y-12">
         
         {/* DRY STAMP */}

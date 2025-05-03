@@ -10,8 +10,8 @@ interface ServiceHeroProps {
   subtitle: string;
   description: string;
   portfolioLink: string;
-  leftImgs: { id: number; name: string; location: string; img: string }[];
-  rightImgs: { id: number; name: string; location: string; img: string }[];
+  leftImgs: { id: number; name: string; img: string }[];
+  rightImgs: { id: number; name: string; img: string }[];
 }
 
 const ResponsiveServiceHero: React.FC<ServiceHeroProps> = ({
@@ -95,7 +95,7 @@ const ResponsiveServiceHero: React.FC<ServiceHeroProps> = ({
         >
           {rightImgs.map((item, index) => (
             <div key={index} className="relative mb-4">
-              <img src={item.img} alt={item.name} className="w-full h-full object-cover rounded-lg" />
+              <img src={item.img} alt={"service"} className="w-full h-full object-cover rounded-lg" />
             </div>
           ))}
         </motion.div>

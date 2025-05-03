@@ -43,22 +43,22 @@ const page = () => {
   ];
 
   const leftImgs = [
-    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/BillboardsBannersRollUps/1_billboards-design.jpg" },
-    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/BillboardsBannersRollUps/2_billboards-banners-backdrop-design.jpg" },
-    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/BillboardsBannersRollUps/3_city-light-ads-design.jpg" },
-    { id: 4, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/BillboardsBannersRollUps/1_billboards-design.jpg" },
-    { id: 5, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/BillboardsBannersRollUps/2_billboards-banners-backdrop-design.jpg" },
-    { id: 6, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/BillboardsBannersRollUps/3_city-light-ads-design.jpg" }
+    { id: 1, name: "Marina Serlin", img: "/service-section/BillboardsBannersRollUps/1_billboards-design.jpg" },
+    { id: 2, name: "Dany Lanza", img: "/service-section/BillboardsBannersRollUps/2_billboards-banners-backdrop-design.jpg" },
+    { id: 3, name: "Taanel Malleus", img: "/service-section/BillboardsBannersRollUps/3_city-light-ads-design.jpg" },
+    { id: 4, name: "Marina Serlin", img: "/service-section/BillboardsBannersRollUps/1_billboards-design.jpg" },
+    { id: 5, name: "Dany Lanza", img: "/service-section/BillboardsBannersRollUps/2_billboards-banners-backdrop-design.jpg" },
+    { id: 6, name: "Taanel Malleus", img: "/service-section/BillboardsBannersRollUps/3_city-light-ads-design.jpg" }
     
   ];
 
   const rightImgs = [
-    { id: 1, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/BillboardsBannersRollUps/4_roll-up-retractable_banners-design.jpg" },
-    { id: 2, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/BillboardsBannersRollUps/5_shop-window-branding-store.jpg" },
-    { id: 3, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/BillboardsBannersRollUps/6_market-ads-banner.jpg" },
-    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/BillboardsBannersRollUps/4_roll-up-retractable_banners-design.jpg" },
-    { id: 5, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/BillboardsBannersRollUps/5_shop-window-branding-store.jpg" },
-    { id: 6, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/BillboardsBannersRollUps/6_market-ads-banner.jpg" }
+    { id: 1, name: "Patrick Kluivert", img: "/service-section/BillboardsBannersRollUps/4_roll-up-retractable_banners-design.jpg" },
+    { id: 2, name: "Marina Serlin",  img: "/service-section/BillboardsBannersRollUps/5_shop-window-branding-store.jpg" },
+    { id: 3, name: "Marina Serlin",  img: "/service-section/BillboardsBannersRollUps/6_market-ads-banner.jpg" },
+    { id: 4, name: "Patrick Kluivert",  img: "/service-section/BillboardsBannersRollUps/4_roll-up-retractable_banners-design.jpg" },
+    { id: 5, name: "Marina Serlin",  img: "/service-section/BillboardsBannersRollUps/5_shop-window-branding-store.jpg" },
+    { id: 6, name: "Marina Serlin",  img: "/service-section/BillboardsBannersRollUps/6_market-ads-banner.jpg" }
   ];
 
   return (

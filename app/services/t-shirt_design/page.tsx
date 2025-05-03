@@ -48,18 +48,18 @@ const requirements = (
 const page = () => {
 
   const leftImgs = [
-    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/T-Shirt/1_t-shirt-design.jpg" },
-    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/T-Shirt/2_casual-wear-t-shirt-fashion.jpg" },
-    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/T-Shirt/3_printed-tee-design.jpg" },
-    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/T-Shirt/4_graphic-tee-design.jpg" },
-    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/T-Shirt/5_t-shirt-design-sublimation-sweetwear.jpg" },
+    { id: 1, name: "Marina Serlin", img: "/service-section/T-Shirt/1_t-shirt-design.jpg" },
+    { id: 2, name: "Dany Lanza", img: "/service-section/T-Shirt/2_casual-wear-t-shirt-fashion.jpg" },
+    { id: 3, name: "Taanel Malleus", img: "/service-section/T-Shirt/3_printed-tee-design.jpg" },
+    { id: 4, name: "Patrick Kluivert", img: "/service-section/T-Shirt/4_graphic-tee-design.jpg" },
+    { id: 5, name: "Patrick Kluivert", img: "/service-section/T-Shirt/5_t-shirt-design-sublimation-sweetwear.jpg" },
   ];
 
   const rightImgs = [
-    { id: 6, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/T-Shirt/6_design-casual-wear-print.jpg" },
-    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/T-Shirt/5_t-shirt-design-sublimation-sweetwear.jpg" },
-    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/T-Shirt/4_graphic-tee-design.jpg" },
-    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/T-Shirt/1_t-shirt-design.jpg" }
+    { id: 6, name: "Marina Serlin",  img: "/service-section/T-Shirt/6_design-casual-wear-print.jpg" },
+    { id: 5, name: "Patrick Kluivert", img: "/service-section/T-Shirt/5_t-shirt-design-sublimation-sweetwear.jpg" },
+    { id: 4, name: "Patrick Kluivert", img: "/service-section/T-Shirt/4_graphic-tee-design.jpg" },
+    { id: 1, name: "Marina Serlin", img: "/service-section/T-Shirt/1_t-shirt-design.jpg" }
   ];
   return (
     <>

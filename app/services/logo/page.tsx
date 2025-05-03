@@ -32,21 +32,21 @@ const page = () => {
   ];
 
   const leftImgs = [
-    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/Logo/1_logo-visual-identity-design.jpg" },
-    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/Logo/2_logo-corporate-identity.jpg" },
-    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/Logo/3_logo-logotype-wordmark-design.jpg" },
-    { id: 4, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/Logo/1_logo-visual-identity-design.jpg" },
-    { id: 5, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/Logo/2_logo-corporate-identity" },
-    { id: 6, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/Logo/3_logo-logotype-wordmark-design.jpg" },
+    { id: 1, name: "Marina Serlin", img: "/service-section/Logo/1_logo-visual-identity-design.jpg" },
+    { id: 2, name: "Dany Lanza", img: "/service-section/Logo/2_logo-corporate-identity.jpg" },
+    { id: 3, name: "Taanel Malleus", img: "/service-section/Logo/3_logo-logotype-wordmark-design.jpg" },
+    { id: 4, name: "Marina Serlin", img: "/service-section/Logo/1_logo-visual-identity-design.jpg" },
+    { id: 5, name: "Dany Lanza", img: "/service-section/Logo/2_logo-corporate-identity" },
+    { id: 6, name: "Taanel Malleus", img: "/service-section/Logo/3_logo-logotype-wordmark-design.jpg" },
   ];
 
   const rightImgs = [
-    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/Logo/4_logotype-company-brand.jpg" },
-    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/Logo/5_logo-monogram-pet.jpg" },
-    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/Logo/6_logo-visual-identity-store.jpg" },
-    { id: 6, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/Logo/4_logotype-company-brand.jpg" },
-    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/Logo/5_logo-monogram-pet.jpg" },
-    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/Logo/6_logo-visual-identity-store.jpg" },
+    { id: 1, name: "Marina Serlin", img: "/service-section/Logo/4_logotype-company-brand.jpg" },
+    { id: 2, name: "Dany Lanza", img: "/service-section/Logo/5_logo-monogram-pet.jpg" },
+    { id: 3, name: "Taanel Malleus",  img: "/service-section/Logo/6_logo-visual-identity-store.jpg" },
+    { id: 6, name: "Marina Serlin", img: "/service-section/Logo/4_logotype-company-brand.jpg" },
+    { id: 4, name: "Patrick Kluivert", img: "/service-section/Logo/5_logo-monogram-pet.jpg" },
+    { id: 5, name: "Patrick Kluivert", img: "/service-section/Logo/6_logo-visual-identity-store.jpg" },
   ];
   return (
     <>

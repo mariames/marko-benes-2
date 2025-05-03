@@ -63,18 +63,18 @@ const page = () => {
   ];
 
   const leftImgs = [
-    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/PromoBooths/1_promo-trade-booth-stand-fair-design.jpg" },
-    { id: 2, name: "Dany Lanza", location: "Berlin, Germany", img: "/service-section/PromoBooths/2_promo-booth-stand-fair-branding.jpg" },
-    { id: 3, name: "Taanel Malleus", location: "Berlin, Germany", img: "/service-section/PromoBooths/3_promo-trade-fair-branding.jpg" },
-    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PromoBooths/4_promo-booth-stand-fair-branding-elements.jpg" },
-    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PromoBooths/5_promo-trade-booth-stand-fair-kiosk.jpg" },
+    { id: 1, name: "Marina Serlin", img: "/service-section/PromoBooths/1_promo-trade-booth-stand-fair-design.jpg" },
+    { id: 2, name: "Dany Lanza", img: "/service-section/PromoBooths/2_promo-booth-stand-fair-branding.jpg" },
+    { id: 3, name: "Taanel Malleus", img: "/service-section/PromoBooths/3_promo-trade-fair-branding.jpg" },
+    { id: 4, name: "Patrick Kluivert", img: "/service-section/PromoBooths/4_promo-booth-stand-fair-branding-elements.jpg" },
+    { id: 5, name: "Patrick Kluivert", img: "/service-section/PromoBooths/5_promo-trade-booth-stand-fair-kiosk.jpg" },
   ];
 
   const rightImgs = [
-    { id: 6, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/PromoBooths/6_promo-booth-table-design.jpg" },
-    { id: 5, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PromoBooths/5_promo-trade-booth-stand-fair-kiosk.jpg" },
-    { id: 4, name: "Patrick Kluivert", location: "Berlin, Germany", img: "/service-section/PromoBooths/4_promo-booth-stand-fair-branding-elements.jpg" },
-    { id: 1, name: "Marina Serlin", location: "Berlin, Germany", img: "/service-section/PromoBooths/1_promo-trade-booth-stand-fair-design.jpg" }
+    { id: 6, name: "Marina Serlin", img: "/service-section/PromoBooths/6_promo-booth-table-design.jpg" },
+    { id: 5, name: "Patrick Kluivert", img: "/service-section/PromoBooths/5_promo-trade-booth-stand-fair-kiosk.jpg" },
+    { id: 4, name: "Patrick Kluivert", img: "/service-section/PromoBooths/4_promo-booth-stand-fair-branding-elements.jpg" },
+    { id: 1, name: "Marina Serlin", img: "/service-section/PromoBooths/1_promo-trade-booth-stand-fair-design.jpg" }
   ];
 
   return (

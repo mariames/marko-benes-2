@@ -4,11 +4,12 @@ import Link from "next/link";
 interface CrossTextEffectProps {
   text: string;
   href: string;  // Link for navigation
+  onClick?: () => void;
 }
 
-const CrossTextEffect: React.FC<CrossTextEffectProps> = ({ text, href }) => {
+const CrossTextEffect: React.FC<CrossTextEffectProps> = ({ text, href, onClick }) => {
   return (
-    <motion.div key={text} className="relative inline-block" whileHover="hover">
+    <motion.div key={text} className="relative inline-block" whileHover="hover" onClick={onClick}>
       <Link href={href} className="flex items-center tracking-wide"> {/** a */}
         {Array.from(text).map((letter, index) => (
           <motion.span

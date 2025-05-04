@@ -36,7 +36,7 @@ const page = () => {
     { id: 2, name: "Dany Lanza", img: "/service-section/Logo/2_logo-corporate-identity.jpg" },
     { id: 3, name: "Taanel Malleus", img: "/service-section/Logo/3_logo-logotype-wordmark-design.jpg" },
     { id: 4, name: "Marina Serlin", img: "/service-section/Logo/1_logo-visual-identity-design.jpg" },
-    { id: 5, name: "Dany Lanza", img: "/service-section/Logo/2_logo-corporate-identity" },
+    { id: 5, name: "Dany Lanza", img: "/service-section/Logo/2_logo-corporate-identity.jpg" },
     { id: 6, name: "Taanel Malleus", img: "/service-section/Logo/3_logo-logotype-wordmark-design.jpg" },
   ];
 

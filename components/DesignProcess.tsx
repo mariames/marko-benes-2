@@ -18,7 +18,21 @@ const DesignProcess: React.FC = () => {
         ))}
       </div>
       {/*<Image src="/collaborate/6391_collaborate.jpg" width={3840} height={2363} alt="M" className="rounded-lg mt-20 object-cover" /> */}
-      <img src="/collaborate/6391_collaborate.jpg" alt="Marko" className="rounded-lg mt-20 object-cover"  />
+      {/** <img src="/collaborate/6391_collaborate.jpg" alt="Marko" className="rounded-lg mt-20 object-cover"  /> */}
+      <div className="relative w-full aspect-[16/10] rounded-lg overflow-hidden mt-20">
+        <img
+          src="/collaborate/6391_collaborate-large.jpg"
+          srcSet="
+            /collaborate/6391_collaborate-small.jpg 960w,
+            /collaborate/6391_collaborate-medium.jpg 2048w,
+            /collaborate/6391_collaborate-large.jpg 3840w
+          "
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 60vw"
+          alt="Marko"
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="lazy"
+        />
+      </div>
     </section>
   );
 };

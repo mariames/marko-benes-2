@@ -35,11 +35,11 @@ const PostersPrintTechnique: React.FC = () => {
                 src="/service-section/PostersAndFlyers/print_finishing_techniques/dry_stamp_embossing_debossing_busuness_card_invitation.jpg"
                 srcSet="
                 /sm/service-section/PostersAndFlyers/print_finishing_techniques/dry_stamp_embossing_debossing_busuness_card_invitation.jpg 960w,
-                   /service-section/PostersAndFlyers/print_finishing_techniques/dry_stamp_embossing_debossing_busuness_card_invitation.jpg 3840w
+                   /service-section/PostersAndFlyers/print_finishing_techniques/dry_stamp_embossing_debossing_busuness_card_invitation.jpg 1440w
                 "
                 sizes="(max-width: 640px) 100vw, 80vw"
                 alt="Dry Stamp Embossing"
-                className="absolute inset-0 w-full h-full object-cover transition-transform transform group-hover:scale-105 group-hover:shadow-lg"
+                className=" w-full h-full object-cover rounded-lg transition-transform transform group-hover:scale-105 group-hover:shadow-lg"
                 loading="lazy"
               />
 
@@ -73,7 +73,7 @@ const PostersPrintTechnique: React.FC = () => {
                 "
                 sizes="(max-width: 640px) 100vw, 80vw"
                 alt="Foil Stamping"
-                className="absolute inset-0 w-full h-full object-cover transition-transform transform group-hover:scale-105 group-hover:shadow-lg"
+                className="w-full h-full object-cover rounded-lg transition-transform transform group-hover:scale-105 group-hover:shadow-lg"
                 loading="lazy"
               />
           </div>
@@ -97,7 +97,7 @@ const PostersPrintTechnique: React.FC = () => {
                 "
                 sizes="(max-width: 640px) 100vw, 80vw"
                 alt="UV Varnish Coating"
-                className="absolute inset-0 w-full h-full object-cover transition-transform transform group-hover:scale-105 group-hover:shadow-lg"
+                className="w-full h-full object-cover rounded-lg transition-transform transform group-hover:scale-105 group-hover:shadow-lg"
                 loading="lazy"
               />
           </div>

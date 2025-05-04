@@ -30,6 +30,20 @@ const PostersPrintTechnique: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
           {/* First Image */}
           <div className="relative group">
+    
+              <img
+                src="/service-section/PostersAndFlyers/print_finishing_techniques/dry_stamp_embossing_debossing_busuness_card_invitation.jpg"
+                srcSet="
+                /sm/service-section/PostersAndFlyers/print_finishing_techniques/dry_stamp_embossing_debossing_busuness_card_invitation-small.jpg 960w,
+                  /service-section/PostersAndFlyers/print_finishing_techniques/dry_stamp_embossing_debossing_busuness_card_invitation.jpg 3840w
+                "
+                sizes="(max-width: 640px) 100vw, 80vw"
+                alt="Dry Stamp Embossing"
+                className="absolute inset-0 w-full h-full object-cover transition-transform transform group-hover:scale-105 group-hover:shadow-lg"
+                loading="lazy"
+              />
+
+            {/** 
             <Image 
               src="/service-section/PostersAndFlyers/print_finishing_techniques/dry_stamp_embossing_debossing_busuness_card_invitation.jpg" 
               alt="Dry Stamp Embossing" 
@@ -37,10 +51,12 @@ const PostersPrintTechnique: React.FC = () => {
               width={1400} 
               height={972} 
             />
+            */}
           </div>
 
           {/* Second Image */}
           <div className="relative group">
+            {/** 
             <Image 
               src="/service-section/PostersAndFlyers/print_finishing_techniques/hot_foil_stamping_foil_blocking_menu_flyer_design.jpg" 
               alt="Foil Stamping" 
@@ -48,10 +64,23 @@ const PostersPrintTechnique: React.FC = () => {
               width={1400} 
               height={972} 
             />
+            */}
+              <img
+                src="/service-section/PostersAndFlyers/print_finishing_techniques/hot_foil_stamping_foil_blocking_menu_flyer_design.jpg"
+                srcSet="
+                /sm/service-section/PostersAndFlyers/print_finishing_techniques/hot_foil_stamping_foil_blocking_menu_flyer_design.jpg 960w,
+                  /service-section/PostersAndFlyers/print_finishing_techniques/hot_foil_stamping_foil_blocking_menu_flyer_design.jpg 3840w
+                "
+                sizes="(max-width: 640px) 100vw, 80vw"
+                alt="Foil Stamping"
+                className="absolute inset-0 w-full h-full object-cover transition-transform transform group-hover:scale-105 group-hover:shadow-lg"
+                loading="lazy"
+              />
           </div>
 
           {/* Third Image */}
           <div className="relative group">
+            {/** 
             <Image 
               src="/service-section/PostersAndFlyers/print_finishing_techniques/uv_varnish_uv_coating_spot_flyer_design.jpg" 
               alt="UV Varnish Coating" 
@@ -59,6 +88,18 @@ const PostersPrintTechnique: React.FC = () => {
               width={1400} 
               height={972} 
             />
+            */}
+              <img
+                src="/service-section/PostersAndFlyers/print_finishing_techniques/uv_varnish_uv_coating_spot_flyer_design.jpg"
+                srcSet="
+                /sm/service-section/PostersAndFlyers/print_finishing_techniques/uv_varnish_uv_coating_spot_flyer_design.jpg 960w,
+                   /service-section/PostersAndFlyers/print_finishing_techniques/uv_varnish_uv_coating_spot_flyer_design.jpg 3840w
+                "
+                sizes="(max-width: 640px) 100vw, 80vw"
+                alt="UV Varnish Coating"
+                className="absolute inset-0 w-full h-full object-cover transition-transform transform group-hover:scale-105 group-hover:shadow-lg"
+                loading="lazy"
+              />
           </div>
         </div>
       </div>

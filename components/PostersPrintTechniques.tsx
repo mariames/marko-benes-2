@@ -34,8 +34,8 @@ const PostersPrintTechnique: React.FC = () => {
               <img
                 src="/service-section/PostersAndFlyers/print_finishing_techniques/dry_stamp_embossing_debossing_busuness_card_invitation.jpg"
                 srcSet="
-                /sm/service-section/PostersAndFlyers/print_finishing_techniques/dry_stamp_embossing_debossing_busuness_card_invitation-small.jpg 960w,
-                  /service-section/PostersAndFlyers/print_finishing_techniques/dry_stamp_embossing_debossing_busuness_card_invitation.jpg 3840w
+                /sm/service-section/PostersAndFlyers/print_finishing_techniques/dry_stamp_embossing_debossing_busuness_card_invitation.jpg 960w,
+                   /service-section/PostersAndFlyers/print_finishing_techniques/dry_stamp_embossing_debossing_busuness_card_invitation.jpg 3840w
                 "
                 sizes="(max-width: 640px) 100vw, 80vw"
                 alt="Dry Stamp Embossing"

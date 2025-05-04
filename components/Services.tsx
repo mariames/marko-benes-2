@@ -79,6 +79,13 @@ const services: Service[] = [
   },
 ];
 
+const getSrcSet = (path: string) => `
+  /sm${path} 960w,
+  ${path} 1920w
+`;
+
+const sizes = `(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw`;
+
 const Services: React.FC = () => {
   return (
     <div className="bg-black pb-10 px-6 md:px-10 lg:px-20 xl:px-40 2xl:px-64">
@@ -94,20 +101,50 @@ const Services: React.FC = () => {
             <Link href={service.link} className="relative group block">
               <div className="w-full aspect-[4/3] flex items-center justify-center bg-gray-900 rounded-lg border border-slate-800 bg-cover bg-center transition-all duration-300 group-hover:brightness-100 overflow-hidden">
                 <div className="relative w-full h-full">
+                  {/** 
                   <img
                     src={service.src}
                     alt={service.name}
                     className="absolute w-full h-full object-cover rounded-lg transition-opacity duration-500"
                   />
+                  */}
+                  <img
+                    src={service.src}
+                    srcSet={getSrcSet(service.src)}
+                    sizes={sizes}
+                    alt={service.name}
+                    className="absolute w-full h-full object-cover rounded-lg transition-opacity duration-500"
+                    loading="lazy"
+                  />
+                  {/** 
                   <img
                     src={service.previewSrc1}
                     alt={`${service.name} preview 1`}
                     className="absolute w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200"
                   />
+                  */}
+                  <img
+                    src={service.previewSrc1}
+                    srcSet={getSrcSet(service.previewSrc1)}
+                    sizes={sizes}
+                    alt={`${service.name} preview 1`}
+                    className="absolute w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200"
+                    loading="lazy"
+                  />
+                  {/** 
                   <img
                     src={service.previewSrc2}
                     alt={`${service.name} preview 2`}
                     className="absolute w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-500"
+                  />
+                  */}
+                  <img
+                    src={service.previewSrc2}
+                    srcSet={getSrcSet(service.previewSrc2)}
+                    sizes={sizes}
+                    alt={`${service.name} preview 2`}
+                    className="absolute w-full h-full object-cover rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-500"
+                    loading="lazy"
                   />
                 </div>
               </div>

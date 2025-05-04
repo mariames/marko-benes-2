@@ -132,28 +132,28 @@ export default function NavbarWithServices() {
                                     } transition-opacity duration-300`}
                                 >
                                     <li className="p-2">
-                                        <CrossTextEffect text="LABELS&nbsp;&amp;&nbsp;PACKAGING" href="/services/labels_and_packaging" />
+                                        <CrossTextEffect text="LABELS&nbsp;&amp;&nbsp;PACKAGING" href="/services/labels_and_packaging" onClick={handleItemClick} />
                                     </li>
                                     <li className="p-2">
-                                        <CrossTextEffect text="POSTERS&nbsp;&amp;&nbsp;FLYERS" href="/services/posters_and_flyers" />
+                                        <CrossTextEffect text="POSTERS&nbsp;&amp;&nbsp;FLYERS" href="/services/posters_and_flyers" onClick={handleItemClick} />
                                     </li>
                                     <li className="p-2">
-                                        <CrossTextEffect text="BILLBOARDS,&nbsp;BANNERS&nbsp;&&nbsp;ROLL&nbsp;UPS" href="/services/billboards_banners_roll_ups" />
+                                        <CrossTextEffect text="BILLBOARDS,&nbsp;BANNERS&nbsp;&&nbsp;ROLL&nbsp;UPS" href="/services/billboards_banners_roll_ups" onClick={handleItemClick} />
                                     </li>
                                     <li className="p-2">
-                                        <CrossTextEffect text="VEHICLE&nbsp;BRANDING" href="/services/vehicle_branding" />
+                                        <CrossTextEffect text="VEHICLE&nbsp;BRANDING" href="/services/vehicle_branding" onClick={handleItemClick} />
                                     </li>
                                     <li className="p-2">
-                                        <CrossTextEffect text="TRADE&nbsp;PROMO&nbsp;BOOTHS" href="/services/trade_promo_booths" />
+                                        <CrossTextEffect text="TRADE&nbsp;PROMO&nbsp;BOOTHS" href="/services/trade_promo_booths" onClick={handleItemClick} />
                                     </li>
                                     <li className="p-2">
-                                        <CrossTextEffect text="PROMO&nbsp;SHELVES" href="/services/promo_shelves" />
+                                        <CrossTextEffect text="PROMO&nbsp;SHELVES" href="/services/promo_shelves" onClick={handleItemClick} />
                                     </li>
                                     <li className="p-2">
-                                        <CrossTextEffect text="LOGO" href="/services/logo" />
+                                        <CrossTextEffect text="LOGO" href="/services/logo" onClick={handleItemClick} />
                                     </li>
                                     <li className="p-2">
-                                        <CrossTextEffect text="T-SHIRT&nbsp;DESIGN" href="/services/t-shirt_design" />
+                                        <CrossTextEffect text="T-SHIRT&nbsp;DESIGN" href="/services/t-shirt_design" onClick={handleItemClick} />
                                     </li>
                                 </ul>
                             </div>

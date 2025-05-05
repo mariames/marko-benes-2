@@ -30,7 +30,7 @@ const PostersPrintTechnique: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
           {/* First Image */}
           <div className="relative group">
-    
+
               <img
                 src="/service-section/PostersAndFlyers/print_finishing_techniques/dry_stamp_embossing_debossing_busuness_card_invitation.jpg"
                 srcSet="

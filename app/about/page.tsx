@@ -15,8 +15,7 @@ const About = () => {
           smallTitle="ABOUT"
           smallMessage="DESIGN AS A CALLING" />
         <AboutMarko />
-      <LandingSection />
-      {/** <CardSection /> */}
+      <CardSection />
       {/** <Stack /> */}
       <CallToAction />
     </>

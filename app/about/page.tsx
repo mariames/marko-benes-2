@@ -17,7 +17,7 @@ const About = () => {
         <AboutMarko />
       {/** <LandingSection /> */}
       {/** <CardSection /> */}
-      <Stack />
+      {/** <Stack /> */}
       <CallToAction />
     </>
   );

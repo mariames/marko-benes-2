@@ -24,11 +24,11 @@ const HeroSection2 = () => {
         */}
         <div className="relative w-full aspect-[21/9] rounded-2xl overflow-hidden">
           <img
-            src="/about/6406_frellance-carrier-large.jpg"
+            src="/about/6406_frellance-carrier-large.webp"
             srcSet="
-              /about/6406_frellance-carrier-small.jpg 960w,
-              /about/6406_frellance-carrier-medium.jpg 2047w,
-              /about/6406_frellance-carrier-large.jpg 3840w
+              /about/6406_frellance-carrier-small.webp 960w,
+              /about/6406_frellance-carrier-medium.webp 2047w,
+              /about/6406_frellance-carrier-large.webp 3840w
             "
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 60vw"
             alt="Marko Benis"

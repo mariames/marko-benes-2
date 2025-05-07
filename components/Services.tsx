@@ -16,9 +16,9 @@ const services: Service[] = [
   {
     name: "Labels & Packaging",
     link: "/services/labels_and_packaging",
-    src: "/service/labels-and-packaging.jpg",
-    previewSrc1: "/service/labels-and-packaging-preview1.jpg",
-    previewSrc2: "/service/labels-and-packaging-preview2.jpg",
+    src: "/service/labels-and-packaging.webp",
+    previewSrc1: "/service/labels-and-packaging-preview1.webp",
+    previewSrc2: "/service/labels-and-packaging-preview2.webp",
     types: ["product label","box design", "shelf ready packaging"],
   },
   {
@@ -32,9 +32,9 @@ const services: Service[] = [
   {
     name: "Billboards, Banners & Roll Ups",
     link: "/services/billboards_banners_roll_ups",
-    src: "/service/billboards-banners-roll-ups.jpg",
-    previewSrc1: "/service/billboards-banners-roll-ups-preview1.jpg",
-    previewSrc2: "/service/billboards-banners-roll-ups-preview2.jpg",
+    src: "/service/billboards-banners-roll-ups.webp",
+    previewSrc1: "/service/billboards-banners-roll-ups-preview1.webp",
+    previewSrc2: "/service/billboards-banners-roll-ups-preview2.webp",
     types: ["city light advertising", "shop window branding"],
   },
   {
@@ -64,9 +64,9 @@ const services: Service[] = [
   {
     name: "Logo",
     link: "/services/logo",
-    src: "/service/logo.jpg",
-    previewSrc1: "/service/logo-preview1.jpg",
-    previewSrc2: "/service/logo-preview2.jpg",
+    src: "/service/logo.webp",
+    previewSrc1: "/service/logo-preview1.webp",
+    previewSrc2: "/service/logo-preview2.webp",
     types: ["Branding", "Wordmark"],
   },
   {

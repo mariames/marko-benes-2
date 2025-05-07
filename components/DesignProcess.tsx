@@ -23,9 +23,9 @@ const DesignProcess: React.FC = () => {
         <img
           src="/collaborate/6391_collaborate-large.jpg"
           srcSet="
-            /collaborate/6391_collaborate-small.jpg 960w,
-            /collaborate/6391_collaborate-medium.jpg 2048w,
-            /collaborate/6391_collaborate-large.jpg 3840w
+            /collaborate/6391_collaborate-small.webp 960w,
+            /collaborate/6391_collaborate-medium.webp 2048w,
+            /collaborate/6391_collaborate-large.webp 3840w
           "
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 60vw"
           alt="Marko"

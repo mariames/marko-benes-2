@@ -19,9 +19,9 @@ const AboutMarko: React.FC = () => {
           <motion.img
             src="/about/marko-large.jpg"
             srcSet="
-              /about/marko-small.jpg 960w,
-              /about/marko-medium.jpg 2048w,
-              /about/marko-large.jpg 3336w
+              /about/marko-small.webp 960w,
+              /about/marko-medium.webp 2048w,
+              /about/marko-large.webp 3336w
             "
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 60vw"
             alt="About Marko"

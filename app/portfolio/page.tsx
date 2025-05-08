@@ -202,7 +202,7 @@ const ServicesGallery: React.FC = () => {
         <select
           value={selectedCategory}
           onChange={(e) => setSelectedCategory(e.target.value as ServiceType)}
-          className="p-2 border-2 border-white rounded-md font-bold text-white dark:text-white bg-[#101010] dark:bg-[#101010] tracking-wide"
+          className="p-5 text-lg border-2 border-gray-700 rounded-md font-bold text-white dark:text-white bg-[#101010] dark:bg-[#101010] tracking-wide"
         >
           {Object.values(ServiceType).map((category) => (
             <option key={category} value={category}>

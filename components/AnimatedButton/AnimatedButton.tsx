@@ -1,5 +1,6 @@
 import React from "react";
 import "./AnimatedButton.css";
+import Link from "next/link";
 
 interface AnimatedButtonProps {
   text: string;
@@ -12,9 +13,9 @@ const AnimatedButton: React.FC<AnimatedButtonProps> = ({ text, link }) => {
       <a href={link} className="main-button">
         {text}
       </a>
-      <a href={link} className="icon-button">
+      <Link href={link} className="icon-button">
         <span className="arrow">➔</span>
-      </a>
+      </Link>
     </div>
   );
 };

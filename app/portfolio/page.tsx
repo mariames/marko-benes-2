@@ -7,7 +7,7 @@ import TitleAnimation from "@/components/TitleAnimation";
 
 // ✅ Define an Enum for Service Types
 enum ServiceType {
-  All = "All",
+  All = "Show All Categories",
   LabelsAndPackaging = "Labels & Packaging",
   PostersAndFlyers = "Posters & Flyers",
   BillboardsBannersRollUps = "Billboards, Banners & Roll Ups",
@@ -198,7 +198,7 @@ const ServicesGallery: React.FC = () => {
           smallMessage="IMAGINE YOUR PROJECT HERE" />
       {/* ✅ Filter Dropdown */}
       <div className="md:mb-6 flex justify-end my-1 md:my-14  mr-4 lg:mr-10">
-        <label className="block text-lg font-semibold mb-2">Filter by Category:</label>
+        {/** <label className="block text-lg font-semibold mb-2">Filter by Category:</label> */}
         <select
           value={selectedCategory}
           onChange={(e) => setSelectedCategory(e.target.value as ServiceType)}

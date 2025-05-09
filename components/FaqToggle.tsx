@@ -6,26 +6,31 @@ import React, { useState } from 'react';
 const FaqToggle = () => {
 
   const faqs = [
-    {
-      question:  "Are you available to hire full time/part time?",
-      answer: "I am always open to discussing interesting opportunities, collaborations, and other fun stuff. If you’re interested in discussing a project, to make something great together, please fill out the contact form or send an e-mail. Simply want to get in touch? Let's connect on my business social networks."
-    },
-    {
-      question: "Can you facelift or redesign my design?",
-      answer: "Would love to! If you want to improve your existing design I will be happy to help you. I would like to take a look at your existing projects, materials, source files and we can discuss If I can add value and help you with the same."
-    },
-    {
-      question: "Can we get on a call?",
-      answer: "For sure. But first let's talk via email/socials to discuss your problems, goals, requirements, timelines, budget and exchange materials & info. This way, we can save each other's time on calls, and still can get an understanding if we're a good fit."
-    },
-    {
-      question: "What are the payment methods?",
-      answer: "Payments can be made in two ways. Via official company invoice/account or Payooner account. Depending on the type and scope of work, it is necessary to pay the entire amount of money or a certain agreed percentage. After that I start working."
-    },
-    {
-      question: "Do you work on other types of designs that are not listed in the Services section?",
-      answer: "Certainly. Any type of design similar to those listed in the \"Services\" section, created using the same software, can also be offered as part of my services."
-    }
+  {
+    question: "Are you open to new collaborations and projects?",
+    answer: "Absolutely. I’m always excited to team up with forward-thinking companies, especially those working at the intersection of technology and creativity. If you're building innovative web or video experiences and need someone who cares deeply about performance and user experience—I’d love to connect."
+  },
+  {
+    question: "What value can you bring to our video production pipeline?",
+    answer: "I specialize in front-end performance and building web interfaces that handle media content gracefully. From optimizing video-heavy pages to ensuring cross-device consistency and lightning-fast load times, I make sure your cutting-edge content looks and feels premium—no matter the platform."
+  },
+  {
+    question: "Can you collaborate with our in-house design and dev teams?",
+    answer: "Of course. I’ve spent years integrating seamlessly into remote and hybrid teams. Whether it's brainstorming early concepts with designers or refining implementation with devs, I bring strong communication skills and a high-performance mindset to every collaboration."
+  },
+  {
+    question: "Do you only build from scratch or also optimize existing platforms?",
+    answer: "Both. I can dive into existing codebases, identify bottlenecks, and uplift performance. I also enjoy building new platforms from the ground up—especially when performance, responsiveness, and user engagement are key goals."
+  },
+  {
+    question: "Why should we pick you over other developers?",
+    answer: "I bring more than clean code—I bring speed, stability, and a deep understanding of how users experience content online. While many developers can build, I ensure your content is delivered in a way that enhances your brand, engages your audience, and performs flawlessly."
+  },
+  {
+    question: "Do you offer mentoring or guidance for junior developers?",
+    answer: "Yes, mentoring is something I truly enjoy. Whether it’s helping junior developers grow their performance mindset or guiding them through real-world projects, I’m always happy to share knowledge and support the next generation of developers."
+  }
+
   ];
 
   const [openIndex, setOpenIndex] = useState(null);  // Open index starts as null (no FAQ open).

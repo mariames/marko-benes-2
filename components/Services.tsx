@@ -15,7 +15,7 @@ interface Service {
 const services: Service[] = [
   {
     name: "Labels & Packaging",
-    link: "/services/labels_and_packaging",
+    link: "/labels_and_packaging",
     src: "/service/labels-and-packaging.webp",
     previewSrc1: "/service/labels-and-packaging-preview1.webp",
     previewSrc2: "/service/labels-and-packaging-preview2.webp",
@@ -23,7 +23,7 @@ const services: Service[] = [
   },
   {
     name: "Posters & Flyers",
-    link: "/services/posters_and_flyers",
+    link: "/posters_and_flyers",
     src: "/service/posters-and-flyers.webp",
     previewSrc1: "/service/posters-and-flyers-preview1.webp",
     previewSrc2: "/service/posters-and-flyers-preview2.webp",
@@ -31,7 +31,7 @@ const services: Service[] = [
   },
   {
     name: "Billboards, Banners & Roll Ups",
-    link: "/services/billboards_banners_roll_ups",
+    link: "/billboards_banners_roll_ups",
     src: "/service/billboards-banners-roll-ups.webp",
     previewSrc1: "/service/billboards-banners-roll-ups-preview1.webp",
     previewSrc2: "/service/billboards-banners-roll-ups-preview2.webp",
@@ -39,7 +39,7 @@ const services: Service[] = [
   },
   {
     name: "Vehicle Branding",
-    link: "/services/vehicle_branding",
+    link: "/vehicle_branding",
     src: "/service/vehicle-branding.webp",
     previewSrc1: "/service/vehicle-branding-preview1.webp",
     previewSrc2: "/service/vehicle-branding-preview2.webp",
@@ -47,7 +47,7 @@ const services: Service[] = [
   },
   {
     name: "Trade Promo Booths",
-    link: "/services/trade_promo_booths",
+    link: "/trade_promo_booths",
     src: "/service/trade-promo-booths.webp",
     previewSrc1: "/service/trade-promo-booths-preview1.webp",
     previewSrc2: "/service/trade-promo-booths-preview2.webp",
@@ -55,7 +55,7 @@ const services: Service[] = [
   },
   {
     name: "Promo Shelves",
-    link: "/services/promo_shelves",
+    link: "/promo_shelves",
     src: "/service/promo-shelves.webp",
     previewSrc1: "/service/promo-shelves-preview1.webp",
     previewSrc2: "/service/promo-shelves-preview2.webp",
@@ -63,7 +63,7 @@ const services: Service[] = [
   },
   {
     name: "Logo",
-    link: "/services/logo",
+    link: "/logo",
     src: "/service/logo.webp",
     previewSrc1: "/service/logo-preview1.webp",
     previewSrc2: "/service/logo-preview2.webp",
@@ -71,7 +71,7 @@ const services: Service[] = [
   },
   {
     name: "T-Shirt Design",
-    link: "/services/t-shirt_design",
+    link: "/t-shirt_design",
     src: "/service/t-shirt-design.webp",
     previewSrc1: "/service/t-shirt-design-preview1.webp",
     previewSrc2: "/service/t-shirt-design-preview2.webp",
@@ -99,6 +99,7 @@ const Services: React.FC = () => {
             viewport={{ once: true }}
           >
             <Link href={service.link} className="relative group block">
+              <>
               <div className="w-full aspect-[4/3] flex items-center justify-center bg-gray-900 rounded-lg border border-slate-800 bg-cover bg-center transition-all duration-300 group-hover:brightness-100 overflow-hidden">
                 <div className="relative w-full h-full">
                   {/** 
@@ -159,6 +160,7 @@ const Services: React.FC = () => {
                   </span>
                 ))}
               </div>
+              </>
             </Link>
           </motion.div>
         ))}

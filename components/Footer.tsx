@@ -14,15 +14,18 @@ const Footer = () => {
       <div className="flex flex-col lg:flex-row justify-around items-center container mx-auto px-4">
         {/* Left Side: Logo */}
         <div>
+          {/** 
           <Image
             src="/Marko-Benis-logo.svg"
             width={200}
             height={50} 
             className="object-contain ml-1 w-52 h-auto"
             alt="Marko Benis" />
+            */}
+            <span className="font-bold">MARIJANA VUJOVIC</span>
         </div>
         
-        {/* Socials Section */}
+        {/* Socials Section 
           
             <div className="grid grid-cols-3 gap-4 mt-4">
               {socialLinks.map((social, index) => (
@@ -37,7 +40,7 @@ const Footer = () => {
                 </a>
               ))}
             </div>
-          
+          */}
 
 
         {/* Right Side: Email */}
@@ -46,7 +49,7 @@ const Footer = () => {
               href="mailto:marko@benis.studio"
               className="text-lg font-semibold mt-2 hover:text-gray-200 4xl:text-2xl"
             >
-              marko@benis.studio
+              marijanadev@gmail.com
             </a>
         
       </div>

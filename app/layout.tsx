@@ -48,7 +48,7 @@ export default function RootLayout({
         <link rel="icon" href="/icon.svg" sizes="16" />
       </head>
       <body className={`${inter.className} poppins-font bg-black`}>
-        <NavbarWithServices />
+        {/** <NavbarWithServices /> */}
         {children}
         <Footer />
       </body>

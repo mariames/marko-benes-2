@@ -15,7 +15,7 @@ const AboutMarko: React.FC = () => {
       <section className="relative w-full h-[50vh] lg:h-[100vh] bg-black"> 
          
         <div className="top-[40vh] md:top-[30vh] 2xl:top-[30vh] 3xl:top-[25vh] 4xl:top-[20vh] h-screen flex items-baseline justify-center">  
-          
+          {/** 
           <motion.img
             src="/about/marko-large.jpg"
             srcSet="
@@ -31,7 +31,16 @@ const AboutMarko: React.FC = () => {
             }}
             loading="lazy"
           />
-
+          */}
+          <motion.img
+            src="/ja.png"
+            alt="About Marko"
+            className="w-auto h-auto max-w-full max-h-full object-contain rounded-lg"
+            style={{
+              scale: imageScale, // Grow while scrolling
+            }}
+            loading="lazy"
+          />
         </div>
         
       </section>
